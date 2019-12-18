@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <x.RelativeLayout
+        a:id="@+id/lesson_playing_bar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:background="#f2f2f2"
+        a:visibility="gone" >
+
+        <x.ImageView
+            a:id="@+id/lesson_playing_img_pause"
+            style="@style/ImageView"
+            a:layout_width="220px"
+            a:layout_height="220px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            a:src="@drawable/lesson_player_btn_pause" />
+
+        <x.TextView
+            a:id="@+id/lesson_playing_txt_length"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="30px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/lesson_playing_img_pause"
+            a:textColor="#404040"
+            a:textSize="42px" />
+
+        <SeekBar
+            a:id="@+id/lesson_playing_seekbar_position"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_playing_txt_length"
+            a:layout_marginLeft="13px"
+            a:layout_marginRight="53px"
+            a:layout_marginTop="25px"
+            a:layout_toRightOf="@id/lesson_playing_img_pause"
+            a:max="10000"
+            a:maxHeight="8px"
+            a:minHeight="8px"
+            a:paddingLeft="17px"
+            a:paddingRight="17px"
+            a:progress="0"
+            a:progressDrawable="@drawable/seek_bar_progress_drawable"
+            a:secondaryProgress="0"
+            a:splitTrack="false"
+            a:thumb="@drawable/lesson_player_btn_seeker" />
+
+        <x.TextView
+            a:id="@+id/lesson_playing_txt_current_time"
+            a:layout_width="160px"
+            a:layout_height="44px"
+            a:layout_alignLeft="@id/lesson_playing_txt_length"
+            a:layout_below="@id/lesson_playing_seekbar_position"
+            a:textColor="#404040"
+            a:textSize="35px" />
+
+        <x.TextView
+            a:id="@+id/lesson_playing_txt_end_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/lesson_playing_seekbar_position"
+            a:layout_marginRight="70px"
+            a:textColor="#404040"
+            a:textSize="35px" />
+    </x.RelativeLayout>
+
+</RelativeLayout>

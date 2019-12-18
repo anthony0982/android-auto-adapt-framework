@@ -1,0 +1,285 @@
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical"
+    x:bg="@color/profile_activity_bg_color">
+
+    <x.LinearLayout
+        a:id="@+id/profile_list_item_layout"
+        a:layout_width="990px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="25px"
+        a:orientation="vertical"
+        x:bg="@drawable/profile_item_bg_shape" >
+
+        <x.RelativeLayout
+            a:id="@+id/profile_list_item_first_part"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content" >
+
+            <x.TextView
+                a:id="@+id/profile_item_txt_post_time"
+                style="@style/TextView"
+                a:layout_marginLeft="32px"
+                a:layout_marginTop="30px"
+                a:textColor="@color/profile_txt_color_4"
+                a:textSize="@dimen/font_size_34" />
+
+            <x.TextView
+                a:id="@+id/profile_item_txt_delete"
+                style="@style/TextView"
+                a:layout_alignParentRight="true"
+                a:layout_marginRight="32px"
+                a:layout_marginTop="30px"
+                a:text="删除"
+                a:textColor="@color/profile_txt_color_3"
+                a:textSize="@dimen/font_size_34"
+                a:visibility="invisible" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/profile_list_second_part"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content" >
+
+            <x.RelativeLayout
+                a:id="@+id/profile_list_item_content_layout"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:visibility="gone" >
+
+                <x.TextView
+                    a:id="@+id/profile_txt_item_content"
+                    style="@style/TextView"
+                    a:layout_marginTop="20px"
+                    a:lineSpacingMultiplier="1.25"
+                    a:paddingLeft="32px"
+                    a:paddingRight="25px"
+                    a:singleLine="false"
+                    a:textColor="@color/profile_txt_color_5"
+                    a:textSize="@dimen/font_size_42" />
+
+                <x.ImageView
+                    a:id="@+id/profile_list_item_photo"
+                    style="@style/ImageView"
+                    a:layout_width="990px"
+                    a:layout_height="900px"
+                    a:layout_below="@id/profile_txt_item_content"
+                    a:layout_marginTop="20px"
+                    x:bg="@color/profile_item_photo_bg" />
+
+                <x.TextView
+                    a:id="@+id/profile_txt_list_item_picture_count"
+                    a:layout_width="70px"
+                    a:layout_height="70px"
+                    a:layout_alignBottom="@id/profile_list_item_photo"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginBottom="50px"
+                    a:layout_marginRight="50px"
+                    a:gravity="center"
+                    a:paddingBottom="8px"
+                    a:textColor="@android:color/white"
+                    a:textSize="@dimen/font_size_44"
+                    a:visibility="invisible"
+                    x:bg="@drawable/profile_list_item_picture_count_bg" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/profile_list_item_music_layout"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:paddingBottom="30px"
+                a:visibility="gone" >
+
+                <x.RelativeLayout
+                    a:id="@+id/profile_item_music_centerHorizontal"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerHorizontal="true" >
+
+                    <com.makeramen.RoundedImageView
+                        a:id="@+id/profile_item_img_music_picture"
+                        style="@style/ImageView"
+                        a:layout_width="122px"
+                        a:layout_height="122px"
+                        a:layout_marginTop="68px"
+                        x:corner_radius="75px"
+                        x:oval="true" />
+
+                    <x.ImageView
+                        a:id="@+id/profile_ic_item_img_music_play"
+                        style="@style/ImageView"
+                        a:layout_width="122px"
+                        a:layout_height="122px"
+                        a:layout_marginTop="68px"
+                        x:src="@drawable/profile_ic_item_music_play" />
+
+                    <x.ImageView
+                        a:id="@+id/profile_ic_item_img_music_stop"
+                        style="@style/ImageView"
+                        a:layout_width="122px"
+                        a:layout_height="122px"
+                        a:layout_marginTop="68px"
+                        a:visibility="gone"
+                        x:src="@drawable/profile_ic_item_music_stop" />
+
+                    <x.RelativeLayout
+                        a:layout_width="wrap_content"
+                        a:layout_height="wrap_content"
+                        a:layout_marginLeft="50px"
+                        a:layout_marginTop="65px"
+                        a:layout_toRightOf="@id/profile_item_img_music_picture" >
+
+                        <x.TextView
+                            a:id="@+id/profile_txt_item_music_title"
+                            style="@style/TextView"
+                            a:layout_centerHorizontal="true"
+                            a:textColor="@color/profile_txt_color_5"
+                            a:textSize="@dimen/font_size_42" />
+
+                        <x.TextView
+                            a:id="@+id/profile_txt_item_music_singer"
+                            style="@style/TextView"
+                            a:layout_below="@id/profile_txt_item_music_title"
+                            a:layout_centerHorizontal="true"
+                            a:layout_marginTop="25px"
+                            a:textColor="@color/profile_txt_color_5"
+                            a:textSize="@dimen/font_size_34" />
+                    </x.RelativeLayout>
+                </x.RelativeLayout>
+
+                <x.TextView
+                    a:id="@+id/profile_txt_item_music_lyric"
+                    style="@style/TextView"
+                    a:layout_below="@id/profile_item_music_centerHorizontal"
+                    a:layout_centerHorizontal="true"
+                    a:layout_marginTop="95px"
+                    a:gravity="center_horizontal"
+                    a:lineSpacingMultiplier="1.5"
+                    a:singleLine="false"
+                    a:textColor="@color/profile_txt_color_6"
+                    a:textSize="@dimen/font_size_44" />
+
+                <x.TextView
+                    a:id="@+id/profile_txt_item_music_source"
+                    style="@style/TextView"
+                    a:layout_alignBottom="@id/profile_txt_item_music_lyric"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginBottom="30px"
+                    a:layout_marginRight="38px"
+                    a:textColor="@color/profile_txt_color_6"
+                    a:textSize="@dimen/font_size_30"
+                    x:bg="@drawable/profile_item_music_source_shape" />
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/profile_list_third_part"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content" >
+
+            <x.ImageView
+                a:id="@+id/profile_list_item_line"
+                a:layout_width="fill_parent"
+                a:layout_height="1px"
+                x:bg="@color/profile_item_line_color" />
+
+            <x.RelativeLayout
+                a:id="@+id/profile_list_item_forward_area"
+                a:layout_width="330px"
+                a:layout_height="145px"
+                a:layout_below="@id/profile_list_item_line"
+                x:bg="@drawable/profile_item_left_button_selector" >
+
+                <x.ImageView
+                    a:id="@+id/profile_list_item_img_share"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="135px"
+                    a:src="@drawable/profile_ic_forward" />
+
+                <x.TextView
+                    a:id="@+id/profile_list_item_txt_share_count"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="20px"
+                    a:layout_toRightOf="@id/profile_list_item_img_share"
+                    a:textColor="@color/profile_txt_color_6"
+                    a:textSize="@dimen/font_size_26" />
+
+                <x.ImageView
+                    a:layout_width="1px"
+                    a:layout_height="145px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginBottom="4px"
+                    x:bg="@color/profile_item_line_color" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/profile_list_item_comment_area"
+                a:layout_width="330px"
+                a:layout_height="145px"
+                a:layout_below="@id/profile_list_item_line"
+                a:layout_toRightOf="@id/profile_list_item_forward_area"
+                a:background="@drawable/login_button_selector" >
+
+                <x.ImageView
+                    a:id="@+id/profile_list_item_img_comment"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="135px"
+                    a:src="@drawable/profile_ic_comment" />
+
+                <x.TextView
+                    a:id="@+id/profile_list_item_txt_comment_count"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="20px"
+                    a:layout_toRightOf="@id/profile_list_item_img_comment"
+                    a:textColor="@color/profile_txt_color_6"
+                    a:textSize="@dimen/font_size_26" />
+
+                <x.ImageView
+                    a:layout_width="1px"
+                    a:layout_height="145px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginBottom="4px"
+                    x:bg="@color/profile_item_line_color" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/profile_list_item_praise_area"
+                a:layout_width="330px"
+                a:layout_height="145px"
+                a:layout_below="@id/profile_list_item_line"
+                a:layout_toRightOf="@id/profile_list_item_comment_area"
+                x:bg="@drawable/profile_item_right_button_selector" >
+
+                <x.ImageView
+                    a:id="@+id/profile_list_item_img_praise"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="135px"
+                    a:src="@drawable/profile_ic_praise" />
+
+                <x.TextView
+                    a:id="@+id/profile_list_item_txt_praise_count"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="20px"
+                    a:layout_toRightOf="@id/profile_list_item_img_praise"
+                    a:textColor="@color/profile_txt_color_6"
+                    a:textSize="@dimen/font_size_26" />
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+    </x.LinearLayout>
+
+</LinearLayout>

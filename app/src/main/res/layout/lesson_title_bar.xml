@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.TextView
+        a:id="@+id/lesson_fragment_title"
+        a:layout_width="566px"
+        a:layout_height="match_parent"
+        a:layout_centerHorizontal="true"
+        a:ellipsize="middle"
+        a:singleLine="true"
+        a:gravity="center"
+        a:textColor="#FF585858"
+        a:textSize="50px" />
+
+    <x.ImageView
+        a:id="@+id/lesson_fragment_close"
+        a:layout_width="142px"
+        a:layout_height="144px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        x:src="@drawable/lesson_ic_close" />
+
+    <View
+        a:id="@+id/lesson_fragment_title_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:background="#1A000000" />
+
+</merge>

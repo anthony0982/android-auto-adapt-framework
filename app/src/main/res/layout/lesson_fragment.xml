@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/lesson_fragment_layout"
+        a:layout_width="1020px"
+        a:layout_height="1460px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="95px"
+        x:bg="@drawable/common_card_background">
+
+        <im.clazz.lesson.LessonTitleBar
+            a:id="@+id/lesson_fragment_title_bar"
+            a:layout_width="match_parent"
+            a:layout_height="144px"
+            a:layout_marginLeft="0px"
+            a:layout_marginTop="0px"
+            a:background="@drawable/material_card_top_gray" />
+
+        <include layout="@layout/lesson_fragment_main_layout" />
+
+        <FrameLayout
+            a:id="@+id/schedule_class_tools"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_below="@id/lesson_fragment_title_bar"></FrameLayout>
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

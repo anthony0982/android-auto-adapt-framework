@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutSettingsItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+
+        <x.ImageView
+            a:id="@+id/mImageLeft"
+            style="@style/SettingsItem.Image" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/SettingsItem.Title" />
+
+        <x.TextView
+            a:id="@+id/mTxtText"
+            style="@style/SettingsItem.Text" />
+
+        <x.ImageView
+            a:id="@+id/mImageRight"
+            style="@style/SettingsItem.ImageRight" />
+
+
+        <x.ImageView
+            a:id="@+id/mImageCheck"
+            style="@style/SettingsItem.Check" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/mImageLoading"
+            style="@style/SettingsItem.ImageLoading" />
+
+        <x.ImageView
+            a:id="@+id/mImgDive"
+            style="@style/SettingsItem.Dive" />
+
+
+        <com.kyleduo.switchbutton.SwitchButton
+            a:id="@+id/mSwitch"
+            style="@style/SettingsItem.Switch" />
+
+        <View
+            a:id="@+id/mImgLine"
+            style="@style/SettingsItem.Line" />
+
+    </x.RelativeLayout>
+</x.RelativeLayout>

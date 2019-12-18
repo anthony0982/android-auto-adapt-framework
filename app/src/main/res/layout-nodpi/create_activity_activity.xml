@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="match_parent">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutSubTitle"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical">
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mTopic"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_topic" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mBrief"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_brief" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mPoster"
+                    style="@style/EditItemView"
+                    x:hint="@string/optional"
+                    x:item_title="@string/activity_poster"
+                    x:show_image="true" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mType"
+                    style="@style/EditItemView"
+                    x:hint="@string/activity_type"
+                    x:item_title="@string/activity_type" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mCreateChat"
+                    style="@style/EditItemView"
+                    x:hint="@string/yes"
+                    x:item_title="@string/activity_create_chat"
+                    x:title_width="500px" />
+
+                <View
+                    a:id="@+id/mViewSplitSubTitle"
+                    style="@style/EditItem.Split" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mStartTime"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_start_time" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mEndTime"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_end_time" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mLocation"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_location" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mSponsor"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_sponsor" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mSpeaker"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_speaker" />
+
+                <View
+                    a:id="@+id/mViewSplitTarget"
+                    style="@style/EditItem.Split" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mTarget"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_targets" />
+
+                <im.clazz.view.EditItemView
+                    a:id="@+id/mTargetGrade"
+                    style="@style/EditItemView"
+                    x:item_title="@string/activity_target_grade" />
+
+
+                <x.TextView
+                    a:id="@+id/mTxtPost"
+                    style="@style/RoundTextView"
+                    a:layout_width="match_parent"
+                    a:layout_marginBottom="40px"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="50px"
+                    a:enabled="false"
+                    a:paddingBottom="20px"
+                    a:paddingTop="20px"
+                    a:text="@string/sponsor"
+                    a:textSize="@dimen/font_size_52" />
+            </x.LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:singleLine="true"
+            a:text="@string/activity_sponsor_new" />
+
+    </x.RelativeLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mTypePicker"
+        style="@style/Picker" />
+
+    <com.example.picker.DateHourMinutePicker
+        a:id="@+id/mStartTimePicker"
+        style="@style/DateHourMinutePicker" />
+
+    <com.example.picker.DateHourMinutePicker
+        a:id="@+id/mEndTimePicker"
+        style="@style/DateHourMinutePicker" />
+
+</RelativeLayout>

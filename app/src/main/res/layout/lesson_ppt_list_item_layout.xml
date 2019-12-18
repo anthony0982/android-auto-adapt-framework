@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_ppt_fragment_img"
+        style="@style/ImageView.ScheduleRecord"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="46px" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_ppt_fragment_txt"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="16px"
+        a:layout_marginTop="45px"
+        a:layout_toRightOf="@id/schedule_class_tool_ppt_fragment_img"
+        a:textColor="#737373"
+        a:textSize="38px" />
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_ppt_fragment_item_img"
+        style="@style/ImageView.ScheduleRecord"
+        a:layout_below="@id/schedule_class_tool_ppt_fragment_txt"
+        a:layout_marginLeft="108px"
+		a:layout_marginTop="68px"/>
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_ppt_fragment_item_txt"
+        style="@style/TextView.ScheduleHomeworkItem"
+        a:layout_marginLeft="23px"
+        a:layout_toRightOf="@id/schedule_class_tool_ppt_fragment_item_img"
+        a:layout_below="@id/schedule_class_tool_ppt_fragment_txt"
+        a:layout_marginTop="68px"
+        a:textColor="#727272"
+        a:textSize="38px" />
+
+</RelativeLayout>

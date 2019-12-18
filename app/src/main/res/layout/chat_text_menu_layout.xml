@@ -1,0 +1,21 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        a:layout_width="700px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_dialog"
+        a:paddingTop="24px" 
+        a:paddingBottom="24px" >
+
+        <TextView
+            a:id="@+id/txt_copy"
+            style="@style/TextView.ChatMenu"
+            a:text="@string/copy" />
+
+        <TextView
+            a:id="@+id/txt_delete"
+            style="@style/TextView.ChatMenu"
+            a:layout_below="@id/txt_copy"
+            a:text="@string/delete" />
+    </RelativeLayout>
+</merge>

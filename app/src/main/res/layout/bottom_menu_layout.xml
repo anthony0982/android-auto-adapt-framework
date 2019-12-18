@@ -1,0 +1,17 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:fadingEdge="vertical"
+        a:layout_alignParentBottom="true"
+        a:layout_marginBottom="50px"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@drawable/round_corner_white_rectangle_shape"
+        a:scrollbarStyle="outsideOverlay"
+        a:scrollbars="vertical" />
+
+</merge>

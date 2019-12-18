@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.TextView xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mTxtTag"
+    style="@style/RoundTextView.Blue"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content"
+    a:layout_centerVertical="true"
+    a:layout_marginLeft="50px"
+    a:textSize="36px"
+    x:round_backgroundColor="#f39700"
+    x:round_borderWidth="0px"
+    x:round_isRadiusAdjustBounds="false"
+    x:round_padding_horizontal="0.6"
+    x:round_padding_vertical="0.3"
+    x:round_radius="6px" />

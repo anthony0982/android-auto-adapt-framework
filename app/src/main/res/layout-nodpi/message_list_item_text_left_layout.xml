@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <include layout="@layout/message_list_item_time_split_layout" />
+
+    <x.RelativeLayout
+        a:layout_width="1080px"
+        a:layout_height="wrap_content"
+        a:paddingLeft="16px">
+
+        <x.TextView
+            a:id="@+id/message_list_item_txt_name_left"
+            style="@style/Message.Name" />
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/message_list_item_avatar_left"
+            style="@style/Message.Avatar.Left" />
+
+        <com.halo.view.HttpTextView
+            a:id="@+id/message_list_item_txt_content_left"
+            style="@style/Message.Text.Left" />
+    </x.RelativeLayout>
+
+</LinearLayout>

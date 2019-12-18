@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.TextView xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/message_list_item_txt_time_split"
+    style="@style/Message.Tip" />

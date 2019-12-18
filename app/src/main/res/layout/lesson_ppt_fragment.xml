@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_class_tool_ppt_fragment_layout"
+        a:layout_width="1020px"
+        a:layout_height="1308px"
+        a:background="@drawable/material_card_bottom" >
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_ppt_fragment_txt_no_ppt"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:text="@string/lesson_no_ppt"
+            a:textColor="#8d8d8d"
+            a:textSize="45px" 
+            a:visibility="gone"/>
+        <ListView
+            a:id="@+id/schedule_class_tool_ppt_fragment_list_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@null"
+            a:divider="@null"
+            a:fillViewport="true"
+            a:paddingBottom="20px"
+            a:scrollbars="none" />
+        <x.ImageView 
+            a:id="@+id/schedule_class_tool_ppt_fragment_add"
+            a:layout_width="140px"
+            a:layout_height="140px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentBottom="true"
+            a:layout_marginBottom="105px"
+            a:layout_marginRight="30px"
+            a:src="@drawable/schedule_class_tool_ppt_btn_add"
+            />
+
+    </x.RelativeLayout>
+
+</RelativeLayout>

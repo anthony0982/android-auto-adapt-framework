@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <RelativeLayout
+        a:id="@+id/intro_layout_logined"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent">
+
+        <x.ImageView
+            a:id="@+id/intro_bg_img"
+            style="@style/ImageView"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:scaleType="centerCrop"
+            x:src="@drawable/bg_intro_night" />
+
+        <im.clazz.fragment.start.IntroTopHoverView
+            a:id="@+id/intro_top_hover_view"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content" />
+
+        <im.clazz.fragment.start.IntroBottomHoverView
+            a:id="@+id/intro_bottom_hover_view"
+            a:layout_width="fill_parent"
+            a:layout_height="@dimen/intro_bottom_hover_height"
+            a:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <im.clazz.fragment.profile.edit.EditProfileView
+        a:id="@+id/intro_profile_edit_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:visibility="gone" />
+
+</RelativeLayout>

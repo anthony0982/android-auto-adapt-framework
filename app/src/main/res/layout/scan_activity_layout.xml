@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/capture_containter"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <SurfaceView
+        a:id="@+id/capture_preview"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <View
+        a:id="@+id/capture_activity_title_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_marginTop="152px"
+        a:background="#FFd7d7d7"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/top_mask"
+        a:layout_width="match_parent"
+        a:layout_height="480px"
+        a:layout_alignParentTop="true"
+        x:bg="@drawable/scan_mask" />
+
+    <x.RelativeLayout
+        a:id="@+id/capture_crop_layout"
+        a:layout_width="600px"
+        a:layout_height="600px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="480px"
+        x:bg="@drawable/capture">
+
+        <x.ImageView
+            a:id="@+id/capture_scan_line"
+            a:layout_width="match_parent"
+            a:layout_height="20px"
+            a:layout_alignParentTop="true"
+            a:layout_margin="10px"
+            x:bg="@drawable/scan_line" />
+    </x.RelativeLayout>
+
+    <x.ImageView
+        a:id="@+id/bottom_mask"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_below="@id/capture_crop_layout"
+        a:background="@drawable/scan_mask"
+        a:contentDescription="@string/app_name" />
+
+    <x.ImageView
+        a:id="@+id/left_mask"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@id/bottom_mask"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/top_mask"
+        a:layout_toLeftOf="@id/capture_crop_layout"
+        a:background="@drawable/scan_mask"
+        a:contentDescription="@string/app_name" />
+
+    <x.ImageView
+        a:id="@+id/right_mask"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@id/bottom_mask"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/top_mask"
+        a:layout_toRightOf="@id/capture_crop_layout"
+        a:contentDescription="@string/app_name"
+        x:bg="@drawable/scan_mask" />
+
+    <x.TextView
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/capture_crop_layout"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="50dp"
+        a:text="@string/scan_tips"
+        a:textColor="@android:color/white"
+        a:textSize="@dimen/font_size_medium" />
+
+    <x.TextView
+        a:id="@+id/capture_activity_txt_title"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="230px"
+        a:background="#BB000000"
+        a:paddingTop="70px"
+        a:text="@string/scan_title"
+        a:textColor="#FFFFFFFF"
+        a:textSize="56px" />
+
+    <x.ImageView
+        a:id="@+id/capture_activity_img_back"
+        style="@style/ToolBar.Icon.Back"
+        a:layout_alignParentTop="true"
+        a:layout_marginTop="100px" />
+
+    <x.ImageView
+        a:id="@+id/bottom_mask_2"
+        a:layout_width="match_parent"
+        a:layout_height="280px"
+        a:layout_alignParentBottom="true"
+        a:background="#BB000000" />
+
+    <x.ImageView
+        a:id="@+id/capture_activity_img_light"
+        style="@style/ImageView"
+        a:layout_width="140px"
+        a:layout_height="140px"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="60px"
+        x:src="@drawable/ic_lightning" />
+
+</x.RelativeLayout>

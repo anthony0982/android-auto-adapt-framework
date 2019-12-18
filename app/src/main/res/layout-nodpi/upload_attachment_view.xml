@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutAttachments"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:orientation="vertical" />
+
+    <RelativeLayout
+        a:id="@+id/mLayoutAddAttachments"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtAddAttachments"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:enabled="false"
+            a:paddingBottom="20px"
+            a:paddingTop="20px"
+            a:text="@string/attachment"
+            a:textColor="@color/gray_66"
+            a:textSize="@dimen/font_size_46" />
+
+        <x.ImageView
+            a:id="@+id/mImgAddAttachments"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:tint="@color/gray_66"
+            x:src="@drawable/ic_add_thin" />
+
+    </RelativeLayout>
+</x.LinearLayout>

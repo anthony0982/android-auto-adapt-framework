@@ -1,0 +1,38 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTitle"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtTitle"
+        a:background="@drawable/list_item_color_selector"
+        a:orientation="vertical">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@+id/mImgRecommendDive"
+            a:lineSpacingMultiplier="1.3"
+            a:paddingBottom="32px"
+            a:paddingLeft="50px"
+            a:paddingTop="32px"
+            a:text="@string/choose"
+            a:textColor="#505763"
+            a:textSize="46px" />
+
+        <x.ImageView
+            a:id="@+id/mImgRecommendDive"
+            style="@style/SettingsItem.DiveOnly"
+            a:rotation="90" />
+    </x.RelativeLayout>
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItems"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutTitle"
+        a:orientation="vertical" />
+
+</merge>

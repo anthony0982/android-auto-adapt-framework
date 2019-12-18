@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <com.halo.view.ScrollView
+        a:id="@+id/scroll_view"
+        a:layout_width="wrap_content"
+        a:layout_height="match_parent"
+        a:fillViewport="true"
+        a:overScrollMode="never"
+        a:paddingBottom="0px"
+        a:paddingRight="0px"
+        a:paddingTop="0px"
+        a:scrollbars="none" >
+
+        <RelativeLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content" >
+
+            <com.halo.flipper.ImageFlipper
+                a:id="@+id/flipper"
+                a:layout_width="match_parent"
+                a:layout_height="500px"
+                a:background="#E0E0E0" />
+
+            <x.ImageView
+                a:id="@+id/school_course_pager_line"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/flipper"
+                a:src="@color/title_line_color" />
+
+            <com.halo.flipper.ImageFlipperIndicator
+                a:id="@+id/school_course_indicator"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignBottom="@id/flipper"
+                a:layout_alignParentRight="true"
+                a:layout_marginBottom="30px"
+                a:layout_marginRight="80px" />
+
+            <x.LinearLayout
+                a:id="@+id/school_course_layout_course"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/school_course_pager_line"
+                a:orientation="vertical"
+                a:paddingBottom="100px" />
+        </RelativeLayout>
+    </com.halo.view.ScrollView>
+
+</merge>

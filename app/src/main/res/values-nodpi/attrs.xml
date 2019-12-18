@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="swipe">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="wheel">
+        <attr name="lineSplitHeight" format="reference|integer" />
+        <attr name="textColorFirst" format="reference|color" />
+        <attr name="textColorSecond" format="reference|color" />
+        <attr name="textColorThird" format="reference|color" />
+        <attr name="splitLineColor" format="reference|color" />
+        <attr name="textSize" format="reference|integer" />
+        <attr name="textSizeSecond" format="reference|integer" />
+        <attr name="textSizeHighlight" format="reference|integer" />
+        <attr name="unitText" format="reference|string" />
+        <attr name="textColorUnit" format="reference|color" />
+        <attr name="textSizeUnit" format="reference|integer" />
+        <attr name="textGravity">
+            <flag name="left" value="-1" />
+            <flag name="center" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+        <attr name="textGravityColumnOne">
+            <flag name="left" value="-1" />
+            <flag name="center" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+        <attr name="textGravityColumnTwo">
+            <flag name="left" value="-1" />
+            <flag name="center" value="0" />
+            <flag name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="x">
+        <attr name="bg" format="reference|color" />
+        <attr name="src" format="reference|color" />
+        <attr name="src_disabled" format="reference|color" />
+        <attr name="tint" format="reference|color" />
+        <attr name="backgoundTint" format="reference|color" />
+        <attr name="src_active" format="reference|color" />
+        <attr name="text" format="reference|string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="fontSize" format="reference|integer" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="lineHeight" format="reference|integer" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="show_bottom_line" format="boolean" />
+        <attr name="round" format="boolean" />
+        <attr name="round_padding_horizontal" format="float" />
+        <attr name="round_padding_vertical" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="rating_bar">
+        <attr name="star_only" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TabButton">
+
+        <!-- Indicates the initial checked state of this button. -->
+        <attr name="checked" format="boolean" />
+        <!-- Drawable used for the button graphic (e.g. checkbox, radio button, etc). -->
+        <attr name="button" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TabGroup">
+        <attr name="tabButtonStyle" format="reference" />
+
+        <!--
+             The id of the child radio button that should be checked by default
+             within this radio group.
+        -->
+        <attr name="checkedButton" format="integer" />
+        <!--
+             Should the radio group be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.  The default is
+             vertical.
+        -->
+        <!-- Standard orientation constant. -->
+        <attr name="tab_orientation">
+
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AnimView">
+        <attr name="type">
+
+            <!-- 文字以渐隐的方式出现 -->
+            <enum name="text" value="0" />
+
+            <!-- 图片以pop的方式出现 -->
+            <enum name="pic" value="1" />
+
+            <!-- 灯光 -->
+            <enum name="lamp" value="2" />
+
+            <!-- slogan文字 -->
+            <enum name="slogan" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--
+         SlidingDrawer specific attributes. These attributes are used to configure
+         a SlidingDrawer from XML.
+    -->
+    <declare-styleable name="SlidingDrawer">
+
+        <!-- Identifier for the child that represents the drawer's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the drawer's content. -->
+        <attr name="content" format="reference" />
+        <!-- Orientation of the SlidingDrawer. -->
+        <attr name="orientations">
+            <enum name="right_left" value="0" />
+            <enum name="bottom_top" value="1" />
+            <enum name="left_right" value="2" />
+            <enum name="top_bottom" value="3" />
+        </attr>
+        <!-- Extra offset for the handle at the bottom of the SlidingDrawer. -->
+        <attr name="bottomOffset" format="dimension" />
+        <!-- Extra offset for the handle at the top of the SlidingDrawer. -->
+        <attr name="topOffset" format="dimension" />
+        <!--
+             Indicates whether the drawer can be opened/closed by a single tap
+             on the handle.  (If false, the user must drag or fling, or click
+             using the trackball, to open/close the drawer.)  Default is true.
+        -->
+        <attr name="allowSingleTap" format="boolean" />
+        <!--
+             Indicates whether the drawer should be opened/closed with an animation
+             when the user clicks the handle. Default is true.
+        -->
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundImageView">
+        <attr name="android:foreground" />
+    </declare-styleable>
+
+    <attr name="aspect" />
+
+    <declare-styleable name="SwitchButton">
+        <attr name="onDrawable" format="reference" />
+        <attr name="offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="onColor" format="color|reference" />
+        <attr name="offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="radius" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LineHeightEditText">
+        <attr name="cursorColor" format="color" />
+        <attr name="cursorHeight" format="dimension" />
+        <attr name="cursorWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DatePicker">
+        <attr name="fromNowOn" format="boolean" />
+        <attr name="fromNowOnYears" format="reference|integer" />
+        <attr name="startYear" format="reference|integer" />
+        <attr name="years" format="reference|integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingView">
+        <attr name="qmui_loading_size" format="dimension" />
+        <attr name="qmui_loading_color" format="reference|color" />
+    </declare-styleable>
+
+    <attr name="QMUILoadingStyle" format="reference" />
+
+    <!--**************** QMUIPullRefreshLayout ******************-->
+    <declare-styleable name="PullRefreshLayout">
+        <!-- RefreshView的初始offset -->
+        <attr name="qmui_refresh_init_offset" format="dimension" />
+
+        <attr name="qmui_loading_view_size" format="dimension|reference" />
+        <!-- 刷新时RefreshView的offset -->
+        <attr name="qmui_refresh_end_offset" format="dimension" />
+        <!-- TargetView(ListView或者ScrollView等)的初始位置 -->
+        <attr name="qmui_target_init_offset" format="dimension" />
+        <!-- 刷新时TargetView(ListView或者ScrollView等)的位置-->
+        <attr name="qmui_target_refresh_offset" format="dimension" />
+        <attr name="qmui_target_refresh_color" format="reference|color" />
+        <!-- 是否自动根据RefreshView的高度计算RefreshView的初始位置-->
+        <attr name="qmui_auto_calculate_refresh_init_offset" format="boolean" />
+        <!-- 是否自动根据TargetView在刷新时的位置计算RefreshView的结束位置-->
+        <attr name="qmui_auto_calculate_refresh_end_offset" format="boolean" />
+        <!-- TargetView的刷新位置与RefreshView高度相等-->
+        <attr name="qmui_equal_target_refresh_offset_to_refresh_view_height" format="boolean" />
+    </declare-styleable>
+    <attr name="PullRefreshLayoutStyle" format="reference" />
+
+    <declare-styleable name="RoundButton">
+        <attr name="round_backgroundColor" format="reference|color" />
+        <attr name="round_borderColor" format="reference|color" />
+        <attr name="round_borderWidth" format="reference|dimension" />
+        <attr name="round_isRadiusAdjustBounds" format="boolean" />
+        <attr name="round_left" format="boolean" />
+        <attr name="round_radius" format="reference|dimension" />
+        <attr name="round_radiusTopLeft" format="reference|dimension" />
+        <attr name="round_radiusTopRight" format="reference|dimension" />
+        <attr name="round_radiusBottomLeft" format="reference|dimension" />
+        <attr name="round_radiusBottomRight" format="reference|dimension" />
+        <attr name="round_btn_border_width" format="dimension" />
+    </declare-styleable>
+
+    <attr name="RoundCornerImageViewStyle" format="reference" />
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="round_corner_border_width" format="dimension" />
+        <attr name="round_corner_border_color" format="color" />
+        <attr name="round_corner_selected_mask_color" format="color" />
+        <attr name="round_corner_selected_border_color" format="color" />
+        <attr name="round_corner_selected_border_width" format="dimension" />
+        <attr name="round_corner_corner_radius" format="dimension" />
+        <attr name="round_corner_is_oval" format="boolean" />
+        <attr name="round_corner_is_circle" format="boolean" />
+        <attr name="round_corner_is_touch_select_mode_enabled" format="boolean" />
+    </declare-styleable>
+
+    <attr name="EditItemViewStyle" format="reference" />
+
+    <declare-styleable name="EditItemView">
+        <attr name="item_title" format="reference|string" />
+        <attr name="show_image" format="reference|boolean" />
+        <attr name="title_width" format="reference|dimension" />
+        <attr name="hint" format="reference|string" />
+        <attr name="text_gravity">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="SettingItemViewStyle" format="reference" />
+
+    <declare-styleable name="SettingItemView">
+        <attr name="settings_title" format="reference|string" />
+        <attr name="show_image_left" format="reference|boolean" />
+        <attr name="show_image_right" format="reference|boolean" />
+        <attr name="show_line" format="reference|boolean" />
+        <attr name="show_switch" format="reference|boolean" />
+        <attr name="show_dive" format="reference|boolean" />
+        <attr name="text_match_parent" format="reference|boolean" />
+        <attr name="icon" format="reference" />
+        <attr name="right_icon" format="reference" />
+        <attr name="show_text_right" format="reference|boolean" />
+        <attr name="settings_title_width" format="reference|dimension" />
+        <attr name="settings_text_padding_right" format="reference|dimension" />
+        <attr name="settings_hint" format="reference|string" />
+        <attr name="settings_text_gravity">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+    </declare-styleable>
+</resources>

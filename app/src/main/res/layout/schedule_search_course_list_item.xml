@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.TextView
+        a:id="@+id/schedule_search_course_list_item_txt_class_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="23px"
+        a:layout_marginTop="23px"
+        a:textColor="#000000"
+        a:textSize="35px" />
+
+    <x.TextView
+        a:id="@+id/schedule_search_course_list_item_txt_teacher_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="35px"
+        a:layout_marginTop="25px"
+        a:textColor="#aaaaaa"
+        a:textSize="30px" />
+
+    <x.TextView
+        a:id="@+id/schedule_search_course_list_item_txt_class_info"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/schedule_search_course_list_item_txt_class_name"
+        a:layout_marginLeft="27px"
+        a:layout_marginTop="45px"
+        a:singleLine="false"
+        a:textColor="#acacac"
+        a:textSize="27px" />
+
+    <x.TextView
+        a:id="@+id/schedule_search_course_list_item_txt_chosen"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/schedule_search_course_list_item_txt_class_info"
+        a:layout_marginLeft="23px"
+        a:layout_marginTop="20px"
+        a:textColor="#aaaaaa"
+        a:textSize="27px" />
+
+    <x.TextView
+        a:id="@+id/schedule_search_course_list_item_txt_collage_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignRight="@id/schedule_search_course_list_item_txt_teacher_name"
+        a:layout_below="@id/schedule_search_course_list_item_txt_class_info"
+        a:layout_marginTop="20px"
+        a:textColor="#ababab"
+        a:textSize="32px" />
+
+    <View
+        a:id="@+id/schedule_search_course_list_item_txt_bottom_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/schedule_search_course_list_item_txt_collage_name"
+        a:layout_marginLeft="25px"
+        a:layout_marginTop="23px"
+        a:background="#c8c7cc" />
+
+</RelativeLayout>

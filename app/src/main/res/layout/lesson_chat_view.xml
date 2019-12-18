@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:fitsSystemWindows="true" >
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/lesson_chat_recycler_view"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginRight="70px"
+        a:background="@null"
+        a:fadingEdge="vertical"
+        a:scrollbarStyle="outsideOverlay"
+        a:scrollbars="vertical" />
+
+    <x.TextView
+        a:id="@+id/lesson_chat_txt_tip_new_message"
+        style="@style/TextView"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="20px"
+        a:layout_marginRight="80px"
+        a:gravity="center_horizontal|top"
+        a:minHeight="100px"
+        a:minWidth="180px"
+        a:paddingBottom="40px"
+        a:paddingLeft="20px"
+        a:paddingRight="20px"
+        a:paddingTop="24px"
+        a:text="@string/tip_new_message"
+        a:textColor="#FF9000FC"
+        a:textSize="40px"
+        a:visibility="gone"/>
+
+</merge>

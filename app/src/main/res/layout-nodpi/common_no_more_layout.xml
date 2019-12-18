@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/layout_loading"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <RelativeLayout
+        a:id="@+id/layout_no_more"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:gravity="center"
+        a:paddingBottom="20px"
+        a:paddingTop="20px">
+
+        <x.ImageView
+            a:id="@+id/img_no_more"
+            style="@style/ImageView"
+            a:layout_width="351px"
+            a:layout_height="38px"
+            x:src="@drawable/ic_list_end" />
+    </RelativeLayout>
+</RelativeLayout>

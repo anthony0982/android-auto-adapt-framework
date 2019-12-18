@@ -1,0 +1,10 @@
+<TextView xmlns:a="http://schemas.android.com/apk/res/android"
+    style="@style/ToolBar.TextView"
+    a:id="@+id/txt_action_confirm"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content"
+    a:paddingLeft="30px"
+    a:paddingRight="50px"
+    a:text="@string/confirm"
+    a:textColor="@android:color/white"
+    a:textSize="44px" />

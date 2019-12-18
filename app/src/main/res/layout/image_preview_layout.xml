@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <View
+        a:id="@+id/image_preview_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/black" />
+
+    <ImageView
+        a:id="@+id/image_preview_img_anim"
+        style="@style/ImageView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/image_view_pager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.ImageView
+        a:id="@+id/mImgDownload"
+        style="@style/ImageView"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="200px"
+        a:layout_marginRight="100px"
+        a:src="@drawable/ic_download" />
+
+    <View
+        a:id="@+id/cover_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+</merge>

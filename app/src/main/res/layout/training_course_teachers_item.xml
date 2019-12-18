@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.RelativeLayout
+        a:id="@+id/training_course_teacher_item_layout_avatar_border"
+        a:layout_width="280px"
+        a:layout_height="332px"
+        a:layout_marginLeft="45px"
+        a:layout_marginTop="45px"
+        x:bg="@drawable/training_course_teacher_avatar_background" >
+
+        <x.ImageView
+            a:id="@+id/training_course_teacher_item_img_avatar"
+            a:layout_width="266px"
+            a:layout_height="318px"
+            a:layout_centerInParent="true"/>
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/training_course_teacher_item_txt_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="48px"
+        a:layout_marginTop="42px"
+        a:layout_toRightOf="@id/training_course_teacher_item_layout_avatar_border"
+        a:textColor="#423f37"
+        a:textSize="40px" />
+
+    <x.TextView
+        a:id="@+id/training_course_teacher_item_txt_profession_title"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/training_course_teacher_item_txt_name"
+        a:layout_below="@id/training_course_teacher_item_txt_name"
+        a:layout_marginTop="32px"
+        a:textColor="#57534a"
+        a:textSize="34px" />
+
+    <x.TextView
+        a:id="@+id/training_course_teacher_item_txt_profile"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/training_course_teacher_item_txt_name"
+        a:layout_below="@id/training_course_teacher_item_txt_profession_title"
+        a:layout_marginRight="48px"
+        a:layout_marginTop="38px"
+        a:textColor="#57534a"
+        a:textSize="30px" />
+
+    <View
+        a:id="@+id/training_course_teacher_item_line"
+        a:layout_width="990px"
+        a:layout_height="4px"
+        a:layout_below="@id/training_course_teacher_item_txt_profile"
+        a:layout_marginLeft="45px"
+        a:layout_marginTop="45px"
+        a:background="#e6e6e6" />
+
+</RelativeLayout>

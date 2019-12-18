@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/red">
+
+    <FrameLayout
+        a:id="@+id/intro_frame"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent" />
+
+    <FrameLayout
+        a:id="@+id/guide_frame"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent" />
+
+    <FrameLayout
+        a:id="@+id/splash_frame"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent" />
+
+</RelativeLayout>

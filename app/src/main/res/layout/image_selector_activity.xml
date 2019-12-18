@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <View
+        a:id="@+id/view_navigation_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/black" />
+
+    <android.support.v7.widget.RecyclerView
+        a:id="@+id/image_grid"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginBottom="@dimen/collection_photo_toolbar_height"
+        a:layout_marginTop="?actionBarSize"
+        a:background="@android:color/white"
+        a:clipToPadding="false"
+        a:padding="@dimen/image_grid_margin"
+        a:scrollbarStyle="outsideOverlay"
+        a:scrollbars="vertical"
+        tools:listitem="@layout/item_grid_image" />
+
+    <RelativeLayout
+        a:id="@+id/layout_content"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <View
+            a:id="@+id/view_album_list_bg"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:alpha="0"
+            a:background="@color/translucent_80_dark" />
+
+        <RelativeLayout
+            a:id="@+id/layout_album_list"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_above="@+id/layout_bottom_bar"
+            a:visibility="gone">
+
+            <ListView
+                a:id="@+id/lv_ablum_ar"
+                a:layout_width="match_parent"
+                a:layout_height="1300px"
+                a:layout_alignParentBottom="true"
+                a:background="@android:color/white"
+                a:scrollbarStyle="outsideOverlay" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            a:id="@+id/layout_bottom_bar"
+            a:layout_width="match_parent"
+            a:layout_height="@dimen/collection_photo_toolbar_height"
+            a:layout_alignParentBottom="true"
+            a:background="@color/color_primary">
+
+            <RelativeLayout
+                a:id="@+id/layout_album"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:background="@drawable/bg_image_selector_album_color_selector">
+
+                <TextView
+                    a:id="@+id/tv_album_ar"
+                    a:layout_width="wrap_content"
+                    a:layout_height="match_parent"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="10dp"
+                    a:gravity="left|center_vertical"
+                    a:minWidth="50dp"
+                    a:text="@string/recent_photos"
+                    a:textColor="@android:color/white"
+                    a:textSize="13sp" />
+
+                <ImageView
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerVertical="true"
+                    a:layout_marginBottom="-3dp"
+                    a:layout_marginLeft="-3dp"
+                    a:layout_toRightOf="@+id/tv_album_ar"
+                    a:background="@drawable/ic_spinner_white"
+                    a:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <TextView
+                a:id="@+id/tv_line_ar"
+                a:layout_width="1dp"
+                a:layout_height="match_parent"
+                a:layout_marginBottom="10dp"
+                a:layout_marginRight="5dp"
+                a:layout_marginTop="10dp"
+                a:layout_toLeftOf="@+id/tv_preview_ar"
+                a:background="@android:color/white"
+                a:visibility="gone" />
+
+            <TextView
+                a:id="@+id/tv_preview_ar"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:clickable="true"
+                a:enabled="false"
+                a:padding="10dp"
+                a:text="@string/preview"
+                a:textColor="@android:color/white"
+                a:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- Next view is only used to smoother toolbar fading -->
+
+    <View
+        a:id="@+id/btn_back"
+        style="@style/ImageSelectorToolBar"
+        a:background="@color/window_background_dark_2" />
+
+    <View
+        a:id="@+id/full_background"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/window_background_dark_2"
+        a:visibility="invisible" />
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/pager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar style="@style/ImageSelectorToolBar" />
+
+    <android.support.v7.widget.Toolbar
+        a:id="@+id/full_toolbar"
+        style="@style/ImageSelectorToolBar"
+        a:background="@color/transparent"
+        a:visibility="invisible" />
+
+    <TextView
+        a:id="@+id/full_title"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_gravity="right|bottom"
+        a:layout_margin="@dimen/margin"
+        a:shadowColor="#000000"
+        a:shadowRadius="4"
+        a:textColor="@color/text_primary_light"
+        a:textSize="16sp"
+        a:visibility="invisible" />
+
+</merge>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TextView"
+                a:layout_width="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="80px"
+                a:textColor="@color/gray_22"
+                a:textSize="@dimen/font_size_medium" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mTermStartDate"
+                style="@style/SettingsItemView.Dive"
+                a:layout_marginTop="80px"
+                x:settings_title="@string/term_start_date" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mTermEndDate"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/term_end_date" />
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="80px">
+
+                <x.TextView
+                    a:id="@+id/mTxtPeriodTitle"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:text="@string/peroid_setting_title"
+                    a:textColor="@color/gray_22"
+                    a:textSize="@dimen/font_size_medium" />
+
+
+                <x.TextView
+                    a:id="@+id/mTxtAdd"
+                    style="@style/TextView"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:padding="20px"
+                    a:text="+"
+                    a:textColor="@color/gray_22"
+                    a:textSize="@dimen/font_size_62" />
+
+                <x.TextView
+                    a:id="@+id/mTxtCount"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="80px"
+                    a:layout_toLeftOf="@id/mTxtAdd"
+                    a:text="0"
+                    a:textColor="@color/gray_22"
+                    a:textSize="@dimen/font_size_56" />
+
+                <x.TextView
+                    a:id="@+id/mTxtMinus"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="80px"
+                    a:layout_toLeftOf="@id/mTxtCount"
+                    a:padding="20px"
+                    a:text="-"
+                    a:textColor="@color/gray_22"
+                    a:textSize="@dimen/font_size_62" />
+            </RelativeLayout>
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutContent"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="80px"
+                a:orientation="vertical" />
+
+            <x.RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="100px"
+                a:paddingBottom="100px">
+
+                <x.ImageView
+                    a:id="@+id/mImgWarning"
+                    style="@style/ImageView"
+                    a:layout_width="44px"
+                    a:layout_height="44px"
+                    a:layout_marginTop="6px"
+                    x:src="@drawable/ic_warning_44" />
+
+                <x.TextView
+                    a:id="@+id/mTxtWarningTitle"
+                    style="@style/TextView"
+                    a:layout_marginLeft="18px"
+                    a:layout_toRightOf="@id/mImgWarning"
+                    a:text="@string/setting_tip"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_40" />
+
+                <x.TextView
+                    a:id="@+id/mTxtWarningContent"
+                    style="@style/TextView.MultiLine"
+                    a:layout_below="@id/mTxtWarningTitle"
+                    a:layout_marginTop="30px"
+                    a:lineSpacingMultiplier="1.25"
+                    a:text="@string/setting_tip_content_term"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_42" />
+            </x.RelativeLayout>
+        </x.LinearLayout>
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:text="@string/term_time_setting" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+
+    </x.RelativeLayout>
+
+    <com.example.picker.DatePicker
+        a:id="@+id/mStartDatePicker"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:years="2" />
+
+    <com.example.picker.DatePicker
+        a:id="@+id/mEndDatePicker"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:years="2" />
+
+    <com.example.picker.StartEndPicker
+        a:id="@+id/mStartEndPicker"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height" />
+</RelativeLayout>

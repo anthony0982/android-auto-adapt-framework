@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <com.alexvasilkov.gestures.sample.views.AspectImageView
+        a:id="@+id/item_grid_img"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_margin="@dimen/image_grid_margin"
+        a:background="@drawable/image_background"
+        a:foreground="?selectableItemBackground"
+        a:scaleType="centerCrop"
+        x:aspect="1" />
+
+
+    <x.ImageView
+        a:id="@+id/item_grid_img_checkbox"
+        style="@style/ImageView"
+        a:layout_width="164px"
+        a:layout_height="164px"
+        a:layout_alignParentRight="true"
+        a:layout_alignParentTop="true"
+        x:src="@drawable/ic_checkbox_unchecked_with_margin" />
+
+</RelativeLayout>

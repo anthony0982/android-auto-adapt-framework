@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical"
+    a:paddingRight="24px">
+
+    <include layout="@layout/message_list_item_time_split_layout" />
+
+    <x.RelativeLayout
+        a:id="@+id/message_list_item_layout_right"
+        a:layout_width="1080px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="right">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/message_list_item_avatar_right"
+            style="@style/Message.Avatar.Right" />
+
+        <com.halo.view.HttpTextView
+            a:id="@+id/message_list_item_txt_content_right"
+            style="@style/Message.Text.Right" />
+
+        <x.ImageView
+            a:id="@+id/message_list_item_img_content_warning"
+            style="@style/ImageView"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="10px"
+            a:layout_toLeftOf="@id/message_list_item_txt_content_right"
+            x:src="@drawable/ic_warning" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/progress_bar_sending_right"
+            style="@style/ChatImageLoadingView"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="10px"
+            a:layout_toLeftOf="@id/message_list_item_txt_content_right"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+    <include layout="@layout/message_list_item_tip_layout" />
+
+</LinearLayout>

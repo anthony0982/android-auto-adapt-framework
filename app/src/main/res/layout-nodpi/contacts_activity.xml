@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mGroups"
+        a:background="@color/gray_fa" />
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerViewGroups"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mGroups"
+        a:background="@color/gray_fa" />
+
+    <View
+        a:id="@+id/mViewBackGround"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignBottom="@+id/mGroups"
+        a:background="@color/white" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgClose"
+            style="@style/ToolBar.Icon.Close.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Blue"
+            a:text="@string/contacts" />
+
+    </x.RelativeLayout>
+
+    <com.halo.view.MaterialEditText
+        a:id="@+id/mMaterialEditText"
+        style="@style/MaterialEditText"
+        a:layout_width="match_parent"
+        a:layout_height="130px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="70px"
+        a:layout_marginRight="50px"
+        a:background="@color/white"
+        a:hint="@string/search_contact_hint"
+        a:maxLength="60"
+        a:singleLine="true"
+        a:textSize="@dimen/font_size_44"
+        a:textStyle="normal"
+        x:met_hideUnderline="true"
+        x:met_textColor="@color/black"
+        x:met_underlineColorFocused="@color/blue"
+        x:met_underlineColorUnFocused="@color/gray_9b" />
+
+    <TextView
+        a:id="@+id/mTxtCancel"
+        style="@style/TextView.Center"
+        a:layout_height="80px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="20px"
+        a:visibility="gone"
+        a:paddingLeft="20px"
+        a:paddingRight="20px"
+        a:text="@string/cancel"
+        a:textColor="@color/gray_a7"
+        a:textSize="@dimen/font_size_36" />
+
+    <im.clazz.view.SettingsItemView
+        a:id="@+id/mGroups"
+        style="@style/SettingsItemView.ImageText"
+        a:layout_height="130px"
+        a:layout_below="@id/mMaterialEditText"
+        x:icon="@drawable/ic_group"
+        x:settings_title="@string/contacts_group"
+        x:show_line="false" />
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerViewSearchResult"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mMaterialEditText"
+        a:background="@color/gray_fa"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/contact_list_empty" />
+
+    <x.TextView
+        a:id="@+id/mSearchResultViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:layout_below="@+id/mMaterialEditText"
+        a:background="@color/gray_fa"
+        a:paddingBottom="150px"
+        a:text="@string/searched_contact_list_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+</x.RelativeLayout>

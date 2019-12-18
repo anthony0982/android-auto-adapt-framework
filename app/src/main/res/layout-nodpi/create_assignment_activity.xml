@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="match_parent">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutSubTitle"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical"
+                a:paddingBottom="50px">
+
+                <im.clazz.view.SettingsItemView
+                    a:id="@+id/mCourse"
+                    style="@style/SettingsItemView.Dive"
+                    x:settings_title="@string/course" />
+
+                <im.clazz.view.SettingsItemView
+                    a:id="@+id/mClasses"
+                    style="@style/SettingsItemView.Dive"
+                    x:settings_title="@string/clazz" />
+
+                <im.clazz.view.SettingsItemView
+                    a:id="@+id/mDeadline"
+                    style="@style/SettingsItemView.Dive"
+                    x:settings_title="@string/deadline" />
+
+                <x.TextView
+                    a:id="@+id/mTxtQuestionTag"
+                    style="@style/TextView"
+                    a:layout_width="match_parent"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="50px"
+                    a:enabled="false"
+                    a:paddingBottom="20px"
+                    a:paddingTop="20px"
+                    a:text="@string/question"
+                    a:textColor="@color/gray_66"
+                    a:textSize="@dimen/font_size_46" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditTextQuestion"
+                    style="@style/MaterialEditText"
+                    a:layout_height="match_parent"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="20px"
+                    a:hint="@string/assignment_hint_question"
+                    a:textSize="@dimen/font_size_medium"
+                    a:textStyle="normal"
+                    x:met_floatingLabelText="@string/title"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+
+                <im.clazz.ui.component.UploadAttachmentView
+                    a:id="@+id/mUploadAttachmentView"
+                    a:layout_width="match_parent"
+                    a:layout_height="wrap_content"
+                    a:background="@null"
+                    a:fadingEdge="vertical" />
+            </x.LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:singleLine="true"
+            a:text="@string/menu_create_assignment" />
+
+        <x.TextView
+            a:id="@+id/mTxtPost"
+            style="@style/TitleBar.Text.Right"
+            a:text="@string/publish" />
+
+    </x.RelativeLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mCoursePicker"
+        style="@style/Picker" />
+
+    <com.example.picker.DateHourMinutePicker
+        a:id="@+id/mEndTimePicker"
+        style="@style/DateHourMinutePicker" />
+
+</RelativeLayout>

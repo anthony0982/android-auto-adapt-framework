@@ -1,0 +1,10 @@
+<x.ImageView xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/img_action_camera"
+    style="@style/ToolBar.ImageView"
+    a:layout_width="100px"
+    a:layout_height="70px"
+    a:paddingLeft="15px"
+    a:paddingRight="15px"
+    a:scaleType="fitCenter"
+    x:src="@drawable/ic_photo_camera_white" />

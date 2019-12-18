@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/note_public_layout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.ImageView
+        a:id="@+id/img_note_public_item_image"
+        style="@style/ImageView"
+        a:layout_width="244px"
+        a:layout_height="310px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="22px"
+        a:scaleType="centerCrop" />
+
+    <x.TextView
+        a:id="@+id/txt_note_public_item_title"
+        style="@style/Topic.Item.Title"
+        a:layout_width="match_parent"
+        a:layout_marginTop="40px"
+        a:layout_toLeftOf="@id/img_note_public_item_image"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <x.TextView
+        a:id="@+id/txt_note_public_item_digest"
+        style="@style/Topic.Item.Digest"
+        a:layout_width="match_parent"
+        a:layout_below="@id/txt_note_public_item_title"
+        a:layout_marginTop="30px"
+        a:layout_toLeftOf="@id/img_note_public_item_image"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <x.LinearLayout
+        a:id="@+id/note_public_item_layout_bottom_left"
+        a:layout_width="wrap_content"
+        a:layout_height="126px"
+        a:layout_below="@id/txt_note_public_item_digest"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:gravity="center_vertical">
+
+        <x.TextView
+            a:id="@+id/txt_note_public_item_edit_time"
+            style="@style/TextView"
+            a:paddingBottom="6px"
+            a:textColor="@color/gray_b9"
+            a:textSize="@dimen/font_size_38" />
+
+        <x.ImageView
+            a:id="@+id/img_note_public_item_img"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_marginLeft="30px"
+            a:tint="@color/gray_b9"
+            x:src="@drawable/ic_note_item_img" />
+
+        <x.ImageView
+            a:id="@+id/img_note_public_item_voice"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_marginLeft="30px"
+            a:tint="@color/gray_b9"
+            x:src="@drawable/ic_note_item_record" />
+
+    </x.LinearLayout>
+
+    <x.LinearLayout
+        a:id="@+id/note_public_item_layout_fork"
+        a:layout_width="wrap_content"
+        a:layout_height="126px"
+        a:layout_below="@id/txt_note_public_item_digest"
+        a:layout_marginTop="40px"
+        a:gravity="center_vertical">
+
+        <x.TextView
+            a:id="@+id/txt_note_public_item_fork_count"
+            style="@style/TextView"
+            a:paddingBottom="6px"
+            a:textColor="@color/gray_b9"
+            a:textSize="@dimen/font_size_38" />
+
+        <x.ImageView
+            a:id="@+id/img_note_public_item_fork"
+            style="@style/ImageView"
+            a:layout_width="66px"
+            a:layout_height="40px"
+            a:layout_marginLeft="10px"
+            a:tint="@color/gray_b9"
+            x:src="@drawable/ic_fork" />
+
+    </x.LinearLayout>
+
+</x.RelativeLayout>

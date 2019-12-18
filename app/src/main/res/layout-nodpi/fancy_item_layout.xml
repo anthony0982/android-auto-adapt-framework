@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_btn_selector" >
+
+    <x.ImageView
+        a:id="@+id/ic_fancy"
+        a:layout_width="1080px"
+        a:layout_height="674px"
+        a:scaleType="fitXY" />
+
+    <x.TextView
+        a:id="@+id/txt_fancy_description"
+        style="@style/TextView.Black.Small"
+        a:layout_below="@id/ic_fancy"
+        a:padding="26px"
+        a:singleLine="false" />
+
+    <View
+        a:id="@+id/dynamic_fancy_split_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/txt_fancy_description"
+        a:background="#EEEEEE" />
+
+    <RelativeLayout
+        a:id="@+id/layout_fancy_share"
+        a:layout_width="359px"
+        a:layout_height="100px"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/dynamic_fancy_split_line"
+        a:background="@drawable/bg_btn_selector"
+        a:gravity="center" >
+
+        <x.ImageView
+            a:id="@+id/ic_dynamic_fancy_share"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            x:src="@drawable/ic_toolbar_share" />
+
+        <x.TextView
+            a:id="@+id/txt_fancy_share_count"
+            style="@style/TextView.LightGray.XSmall"
+            a:layout_centerVertical="true"
+            a:layout_toRightOf="@id/ic_dynamic_fancy_share"
+            a:text="30" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/dynamic_fancy_split_line_vertical_left"
+        a:layout_width="2px"
+        a:layout_height="44px"
+        a:layout_below="@id/dynamic_fancy_split_line"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/layout_fancy_share"
+        a:background="#E1E0E0" />
+
+    <RelativeLayout
+        a:id="@+id/layout_fancy_comment"
+        a:layout_width="359px"
+        a:layout_height="100px"
+        a:layout_below="@id/dynamic_fancy_split_line"
+        a:layout_centerHorizontal="true"
+        a:background="@drawable/bg_btn_selector"
+        a:gravity="center" >
+
+        <x.ImageView
+            a:id="@+id/ic_dynamic_fancy_comment"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            x:src="@drawable/ic_club_news_comment" />
+
+        <x.TextView
+            a:id="@+id/txt_fancy_comment_count"
+            style="@style/TextView.LightGray.XSmall"
+            a:layout_centerVertical="true"
+            a:layout_toRightOf="@id/ic_dynamic_fancy_comment"
+            a:text="30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/layout_fancy_thumb"
+        a:layout_width="359px"
+        a:layout_height="100px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/dynamic_fancy_split_line"
+        a:background="@drawable/bg_btn_selector"
+        a:gravity="center" >
+
+        <x.ImageView
+            a:id="@+id/ic_dynamic_fancy_thumb"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            x:src="@drawable/ic_like" />
+
+        <x.TextView
+            a:id="@+id/txt_fancy_thumb_count"
+            style="@style/TextView.LightGray.XSmall"
+            a:layout_centerVertical="true"
+            a:layout_toRightOf="@id/ic_dynamic_fancy_thumb"
+            a:text="30" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/dynamic_fancy_split_line_vertical_right"
+        a:layout_width="2px"
+        a:layout_height="44px"
+        a:layout_below="@id/dynamic_fancy_split_line"
+        a:layout_marginTop="30px"
+        a:layout_toLeftOf="@id/layout_fancy_thumb"
+        a:background="#E1E0E0" />
+
+    <View
+        a:id="@+id/txt_dynamic_fancy_split_line_bottom"
+        a:layout_width="match_parent"
+        a:layout_height="6px"
+        a:layout_below="@id/layout_fancy_thumb"
+        a:background="#EEEEEE" />
+
+</RelativeLayout>

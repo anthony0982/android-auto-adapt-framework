@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white">
+
+    <im.clazz.ui.component.SchoolTitleBar
+        a:id="@+id/school_title_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:layout_height="124px"
+        a:layout_alignParentTop="true"/>
+
+    <im.clazz.ui.component.SchoolCourseView
+        a:id="@+id/school_course_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/school_title_bar" />
+
+    <im.clazz.ui.component.ScheduleMenuView
+        a:id="@+id/school_func_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+    <im.clazz.ui.component.SchoolSearchView
+        a:id="@+id/school_search_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.ImageView
+        a:id="@+id/img_school_title_bar_ic_search"
+        style="@style/ImageView"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="150px"
+        a:layout_marginTop="14px"
+        a:layout_alignTop="@+id/img_school_title_bar_ic_add"
+        a:tint="@color/icon_tint_color"
+        a:src="@drawable/school_title_ic_search" />
+
+    <im.clazz.ui.component.SchoolMenuView
+        a:id="@+id/school_slide_menu"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/school_title_bar" />
+
+</RelativeLayout>

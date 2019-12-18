@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_add_course_fragment_layout"
+        a:layout_width="1030px"
+        a:layout_height="1350px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/schedule_add_course_bg_shadow" >
+        
+        <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_add"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_marginLeft="75px"
+            a:layout_marginTop="85px"
+            a:src="@drawable/schedule_add_course_ic_add" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_add"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="75px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_add"
+            a:text="@string/schedule_add_course_add"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_course"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_add"
+            a:layout_below="@id/schedule_add_course_fragment_txt_add"
+            a:layout_marginTop="40px"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_user_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_add"
+            a:layout_below="@id/schedule_add_course_fragment_txt_course"
+            a:layout_marginTop="40px"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_collage"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_txt_course"
+            a:layout_marginLeft="420px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_add"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <View
+            a:id="@+id/schedule_add_course_fragment_line_a"
+            a:layout_width="845px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_course_fragment_txt_user_name"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="35px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_add"
+            a:background="#FFefefef" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_set_time"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_img_add"
+            a:layout_below="@id/schedule_add_course_fragment_line_a"
+            a:layout_marginTop="40px"
+            a:src="@drawable/schedule_add_course_ic_time" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_set_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_line_a"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_set_time"
+            a:text="@string/schedule_add_course_time"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_btn_add"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_alignRight="@id/schedule_add_course_fragment_line_a"
+            a:layout_below="@id/schedule_add_course_fragment_line_a"
+            a:layout_marginTop="35px"
+            a:src="@drawable/schedule_add_course_btn_add"
+            a:visibility="gone" />
+
+        <!--
+             <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_btn_remove_a"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignRight="@id/schedule_add_course_fragment_line_a"
+            a:layout_below="@id/schedule_add_course_fragment_txt_set_time"
+            a:layout_marginTop="98px"
+            a:visibility="gone"
+            a:src="@drawable/schedule_add_course_btn_remove" />        -->
+
+        <im.clazz.ui.component.MainRecyclerView
+            a:id="@+id/schedule_add_course_fragment_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="430px"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_user_name"
+            a:layout_alignRight="@id/schedule_add_course_fragment_line_a"
+            a:layout_below="@id/schedule_add_course_fragment_txt_set_time"
+            a:layout_marginTop="30px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_choose_week"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_below="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_marginTop="27px"
+            a:text="选择周次"
+            a:textColor="#c6c7c9"
+            a:textSize="42px"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_choose_classroom"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_collage"
+            a:layout_below="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_marginTop="27px"
+            a:text="选择教室"
+            a:textColor="#c6c7c9"
+            a:textSize="42px"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_choose_day"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_choose_week"
+            a:layout_below="@id/schedule_add_course_fragment_txt_choose_week"
+            a:layout_marginTop="40px"
+            a:text="选择日期"
+            a:textColor="#c6c7c9"
+            a:textSize="42px"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_choose_class"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_choose_classroom"
+            a:layout_below="@id/schedule_add_course_fragment_txt_choose_classroom"
+            a:layout_marginTop="40px"
+            a:text="选择节次"
+            a:textColor="#c6c7c9"
+            a:textSize="42px"
+            a:visibility="gone" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_btn_remove_b"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignRight="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_below="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_marginTop="79px"
+            a:src="@drawable/schedule_add_course_btn_remove"
+            a:visibility="gone" />
+
+        <View
+            a:id="@+id/schedule_add_course_fragment_line_c"
+            a:layout_width="845px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_course_fragment_txt_choose_class"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="35px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_add"
+            a:background="#FFefefef"
+            a:visibility="gone" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_course_fragment_img_group"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_img_add"
+            a:layout_below="@id/schedule_add_course_fragment_line_c"
+            a:layout_marginTop="52px"
+            a:src="@drawable/schedule_add_course_ic_group" />
+        
+        <View
+            a:id="@+id/schedule_add_course_recycler_view_type_select_back_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:visibility="gone"/>
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_group"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_line_c"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="42px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_group"
+            a:text="@string/schedule_add_course_group"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_choose_group"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_group"
+            a:layout_below="@id/schedule_add_course_fragment_txt_group"
+            a:layout_marginTop="46px"
+            a:text="木工13-01班"
+            a:textColor="#292525"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_cancel"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_txt_choose_group"
+            a:layout_marginLeft="530px"
+            a:layout_marginTop="55px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_group"
+            a:text="@string/schedule_add_course_cancel"
+            a:textColor="@color/gray_cc"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_confirm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_txt_choose_group"
+            a:layout_marginLeft="725px"
+            a:layout_marginTop="55px"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_group"
+            a:text="@string/schedule_add_course_confirm"
+            a:textColor="@color/confirm_normal"
+            a:textSize="40px" />
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_add_course_fragment_layout_type_select"
+            a:layout_width="330px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_course_fragment_recycler_view"
+            a:layout_toRightOf="@id/schedule_add_course_fragment_img_group"
+            a:paddingBottom="10px"
+            a:paddingLeft="10px"
+            a:paddingRight="10px"
+            a:paddingTop="17px"
+            a:visibility="gone"
+            x:bg="@drawable/schedule_add_course_bg_shadow"
+            x:relativeLayoutMaxHeight="400px" >
+
+            <com.halo.view.RecyclerView
+                a:id="@+id/schedule_add_course_recycler_view_type_select"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerHorizontal="true"
+                a:fadingEdge="none" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

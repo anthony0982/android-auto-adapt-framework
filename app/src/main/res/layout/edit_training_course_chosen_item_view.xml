@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/edit_training_course_chosen_item"
+    a:layout_width="wrap_content"
+    a:layout_height="88px" 
+    a:background="#fafafa" >
+
+    <x.TextView
+        a:id="@+id/edit_training_course_chosen_item_txt_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="52px"
+        a:textColor="#bdbdbd"
+        a:textSize="45px" />
+
+    <View 
+        a:id="@+id/space"
+        a:layout_width="68px"
+        a:layout_height="17px"
+        a:layout_centerVertical="true"
+        a:layout_toRightOf="@id/edit_training_course_chosen_item_txt_name"
+        />
+    <x.ImageView
+        a:id="@+id/edit_training_course_chosen_item_img_chosen"
+        a:layout_width="68px"
+        a:layout_height="17px"
+        a:layout_centerVertical="true"
+        a:paddingLeft="22px"
+        a:paddingRight="22px"
+        a:layout_toRightOf="@id/edit_training_course_chosen_item_txt_name"
+        a:src="@drawable/edit_training_course_a_group_check"
+        a:visibility="gone"/>
+
+</RelativeLayout>

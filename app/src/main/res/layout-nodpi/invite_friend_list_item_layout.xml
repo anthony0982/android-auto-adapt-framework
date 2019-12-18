@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_item_white_trans_blue_color_selector"
+    a:paddingLeft="66px"
+    a:paddingTop="30px">
+
+    <x.TextView
+        a:id="@+id/invite_item_name"
+        style="@style/TextView"
+        a:layout_centerVertical="true"
+        a:textColor="#FF6D5959"
+        a:textSize="@dimen/font_size_medium" />
+
+    <x.TextView
+        a:id="@+id/invite_item_relation"
+        style="@style/TextView"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="300px"
+        a:textColor="#FFC3C3C3"
+        a:textSize="@dimen/font_size_44" />
+
+    <x.ImageView
+        a:id="@+id/invite_item_checkbox"
+        a:layout_width="40px"
+        a:layout_height="40px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:layout_marginRight="50px"
+        a:src="@drawable/invite_ic_unchecked" />
+
+    <x.ImageView
+        a:id="@+id/invite_item_line"
+        a:layout_width="fill_parent"
+        a:layout_height="2px"
+        a:layout_marginTop="120px"
+        a:src="#FFEAEBEB" />
+
+</x.RelativeLayout>

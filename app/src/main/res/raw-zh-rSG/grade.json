@@ -1,0 +1,22 @@
+﻿{"high":[
+	{"name":"初级学院二年级","code":"high_2"},
+	{"name":"初级学院一年级","code":"high_1"},
+	{"name":"其他","code":"high_other"}
+],
+"mid":[
+	{"name":"中五","code":"mid_5"},
+	{"name":"中四","code":"mid_4"},
+	{"name":"中三","code":"mid_3"},
+	{"name":"中二","code":"mid_2"},
+	{"name":"中一","code":"mid_1"},
+	{"name":"其他","code":"mid_other"}
+],
+"pri":[
+	{"name":"六年级","code":"pri_6"},
+	{"name":"五年级","code":"pri_5"},
+	{"name":"四年级","code":"pri_4"},
+	{"name":"三年级","code":"pri_3"},
+	{"name":"二年级","code":"pri_2"},
+	{"name":"一年级","code":"pri_1"}
+]
+}

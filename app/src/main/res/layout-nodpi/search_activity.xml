@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        a:id="@+id/mLayoutSearchBar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtBg"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_height="90px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="184px"
+            x:round="true"
+            x:round_backgroundColor="@color/gray_f2"
+            x:round_isRadiusAdjustBounds="false"
+            x:round_padding_horizontal="1.0"
+            x:round_padding_vertical="1.0"
+            x:round_radius="10px" />
+
+
+        <x.TextView
+            a:id="@+id/mTxtCancel"
+            style="@style/TextView.Center"
+            a:layout_width="183px"
+            a:layout_height="90px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:text="@string/cancel"
+            a:textColor="@color/light_blue"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.TextView
+            a:id="@+id/mTxtCategory"
+            style="@style/TextView.Center"
+            a:layout_height="90px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="80px"
+            a:text="@string/all"
+            a:textColor="@color/gray_9b"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.ImageView
+            a:id="@+id/mImgDive"
+            style="@style/ImageView"
+            a:layout_width="20px"
+            a:layout_height="20px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="15px"
+            a:layout_toRightOf="@id/mTxtCategory"
+            a:tint="@color/gray_cc"
+            x:src="@drawable/ic_arrow_down" />
+
+        <View
+            a:id="@+id/mImgTopLine"
+            a:layout_width="4px"
+            a:layout_height="40px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="15px"
+            a:layout_toRightOf="@id/mImgDive"
+            a:background="#22cccccc" />
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/mMaterialEditText"
+            style="@style/MaterialEditText"
+            a:layout_width="match_parent"
+            a:layout_height="90px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            a:layout_marginRight="260px"
+            a:layout_toRightOf="@id/mImgTopLine"
+            a:hint="@string/search"
+            a:maxLength="60"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_40"
+            a:textStyle="normal"
+            x:met_hideUnderline="true"
+            x:met_textColor="@color/gray_44"
+            x:met_underlineColorFocused="@color/blue"
+            x:met_underlineColorUnFocused="@color/gray_9b" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/mProgress"
+            style="@style/LoadingView"
+            a:layout_width="30px"
+            a:layout_height="30px"
+            a:layout_alignRight="@id/mTxtBg"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="30px"
+            a:visibility="gone"
+            x:qmui_loading_size="30px" />
+    </RelativeLayout>
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutSearchBar"
+        a:layout_marginTop="30px"
+        a:visibility="gone" />
+
+    <ScrollView
+        a:id="@+id/mScrollViewHotKeywords"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutSearchBar"
+        a:layout_marginTop="20px">
+
+        <RelativeLayout
+            a:id="@+id/mLayoutSearchKeywords"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content">
+
+            <x.TextView
+                a:id="@+id/mLayoutHotKeywordsTip"
+                style="@style/TextView"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_centerHorizontal="true"
+                a:background="@color/gray_fa"
+                a:gravity="center_vertical"
+                a:paddingBottom="10px"
+                a:paddingLeft="50px"
+                a:paddingTop="10px"
+                a:text="@string/hot_keywords_tip"
+                a:textColor="@color/gray_88"
+                a:textSize="38px" />
+
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutHotKeywords"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/mLayoutHotKeywordsTip"
+                a:background="@color/white"
+                a:orientation="vertical"
+                a:paddingLeft="50px"
+                a:paddingRight="50px" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        a:id="@+id/mScrollViewCategories"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutSearchBar"
+        a:visibility="gone">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutCategories"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:background="@color/white"
+            a:orientation="vertical"
+            a:paddingBottom="50px"
+            a:paddingLeft="50px"
+            a:paddingRight="50px"
+            a:paddingTop="50px" />
+    </ScrollView>
+
+
+    <TextView
+        a:id="@+id/mTxtSearchState"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutSearchBar"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="300px"
+        a:textColor="#cdcdcd"
+        a:textSize="46px"
+        a:visibility="gone" />
+
+    <TextView
+        a:id="@+id/mTxtEmpty"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:textColor="#cdcdcd"
+        a:textSize="46px"
+        a:visibility="gone" />
+</RelativeLayout>

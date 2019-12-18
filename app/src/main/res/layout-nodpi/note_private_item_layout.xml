@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:text="@string/note"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36"
+        a:visibility="gone" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtGroup"
+        a:layout_centerHorizontal="true"
+        a:background="@drawable/list_item_color_selector"
+        a:orientation="vertical"
+        a:padding="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/Topic.Item.Title"
+            a:layout_width="match_parent"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_46" />
+
+        <x.TextView
+            a:id="@+id/mTxtDigest"
+            style="@style/Topic.Item.Digest"
+            a:layout_width="match_parent"
+            a:layout_marginTop="30px"
+            a:textColor="@color/gray_a3" />
+
+        <com.halo.view.RoundCornerImageView
+            a:id="@+id/mImgPicture"
+            style="@style/RoundCornerImageView"
+            a:layout_width="980px"
+            a:layout_height="500px"
+            a:layout_marginTop="22px" />
+
+        <x.RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="44px">
+
+            <x.TextView
+                a:id="@+id/mTxtEditTime"
+                style="@style/TextView"
+                a:layout_alignParentRight="true"
+                a:textColor="@color/gray_a3"
+                a:textSize="@dimen/font_size_30" />
+
+            <x.TextView
+                a:id="@+id/mTxtCourse"
+                style="@style/TextView"
+                a:gravity="right"
+                a:textColor="@color/light_blue"
+                a:textSize="@dimen/font_size_30" />
+        </x.RelativeLayout>
+
+    </x.LinearLayout>
+</x.RelativeLayout>

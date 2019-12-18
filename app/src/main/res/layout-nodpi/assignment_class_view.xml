@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="match_parent"
+        a:layout_height="100px"
+        a:background="@drawable/list_item_color_selector">
+
+        <x.ImageView
+            a:id="@+id/mImageLeft"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="50px"
+            x:src="@drawable/ic_reg_dive_50" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            a:layout_toRightOf="@id/mImageLeft"
+            a:textColor="@color/gray_66"
+            a:textSize="46px" />
+
+        <x.TextView
+            a:id="@+id/mTxtText"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:textColor="@color/gray_9b"
+            a:textSize="36px" />
+
+        <View
+            a:id="@+id/mImgLine"
+            style="@style/SettingsItem.Line"
+            a:layout_marginTop="30px" />
+
+    </x.RelativeLayout>
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutMarks"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutItem"
+        a:orientation="vertical"
+        a:paddingBottom="30px"
+        a:visibility="gone" />
+
+</x.RelativeLayout>

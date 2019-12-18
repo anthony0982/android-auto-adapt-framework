@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_topic_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/post_topic_layout_tool_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/post_topic_img_back"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/post_topic_toolbar_txt_title"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/post_topic" />
+    </x.RelativeLayout>
+
+
+    <com.materialedittext.MaterialEditText
+        a:id="@+id/post_topic_input_title"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/post_topic_layout_tool_bar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="90px"
+        a:focusableInTouchMode="true"
+        a:hint="@string/title"
+        a:maxLines="2"
+        a:textCursorDrawable="@drawable/material_input_cursor_color"
+        a:textSize="@dimen/font_size_60"
+        a:textStyle="bold"
+        x:met_floatingLabel="none"
+        x:met_floatingLabelAnimating="true"
+        x:met_floatingLabelPadding="10px"
+        x:met_floatingLabelText="@string/title"
+        x:met_floatingLabelTextColor="@color/translunt_gray_44"
+        x:met_hideUnderline="true"
+        x:met_primaryColor="@color/blue"
+        x:met_textColor="@color/black"
+        x:met_textColorHint="@color/translunt_gray_44"
+        x:met_underlineColorFocused="@color/material_input_under_line_color" />
+
+
+    <com.materialedittext.MaterialEditText
+        a:id="@+id/post_topic_input_content"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_above="@+id/post_topic_layout_bottom_bar"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/post_topic_input_title"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:focusableInTouchMode="true"
+        a:gravity="left|top"
+        a:hint="@string/hint_content"
+        a:textCursorDrawable="@drawable/material_input_cursor_color"
+        a:textSize="@dimen/font_size_medium"
+        a:textStyle="normal"
+        x:met_floatingLabel="none"
+        x:met_floatingLabelAnimating="true"
+        x:met_floatingLabelPadding="10px"
+        x:met_floatingLabelText="@string/title"
+        x:met_floatingLabelTextColor="@color/translunt_gray_44"
+        x:met_hideUnderline="true"
+        x:met_primaryColor="@color/blue"
+        x:met_textColor="@color/black"
+        x:met_textColorHint="@color/translunt_gray_44"
+        x:met_underlineColorFocused="@color/material_input_under_line_color" />
+
+
+    <x.RelativeLayout
+        a:id="@+id/post_topic_layout_bottom_bar"
+        a:layout_width="match_parent"
+        a:layout_height="148px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/gray_f3">
+
+        <x.LinearLayout
+            a:id="@+id/post_topic_layout_bottom_content"
+            a:layout_width="match_parent"
+            a:layout_height="148px"
+            a:gravity="center_vertical"
+            a:orientation="horizontal">
+
+            <x.ImageView
+                a:id="@+id/post_topic_img_picture"
+                style="@style/Icon.Chat"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="30px"
+                x:src="@drawable/chat_ic_picture" />
+
+        </x.LinearLayout>
+
+        <x.TextView
+            a:id="@+id/post_topic_btn_publish"
+            style="@style/Button"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:enabled="false"
+            a:padding="14px"
+            a:text="@string/publish"
+            a:textColor="@color/blue_btn_color_selector"
+            a:textSize="@dimen/font_size_46" />
+
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

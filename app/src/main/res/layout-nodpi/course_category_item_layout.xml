@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/TextView"
+        a:layout_marginTop="60px"
+        a:textSize="56px" />
+
+    <com.halo.component.FlowLayout
+        a:id="@+id/mFlowLayoutTags"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="50px" />
+
+</x.LinearLayout>

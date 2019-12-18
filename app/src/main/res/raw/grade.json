@@ -1,0 +1,22 @@
+﻿{"high":[
+	{"name":"Grade 12","code":"high_4"},
+	{"name":"Grade 11","code":"high_3"},
+	{"name":"Grade 10","code":"high_2"},
+	{"name":"Grade 9","code":"high_1"},
+	{"name":"Other","code":"high_other"}
+],
+"mid":[
+	{"name":"Grade 8","code":"mid_3"},
+	{"name":"Grade 7","code":"mid_2"},
+	{"name":"Grade 6","code":"mid_1"},
+	{"name":"Other","code":"mid_other"}
+],
+"pri":[
+	{"name":"Grade 6","code":"pri_6"},
+	{"name":"Grade 5","code":"pri_5"},
+	{"name":"Grade 4","code":"pri_4"},
+	{"name":"Grade 3","code":"pri_3"},
+	{"name":"Grade 2","code":"pri_2"},
+	{"name":"Grade 1","code":"pri_1"}
+]
+}

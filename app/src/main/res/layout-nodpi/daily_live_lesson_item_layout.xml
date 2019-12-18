@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content">
+
+        <View
+            a:id="@+id/mBottomBorder"
+            a:layout_width="0px"
+            a:layout_height="4px"
+            a:background="@color/cyan_gray"
+            x:layout_constraintBottom_toBottomOf="parent"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            a:id="@+id/mLeftBorder"
+            a:layout_width="6px"
+            a:layout_height="0px"
+            a:background="#4992e3"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            a:id="@+id/mSlideLayout"
+            a:layout_width="1020px"
+            a:layout_height="574px"
+            a:layout_marginTop="20px"
+            a:background="@color/white"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toTopOf="parent">
+
+            <WebView
+                a:id="@+id/mWebView"
+                style="@style/WebView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingViewAbove"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <View
+                a:id="@+id/mWebViewCover"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:background="@color/white" />
+
+        </RelativeLayout>
+
+        <x.TextView
+            a:id="@+id/mTxtState"
+            style="@style/TextView"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="54px"
+            a:text="@string/broadcasting"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mSlideLayout" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:layout_width="0px"
+            a:layout_marginLeft="40px"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="48px"
+            a:lineSpacingMultiplier="1.25"
+            a:singleLine="false"
+            a:textColor="@color/gray_35"
+            a:textSize="@dimen/font_size_medium"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toLeftOf="@id/mTxtState"
+            x:layout_constraintTop_toBottomOf="@id/mSlideLayout" />
+
+        <x.ImageView
+            a:id="@+id/mImgTeacher"
+            style="@style/ImageView"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_marginLeft="38px"
+            a:layout_marginTop="36px"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mTxtTitle"
+            x:src="@drawable/ic_daily_teacher" />
+
+        <x.TextView
+            a:id="@+id/mTxtTeacher"
+            style="@style/TextView"
+            a:layout_marginLeft="8px"
+            a:layout_marginTop="36px"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_32"
+            x:layout_constraintLeft_toRightOf="@id/mImgTeacher"
+            x:layout_constraintTop_toBottomOf="@id/mTxtTitle" />
+
+        <x.ImageView
+            a:id="@+id/mImgLocation"
+            style="@style/ImageView"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_marginLeft="38px"
+            a:layout_marginTop="18px"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mImgTeacher"
+            x:src="@drawable/ic_daily_location" />
+
+        <x.TextView
+            a:id="@+id/mTxtLocation"
+            style="@style/TextView"
+            a:layout_marginBottom="54px"
+            a:layout_marginLeft="8px"
+            a:layout_marginTop="18px"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_30"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintLeft_toRightOf="@id/mImgLocation"
+            x:layout_constraintTop_toBottomOf="@id/mImgTeacher" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</x.RelativeLayout>

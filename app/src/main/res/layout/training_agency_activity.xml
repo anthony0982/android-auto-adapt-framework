@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/training_agency_activity_title_bar"
+        style="@style/TitleBar.Main">
+
+        <x.ImageView
+            a:id="@+id/training_agency_activity_back"
+            style="@style/Icon"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            x:src="@drawable/ic_back_120" />
+
+        <x.RelativeLayout
+            a:id="@+id/training_agency_activity_title_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true">
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_title"
+                style="@style/TitleBar.Text"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:textSize="48px" />
+
+            <x.RelativeLayout
+                a:id="@+id/training_agency_activity_layout_branch"
+                a:layout_width="wrap_content"
+                a:layout_height="150px"
+                a:layout_toRightOf="@id/training_agency_activity_title">
+
+                <x.TextView
+                    a:id="@+id/training_agency_activity_branch_txt_left_bracket"
+                    style="@style/TitleBar.Text"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerVertical="true"
+                    a:text="["
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/training_agency_activity_branch_txt_branch"
+                    style="@style/TitleBar.Text"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerVertical="true"
+                    a:layout_toRightOf="@id/training_agency_activity_branch_txt_left_bracket"
+                    a:textSize="38px" />
+
+                <x.ImageView
+                    a:id="@+id/training_agency_activity_branch_img_branch"
+                    style="@style/Icon"
+                    a:layout_width="16px"
+                    a:layout_height="11px"
+                    a:layout_alignBottom="@id/training_agency_activity_branch_txt_branch"
+                    a:layout_centerVertical="true"
+                    a:layout_marginBottom="14px"
+                    a:layout_toRightOf="@id/training_agency_activity_branch_txt_branch"
+                    a:src="@drawable/training_agency_branch" />
+
+                <x.TextView
+                    a:id="@+id/training_agency_activity_branch_txt_right_bracket"
+                    style="@style/TitleBar.Text"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerVertical="true"
+                    a:layout_toRightOf="@id/training_agency_activity_branch_img_branch"
+                    a:text="]"
+                    a:textSize="38px" />
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+
+        <x.TextView
+            a:id="@+id/training_agency_activity_txt_concern"
+            style="@style/TitleBar.Text"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="10px"
+            a:text="@string/training_agency_add_concern"
+            a:textSize="40px" />
+    </x.RelativeLayout>
+
+    <com.halo.view.ScrollView
+        a:id="@+id/training_agency_activity_scroll_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/training_agency_activity_title_bar"
+        a:fillViewport="true"
+        a:overScrollMode="never"
+        a:scrollbars="none">
+
+        <x.RelativeLayout
+            a:id="@+id/training_agency_activity_layout_content"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:paddingBottom="80px">
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_logo"
+                style="@style/ImageView"
+                a:layout_width="192px"
+                a:layout_height="179px"
+                a:layout_marginLeft="45px"
+                a:layout_marginTop="28px"/>
+
+            <View
+                a:id="@+id/training_agency_activity_top_vertical_line"
+                a:layout_width="2px"
+                a:layout_height="182px"
+                a:layout_marginLeft="6px"
+                a:layout_marginTop="34px"
+                a:layout_toRightOf="@id/training_agency_activity_img_logo"
+                a:background="#FFE0E0E0" />
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_school_type"
+                style="@style/ImageView"
+                a:layout_width="30px"
+                a:layout_height="30px"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="48px"
+                a:layout_toRightOf="@id/training_agency_activity_top_vertical_line"
+                x:src="@drawable/ic_school_type" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_school_type"
+                style="@style/TextView"
+                a:layout_width="wrap_content"
+                a:layout_marginLeft="14px"
+                a:layout_marginTop="40px"
+                a:layout_toRightOf="@id/training_agency_activity_img_school_type"
+                a:text="留学机构+语言培训"
+                a:textColor="#FF595B5D"
+                a:textSize="@dimen/font_size_34" />
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_school_location"
+                style="@style/ImageView"
+                a:layout_width="30px"
+                a:layout_height="30px"
+                a:layout_below="@id/training_agency_activity_img_school_type"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="36px"
+                a:layout_toRightOf="@id/training_agency_activity_top_vertical_line"
+                x:src="@drawable/ic_school_location" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_school_location"
+                style="@style/TextView"
+                a:layout_width="wrap_content"
+                a:layout_below="@id/training_agency_activity_img_school_type"
+                a:layout_marginLeft="14px"
+                a:layout_marginTop="30px"
+                a:layout_toRightOf="@id/training_agency_activity_img_school_type"
+                a:text="辽宁，沈阳"
+                a:textColor="#FF595B5D"
+                a:textSize="@dimen/font_size_34" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_school_mark"
+                style="@style/TextView.Center"
+                a:layout_width="wrap_content"
+                a:layout_height="80px"
+                a:layout_alignParentRight="true"
+                a:layout_marginRight="30px"
+                a:layout_marginTop="26px"
+                a:text="7.9"
+                a:textColor="@color/white"
+                a:textSize="50px"
+                x:bg="@drawable/bg_school_mark" />
+
+            <View
+                a:id="@+id/training_agency_activity_line_1"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/training_agency_activity_img_logo"
+                a:layout_marginLeft="30px"
+                a:layout_marginRight="30px"
+                a:layout_marginTop="30px"
+                a:background="#FFE0E0E0" />
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_news"
+                style="@style/ImageView"
+                a:layout_width="42px"
+                a:layout_height="42px"
+                a:layout_below="@id/training_agency_activity_line_1"
+                a:layout_marginLeft="26px"
+                a:layout_marginTop="50px"
+                x:src="@drawable/training_agency_news" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_news"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/training_agency_activity_line_1"
+                a:layout_marginLeft="16px"
+                a:layout_marginTop="42px"
+                a:layout_toRightOf="@id/training_agency_activity_img_news"
+                a:text="@string/training_agency_news"
+                a:textColor="#767470"
+                a:textSize="40px" />
+
+            <RelativeLayout
+                a:id="@+id/training_agency_activity_layout_news_more"
+                a:layout_width="44px"
+                a:layout_height="44px"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/training_agency_activity_line_1"
+                a:layout_marginRight="67px"
+                a:layout_marginTop="65px">
+
+                <x.ImageView
+                    a:id="@+id/training_agency_activity_img_news_more"
+                    style="@style/ImageView"
+                    a:layout_width="44px"
+                    a:layout_height="12px"
+                    x:src="@drawable/training_agency_news_more" />
+            </RelativeLayout>
+
+            <com.halo.view.RecyclerView
+                a:id="@+id/training_agency_activity_recycler_view_news"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/training_agency_activity_img_news"
+                a:layout_marginLeft="76px"
+                a:fadingEdge="none" />
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_train"
+                style="@style/ImageView"
+                a:layout_width="48px"
+                a:layout_height="31px"
+                a:layout_below="@id/training_agency_activity_recycler_view_news"
+                a:layout_marginLeft="26px"
+                a:layout_marginTop="65px"
+                x:src="@drawable/training_agency_train" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_train"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/training_agency_activity_recycler_view_news"
+                a:layout_marginLeft="18px"
+                a:layout_marginTop="51px"
+                a:layout_toRightOf="@id/training_agency_activity_img_train"
+                a:text="@string/training_agency_train"
+                a:textColor="#423f37"
+                a:textSize="40px" />
+
+            <com.astuetz.PagerIndicator
+                a:id="@+id/training_agency_activity_train_indicator"
+                a:layout_width="fill_parent"
+                a:layout_height="116px"
+                a:layout_below="@id/training_agency_activity_img_train"
+                a:layout_marginTop="20px"
+                a:background="@null"
+                a:overScrollMode="never"
+                x:pstsIndicatorColor="#FF666666"
+                x:pstsIndicatorHeight="6px"
+                x:pstsTabPaddingLeftRight="20px"
+                x:pstsTextColor="#FFA3A3A3"
+                x:pstsTextColorHighlight="#FF000000"
+                x:pstsTextSize="38px"
+                x:pstsTextSizeHighlight="50px"
+                x:pstsUnderlineHeight="2px" />
+
+            <android.support.v4.view.ViewPager
+                a:id="@+id/training_agency_activity_train_pager"
+                a:layout_width="wrap_content"
+                a:layout_height="656px"
+                a:layout_below="@id/training_agency_activity_train_indicator" />
+
+            <x.ImageView
+                a:id="@+id/training_agency_activity_img_study_abroad"
+                style="@style/ImageView"
+                a:layout_width="48px"
+                a:layout_height="31px"
+                a:layout_below="@id/training_agency_activity_train_pager"
+                a:layout_marginLeft="26px"
+                a:layout_marginTop="48px"
+                x:src="@drawable/training_agency_study_abroad" />
+
+            <x.TextView
+                a:id="@+id/training_agency_activity_txt_study_abroad"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/training_agency_activity_train_pager"
+                a:layout_marginLeft="18px"
+                a:layout_marginTop="34px"
+                a:layout_toRightOf="@id/training_agency_activity_img_study_abroad"
+                a:text="@string/training_agency_study_abroad"
+                a:textColor="#423f37"
+                a:textSize="40px" />
+
+            <com.astuetz.PagerIndicator
+                a:id="@+id/training_agency_activity_study_abroad_indicator"
+                a:layout_width="fill_parent"
+                a:layout_height="116px"
+                a:layout_below="@id/training_agency_activity_img_study_abroad"
+                a:layout_marginTop="20px"
+                a:background="@null"
+                a:overScrollMode="never"
+                x:pstsIndicatorColor="#FF666666"
+                x:pstsIndicatorHeight="6px"
+                x:pstsTabPaddingLeftRight="20px"
+                x:pstsTextColor="#FFA3A3A3"
+                x:pstsTextColorHighlight="#FF000000"
+                x:pstsTextSize="38px"
+                x:pstsTextSizeHighlight="50px"
+                x:pstsUnderlineHeight="2px" />
+
+            <android.support.v4.view.ViewPager
+                a:id="@+id/training_agency_activity_study_abroad_pager"
+                a:layout_width="wrap_content"
+                a:layout_height="656px"
+                a:layout_below="@id/training_agency_activity_study_abroad_indicator" />
+        </x.RelativeLayout>
+    </com.halo.view.ScrollView>
+
+    <View
+        a:id="@+id/training_agency_activity_touch_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.RelativeLayout
+        a:id="@+id/training_agency_activity_layout_barcode"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="152px"
+        a:gravity="center"
+        a:visibility="gone">
+
+        <View
+            a:id="@+id/training_agency_activity_barcode_bg"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@color/translucent_30_dark" />
+
+        <x.ImageView
+            a:id="@+id/training_agency_activity_img_barcode_bg"
+            style="@style/ImageView"
+            a:layout_width="679px"
+            a:layout_height="892px"
+            a:layout_centerHorizontal="true"
+            x:src="@drawable/bg_barcode" />
+
+        <x.ImageView
+            a:id="@+id/training_agency_activity_img_barcode"
+            style="@style/ImageView"
+            a:layout_width="556px"
+            a:layout_height="556px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="82px"
+            x:src="@drawable/img_barcode_sife" />
+
+        <View
+            a:id="@+id/training_agency_activity_line"
+            a:layout_width="620px"
+            a:layout_height="2px"
+            a:layout_below="@id/training_agency_activity_img_barcode"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="54px"
+            a:background="#FFD4D3D3" />
+
+        <x.TextView
+            a:id="@+id/training_agency_activity_txt_guide"
+            style="@style/TextView.Center"
+            a:layout_width="640px"
+            a:layout_below="@id/training_agency_activity_line"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="32px"
+            a:lineSpacingMultiplier="1.3"
+            a:singleLine="false"
+            a:text="@string/barcode_guide"
+            a:textColor="#FFABACB2"
+            a:textSize="42px" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/training_agency_activity_layout_branch_select"
+        a:layout_width="330px"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/training_agency_activity_title_bar"
+        a:layout_marginTop="-50px"
+        a:paddingBottom="10px"
+        a:paddingLeft="10px"
+        a:paddingRight="10px"
+        a:paddingTop="17px"
+        a:visibility="gone"
+        x:bg="@drawable/bg_branch_select"
+        x:relativeLayoutMaxHeight="800px">
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/training_agency_activity_recycler_view_branch_select"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true"
+            a:fadingEdge="none" />
+    </x.RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/club_moment_layout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_btn_selector"
+    a:orientation="vertical">
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/white">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mImgAvatar"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="40px"
+            x:corner_radius="75px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/txt_club_name"
+            style="@style/TitleBar.NotificationTitle"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/mImgAvatar" />
+
+        <x.TextView
+            a:id="@+id/txt_club_time"
+            style="@style/TitleBar.NotificationSubTitle"
+            a:layout_below="@id/txt_club_name"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="20px"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:textSize="@dimen/font_size_30" />
+
+        <x.TextView
+            a:id="@+id/txt_club_author_tag"
+            style="@style/TitleBar.NotificationSubTitle"
+            a:layout_below="@id/txt_club_name"
+            a:layout_marginLeft="30px"
+            a:layout_marginTop="20px"
+            a:layout_toRightOf="@id/txt_club_time"
+            a:text="发布者："
+            a:textSize="@dimen/font_size_30" />
+
+        <x.TextView
+            a:id="@+id/txt_club_author"
+            style="@style/TitleBar.NotificationSubTitle"
+            a:layout_below="@id/txt_club_name"
+            a:layout_marginTop="20px"
+            a:layout_toRightOf="@id/txt_club_author_tag"
+            a:textColor="#fc8d9e"
+            a:textSize="@dimen/font_size_30" />
+
+        <x.ImageView
+            a:id="@+id/img_club_photo"
+            style="@style/ImageView"
+            a:layout_width="match_parent"
+            a:layout_height="600px"
+            a:layout_below="@id/txt_club_time"
+            a:layout_marginTop="40px"
+            a:scaleType="centerCrop"
+            a:src="@drawable/photo2" />
+
+        <x.TextView
+            a:id="@+id/txt_club_photo_count"
+            a:layout_width="70px"
+            a:layout_height="70px"
+            a:layout_alignBottom="@id/img_club_photo"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="50px"
+            a:layout_marginRight="50px"
+            a:gravity="center"
+            a:textColor="@android:color/white"
+            a:textSize="@dimen/font_size_40"
+            a:visibility="visible"
+            x:bg="@drawable/profile_list_item_picture_count_bg" />
+
+        <x.TextView
+            a:id="@+id/txt_club_moment_title"
+            style="@style/TitleBar.NotificationContent"
+            a:layout_below="@id/img_club_photo"
+            a:layout_marginTop="20px"
+            a:paddingLeft="50px"
+            a:paddingRight="50px"
+            a:textColor="@android:color/black"
+            a:textSize="@dimen/font_size_50" />
+
+        <x.TextView
+            a:id="@+id/wb_club_content"
+            style="@style/TitleBar.NotificationContent"
+            a:layout_below="@id/txt_club_moment_title"
+            a:layout_marginTop="20px"
+            a:lineSpacingMultiplier="1.25"
+            a:paddingLeft="50px"
+            a:paddingRight="50px" />
+
+        <View
+            a:id="@+id/dynamic_club_split_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/wb_club_content"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="45px"
+            a:background="#dedede" />
+
+        <x.ImageView
+            a:id="@+id/img_club_love"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="30px"
+            a:tint="#b7b7b7"
+            x:src="@drawable/ic_club_news_love" />
+
+
+        <x.TextView
+            a:id="@+id/txt_club_love_count"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="45px"
+            a:layout_toRightOf="@id/img_club_love"
+            a:textColor="#b7b7b7"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.ImageView
+            a:id="@+id/img_club_comment"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="30px"
+            a:tint="#b7b7b7"
+            x:src="@drawable/ic_club_news_comment" />
+
+        <x.ImageView
+            a:id="@+id/img_club_comment_dot"
+            a:layout_width="55px"
+            a:layout_height="55px"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginTop="35px"
+            a:layout_toLeftOf="@id/img_club_comment"
+            a:tint="#b7b7b7"
+            x:src="@drawable/ic_club_new_dot" />
+
+        <x.TextView
+            a:id="@+id/txt_club_comment_count_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginTop="45px"
+            a:layout_toLeftOf="@id/img_club_comment_dot"
+            a:text="评论"
+            a:textColor="#b7b7b7"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/txt_club_comment_count"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/dynamic_club_split_line"
+            a:layout_marginRight="15px"
+            a:layout_marginTop="45px"
+            a:layout_toLeftOf="@id/txt_club_comment_count_name"
+            a:textColor="#b7b7b7"
+            a:textSize="@dimen/font_size_34" />
+
+        <View
+            a:id="@+id/club_split_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/txt_club_comment_count"
+            a:layout_marginTop="35px"
+            a:background="#d6d6d6" />
+    </RelativeLayout>
+
+    <View
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:background="#f0f0f0" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content" >
+
+    <x.RelativeLayout
+        a:id="@+id/lesson_chat_item_layout"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="90px"
+        a:layout_marginTop="20px"
+        a:background="@drawable/list_item_color_selector" >
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/lesson_chat_item_img_avatar"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            x:corner_radius="40px"
+            x:mutate_background="true"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/lesson_chat_item_txt_message"
+            style="@style/TextView"
+            a:layout_marginLeft="36px"
+            a:layout_marginTop="16px"
+            a:layout_toRightOf="@id/lesson_chat_item_img_avatar"
+            a:lineSpacingMultiplier="1.5"
+            a:maxWidth="600px"
+            a:singleLine="false"
+            a:textColor="#8d8d8d"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/lesson_chat_item_txt_time"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_alignTop="@id/lesson_chat_item_txt_message"
+            a:layout_marginRight="20px"
+            a:layout_marginTop="8px"
+            a:textColor="#a0a0a0"
+            a:textSize="32px" />
+
+        <x.ImageView
+            a:id="@+id/lesson_chat_item_img_warning"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            a:layout_toRightOf="@id/lesson_chat_item_txt_message"
+            a:visibility="gone"
+            x:src="@drawable/ic_warning" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

@@ -1,0 +1,65 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayout"
+        a:layout_width="820px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="50px"
+            a:paddingTop="60px"
+            a:text="@string/upload_slide"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/mTxtContent"
+            style="@style/TextView.MultiLine"
+            a:layout_below="@id/mTxtTitle"
+            a:lineSpacingMultiplier="1.3"
+            a:paddingLeft="50px"
+            a:paddingRight="50px"
+            a:text="@string/upload_slide_tip"
+            a:textColor="@color/gray_9b"
+            a:textSize="48px" />
+
+        <x.TextView
+            a:id="@+id/mBtnConfirm"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mTxtContent"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="40px"
+            a:background="@drawable/material_button"
+            a:text="@string/go_to_select"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mBtnCancel"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:layout_height="120px"
+            a:layout_below="@id/mTxtContent"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="40px"
+            a:layout_toLeftOf="@id/mBtnConfirm"
+            a:background="@drawable/material_button"
+            a:text="@string/cancel"
+            a:textColor="#FF888888"
+            a:textSize="@dimen/font_size_44" />
+
+    </x.RelativeLayout>
+
+</merge>

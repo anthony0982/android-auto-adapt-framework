@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent">
+
+        <RelativeLayout
+            a:layout_width="fill_parent"
+            a:layout_height="360px"
+            a:layout_alignParentTop="true"
+            a:background="@drawable/tui_mediacontroller_topshadow"
+            a:gravity="top">
+
+            <x.ImageView
+                a:id="@+id/mImgBack"
+                style="@style/ToolBar.Icon.White"
+                a:layout_alignParentLeft="true"
+                a:layout_marginLeft="30px"
+                a:layout_marginTop="32px"
+                x:src="@drawable/ic_toolbar_back" />
+
+            <TextView
+                a:id="@+id/mediacontroller_title"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="18px"
+                a:layout_marginTop="44px"
+                a:layout_toRightOf="@id/mImgBack"
+                a:textColor="#ffffffff"
+                a:textSize="42px" />
+        </RelativeLayout>
+
+        <x.ImageView
+            a:id="@+id/mediacontroller_play_pause"
+            style="@style/ImageView"
+            a:layout_width="256px"
+            a:layout_height="256px"
+            a:layout_centerHorizontal="true"
+            a:layout_centerVertical="true"
+            a:background="@android:color/transparent"
+            x:src="@drawable/tui_ic_mediacontroller_pause" />
+
+        <RelativeLayout
+            a:layout_width="fill_parent"
+            a:layout_height="360px"
+            a:layout_alignParentBottom="true"
+            a:background="@drawable/tui_mediacontroller_bottomshadow">
+
+            <TextView
+                a:id="@+id/mediacontroller_time_current"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentBottom="true"
+                a:layout_alignParentLeft="true"
+                a:layout_marginBottom="38px"
+                a:layout_marginLeft="38px"
+                a:gravity="center"
+                a:textColor="#ffffffff"
+                a:textSize="34px" />
+
+            <TextView
+                a:id="@+id/mediacontroller_time_total"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentBottom="true"
+                a:layout_alignParentRight="true"
+                a:layout_marginBottom="38px"
+                a:layout_marginRight="38px"
+                a:gravity="center"
+                a:textColor="#ffffffff"
+                a:textSize="34px" />
+
+            <SeekBar
+                a:id="@+id/mediacontroller_seekbar"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentBottom="true"
+                a:layout_marginBottom="40px"
+                a:layout_marginLeft="0px"
+                a:layout_marginRight="0px"
+                a:layout_toLeftOf="@id/mediacontroller_time_total"
+                a:layout_toRightOf="@id/mediacontroller_time_current"
+                a:maxHeight="4px"
+                a:minWidth="4px"
+                a:progressDrawable="@drawable/media_tui_progressbar"
+                a:splitTrack="false"
+                a:thumb="@drawable/tui_ic_mediacontroller_indicator"
+                a:thumbOffset="0px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

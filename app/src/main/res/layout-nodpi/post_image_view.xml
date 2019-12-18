@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content">
+
+    <x.ImageView
+        a:id="@+id/post_img_image"
+        style="@style/ImageView"
+        a:layout_width="250px"
+        a:layout_height="250px"
+        a:layout_margin="24px"
+        a:scaleType="centerCrop"
+        x:src="@drawable/chat_ic_picture" />
+
+    <x.ImageView
+        a:id="@+id/post_img_close"
+        style="@style/ImageView"
+        a:layout_width="48px"
+        a:layout_height="48px"
+        a:layout_alignParentRight="true"
+        a:layout_alignParentTop="true"
+        x:src="@drawable/ic_post_delete_image" />
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        a:id="@+id/post_progress_bar_loading"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_centerInParent="true"
+        a:background="@color/blue"
+        x:circleWidth="6px" />
+
+</x.RelativeLayout>

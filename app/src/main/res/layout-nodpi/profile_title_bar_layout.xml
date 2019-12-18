@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+
+    <x.ImageView
+        a:id="@+id/img_profile_title_bar_ic_back"
+        style="@style/ToolBar.Icon.Back" />
+
+    <x.TextView
+        a:id="@+id/txt_profile_title_bar_title"
+        style="@style/TitleBar.Text" />
+
+    <x.ImageView
+        a:id="@+id/img_profile_title_bar_ic_edit"
+        style="@style/Icon"
+        a:layout_width="65px"
+        a:layout_height="60px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:layout_marginRight="30px"
+        a:visibility="gone"
+        x:bg="@drawable/common_button_selector"
+        x:src="@drawable/common_ic_edit" />
+
+    <x.TextView
+        a:id="@+id/btn_profile_title_bar_follow"
+        style="@style/TitleBar.Text"
+        a:layout_width="230px"
+        a:layout_height="match_parent"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:gravity="center"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <item name="interpolator" type="id"/>
+    <item name="img_normal" type="id"/>
+    <item name="img_active" type="id"/>
+    <item name="img_tag" type="id"/>
+    <item name="glide_tag" type="id" />
+    <item name="glide_job" type="id" />
+    <item name="tab_find" type="id" />
+    <item name="extra_tag" type="id" />
+    <item name="anim_tag" type="id" />
+    <item name="img_id_tag" type="id"/>
+    <item name="holder" type="id"/>
+    <item name="content" type="id"/>
+    <item name="toolbar" type="id" />
+
+    <item name="resized" type="id" />
+
+    <item name="menu_crop" type="id" />
+    <item name="menu_crop_rect" type="id" />
+    <item name="menu_crop_square" type="id" />
+    <item name="menu_crop_circle" type="id" />
+    <item name="menu_confirm" type="id" />
+
+    <item name="tag_holder" type="id" />
+    <item name="tag_expect_anim" type="id" />
+    <item name="tag_item" type="id" />
+
+</resources>

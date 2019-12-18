@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutNews"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="46px" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/GroupMoment.Item.GroupName"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/mTxtComment"
+        style="@style/Topic.Item.Title"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginTop="12px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:ellipsize="end"
+        a:maxLines="2"
+        a:paddingLeft="30px"
+        a:paddingRight="50px"
+        a:textSize="@dimen/font_size_36" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutArticle"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtComment"
+        a:layout_marginRight="40px"
+        a:layout_marginTop="20px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:paddingBottom="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtBg"
+            style="@style/RoundTextView"
+            a:layout_width="match_parent"
+            a:layout_height="0px"
+            x:round_backgroundColor="@color/gray_f9"
+            x:round_isRadiusAdjustBounds="false"
+            x:round_padding_vertical="0.8"
+            x:round_radius="6px" />
+
+        <x.TextView
+            a:id="@+id/mTxtMomentTitle"
+            style="@style/Topic.Item.Title"
+            a:layout_below="@id/mImgPicture"
+            a:layout_marginTop="20px"
+            a:ellipsize="end"
+            a:maxLines="2"
+            a:paddingLeft="50px"
+            a:paddingRight="50px"
+            a:textColor="@color/gray_9a"
+            a:textSize="@dimen/font_size_34" />
+
+        <com.halo.view.RoundCornerImageView
+            a:id="@+id/mImgMomentAttachment"
+            style="@style/RoundCornerImageView"
+            a:layout_width="match_parent"
+            a:layout_height="500px"
+            a:layout_below="@id/mTxtMomentTitle"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="20px" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutArticle"
+        a:layout_marginTop="40px"
+        a:background="@color/gray_f0" />
+</x.RelativeLayout>

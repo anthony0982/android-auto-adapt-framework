@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/select_title" />
+    </x.RelativeLayout>
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginTop="20px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+</RelativeLayout>

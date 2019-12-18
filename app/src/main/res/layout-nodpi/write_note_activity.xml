@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_note_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white">
+
+        <ScrollView
+            a:id="@+id/mScrollView"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_above="@+id/tools_layout_text"
+            a:layout_below="@+id/mLayoutToolBar"
+            a:scrollbars="vertical">
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:background="@color/white">
+
+                <x.LinearLayout
+                    a:id="@+id/mLayoutSwitchState"
+                    a:layout_width="wrap_content"
+                    a:layout_height="90px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginTop="20px"
+                    a:gravity="center_vertical"
+                    a:orientation="horizontal"
+                    a:paddingRight="50px">
+
+                    <x.TextView
+                        a:id="@+id/mTxtSwitchState"
+                        style="@style/TextView"
+                        a:layout_gravity="center_vertical"
+                        a:layout_marginLeft="20px"
+                        a:text="@string/note_state_private"
+                        a:textColor="@color/green"
+                        a:textSize="42px" />
+
+                    <x.ImageView
+                        a:id="@+id/mImgSelectState"
+                        style="@style/ImageView"
+                        a:layout_width="40px"
+                        a:layout_height="40px"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="6px"
+                        a:layout_toRightOf="@id/mTxtSwitchState"
+                        a:tint="@color/green"
+                        x:src="@drawable/ic_arrow_down" />
+                </x.LinearLayout>
+
+                <x.LinearLayout
+                    a:id="@+id/mLayoutForkState"
+                    a:layout_width="400px"
+                    a:layout_height="90px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginTop="20px"
+                    a:gravity="center_vertical"
+                    a:orientation="horizontal"
+                    a:visibility="gone">
+
+                    <x.TextView
+                        a:id="@+id/mTxtForkState"
+                        style="@style/TextView"
+                        a:layout_gravity="center_vertical"
+                        a:layout_marginLeft="50px"
+                        a:text="@string/fork_from"
+                        a:textColor="@color/gray_9b"
+                        a:textSize="42px" />
+                </x.LinearLayout>
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutSelectCourse"
+                    a:layout_width="wrap_content"
+                    a:layout_height="90px"
+                    a:layout_marginLeft="20px"
+                    a:layout_marginTop="20px"
+                    a:minWidth="100px">
+
+                    <x.TextView
+                        a:id="@+id/mTxtCourseTag"
+                        style="@style/TextView"
+                        a:layout_centerVertical="true"
+                        a:paddingLeft="26px"
+                        a:text="@string/note_course"
+                        a:textColor="@color/gray_99"
+                        a:textSize="@dimen/font_size_42" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtCourseName"
+                        style="@style/TextView.MultiLine"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="4px"
+                        a:layout_toRightOf="@id/mTxtCourseTag"
+                        a:maxWidth="500px"
+                        a:text="@string/select_circle"
+                        a:textColor="@color/light_blue"
+                        a:textSize="@dimen/font_size_42" />
+
+                    <x.ImageView
+                        a:id="@+id/mImgSlideGroup"
+                        style="@style/ImageView"
+                        a:layout_width="40px"
+                        a:layout_height="40px"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="4px"
+                        a:layout_toRightOf="@id/mTxtCourseName"
+                        a:tint="@color/light_blue"
+                        x:src="@drawable/ic_arrow_down" />
+
+                </x.RelativeLayout>
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditTitle"
+                    style="@style/MaterialEditText"
+                    a:layout_below="@id/mLayoutSelectCourse"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="20px"
+                    a:hint="@string/title"
+                    a:textSize="@dimen/font_size_60"
+                    a:textStyle="bold"
+                    x:met_floatingLabelText="@string/title"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+
+                <com.github.irshulx.Editor
+                    a:id="@+id/mEditContent"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    a:layout_below="@id/mEditTitle"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="30px"
+                    x:firstLineWarningHint="@string/editor_first_line_warning"
+                    x:imageDescriptionHint="@string/hint_image_description"
+                    x:placeholder="@string/hint_content"
+                    x:render_type="Editor"
+                    x:uploadFailHint="@string/editor_upload_fail"
+                    x:uploadSuccessHint="@string/editor_upload_success"
+                    x:uploadingHint="@string/editor_uploading" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutToolBar"
+            style="@style/TitleBar.Main"
+            a:layout_width="match_parent">
+
+            <x.ImageView
+                a:id="@+id/mImgBack"
+                style="@style/ToolBar.Icon.Back" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TitleBar.Text" />
+
+            <x.ImageView
+                a:id="@+id/mImgConfirm"
+                style="@style/ToolBar.Confirm"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true" />
+
+        </x.RelativeLayout>
+
+
+        <include layout="@layout/editor_toobar_horizontal" />
+    </x.RelativeLayout>
+
+    <im.clazz.view.EditorRecorderView
+        a:id="@+id/mRecorderView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mPicker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+</x.RelativeLayout>

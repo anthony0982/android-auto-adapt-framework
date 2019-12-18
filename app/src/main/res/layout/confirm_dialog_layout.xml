@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog_background"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/layout_dialog_content"
+        android:layout_width="974px"
+        android:layout_height="560px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingTop="88px" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:textSize="56px" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_marginTop="74px"
+            android:gravity="left"
+            android:textColor="@color/dialog_content"
+            android:textSize="44px" />
+
+        <TextView
+            android:id="@+id/btn_yes"
+            android:layout_width="200px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="70px"
+            android:layout_marginRight="60px"
+            android:background="@drawable/bg_btn_selector"
+            android:gravity="center"
+            android:text="@string/tip_button_yes"
+            android:textColor="@color/dialog_button"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/btn_no"
+            android:layout_width="200px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70px"
+            android:layout_marginRight="100px"
+            android:layout_toLeftOf="@id/btn_yes"
+            android:background="@drawable/bg_btn_selector"
+            android:gravity="center"
+            android:text="@string/tip_button_no"
+            android:textColor="@color/dialog_button"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@drawable/bg_menu_btn_selector"
+    a:orientation="vertical"
+    a:paddingBottom="40px"
+    a:paddingLeft="120px"
+    a:paddingRight="60px"
+    a:paddingTop="40px" >
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/message_menu_item_text_avatar"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_centerVertical="true"
+        x:border_color="#00F0F0F0"
+        x:border_width="1dp"
+        x:corner_radius="75px"
+        x:mutate_background="true"
+        x:oval="true" />
+
+    <TextView
+        a:id="@+id/message_menu_item_text_title"
+        style="@style/MenuText.MediumX"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="30px"
+        a:layout_toRightOf="@id/message_menu_item_text_avatar" />
+
+    <TextView
+        a:id="@+id/message_menu_item_text_hint"
+        style="@style/MenuText.MediumX"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:textColor="#3347494C"
+        a:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="580px"
+    a:layout_height="wrap_content"
+    a:layout_alignParentRight="true"
+    a:layout_marginTop="100px"
+    a:orientation="vertical"
+    a:paddingBottom="24px"
+    a:paddingLeft="22px"
+    a:paddingRight="20px"
+    a:paddingTop="64px"
+    x:bg="@drawable/bg_menu">
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemWriteMoment"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_write"
+        x:text="@string/post_moment" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemWriteGroupMoment"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_write"
+        x:text="@string/post_group_moment" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemWriteNote"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_write"
+        x:text="@string/write_note" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemCreateAssignment"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_add"
+        x:text="@string/menu_create_assignment" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemCreateActivity"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_add"
+        x:text="@string/menu_create_activity" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemScan"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:show_bottom_line="false"
+        x:src="@drawable/ic_menu_scan"
+        x:text="@string/scan" />
+
+</x.LinearLayout>

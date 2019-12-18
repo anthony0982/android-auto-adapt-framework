@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.ImageView
+        a:id="@+id/mDailyImage"
+        style="@style/ImageView"
+        a:layout_width="1080px"
+        a:layout_height="1541px"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/mTxtEmpty"
+        style="@style/RecyclerView.Empty"
+        a:text="@string/daily_empty" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutLeftBar"
+        a:layout_width="556px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_vertical">
+
+        <View
+            a:id="@+id/mViewBg"
+            a:layout_width="502px"
+            a:layout_height="50px"
+            a:background="#f2f3f5" />
+
+        <View
+            a:id="@+id/mViewCover"
+            a:layout_width="502px"
+            a:layout_height="50px"
+            a:background="#a1a7b3" />
+    </x.RelativeLayout>
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutStars"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_vertical">
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="44px"
+            a:layout_height="44px" />
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_marginLeft="4px" />
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_marginLeft="4px" />
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_marginLeft="4px" />
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_marginLeft="4px" />
+    </x.LinearLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtRatio"
+        style="@style/TextView"
+        a:layout_gravity="center_vertical"
+        a:layout_marginLeft="20px"
+        a:textColor="#686f7a"
+        a:textSize="36px" />
+
+
+</x.LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.RelativeLayout
+        a:id="@+id/search_bar_layout"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:gravity="center"
+        a:paddingBottom="16px"
+        a:paddingLeft="38px"
+        a:paddingRight="38px"
+        a:paddingTop="16px">
+
+        <x.ImageView
+            a:id="@+id/search_bar_bg"
+            a:layout_width="match_parent"
+            a:layout_height="80px"
+            a:layout_centerInParent="true"
+            x:bg="@drawable/bg_search_bar" />
+
+        <x.ImageView
+            a:id="@+id/search_bar_img"
+            a:layout_width="32px"
+            a:layout_height="32px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="418px"
+            x:src="@drawable/ic_search_bar" />
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/search_bar_edit_text"
+            style="@style/MaterialEditText"
+            a:layout_width="812px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="8px"
+            a:hint="@string/search"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_36"
+            x:met_hideUnderline="true"
+            x:met_maxCharacters="100"
+            x:met_textColor="@color/gray_3b"
+            x:met_textColorHint="@color/gray_a7" />
+
+        <TextView
+            a:id="@+id/search_bar_txt_cancel"
+            style="@style/TextView.Center"
+            a:layout_height="80px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:alpha="0"
+            a:paddingLeft="20px"
+            a:paddingRight="20px"
+            a:text="@string/cancel"
+            a:textColor="@color/gray_a7"
+            a:textSize="@dimen/font_size_36" />
+
+    </x.RelativeLayout>
+</x.RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="vertical" >
+
+    <RelativeLayout
+        a:id="@+id/training_course_teachers_add_teacher"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="20px"
+        a:layout_marginTop="20px" >
+
+        <ImageView
+            a:id="@+id/training_course_teachers_img_add_teacher"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:src="@drawable/training_course_teachers_add_teacher" />
+
+        <TextView
+            a:id="@+id/training_course_teachers_txt_add_teacher"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="30px"
+            a:layout_marginTop="5px"
+            a:layout_toRightOf="@id/training_course_teachers_img_add_teacher"
+            a:text="@string/training_course_teachers_add_teacher"
+            a:textColor="#4866ca"
+            a:textSize="48px" />
+    </RelativeLayout>
+
+    <im.clazz.ui.component.MainRecyclerView
+        a:id="@+id/training_course_teachers_recycler_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/training_course_teachers_add_teacher" />
+
+</RelativeLayout>

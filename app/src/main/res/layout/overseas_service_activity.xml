@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <im.clazz.ui.component.ProfileTitleBar
+        a:id="@+id/overseas_service_activity_title_bar"
+        style="@style/TitleBar.Main" />
+
+    <com.cpoopc.scrollablelayoutlib.ScrollableLayout
+        a:id="@+id/overseas_service_activity_scrollableLayout"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_activity_title_bar"
+        a:orientation="vertical">
+
+        <RelativeLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content">
+
+            <x.ImageView
+                a:id="@+id/overseas_service_activity_img_overseas_service"
+                a:layout_width="40px"
+                a:layout_height="48px"
+                a:layout_marginLeft="26px"
+                a:layout_marginTop="28px"
+                a:src="@drawable/overseas_service" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_overseas_service"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="16px"
+                a:layout_marginTop="20px"
+                a:layout_toRightOf="@id/overseas_service_activity_img_overseas_service"
+                a:text="@string/overseas_service"
+                a:textColor="#423f37"
+                a:textSize="40px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_title"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_overseas_service"
+                a:layout_marginLeft="76px"
+                a:layout_marginTop="25px"
+                a:text="美国硕士申请，全程委托"
+                a:textColor="#6985d6"
+                a:textSize="40px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_price"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/overseas_service_activity_txt_overseas_service"
+                a:layout_marginRight="63px"
+                a:layout_marginTop="25px"
+                a:text="￥4888"
+                a:textColor="#eb4084"
+                a:textSize="44px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_worth_content"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignRight="@id/overseas_service_activity_txt_price"
+                a:layout_below="@id/overseas_service_activity_txt_price"
+                a:layout_marginTop="15px"
+                a:text="￥20000"
+                a:textColor="#b8b8b9"
+                a:textSize="28px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_worth"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_price"
+                a:layout_marginTop="15px"
+                a:layout_toLeftOf="@id/overseas_service_activity_txt_worth_content"
+                a:text="@string/overseas_service_worth"
+                a:textColor="#b8b8b9"
+                a:textSize="28px" />
+
+            <im.clazz.ui.component.RankView
+                a:id="@+id/overseas_service_activity_rank_view_score"
+                a:layout_width="183px"
+                a:layout_height="32px"
+                a:layout_alignLeft="@id/overseas_service_activity_txt_title"
+                a:layout_below="@id/overseas_service_activity_txt_title"
+                a:layout_marginTop="15px"
+                a:max="5"
+                a:numStars="4" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_score"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_title"
+                a:layout_marginLeft="10px"
+                a:layout_marginTop="8px"
+                a:layout_toRightOf="@id/overseas_service_activity_rank_view_score"
+                a:text="3.9"
+                a:textColor="#6985d6"
+                a:textSize="32px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_group"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignLeft="@id/overseas_service_activity_txt_title"
+                a:layout_below="@id/overseas_service_activity_rank_view_score"
+                a:layout_marginTop="28px"
+                a:text="@string/overseas_service_group"
+                a:textColor="#767470"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_group_content"
+                a:layout_width="490px"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_rank_view_score"
+                a:layout_marginTop="28px"
+                a:layout_toRightOf="@id/overseas_service_activity_txt_group"
+                a:text="大学生：大三、大四、已毕业"
+                a:textColor="#8ea2df"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_service_way"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignLeft="@id/overseas_service_activity_txt_title"
+                a:layout_below="@id/overseas_service_activity_txt_group"
+                a:layout_marginTop="20px"
+                a:text="@string/overseas_service_service_way"
+                a:textColor="#8b8986"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_service_way_content"
+                a:layout_width="490px"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_group"
+                a:layout_marginTop="20px"
+                a:layout_toRightOf="@id/overseas_service_activity_txt_service_way"
+                a:text="在线快捷服务"
+                a:textColor="#8b8986"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_quota"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignLeft="@id/overseas_service_activity_txt_title"
+                a:layout_below="@id/overseas_service_activity_txt_service_way"
+                a:layout_marginTop="20px"
+                a:text="@string/overseas_service_quota"
+                a:textColor="#8b8986"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_quota_content"
+                a:layout_width="490px"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_service_way"
+                a:layout_marginTop="20px"
+                a:layout_toRightOf="@id/overseas_service_activity_txt_quota"
+                a:text="25"
+                a:textColor="#8b8986"
+                a:textSize="30px" />
+
+            <x.ImageView
+                a:id="@+id/overseas_service_activity_img_safe_guard"
+                a:layout_width="29px"
+                a:layout_height="32px"
+                a:layout_alignLeft="@id/overseas_service_activity_txt_title"
+                a:layout_below="@id/overseas_service_activity_txt_quota"
+                a:layout_marginTop="25px"
+                a:src="@drawable/overseas_service_safe_guard" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_safe_guard"
+                a:layout_width="450px"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_quota"
+                a:layout_marginLeft="15px"
+                a:layout_marginTop="17px"
+                a:layout_toRightOf="@id/overseas_service_activity_img_safe_guard"
+                a:text="不成功全额退款"
+                a:textColor="#e38282"
+                a:textSize="34px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_total_services_content"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignRight="@id/overseas_service_activity_txt_worth_content"
+                a:layout_below="@id/overseas_service_activity_txt_worth"
+                a:layout_marginTop="56px"
+                a:text="300"
+                a:textColor="#898680"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_total_services"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_worth"
+                a:layout_marginTop="56px"
+                a:layout_toLeftOf="@id/overseas_service_activity_txt_total_services_content"
+                a:text="@string/overseas_service_total_services"
+                a:textColor="#898680"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_offers_gained_content"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignRight="@id/overseas_service_activity_txt_worth_content"
+                a:layout_below="@id/overseas_service_activity_txt_total_services"
+                a:layout_marginTop="17px"
+                a:text="300"
+                a:textColor="#898680"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_offers_gained"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_total_services"
+                a:layout_marginTop="17px"
+                a:layout_toLeftOf="@id/overseas_service_activity_txt_offers_gained_content"
+                a:text="@string/overseas_service_offers_gained"
+                a:textColor="#898680"
+                a:textSize="30px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_characteristic_content"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignBottom="@id/overseas_service_activity_txt_safe_guard"
+                a:layout_alignRight="@id/overseas_service_activity_txt_worth_content"
+                a:text="100%成功"
+                a:textColor="#9b9995"
+                a:textSize="34px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_characteristic"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignBottom="@id/overseas_service_activity_txt_safe_guard"
+                a:layout_toLeftOf="@id/overseas_service_activity_txt_characteristic_content"
+                a:text="@string/overseas_service_characteristic"
+                a:textColor="#9b9995"
+                a:textSize="34px" />
+
+            <View
+                a:id="@+id/overseas_service_activity_line_1"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/overseas_service_activity_txt_characteristic"
+                a:layout_marginLeft="40px"
+                a:layout_marginRight="40px"
+                a:layout_marginTop="40px"
+                a:background="#eaeaea" />
+
+            <x.ImageView
+                a:id="@+id/overseas_service_activity_img_party"
+                a:layout_width="56px"
+                a:layout_height="38px"
+                a:layout_below="@id/overseas_service_activity_line_1"
+                a:layout_marginLeft="21px"
+                a:layout_marginTop="26px"
+                a:src="@drawable/overseas_service_party" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_party"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_line_1"
+                a:layout_marginLeft="5px"
+                a:layout_marginTop="18px"
+                a:layout_toRightOf="@id/overseas_service_activity_img_party"
+                a:text="@string/overseas_service_party"
+                a:textColor="#423f37"
+                a:textSize="40px" />
+
+            <x.RelativeLayout
+                a:id="@+id/overseas_service_activity_layout_icon_border"
+                a:layout_width="108px"
+                a:layout_height="108px"
+                a:layout_below="@id/overseas_service_activity_txt_party"
+                a:layout_marginLeft="65px"
+                a:layout_marginTop="30px"
+                x:bg="@drawable/overseas_service_icon_bg">
+
+                <com.makeramen.RoundedImageView
+                    a:id="@+id/overseas_service_activity_img_icon"
+                    a:layout_width="72px"
+                    a:layout_height="72px"
+                    a:layout_centerInParent="true"
+                    x:corner_radius="15px"
+                    x:mutate_background="true"
+                    x:oval="true" />
+
+                <x.ImageView
+                    a:id="@+id/overseas_service_activity_img_identify"
+                    a:layout_width="26px"
+                    a:layout_height="30px"
+                    a:layout_alignParentBottom="true"
+                    a:layout_alignParentRight="true"
+                    a:src="@drawable/overseas_service_identify" />
+            </x.RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_party_txt_name"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_party"
+                a:layout_marginLeft="45px"
+                a:layout_marginTop="32px"
+                a:layout_toRightOf="@id/overseas_service_activity_layout_icon_border"
+                a:text="澳际留学美国部"
+                a:textColor="#363125"
+                a:textSize="34px" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_party_txt_type"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_party"
+                a:layout_marginLeft="17px"
+                a:layout_marginTop="35px"
+                a:layout_toRightOf="@id/overseas_service_activity_party_txt_name"
+                a:text="（留学机构）"
+                a:textColor="#6f6d67"
+                a:textSize="28px" />
+
+            <x.ImageView
+                a:id="@+id/overseas_service_activity_party_img_location"
+                a:layout_width="24px"
+                a:layout_height="30px"
+                a:layout_alignLeft="@id/overseas_service_activity_party_txt_name"
+                a:layout_below="@id/overseas_service_activity_party_txt_name"
+                a:layout_marginTop="22px"
+                a:src="@drawable/overseas_service_location" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_party_txt_location"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_party_txt_type"
+                a:layout_marginLeft="15px"
+                a:layout_marginTop="18px"
+                a:layout_toRightOf="@id/overseas_service_activity_party_img_location"
+                a:text="美国，洛杉矶"
+                a:textColor="#848586"
+                a:textSize="28px" />
+
+            <x.RelativeLayout
+                a:id="@+id/overseas_service_activity_layout_concerned"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/overseas_service_activity_txt_party"
+                a:layout_marginRight="60px"
+                a:layout_marginTop="30px"
+                x:bg="@drawable/overseas_service_concerned">
+
+                <x.TextView
+                    a:id="@+id/overseas_service_activity_txt_concerned"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_centerInParent="true"
+                    a:paddingBottom="6px"
+                    a:paddingLeft="20px"
+                    a:paddingRight="20px"
+                    a:text="@string/overseas_service_concerned"
+                    a:textColor="#ffffff"
+                    a:textSize="30px" />
+            </x.RelativeLayout>
+
+            <View
+                a:id="@+id/overseas_service_activity_line_2"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/overseas_service_activity_layout_icon_border"
+                a:layout_marginLeft="40px"
+                a:layout_marginRight="40px"
+                a:layout_marginTop="40px"
+                a:background="#eaeaea" />
+
+            <x.ImageView
+                a:id="@+id/overseas_service_activity_img_service_content"
+                a:layout_width="44px"
+                a:layout_height="45px"
+                a:layout_below="@id/overseas_service_activity_line_2"
+                a:layout_marginLeft="27px"
+                a:layout_marginTop="31px"
+                a:src="@drawable/overseas_service_service_content" />
+
+            <x.TextView
+                a:id="@+id/overseas_service_activity_txt_service_content"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_line_2"
+                a:layout_marginLeft="10px"
+                a:layout_marginTop="24px"
+                a:layout_toRightOf="@id/overseas_service_activity_img_service_content"
+                a:text="@string/overseas_service_service_content"
+                a:textColor="#423f37"
+                a:textSize="40px" />
+
+            <com.halo.view.RecyclerView
+                a:id="@+id/overseas_service_activity_recycler_view_service_content"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/overseas_service_activity_txt_service_content"
+                a:layout_marginLeft="85px"
+                a:layout_marginRight="85px"
+                a:fadingEdge="none" />
+
+            <View
+                a:id="@+id/overseas_service_activity_line_3"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/overseas_service_activity_recycler_view_service_content"
+                a:layout_marginTop="40px"
+                a:background="#eaeaea" />
+        </RelativeLayout>
+
+        <com.astuetz.PagerIndicator
+            a:id="@+id/overseas_service_activity_indicator"
+            a:layout_width="fill_parent"
+            a:layout_height="116px"
+            a:background="@null"
+            a:overScrollMode="never"
+            x:pstsIndicatorColor="#FF666666"
+            x:pstsIndicatorHeight="6px"
+            x:pstsTabPaddingLeftRight="20px"
+            x:pstsTextColor="#FFA3A3A3"
+            x:pstsTextColorHighlight="#FF000000"
+            x:pstsTextSize="38px"
+            x:pstsTextSizeHighlight="50px"
+            x:pstsUnderlineHeight="2px" />
+
+        <android.support.v4.view.ViewPager
+            a:id="@+id/overseas_service_activity_pager"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent" />
+    </com.cpoopc.scrollablelayoutlib.ScrollableLayout>
+
+    <RelativeLayout
+        a:id="@+id/overseas_service_activity_layout_buy"
+        a:layout_width="226px"
+        a:layout_height="226px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="195px"
+        a:layout_marginRight="50px"
+        a:background="@drawable/training_course_sign_up">
+
+        <x.TextView
+            a:id="@+id/overseas_service_activity_txt_buy"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:paddingBottom="10px"
+            a:text="@string/overseas_service_buy"
+            a:textColor="#ffffff"
+            a:textSize="60px" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/overseas_service_add_member_pick_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="#66000000"
+        a:visibility="gone" />
+
+    <FrameLayout
+        a:id="@+id/overseas_service_add_member_fragment_container"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

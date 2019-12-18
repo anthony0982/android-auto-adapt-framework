@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white">
+
+    <im.clazz.ui.component.MessageTitleBar
+        a:id="@+id/mMessageTitleBar"
+        style="@style/TitleBar.Main" />
+
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mMessageTitleBar"
+        a:fadingEdge="vertical"
+        a:scrollbarStyle="outsideOverlay"
+        a:scrollbars="vertical" />
+
+
+    <im.clazz.ui.component.EmptyView
+        a:id="@+id/mEmptyView"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:visibility="gone"
+        x:text="@string/message_list_empty" />
+
+    <im.clazz.ui.component.MessageMenuView
+        a:id="@+id/mMessageMenuView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+    <im.clazz.ui.SystemMessageListView
+        a:id="@+id/mSystemMessageListView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mMessageTitleBar"
+        a:background="@color/white"
+        a:visibility="gone" />
+
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</RelativeLayout>

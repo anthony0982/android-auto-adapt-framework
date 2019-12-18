@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/my_notification" />
+    </x.RelativeLayout>
+
+    <fragment
+        a:id="@+id/mNotificationFragment"
+        class="im.clazz.campus.club.NotificationFragment"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar" />
+
+</RelativeLayout>

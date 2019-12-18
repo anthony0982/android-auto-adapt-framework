@@ -1,0 +1,110 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayout"
+        a:layout_width="820px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="50px"
+            a:paddingTop="60px"
+            a:text="@string/upload_slide"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/mEditTextName"
+            style="@style/MaterialEditText"
+            a:layout_width="match_parent"
+            a:layout_height="130px"
+            a:layout_below="@id/mTxtTitle"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="80px"
+            a:hint="@string/upload_slide_hint_name"
+            a:inputType="text"
+            a:maxLength="60"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_44"
+            a:textStyle="normal"
+            x:met_hideUnderline="true"
+            x:met_textColor="@color/black" />
+
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutBind"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mEditTextName"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="116px">
+
+            <x.ImageView
+                a:id="@+id/mImgCheckBox"
+                style="@style/ImageView"
+                a:layout_width="50px"
+                a:layout_height="50px"
+                a:layout_centerVertical="true"
+                x:src="@drawable/ic_checkbox_normal" />
+
+            <x.TextView
+                a:id="@+id/mTxtBind"
+                style="@style/TextView"
+                a:layout_centerVertical="true"
+                a:layout_toRightOf="@id/mImgCheckBox"
+                a:paddingLeft="20px"
+                a:paddingRight="50px"
+                a:text="@string/upload_slide_bind"
+                a:textColor="@color/gray_9b"
+                a:textSize="48px" />
+        </x.RelativeLayout>
+
+        <x.TextView
+            a:id="@+id/mTxtUploadState"
+            style="@style/TextView"
+            a:layout_below="@id/mLayoutBind"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="72px"
+            a:text="@string/upload_progess"
+            a:textColor="@color/gray_9b"
+            a:textSize="36px" />
+
+        <x.TextView
+            a:id="@+id/mBtnConfirm"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mLayoutBind"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="40px"
+            a:background="@drawable/material_button"
+            a:text="@string/finish"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mBtnCancel"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:layout_height="120px"
+            a:layout_below="@id/mLayoutBind"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="40px"
+            a:layout_toLeftOf="@id/mBtnConfirm"
+            a:background="@drawable/material_button"
+            a:text="@string/cancel"
+            a:textColor="#FF888888"
+            a:textSize="@dimen/font_size_44" />
+
+    </x.RelativeLayout>
+
+</merge>

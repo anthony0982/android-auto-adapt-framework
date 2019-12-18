@@ -1,0 +1,21 @@
+﻿{"high":[
+	{"name":"高校3年","code":"high_3"},
+	{"name":"高校2年","code":"high_2"},
+	{"name":"高校1年","code":"high_1"},
+	{"name":"その他","code":"high_other"}
+],
+"mid":[
+	{"name":"中学3年","code":"mid_3"},
+	{"name":"中学2年","code":"mid_2"},
+	{"name":"中学1年","code":"mid_1"},
+	{"name":"その他","code":"mid_other"}
+],
+"pri":[
+	{"name":"小学6年","code":"pri_6"},
+	{"name":"小学5年","code":"pri_5"},
+	{"name":"小学4年","code":"pri_4"},
+	{"name":"小学3年","code":"pri_3"},
+	{"name":"小学2年","code":"pri_2"},
+	{"name":"小学1年","code":"pri_1"}
+]
+}

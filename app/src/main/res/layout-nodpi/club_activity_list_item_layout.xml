@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_item_white_trans_blue_color_selector"
+    a:paddingBottom="30px"
+    a:paddingLeft="34px"
+    a:paddingRight="50px"
+    a:paddingTop="30px">
+
+    <x.TextView
+        a:id="@+id/club_activity_item_time"
+        style="@style/TextView.Right"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="10px"
+        a:textColor="#BB6B6D75"
+        a:textSize="@dimen/font_size_30" />
+
+    <x.TextView
+        a:id="@+id/club_activity_item_title"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_alignParentLeft="true"
+        a:layout_marginRight="40px"
+        a:layout_toLeftOf="@id/club_activity_item_time"
+        a:paddingLeft="50px"
+        a:singleLine="false"
+        a:textColor="#FF6B6D75"
+        a:textSize="@dimen/font_size_medium" />
+
+</x.RelativeLayout>

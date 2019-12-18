@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/main_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="110px"
+        a:layout_height="110px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="54px" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/GroupMoment.Item.GroupName"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="50px"
+        a:layout_toLeftOf="@id/mTxtTime"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginLeft="30px"
+        a:layout_marginRight="50px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+
+    <x.TextView
+        a:id="@+id/mTxtDigest"
+        style="@style/Topic.Item.Digest"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginTop="50px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        a:textSize="@dimen/font_size_medium" />
+
+
+    <android.support.v7.widget.GridLayout
+        a:id="@+id/mLayoutAttachments"
+        style="@style/MomentGridView"
+        a:layout_below="@id/mTxtDigest"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="30px"
+        a:layout_marginTop="30px"
+        a:tag="ignore"
+        x:columnCount="3"
+        x:useDefaultMargins="true" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutFavorite"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mLayoutAttachments"
+        a:layout_marginRight="70px"
+        a:layout_marginTop="32px">
+
+        <x.ImageView
+            a:id="@+id/mImgFavorite"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            a:layout_centerVertical="true"
+            x:src="@drawable/ic_common_fav" />
+
+        <x.TextView
+            a:id="@+id/mTxtFavoriteCount"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="16px"
+            a:layout_toRightOf="@id/mImgFavorite"
+            a:textColor="@color/gray_88"
+            a:textSize="@dimen/font_size_30" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/group_split_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mLayoutFavorite"
+        a:layout_marginTop="35px"
+        a:background="@color/gray_f0" />
+
+    <View
+        a:id="@+id/group_moment_bottom_split"
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:layout_below="@id/group_split_line"
+        a:background="@color/gray_fa" />
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutCommentTitle"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_below="@id/group_moment_bottom_split">
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            style="@style/TextView.Center"
+            a:layout_height="148px"
+            a:layout_alignParentLeft="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/comment"
+            a:textColor="@color/gray_3b"
+            a:textSize="@dimen/font_size_50" />
+
+        <View
+            a:id="@+id/comment_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/mTxtCommentCount"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:background="@color/gray_e0" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCommentEmpty"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="300px"
+        a:layout_below="@id/group_moment_bottom_split"
+        a:text="@string/no_comment"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mImgComment"
+        style="@style/Comment.Write"
+        a:layout_below="@id/group_moment_bottom_split" />
+</RelativeLayout>

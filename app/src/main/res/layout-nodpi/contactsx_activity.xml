@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/contacts_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mViewBack"
+            style="@style/ToolBar.Icon.Close.Blue" />
+
+        <x.TextView
+            a:id="@+id/contacts_toolbar_txt_title"
+            style="@style/TitleBar.Text.Blue"
+            a:text="@string/contacts" />
+
+        <x.ImageView
+            a:id="@+id/contacts_img_more"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="40px"
+            a:visibility="gone"
+            x:src="@drawable/ic_toolbar_more" />
+
+    </x.RelativeLayout>
+
+
+    <im.clazz.ui.component.ContactsView
+        a:id="@+id/mMessageMenuView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar" />
+
+</x.RelativeLayout>

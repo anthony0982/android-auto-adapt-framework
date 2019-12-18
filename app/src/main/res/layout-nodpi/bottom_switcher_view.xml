@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <View
+        a:id="@+id/public_notes_switch_bottom"
+        a:layout_width="0px"
+        a:layout_height="68px"
+        a:layout_alignParentBottom="true" />
+
+    <x.LinearLayout
+        a:layout_width="wrap_content"
+        a:layout_height="100px"
+        a:layout_above="@id/public_notes_switch_bottom"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="64px"
+        a:layout_marginRight="64px"
+        a:background="@drawable/bg_blue_switch_round_corner_rectangle_shape">
+
+        <TextView
+            a:id="@+id/mBtnLeft"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="match_parent"
+            a:minWidth="150px"
+            a:text="@string/sort_by_time"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_42" />
+
+        <View
+            a:id="@+id/mSplitLeft"
+            a:layout_width="2px"
+            a:layout_height="match_parent"
+            a:background="@color/white" />
+
+        <TextView
+            a:id="@+id/mBtnMiddle"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="match_parent"
+            a:minWidth="150px"
+            a:text="@string/sort_by_hot"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_42" />
+
+        <View
+            a:id="@+id/mSplitRight"
+            a:layout_width="2px"
+            a:layout_height="match_parent"
+            a:background="@color/white" />
+
+        <TextView
+            a:id="@+id/mBtnRight"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="match_parent"
+            a:minWidth="150px"
+            a:text="@string/sort_by_hot"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_42" />
+    </x.LinearLayout>
+</x.RelativeLayout>

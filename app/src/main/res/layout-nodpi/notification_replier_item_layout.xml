@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/notification_replier_layout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white"
+    a:paddingBottom="24px"
+    a:paddingTop="10px">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/notification_replier_img_avatar"
+        a:layout_width="134px"
+        a:layout_height="134px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="20px"
+        a:src="@drawable/ic_default_avatar_78"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/notification_replier_txt_name"
+        style="@style/NotificationReplier.Name"
+        a:layout_marginLeft="28px"
+        a:layout_marginTop="26px"
+        a:layout_toRightOf="@id/notification_replier_img_avatar"
+        a:maxWidth="500px" />
+
+    <x.TextView
+        a:id="@+id/notification_replier_txt_grade"
+        style="@style/NotificationReplier.Class"
+        a:layout_marginLeft="28px"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/notification_replier_txt_name" />
+
+    <x.TextView
+        a:id="@+id/notification_replier_txt_class"
+        style="@style/NotificationReplier.Class"
+        a:layout_marginLeft="28px"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/notification_replier_txt_grade" />
+
+    <x.TextView
+        a:id="@+id/notification_replier_txt_major"
+        style="@style/NotificationReplier.Major"
+        a:layout_below="@id/notification_replier_txt_name"
+        a:layout_marginLeft="28px"
+        a:layout_marginTop="10px"
+        a:layout_toRightOf="@id/notification_replier_img_avatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/notification_replier_txt_time"
+        style="@style/NotificationReplier.Time"
+        a:layout_alignParentRight="true"
+        a:layout_alignTop="@id/notification_replier_txt_major"
+        a:layout_marginLeft="12px"
+        a:layout_marginRight="60px"
+        a:singleLine="false" />
+
+</x.RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content" >
+
+    <x.ImageView
+        a:id="@+id/overseas_service_details_list_img_title"
+        a:layout_width="30px"
+        a:layout_height="29px"
+        a:layout_marginLeft="48px"
+        a:layout_marginTop="36px"
+        a:src="@drawable/overseas_service_detail_goal" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_details_list_txt_title"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="11px"
+        a:layout_marginTop="25px"
+        a:layout_toRightOf="@id/overseas_service_details_list_img_title"
+        a:text="@string/overseas_service_details_goal"
+        a:textColor="#83a3e0"
+        a:textSize="38px" />
+
+    <View
+        a:id="@+id/overseas_service_details_list_view_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/overseas_service_details_list_txt_title"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:layout_marginTop="21px"
+        a:background="#c1d1ef" />
+
+    <x.ImageView
+        a:id="@+id/overseas_service_details_list_img_content"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_details_list_view_line"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:src="@drawable/overseas_detail_goal" />
+
+</RelativeLayout>

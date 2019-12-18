@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <x.ImageView
+        android:id="@+id/img_schedule_class_bg_on_class"
+        style="@style/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="3px"
+        x:src="@drawable/shape_round_rect_blue" />
+
+    <x.ImageView
+        android:id="@+id/img_schedule_class_bg_next_class"
+        style="@style/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="3px"
+        android:visibility="gone"
+        x:src="@drawable/shape_round_rect_dash_green" />
+
+    <x.TextView
+        android:id="@+id/txt_schedule_class_subtitle"
+        style="@style/TextView.XXXSmall"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="12px"
+        android:text="正在上..."
+        android:textColor="@color/blue" />
+
+    <x.ImageView
+        android:id="@+id/img_schedule_class_ic_location"
+        style="@style/ImageView"
+        android:layout_width="18px"
+        android:layout_height="26px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17px"
+        android:layout_marginLeft="16px"
+        x:src="@drawable/ic_schedule_location_blue" />
+
+    <x.TextView
+        android:id="@+id/txt_schedule_class_location"
+        style="@style/TextView.XXXSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8px"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/img_schedule_class_ic_location"
+        android:text="实验楼111"
+        android:textColor="@color/blue"
+        android:textSize="32px" />
+
+    <x.TextView
+        android:id="@+id/txt_schedule_class_teacher"
+        style="@style/TextView.XXXSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8px"
+        android:layout_marginRight="16px"
+        android:gravity="right"
+        android:text="(田伯光)"
+        android:textColor="@color/blue"
+        android:textSize="32px" />
+
+    <x.TextView
+        android:id="@+id/txt_schedule_class_title"
+        style="@style/TextView.SmallX.Center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="14px"
+        android:layout_marginTop="50px"
+        android:gravity="left|center_vertical"
+        android:text="木材切削原理与刀具"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/notification_responser_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/notification_select_sender" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSenders"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="26px"
+            a:layout_marginRight="26px"
+            a:orientation="vertical"
+            a:paddingBottom="42px" />
+    </ScrollView>
+
+</x.RelativeLayout>

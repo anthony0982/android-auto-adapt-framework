@@ -1,0 +1,7 @@
+﻿[{"name":"大学","code":"univ"},
+{"name":"高校","code":"high"},
+{"name":"中学校","code":"mid"},
+{"name":"小学校","code":"pri"},
+{"name":"幼児教育","code":"pre"},
+{"name":"職業教育","code":"voc"},
+{"name":"訓練機関","code":"tra"}]

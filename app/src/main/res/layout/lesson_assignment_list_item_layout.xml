@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_homework_fragment_item_img"
+        style="@style/ImageView.ScheduleHomework"
+        a:layout_marginLeft="52px"
+        a:layout_marginTop="60px"
+        a:src="@drawable/schedule_class_tool_ic_dot" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_item_txt"
+        style="@style/TextView.ScheduleHomework"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="44px"
+        a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_item_img"/>
+
+    <LinearLayout
+        a:id="@+id/schedule_class_tool_homework_fragment_item_txt_attachment"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/schedule_class_tool_homework_fragment_item_txt"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt"
+        a:orientation="vertical" >
+    </LinearLayout>
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_item_txt_request"
+        style="@style/TextView.ScheduleHomeworkRequest"
+        a:layout_alignLeft="@id/schedule_class_tool_homework_fragment_item_txt"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt_attachment"
+        a:layout_marginTop="34px"
+        a:text="@string/lesson_assignment_requirement" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_item_txt_request_content"
+        style="@style/TextView.ScheduleHomeworkRequest"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt_attachment"
+        a:layout_marginTop="34px"
+        a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_item_txt_request" />
+
+    <RelativeLayout
+        a:id="@+id/schedule_class_tool_homework_fragment_item_countdown"
+        a:layout_width="260px"
+        a:layout_height="108px"
+        a:layout_alignLeft="@id/schedule_class_tool_homework_fragment_item_txt"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt_request_content"
+        a:layout_marginTop="44px" >
+
+        <x.ImageView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_countdown_img"
+            style="@style/ImageView.ScheduleRecord"
+            a:layout_centerVertical="true"
+            a:src="@drawable/schedule_class_tool_ic_count_down" />
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_countdown_txt"
+            style="@style/TextView.ScheduleHomeworkRequest"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="4px"
+            a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_item_countdown_img"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/schedule_class_tool_homework_fragment_item_comment"
+        a:layout_width="260px"
+        a:layout_height="108px"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt_request_content"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="44px"
+        a:gravity="center" >
+
+        <x.ImageView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_comment_img"
+            style="@style/ImageView.ScheduleRecord"
+            a:src="@drawable/schedule_class_tool_ic_comment_fragment" />
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_comment_txt"
+            style="@style/TextView.ScheduleHomeworkRequest"
+            a:layout_marginLeft="4px"
+            a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_item_comment_img"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/schedule_class_tool_homework_fragment_item_acomplish"
+        a:layout_width="330px"
+        a:layout_height="108px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_txt_request_content"
+        a:layout_marginTop="44px"
+        a:gravity="center" >
+
+        <x.ImageView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_acomplish_img"
+            style="@style/ImageView.ScheduleRecord"
+            a:src="@drawable/schedule_class_tool_ic_done" />
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_homework_fragment_item_acomplish_txt"
+            style="@style/TextView.ScheduleHomeworkRequest"
+            a:layout_marginLeft="4px"
+            a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_item_acomplish_img"/>
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/schedule_class_tool_homework_fragment_item_line"
+        a:layout_width="951px"
+        a:layout_height="2px"
+        a:layout_marginLeft="106px"
+        a:layout_below="@id/schedule_class_tool_homework_fragment_item_acomplish"
+        a:layout_marginTop="20px"
+        a:background="#FFf5f5f5" />
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <View
+        a:id="@+id/chat_emoticon_recycler_view_line"
+        a:layout_width="match_parent"
+        a:layout_height="0px"
+        a:background="@color/gray_d0" />
+
+    <x.ImageView
+        a:id="@+id/mImgKeyboard"
+        style="@style/Icon.Chat"
+        a:layout_width="110px"
+        a:layout_height="110px"
+        a:layout_marginLeft="30px"
+        a:tint="@color/light_blue"
+        x:src="@drawable/ic_keyboard" />
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        a:layout_width="match_parent"
+        a:layout_height="110px"
+        a:layout_below="@id/chat_emoticon_recycler_view_line"
+        a:layout_marginLeft="30px"
+        a:layout_toRightOf="@id/mImgKeyboard"
+        a:overScrollMode="never"
+        x:pstsIndicatorColor="@color/light_blue"
+        x:pstsIndicatorHeight="4px"
+        x:pstsShouldAnimateText="false"
+        x:pstsTabPaddingLeftRight="36px"
+        x:pstsTextColor="@color/gray_9a"
+        x:pstsTextColorHighlight="@color/gray_44"
+        x:pstsTextSize="38px"
+        x:pstsTextSizeHighlight="38px"
+        x:pstsUnderlineHeight="0px" />
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/chat_emoticon_view_pager"
+        a:layout_width="match_parent"
+        a:layout_height="1000px"
+        a:layout_below="@id/mPagerIndicator"
+        a:orientation="horizontal" />
+
+
+    <x.RelativeLayout
+        a:id="@+id/chat_emoticon_layout_preview"
+        a:layout_width="match_parent"
+        a:layout_height="1000px"
+        a:background="#99000000"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/chat_emoticon_img_preview"
+            style="@style/ImageView"
+            a:layout_width="454px"
+            a:layout_height="454px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="89px"
+            a:background="@drawable/bg_dialog"
+            a:padding="10px"
+            a:scaleType="fitCenter"
+            x:src="@drawable/icon" />
+
+        <x.LinearLayout
+            a:id="@+id/chat_emoticon_layout_delete"
+            a:layout_width="400px"
+            a:layout_height="454px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="52px"
+            a:layout_toRightOf="@id/chat_emoticon_img_preview"
+            a:background="@drawable/bg_dialog"
+            a:gravity="center_vertical"
+            a:orientation="vertical"
+            a:paddingBottom="10px"
+            a:paddingTop="10px">
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_send"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:text="@string/send_emoticon" />
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_delete"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:text="@string/delete_emoticon" />
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_cancel"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:text="@string/cancel"
+                a:textColor="#959595" />
+        </x.LinearLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/chat_emoticon_layout_delete_confirm"
+            a:layout_width="400px"
+            a:layout_height="454px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="52px"
+            a:layout_toRightOf="@id/chat_emoticon_img_preview"
+            a:background="@drawable/bg_dialog"
+            a:paddingBottom="10px"
+            a:paddingTop="10px"
+            a:visibility="gone">
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_delete_title"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:layout_marginTop="10px"
+                a:padding="0px"
+                a:singleLine="false"
+                a:text="@string/emoticon_delete_tip"
+                a:textColor="#121212" />
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_delete_confirm"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:layout_below="@id/chat_emoticon_txt_delete_title"
+                a:text="@string/confirm" />
+
+            <x.TextView
+                a:id="@+id/chat_emoticon_txt_delete_cancel"
+                style="@style/TextView.ChatMenu.EmoticonButton"
+                a:layout_below="@id/chat_emoticon_txt_delete_confirm"
+                a:text="@string/cancel"
+                a:textColor="#959595" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</merge>

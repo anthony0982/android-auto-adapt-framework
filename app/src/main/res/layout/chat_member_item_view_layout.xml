@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.RelativeLayout
+        a:layout_width="200px"
+        a:layout_height="wrap_content" >
+
+        <x.RelativeLayout
+            a:id="@+id/img_chat_member_layout_avatar"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true" >
+
+            <x.ImageView
+                a:id="@+id/img_chat_member_avatar_bg"
+                a:layout_width="140px"
+                a:layout_height="140px"
+                x:src="@drawable/ic_member_round_circle_white" />
+
+            <com.makeramen.RoundedImageView
+                a:id="@+id/img_chat_member_avatar"
+                style="@style/ImageView"
+                a:layout_width="130px"
+                a:layout_height="130px"
+                a:layout_centerInParent="true"
+                x:oval="true" />
+        </x.RelativeLayout>
+
+        <x.TextView
+            a:id="@+id/txt_chat_member_name"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_below="@id/img_chat_member_layout_avatar"
+            a:layout_centerHorizontal="true"
+            a:ellipsize="none"
+            a:gravity="center_horizontal"
+            a:paddingBottom="24px"
+            a:paddingLeft="10px"
+            a:paddingRight="10px"
+            a:paddingTop="20px"
+            a:textColor="#242424"
+            a:textSize="28px" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

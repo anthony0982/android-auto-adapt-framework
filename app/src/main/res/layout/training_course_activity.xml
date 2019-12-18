@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.TextView
+        a:id="@+id/training_course_activity_title"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="160px"
+        a:text="UI设计师精修班"
+        a:textColor="#FF000000"
+        a:textSize="56px" />
+
+    <x.ImageView
+        a:id="@+id/training_course_activity_back"
+        style="@style/Icon"
+        a:layout_width="120px"
+        a:layout_height="120px"
+        a:layout_alignParentLeft="true"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="10px"
+        x:src="@drawable/ic_back_120" />
+
+
+    <RelativeLayout
+        a:id="@+id/training_course_activity_layout_favorite"
+        a:layout_width="180px"
+        a:layout_height="160px"
+        a:layout_alignParentRight="true" >
+
+        <x.ImageView
+            a:id="@+id/training_course_activity_img_favorite"
+            style="@style/ImageView"
+            a:layout_width="31px"
+            a:layout_height="31px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            a:tint="#55acee"
+            x:src="@drawable/training_course_add_favorite" />
+
+        <x.TextView
+            a:id="@+id/training_course_activity_txt_favorite"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="17px"
+            a:layout_toRightOf="@id/training_course_activity_img_favorite"
+            a:paddingTop="5px"
+            a:text="@string/training_course_add_favorite"
+            a:textColor="#55acee"
+            a:textSize="45px" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/training_course_activity_title_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_marginTop="152px"
+        a:background="#FFd7d7d7" />
+    
+    <FrameLayout
+        a:id="@+id/training_course_activity_fragment_container"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/training_course_activity_title_line" >
+    </FrameLayout>
+    
+    <RelativeLayout
+        a:id="@+id/training_course_fragment_layout_sign_up"
+        a:layout_width="226px"
+        a:layout_height="226px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="195px"
+        a:layout_marginRight="50px"
+        a:background="@drawable/training_course_sign_up" >
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_txt_sign_up"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:paddingBottom="10px"
+            a:text="@string/training_course_sign_up"
+            a:textColor="#ffffff"
+            a:textSize="60px" />
+    </RelativeLayout>
+    
+    <View
+        a:id="@+id/training_course_add_teacher_pick_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="#66000000"
+        a:visibility="gone" />
+    
+    <FrameLayout
+        a:id="@+id/training_course_add_teacher_fragment_container"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" >
+    </FrameLayout>
+    
+</RelativeLayout>

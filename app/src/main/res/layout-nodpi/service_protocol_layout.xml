@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/main_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:text="@string/setting_protocol" />
+
+    </x.RelativeLayout>
+
+    <WebView
+        a:id="@+id/mWebView"
+        style="@style/WebView"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="30px"
+        a:layout_marginRight="30px"
+        a:layout_marginTop="20px" />
+</RelativeLayout>

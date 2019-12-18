@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <x.TextView
+        android:id="@+id/x_combo_txt_hint"
+        style="@style/TextView.White.Center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="hint"
+        android:textColor="#FFCACACA"
+        android:textSize="50px" />
+
+    <x.TextView
+        android:id="@+id/x_combo_txt"
+        style="@style/TextView.Center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textCursorDrawable="@drawable/material_input_cursor_color"
+        android:textSize="50px" />
+
+    <x.combo.HighLightLine
+        android:id="@+id/x_combo_txt_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="#FFd7d7d7" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:layout_width="800px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true">
+
+        <x.ImageView
+            a:id="@+id/mImageTag"
+            style="@style/ImageView"
+            a:layout_width="360px"
+            a:layout_height="204px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="30px"
+            x:src="@drawable/ic_empty" />
+
+        <x.TextView
+            a:id="@+id/mTxtEmptyTip"
+            style="@style/TextView"
+            a:layout_below="@id/mImageTag"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="56px"
+            a:text="@string/base_list_empty"
+            a:textColor="#bfbfbf"
+            a:textSize="@dimen/font_size_46" />
+    </x.RelativeLayout>
+</merge>

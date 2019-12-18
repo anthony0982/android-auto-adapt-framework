@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/curriculum_item_bg_color_selector">
+
+    <x.TextView
+        a:id="@+id/txt_curriculum_class_title"
+        style="@style/TextView.Black"
+        a:layout_marginLeft="60px"
+        a:maxWidth="720px"
+        a:paddingBottom="16px"
+        a:paddingTop="36px"
+        a:singleLine="false"
+        a:textSize="50px" />
+
+    <x.TextView
+        a:id="@+id/txt_curriculum_class_status"
+        style="@style/TextView.Gray"
+        a:layout_below="@id/txt_curriculum_class_title"
+        a:layout_marginLeft="60px"
+        a:paddingBottom="12px"
+        a:paddingTop="14px"
+        a:textSize="32px" />
+
+    <x.TextView
+        a:id="@+id/txt_curriculum_class_mark"
+        style="@style/TextView"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:paddingRight="100px"
+        a:gravity="right|center_vertical"
+        a:textColor="#FFDB0A0A"
+        a:textSize="50px" />
+
+</RelativeLayout>

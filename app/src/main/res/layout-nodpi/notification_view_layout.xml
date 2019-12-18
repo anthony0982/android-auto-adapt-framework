@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/notification_main_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/Notification.Title"
+        a:paddingBottom="50px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        a:paddingTop="20px" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutAttachments"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtTitle"
+        a:gravity="left"
+        a:orientation="vertical">
+
+        <x.TextView
+            a:id="@+id/mTxtDigest"
+            style="@style/Topic.Item.Digest"
+            a:layout_marginTop="20px"
+            a:paddingLeft="50px"
+            a:paddingRight="50px" />
+
+    </x.LinearLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/TextView"
+        a:layout_below="@id/mLayoutAttachments"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="50px"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_40" />
+
+    <x.TextView
+        a:id="@+id/mTxtDeadline"
+        style="@style/Notification.Item.Deadline"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mLayoutAttachments"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="54px" />
+
+    <View
+        a:id="@+id/notification_split_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTxtAuthor"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:background="@color/gray_f0"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutBottom"
+        a:layout_width="match_parent"
+        a:layout_height="154px"
+        a:layout_below="@id/mTxtAuthor"
+        a:visibility="gone">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLeftBottom"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_toLeftOf="@+id/notification_img_center">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutRepliers"
+                a:layout_width="380px"
+                a:layout_height="78px"
+                a:layout_centerVertical="true"
+                a:paddingLeft="32px">
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+            </x.LinearLayout>
+
+            <x.ImageView
+                a:id="@+id/mImgMore"
+                style="@style/ImageView"
+                a:layout_width="56px"
+                a:layout_height="13px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="58px"
+                x:src="@drawable/ic_notification_item_more" />
+
+            <x.ImageView
+                a:id="@+id/mImgSplitLine"
+                style="@style/ImageView"
+                a:layout_width="3px"
+                a:layout_height="37px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:visibility="gone"
+                x:src="@drawable/ic_notification_item_split" />
+        </x.RelativeLayout>
+
+        <x.ImageView
+            a:id="@+id/notification_img_center"
+            style="@style/ImageView"
+            a:layout_width="0px"
+            a:layout_height="0px"
+            a:layout_centerInParent="true" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutResponse"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:visibility="gone">
+
+            <x.TextView
+                a:id="@+id/mTxtResponseCount"
+                style="@style/Notification.Item.ResponseCount"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content" />
+
+            <x.ImageView
+                a:id="@+id/mImgResponse"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="64px"
+                a:tint="@color/blue"
+                x:src="@drawable/ic_notification_response" />
+        </x.LinearLayout>
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/notification_bottom_split"
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:layout_below="@id/mLayoutBottom"
+        a:layout_marginTop="50px"
+        a:background="@color/gray_fa" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutCommentTitle"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_below="@id/notification_bottom_split">
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            style="@style/TextView.Center"
+            a:layout_height="148px"
+            a:layout_alignParentLeft="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/comment"
+            a:textColor="@color/gray_3b"
+            a:textSize="@dimen/font_size_50" />
+
+        <View
+            a:id="@+id/comment_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/mTxtCommentCount"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:background="@color/gray_e0" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCommentEmpty"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="300px"
+        a:layout_below="@id/notification_bottom_split"
+        a:text="@string/no_comment"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mImgComment"
+        style="@style/Comment.Write"
+        a:layout_below="@id/notification_bottom_split" />
+</RelativeLayout>

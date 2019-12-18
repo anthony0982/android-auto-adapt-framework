@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <View
+        a:id="@+id/mTopLine"
+        a:layout_width="match_parent"
+        a:layout_height="30px"
+        a:layout_below="@+id/mTitleBar"
+        a:layout_marginTop="30px"
+        a:background="@color/gray_fa" />
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTopLine" />
+
+    <im.clazz.ui.component.EmptyView
+        a:id="@+id/mEmptyView"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:visibility="gone"
+        x:text="@string/at_empty" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:text="@string/setting_at_me" />
+
+    </x.RelativeLayout>
+
+
+</RelativeLayout>

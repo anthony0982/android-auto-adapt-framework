@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        a:layout_width="match_parent"
+        a:layout_height="164px"
+        a:background="@color/white"
+        a:paddingLeft="50px">
+
+        <x.ImageView
+            a:id="@+id/mImgClose"
+            style="@style/ImageView"
+            a:layout_width="42px"
+            a:layout_height="40px"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="70px"
+            a:src="@drawable/ic_notification_activity_close"
+            a:tint="@color/light_blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/Notification.SenderName"
+            a:layout_marginLeft="58px"
+            a:layout_marginTop="50px"
+            a:text="@string/course_versions_title"
+            a:layout_toRightOf="@id/mImgClose" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:visibility="gone" />
+
+    </x.RelativeLayout>
+
+    <com.halo.view.ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginBottom="50px"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:fillViewport="true"
+        a:overScrollMode="never"
+        a:paddingBottom="50px">
+
+        <include layout="@layout/search_course_item_layout" />
+
+    </com.halo.view.ScrollView>
+
+</RelativeLayout>

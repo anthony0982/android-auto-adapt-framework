@@ -1,0 +1,31 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:paddingLeft="90px"
+            a:textColor="@color/light_gray_white_color_selector"
+            a:background="@drawable/transparent_light_blue_color_selector"
+            a:textSize="54px" />
+
+        <x.ImageView
+            a:id="@+id/mImgCheck"
+            style="@style/ImageView"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="66px"
+            a:tint="@color/white"
+            x:src="@drawable/lesson_record_ic_stopped"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+</merge>

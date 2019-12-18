@@ -1,0 +1,65 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayout"
+        a:layout_width="820px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:paddingBottom="40px"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="50px"
+            a:paddingTop="60px"
+            a:text="@string/pay_course"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/mTxtContent"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtTitle"
+            a:paddingLeft="50px"
+            a:text="@string/pay_now"
+            a:textColor="@color/gray_99"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTxtPrice"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtTitle"
+            a:layout_toRightOf="@id/mTxtContent"
+            a:paddingLeft="30px"
+            a:paddingRight="50px"
+            a:text="@string/pay_now"
+            a:textColor="#f95353"
+            a:textSize="40px" />
+
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mPayByWechat"
+            style="@style/SettingsItemView.Dive"
+            a:layout_height="150px"
+            a:layout_below="@id/mTxtPrice"
+            a:layout_marginTop="50px"
+            x:icon="@drawable/ic_wechat"
+            x:settings_title="@string/pay_by_wechat"
+            x:show_image_left="true" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mPayByAlipay"
+            style="@style/SettingsItemView.Dive"
+            a:layout_height="150px"
+            a:layout_below="@id/mPayByWechat"
+            x:icon="@drawable/ic_alipay"
+            x:settings_title="@string/pay_by_alipay"
+            x:show_image_left="true" />
+
+    </x.RelativeLayout>
+
+</merge>

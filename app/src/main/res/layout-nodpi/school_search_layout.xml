@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent" >
+
+    <View
+        a:id="@+id/layout_school_search_bg"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:alpha="0.0"
+        a:background="#4F000000"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/layout_school_search"
+        a:layout_width="fill_parent"
+        a:layout_height="400px"
+        a:visibility="gone"
+        x:bg="@drawable/school_search_bg" >
+
+        <x.EditText
+            a:id="@+id/school_edttxt_search"
+            style="@style/EditText"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="48px"
+            a:layout_marginTop="94px"
+            a:background="@null"
+            a:cursorVisible="true"
+            a:paddingLeft="30px"
+            a:gravity="center_vertical|left"
+            a:hint="@string/school_search_edittext_hint"
+            a:imeOptions="actionSearch"
+            a:maxLength="50"
+            a:paddingRight="150px"
+            a:textColor="@color/color_primary"
+            a:textColorHint="@color/school_search_edittext_hint_color"
+            a:textSize="@dimen/font_size_42" />
+
+        <x.ImageView
+            a:layout_width="fill_parent"
+            a:layout_height="2px"
+            a:layout_marginTop="200px"
+            a:paddingLeft="6px"
+            a:paddingRight="6px"
+            a:src="@color/school_search_edittext_line_color" />
+
+        <com.halo.component.FlowLayout
+            a:id="@+id/school_search_option_flow_view"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="200px"
+            a:paddingLeft="48px"
+            a:paddingRight="30px" >
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_school"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_school"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_school"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_school"
+                    a:text="@string/school_search_option_school" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_course"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_course"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_course"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_course"
+                    a:text="@string/school_search_option_course" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_teacher"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_teacher"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_teacher"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_teacher"
+                    a:text="@string/school_search_option_teacher" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_train"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_train"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_train"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_train"
+                    a:text="@string/school_search_option_training" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_tutor"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_tutor"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_tutor"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_tutor"
+                    a:text="@string/school_search_option_tutor" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_search_option_study_abroad"
+                a:layout_width="wrap_content"
+                a:layout_height="90px"
+                a:paddingRight="60px"
+                a:paddingTop="30px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_search_option_study_abroad"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    x:src="@drawable/school_search_ic_checkbox_uncheck" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_search_option_study_abroad"
+                    style="@style/SchoolSearchOptionText"
+                    a:layout_marginLeft="16px"
+                    a:layout_toRightOf="@id/img_school_search_option_study_abroad"
+                    a:text="@string/school_search_option_study_abroad" />
+            </x.RelativeLayout>
+        </com.halo.component.FlowLayout>
+    </x.RelativeLayout>
+
+    <im.clazz.ui.component.MainRecyclerView
+        a:id="@+id/school_search_tip_recycler_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginTop="400px"
+        a:background="@drawable/school_bg_search_tip"
+        a:paddingLeft="20px"
+        a:paddingRight="20px"
+        a:paddingTop="20px"
+        a:visibility="gone" />
+
+    <org.quanqi.circularprogress.CircularProgressView
+        a:id="@+id/img_school_search_loading"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="520px"
+        a:visibility="gone"
+        x:circularBorderWidth="2dp" />
+
+    <x.ImageView
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:src="@color/title_line_color"
+        a:visibility="gone" />
+
+</RelativeLayout>

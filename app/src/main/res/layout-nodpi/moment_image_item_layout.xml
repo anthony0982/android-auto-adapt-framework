@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <com.halo.view.RoundCornerImageView
+        a:id="@+id/mImage"
+        style="@style/RoundCornerImageView"
+        a:layout_width="313px"
+        a:layout_height="313px"
+        x:round_corner_corner_radius="0px" />
+
+
+    <x.ImageView
+        a:id="@+id/mImgGif"
+        style="@style/ImageView"
+        a:layout_width="76px"
+        a:layout_height="42px"
+        a:layout_alignBottom="@id/mImage"
+        a:layout_alignRight="@id/mImage"
+        a:layout_marginBottom="30px"
+        a:src="@drawable/ic_gif"
+        a:visibility="gone" />
+
+</x.RelativeLayout>

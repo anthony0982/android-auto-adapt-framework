@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 中文字符串不要放在此文件中！！ -->
+
+    <string name="app_name">Clazz</string>
+    <string name="copyright_sign">©</string>
+    <string name="copyright">All Rights Reserved © Clazz Company Limited</string>
+    
+    <string name="msg_no_camera">No Camera!</string>
+    
+    <string name="reload_images">Reload images</string>
+    <string name="loading_images">Loading images…</string>
+    
+    <!-- 中文字符串不要放在此文件中！！ -->
+
+</resources>

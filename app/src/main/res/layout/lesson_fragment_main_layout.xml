@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:layout_below="@id/lesson_fragment_title_bar"
+    a:fitsSystemWindows="true">
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <x.ImageView
+            a:id="@+id/lesson_fragment_img_tools"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_marginLeft="63px"
+            a:layout_marginTop="30px"
+            a:src="@drawable/lesson_ic_tools" />
+
+        <x.TextView
+            a:id="@+id/lesson_fragment_txt_tools"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/lesson_fragment_img_tools"
+            a:text="@string/lesson_tools"
+            a:textColor="#737373"
+            a:textSize="38px" />
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_fragment_layout_recording"
+            a:layout_width="250px"
+            a:layout_height="wrap_content"
+            a:layout_alignParentLeft="true"
+            a:layout_below="@id/lesson_fragment_txt_tools"
+            a:layout_marginLeft="100px"
+            a:layout_marginTop="53px">
+
+            <x.ImageView
+                a:id="@+id/lesson_fragment_img_notes"
+                a:layout_width="48px"
+                a:layout_height="48px"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="0px"
+                a:src="@drawable/lesson_ic_notes" />
+
+            <x.TextView
+                a:id="@+id/lesson_fragment_txt_notes"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/lesson_fragment_img_notes"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="28px"
+                a:text="@string/note"
+                a:textColor="#737373"
+                a:textSize="37px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_fragment_layout_ppt"
+            a:layout_width="250px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_txt_tools"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="53px">
+
+            <x.ImageView
+                a:id="@+id/lesson_fragment_img_ppt"
+                a:layout_width="48px"
+                a:layout_height="48px"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="0px"
+                a:src="@drawable/lesson_ic_ppt" />
+
+            <x.TextView
+                a:id="@+id/lesson_fragment_txt_ppt"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/lesson_fragment_img_ppt"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="28px"
+                a:text="@string/courseware_not_uploaded"
+                a:textColor="#737373"
+                a:textSize="37px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_fragment_layout_homework"
+            a:layout_width="250px"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/lesson_fragment_txt_tools"
+            a:layout_marginRight="100px"
+            a:layout_marginTop="53px">
+
+            <x.ImageView
+                a:id="@+id/lesson_fragment_img_assignment"
+                a:layout_width="48px"
+                a:layout_height="48px"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="0px"
+                a:src="@drawable/lesson_ic_assignment" />
+
+            <x.TextView
+                a:id="@+id/lesson_fragment_txt_assignment"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/lesson_fragment_img_assignment"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="28px"
+                a:text="@string/assignment_not_published"
+                a:textColor="#737373"
+                a:textSize="37px" />
+        </x.RelativeLayout>
+
+        <View
+            a:id="@+id/lesson_fragment_tools_line"
+            a:layout_width="875px"
+            a:layout_height="2px"
+            a:layout_alignLeft="@id/lesson_fragment_img_tools"
+            a:layout_below="@id/lesson_fragment_layout_homework"
+            a:layout_marginTop="57px"
+            a:background="#FFe9edef" />
+
+        <x.ImageView
+            a:id="@+id/lesson_fragment_img_comment"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_alignLeft="@id/lesson_fragment_img_tools"
+            a:layout_below="@id/lesson_fragment_tools_line"
+            a:layout_marginTop="52px"
+            a:src="@drawable/lesson_ic_comment" />
+
+        <x.TextView
+            a:id="@+id/lesson_fragment_txt_comment"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_tools_line"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="52px"
+            a:layout_toRightOf="@id/lesson_fragment_img_comment"
+            a:text="@string/lesson_comment"
+            a:textColor="#737373"
+            a:textSize="38px" />
+
+        <x.ImageView
+            a:id="@+id/lesson_fragment_img_more"
+            a:layout_width="140px"
+            a:layout_height="140px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/lesson_fragment_tools_line"
+            a:layout_marginRight="15px"
+            a:layout_marginTop="15px"
+            a:src="@drawable/lesson_comment_ic_more" />
+
+        <im.clazz.lesson.LessonChatView
+            a:id="@+id/lesson_chat_view"
+            a:layout_width="match_parent"
+            a:layout_height="500px"
+            a:layout_below="@id/lesson_fragment_img_comment"
+            a:layout_marginTop="30px" />
+
+        <x.TextView
+            a:id="@+id/lesson_fragment_txt_no_comment"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_img_comment"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="150px"
+            a:text="@string/no_comment"
+            a:textColor="#8d8d8d"
+            a:textSize="45px"
+            a:visibility="gone" />
+
+        <com.materialedittext.MaterialEditText
+            a:id="@+id/lesson_fragment_comment_edt_content"
+            a:layout_width="759px"
+            a:layout_height="wrap_content"
+            a:layout_alignParentLeft="true"
+            a:layout_marginLeft="90px"
+            a:focusableInTouchMode="true"
+            a:hint="@string/lesson_input_comment"
+            a:maxHeight="100px"
+            a:textColorHint="@color/gray_cc"
+            a:textCursorDrawable="@drawable/material_input_cursor_color"
+            a:textSize="42px"
+            a:layout_alignBottom="@+id/lesson_fragment_comment_img_send"
+            x:met_floatingLabelTextColor="@color/blue"
+            x:met_hideUnderline="true"
+            x:met_primaryColor="@color/blue"
+            x:met_textColor="@color/black"
+            x:met_underlineColorFocused="@color/blue" />
+
+        <x.ImageView
+            a:id="@+id/lesson_fragment_comment_img_send"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_below="@id/lesson_fragment_img_comment"
+            a:layout_marginLeft="35px"
+            a:layout_marginTop="580px"
+            a:layout_toRightOf="@id/lesson_fragment_comment_edt_content"
+            a:src="@drawable/lesson_ic_send" />
+
+        <View
+            a:id="@+id/lesson_fragment_comment_line"
+            a:layout_width="875px"
+            a:layout_height="2px"
+            a:layout_alignLeft="@id/lesson_fragment_img_tools"
+            a:layout_below="@id/lesson_fragment_comment_edt_content"
+            a:layout_marginTop="13px"
+            a:background="#FFe9edef" />
+
+        <x.ImageView
+            a:id="@+id/lesson_fragment_img_degree"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_alignLeft="@id/lesson_fragment_img_tools"
+            a:layout_below="@id/lesson_fragment_comment_line"
+            a:layout_marginTop="38px"
+            a:src="@drawable/lesson_ic_degree" />
+
+        <x.TextView
+            a:id="@+id/lesson_fragment_txt_title_degree"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_comment_line"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="38px"
+            a:layout_toRightOf="@id/lesson_fragment_img_degree"
+            a:text="@string/lesson_degree"
+            a:textColor="#737373"
+            a:textSize="38px" />
+
+        <x.TextView
+            a:id="@+id/lesson_fragment_txt_degree"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_comment_line"
+            a:layout_marginLeft="39px"
+            a:layout_marginTop="38px"
+            a:layout_toRightOf="@id/lesson_fragment_txt_title_degree"
+            a:textColor="#585858"
+            a:textSize="38px" />
+
+        <x.TextView
+            a:id="@+id/lesson_txt_participants_count"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/lesson_fragment_comment_line"
+            a:layout_marginRight="85px"
+            a:layout_marginTop="38px"
+            a:textColor="#737373"
+            a:textSize="34px"
+            a:visibility="gone" />
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_layout_like"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentLeft="true"
+            a:layout_below="@id/lesson_fragment_img_degree"
+            a:layout_marginLeft="84px"
+            a:layout_marginTop="56px">
+
+            <ImageView
+                a:id="@+id/lesson_fragment_degree_img_like"
+                a:layout_width="50px"
+                a:layout_height="50px"
+                a:layout_marginLeft="0px"
+                a:layout_marginTop="0px" />
+
+            <x.TextView
+                a:id="@+id/lesson_txt_like_count"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="13px"
+                a:layout_toRightOf="@id/lesson_fragment_degree_img_like"
+                a:paddingTop="5px"
+                a:textColor="#737373"
+                a:textSize="33px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_layout_boring"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/lesson_fragment_img_degree"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="56px">
+
+            <ImageView
+                a:id="@+id/lesson_fragment_degree_img_boring"
+                a:layout_width="50px"
+                a:layout_height="50px"
+                a:layout_marginLeft="0px"
+                a:layout_marginTop="0px"
+                a:src="@drawable/lesson_ic_boring" />
+
+            <x.TextView
+                a:id="@+id/lesson_txt_boring_count"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="13px"
+                a:layout_toRightOf="@id/lesson_fragment_degree_img_boring"
+                a:paddingTop="5px"
+                a:textColor="#737373"
+                a:textSize="33px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/lesson_layout_sleepy"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/lesson_fragment_img_degree"
+            a:layout_marginRight="84px"
+            a:layout_marginTop="56px">
+
+            <ImageView
+                a:id="@+id/lesson_fragment_degree_img_sleep"
+                a:layout_width="50px"
+                a:layout_height="50px"
+                a:layout_marginLeft="0px"
+                a:layout_marginTop="0px"
+                a:src="@drawable/lesson_ic_sleepy" />
+
+            <x.TextView
+                a:id="@+id/lesson_txt_sleepy_count"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="13px"
+                a:layout_toRightOf="@id/lesson_fragment_degree_img_sleep"
+                a:paddingTop="5px"
+                a:textColor="#737373"
+                a:textSize="33px" />
+        </x.RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

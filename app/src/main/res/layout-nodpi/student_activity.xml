@@ -1,0 +1,76 @@
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/gray_f6"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@+id/mTxtFollow"
+            a:textColor="@color/gray_33" />
+
+        <x.TextView
+            a:id="@+id/mTxtFollow"
+            style="@style/TitleBar.Text"
+            a:layout_width="wrap_content"
+            a:layout_marginRight="50px"
+            a:layout_toLeftOf="@+id/mImgMenu"
+            a:textColor="#586370"
+            a:textSize="40px" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mTitleLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTitleBar"
+        a:background="@color/gray_ee" />
+
+    <im.clazz.ui.component.MainRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleLine" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutChat"
+        a:layout_width="180px"
+        a:layout_height="180px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="150px"
+        a:layout_marginRight="50px"
+        a:visibility="gone"
+        x:bg="@drawable/btn_chat_hi_pink">
+
+        <x.TextView
+            a:id="@+id/profile_activity_txt_chat"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:paddingBottom="10px"
+            a:text="@string/hi"
+            a:textColor="#ffffff"
+            a:textSize="60px" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

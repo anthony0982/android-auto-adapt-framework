@@ -1,0 +1,56 @@
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@drawable/list_item_color_selector"
+    a:paddingBottom="25px"
+    a:paddingTop="25px">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="100px"
+        x:oval="true" />
+
+    <x.ImageView
+        a:id="@+id/mImgChecked"
+        style="@style/ImageView"
+        a:layout_width="48px"
+        a:layout_height="48px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="20px"
+        a:layout_marginTop="20px"
+        a:visibility="gone"
+        x:src="@drawable/ic_checkbox_checked" />
+
+    <x.TextView
+        a:id="@+id/mTxtIndex"
+        style="@style/TextView.Center"
+        a:layout_width="90px"
+        a:layout_height="90px"
+        a:layout_centerVertical="true"
+        a:textColor="@color/color_lesson_index"
+        a:textSize="36px"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/mTxtItemTitle"
+        style="@style/TextView.MultiLine"
+        a:layout_width="match_parent"
+        a:layout_centerInParent="true"
+        a:layout_marginLeft="30px"
+        a:layout_toLeftOf="@id/mImgChecked"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:gravity="center_vertical"
+        a:lineSpacingMultiplier="1.3"
+        a:minHeight="90px"
+        a:paddingBottom="10px"
+        a:paddingTop="10px"
+        a:text="@string/choose"
+        a:textColor="@color/color_lesson_title"
+        a:textSize="46px" />
+
+
+</x.RelativeLayout>

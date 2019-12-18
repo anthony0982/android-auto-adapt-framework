@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <RelativeLayout
+        a:id="@+id/layout_campus_module_layout"
+        a:layout_width="match_parent"
+        a:layout_height="258px"
+        a:paddingTop="30px">
+
+        <x.ImageView
+            a:id="@+id/ic_module"
+            style="@style/ImageView"
+            a:layout_width="144px"
+            a:layout_height="144px"
+            a:layout_centerHorizontal="true"
+            x:src="@drawable/ic_campus_module_notification" />
+
+        <x.ImageView
+            a:id="@+id/ic_module_img_close"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentTop="true"
+            x:src="@drawable/ic_post_delete_image" />
+
+        <x.TextView
+            a:id="@+id/txt_module_title"
+            style="@style/TextView.Center"
+            a:layout_below="@id/ic_module"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="14px"
+            a:text="@string/notification"
+            a:textColor="@color/black"
+            a:textSize="42px" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/campus_module_item_split_line_right"
+        a:layout_width="2px"
+        a:layout_height="258px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:background="@color/transparent"
+        a:visibility="gone" />
+
+    <View
+        a:id="@+id/campus_module_item_split_line_bottom"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/transparent"
+        a:visibility="gone" />
+
+</RelativeLayout>

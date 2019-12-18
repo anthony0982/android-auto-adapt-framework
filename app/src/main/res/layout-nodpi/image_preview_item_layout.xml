@@ -1,0 +1,26 @@
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <ImageView
+        a:id="@+id/chat_image_preview_img_anim"
+        style="@style/ImageView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/chat_image_preview_progress"
+        style="@style/LoadingView.Gray"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_centerInParent="true" />
+
+
+    <com.alexvasilkov.gestures.views.GestureImageView
+        a:id="@+id/chat_image_preview_gestureImageView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+
+</x.RelativeLayout>

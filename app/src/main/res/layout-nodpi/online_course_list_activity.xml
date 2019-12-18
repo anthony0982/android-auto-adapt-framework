@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_width="wrap_content" />
+
+    </x.RelativeLayout>
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:background="@color/white" />
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/online_course_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+</x.RelativeLayout>

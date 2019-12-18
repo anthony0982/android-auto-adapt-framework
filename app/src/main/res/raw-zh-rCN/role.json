@@ -1,0 +1,11 @@
+﻿[{"name":"班主任","code":"director"},
+{"name":"辅导员","code":"counselor"},
+{"name":"在校学生","code":"student"},
+{"name":"在校老师","code":"teacher"},
+{"name":"在职人员","code":"student_on_job"},
+{"name":"赋闲待业","code":"student_lose_job", "extra":"失业人员"},
+{"name":"退休老人","code":"student_aged"},
+{"name":"自由教师","code":"teacher_idle"},
+{"name":"学生家长","code":"parent"},
+{"name":"校方","code":"staff"},
+{"name":"校外商家","code":"merchant"}]

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/report" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:scrollbars="vertical">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="cheat"
+                x:settings_title="@string/report_cheat" />
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="porn"
+                x:settings_title="@string/report_porn" />
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="political"
+                x:settings_title="@string/report_political" />
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="bad_content"
+                x:settings_title="@string/report_bad_content" />
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="ad"
+                x:settings_title="@string/report_ad" />
+
+            <im.clazz.view.SettingsItemView
+                style="@style/SettingsItemView.Check"
+                a:tag="other"
+                x:settings_title="@string/report_other" />
+
+        </x.LinearLayout>
+    </ScrollView>
+
+</x.RelativeLayout>

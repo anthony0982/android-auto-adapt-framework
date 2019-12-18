@@ -1,0 +1,34 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:layout_width="800px"
+        a:layout_height="wrap_content"
+        a:paddingBottom="26px"
+        a:paddingTop="26px"
+        a:paddingLeft="26px"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_dialog">
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            a:id="@+id/mProgressBar"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:layout_centerVertical="true"
+            a:layout_marginBottom="20px"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="20px"
+            a:background="@color/blue"
+            x:circleWidth="6px" />
+
+        <x.TextView
+            a:id="@+id/mTxtTip"
+            style="@style/Submitting.Text"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            a:layout_toRightOf="@id/mProgressBar"
+            a:text="@string/posting" />
+    </x.RelativeLayout>
+</merge>

@@ -1,0 +1,21 @@
+﻿{"high":[
+	{"name":"高三","code":"high_3"},
+	{"name":"高二","code":"high_2"},
+	{"name":"高一","code":"high_1"},
+	{"name":"其他","code":"high_other"}
+],
+"mid":[
+	{"name":"初三","code":"mid_3"},
+	{"name":"初二","code":"mid_2"},
+	{"name":"初一","code":"mid_1"},
+	{"name":"其他","code":"mid_other"}
+],
+"pri":[
+	{"name":"六年级","code":"pri_6"},
+	{"name":"五年级","code":"pri_5"},
+	{"name":"四年级","code":"pri_4"},
+	{"name":"三年级","code":"pri_3"},
+	{"name":"二年级","code":"pri_2"},
+	{"name":"一年级","code":"pri_1"}
+]
+}

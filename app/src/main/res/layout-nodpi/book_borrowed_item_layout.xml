@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/mLayoutItem"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.ImageView
+        a:id="@+id/mImage"
+        style="@style/ImageView"
+        a:layout_width="214px"
+        a:layout_height="282px"
+        a:layout_marginBottom="50px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:scaleType="centerCrop"
+        a:src="@color/gray_ee" />
+
+    <TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/Book.Item.Title"
+        a:layout_toRightOf="@id/mImage" />
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/Book.Item.SubTitle"
+        a:layout_below="@id/mTxtTitle"
+        a:layout_toLeftOf="@+id/txt_book_item_renew"
+        a:layout_toRightOf="@id/mImage" />
+
+    <x.TextView
+        a:id="@+id/txt_book_item_return_date"
+        style="@style/Book.Item.SubTitle"
+        a:layout_below="@id/mTxtAuthor"
+        a:layout_toLeftOf="@+id/txt_book_item_renew"
+        a:layout_toRightOf="@id/mImage" />
+
+    <x.TextView
+        a:id="@+id/txt_book_item_location"
+        style="@style/Book.Item.SubTitle"
+        a:layout_below="@id/txt_book_item_return_date"
+        a:layout_toLeftOf="@+id/txt_book_item_renew"
+        a:layout_toRightOf="@id/mImage" />
+
+    <x.TextView
+        a:id="@+id/txt_book_item_renew"
+        style="@style/Book.Item.SubTitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="186px"
+        a:paddingLeft="100px"
+        a:text="@string/library_renew"
+        a:textColor="@color/blue" />
+
+</x.RelativeLayout>

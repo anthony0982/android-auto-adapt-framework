@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutSettingsItem"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:background="@drawable/btn_white_color_selector">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/SettingsItem.Title"
+            a:layout_width="match_parent"
+            a:layout_alignParentLeft="true"
+            a:layout_toLeftOf="@+id/mTxtText"
+            a:ellipsize="end" />
+
+        <x.TextView
+            a:id="@+id/mTxtText"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:text="@string/schedule_conflict_check"
+            a:textColor="@color/gray_ab"
+            a:textSize="@dimen/font_size_44" />
+
+    </x.RelativeLayout>
+</x.RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/select_identity_activity_txt_title"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/select_identity" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtRole"
+        style="@style/TextView"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="100px"
+        a:text="@string/select_identity_iam"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_44" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutSelectIdentity"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtRole"
+        a:layout_marginTop="20px"
+        a:gravity="center_horizontal"
+        a:orientation="vertical">
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mUndergraduate"
+            style="@style/SettingsItemView.ImageTextDive"
+            x:icon="@drawable/ic_identity_undergraduate"
+            x:settings_title="@string/select_identity_undergraduate" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mPupil"
+            style="@style/SettingsItemView.ImageTextDive"
+            a:visibility="gone"
+            x:icon="@drawable/ic_person"
+            x:settings_title="@string/select_identity_pupil" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mGraduated"
+            style="@style/SettingsItemView.ImageTextDive"
+            x:icon="@drawable/ic_identity_graduated"
+            x:settings_title="@string/select_identity_graduated" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mTeacher"
+            style="@style/SettingsItemView.ImageTextDive"
+            x:icon="@drawable/ic_identity_teacher"
+            x:settings_title="@string/select_identity_teacher" />
+
+
+    </x.LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:layout_width="680px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="90px"
+            a:paddingTop="60px"
+            a:text="@string/add_to"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mTxtTitle"
+            a:orientation="vertical" />
+
+        <x.TextView
+            a:id="@+id/mBtnCancel"
+            style="@style/TextView.Center"
+            a:layout_width="240px"
+            a:layout_height="120px"
+            a:layout_below="@id/mLayoutContent"
+            a:layout_marginBottom="40px"
+            a:layout_marginLeft="60px"
+            a:layout_marginTop="40px"
+            a:background="@drawable/material_button"
+            a:text="@string/cancel"
+            a:textColor="#FF888888"
+            a:textSize="54px" />
+
+        <x.TextView
+            a:id="@+id/mBtnConfirm"
+            style="@style/TextView.Center"
+            a:layout_width="240px"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mLayoutContent"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="40px"
+            a:background="@drawable/material_button"
+            a:text="@string/confirm"
+            a:textColor="@color/blue"
+            a:textSize="54px" />
+    </x.RelativeLayout>
+
+</merge>

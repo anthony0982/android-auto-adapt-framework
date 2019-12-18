@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtLabel"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="4px"
+        a:gravity="center_vertical|left"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_44" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/list_item_color_selector">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mImgAvatar"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="40px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/Comment.Name"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="44px"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:textColor="@color/gray_33" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/Comment.Time"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="8px"
+            a:layout_toRightOf="@id/mImgAvatar" />
+
+        <x.TextView
+            a:id="@+id/mTxtDigest"
+            style="@style/Comment.Content"
+            a:layout_below="@id/mTxtTime"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="18px"
+            a:paddingBottom="24px" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLike"
+            a:layout_width="174px"
+            a:layout_height="172px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentTop="true"
+            a:addStatesFromChildren="false"
+            a:descendantFocusability="blocksDescendants"
+            a:visibility="gone">
+
+            <x.ImageView
+                a:id="@+id/moments_comment_item_img_like"
+                style="@style/Comment.Like"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="64px"
+                x:src="@drawable/ic_like" />
+
+            <x.TextView
+                a:id="@+id/moments_comment_item_txt_like_count"
+                style="@style/Comment.LikeCount"
+                a:layout_width="174px"
+                a:layout_height="38px"
+                a:layout_below="@id/moments_comment_item_img_like"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="6px" />
+        </x.RelativeLayout>
+
+        <View
+            a:id="@+id/mBottomLine"
+            a:layout_width="match_parent"
+            a:layout_height="1px"
+            a:layout_below="@id/mTxtDigest"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="60px"
+            a:background="@color/gray_f0" />
+    </x.RelativeLayout>
+</x.LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mPagerIndicator"
+        a:overScrollMode="never" />
+
+    <View
+        a:id="@+id/mTitleBackground"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignBottom="@+id/mPagerIndicator"
+        a:background="@color/white" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main" />
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="30px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtFullName"
+        style="@style/TitleBar.Title"
+        a:layout_width="match_parent"
+        a:layout_marginLeft="20px"
+        a:layout_marginRight="30px"
+        a:layout_toLeftOf="@+id/mLayoutSearch"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:text="@string/school"
+        a:textSize="@dimen/font_size_54" />
+
+    <x.TextView
+        a:id="@+id/mTxtBrief"
+        style="@style/TitleBar.Title"
+        a:layout_width="wrap_content"
+        a:alpha="0"
+        a:text="@string/school"
+        a:textSize="@dimen/font_size_60" />
+
+    <im.clazz.campus.CampusAdBar
+        a:id="@+id/mCampusAdBar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@+id/mPagerIndicator"
+        a:visibility="gone" />
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        style="@style/PagerIndicator" />
+
+    <x.ImageView
+        a:id="@+id/mImgAdd"
+        a:layout_width="120px"
+        a:layout_height="120px"
+        a:layout_alignParentRight="true"
+        a:tint="@color/light_blue"
+        x:src="@drawable/ic_toolbar_add" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutSearch"
+        a:layout_width="120px"
+        a:layout_height="120px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="false"
+        a:layout_marginRight="150px">
+
+        <x.ImageView
+            a:id="@+id/mImgSearch"
+            style="@style/TitleBar.Icon"
+            a:layout_width="62px"
+            a:layout_height="62px"
+            a:layout_centerInParent="true"
+            a:tint="@color/light_blue"
+            x:src="@drawable/ic_search" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutFilter"
+        a:layout_width="120px"
+        a:layout_height="120px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="false"
+        a:layout_marginRight="280px"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/mImgFilter"
+            style="@style/TitleBar.Icon"
+            a:layout_width="56px"
+            a:layout_height="56px"
+            a:layout_centerInParent="true"
+            a:tint="@color/light_blue"
+            x:src="@drawable/ic_filter" />
+    </x.RelativeLayout>
+
+    <com.halo.view.FloatingActionButton
+        a:id="@+id/mFab"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentEnd="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="80px"
+        a:layout_marginRight="50px"
+        a:src="@drawable/ic_pencil"
+        a:visibility="gone"
+        x:fab_colorNormal="@color/color_primary"
+        x:fab_colorPressed="@color/sky_blue"
+        x:fab_colorRipple="@color/color_primary"
+        x:fab_size="100px" />
+
+    <com.hlab.fabrevealmenu.view.FABRevealMenu
+        a:id="@+id/mFabMenu"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mPagerIndicator"
+        a:layout_centerInParent="true"
+        x:animateItems="true"
+        x:menuBackgroundColor="@color/color_primary_dark"
+        x:menuDirection="up"
+        x:menuRes="@menu/club_fragment_menu_fab"
+        x:menuTitleTextColor="@color/colorWhite"
+        x:overlayBackground="@color/translucent_50_white"
+        x:showOverlay="true"
+        x:showTitle="true" />
+
+    <im.clazz.campus.BottomSwitcher
+        a:id="@+id/mBottomSwitcher"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+    <im.clazz.campus.category.CategoryView
+        a:id="@+id/mCategoryView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar" />
+
+    <im.clazz.ui.component.CampusMenuView
+        a:id="@+id/mCampusMenuView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mCampusLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</x.RelativeLayout>

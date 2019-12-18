@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content" >
+
+    <x.RelativeLayout
+        a:id="@+id/training_agency_fragment_poster_item_layout"
+        a:layout_width="460px"
+        a:layout_height="630px"
+        x:bg="@drawable/training_agency_fragment_poster_edge" >
+
+        <x.ImageView
+            a:id="@+id/training_agency_fragment_poster_item_img_photo"
+            style="@style/ImageView"
+            a:layout_width="450px"
+            a:layout_height="316px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="3px" />
+
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_title"
+            a:layout_width="305px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_agency_fragment_poster_item_img_photo"
+            a:layout_marginLeft="21px"
+            a:layout_marginTop="16px"
+            a:lineSpacingExtra="11px"
+            a:singleLine="false"
+            a:textColor="#595b5d"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_score"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/training_agency_fragment_poster_item_img_photo"
+            a:layout_marginRight="41px"
+            a:layout_marginTop="22px"
+            a:textColor="#eb4084"
+            a:textSize="34px"/>
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_cost"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/training_agency_fragment_poster_item_txt_title"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_title"
+            a:layout_marginTop="13px"
+            a:textColor="#616161"
+            a:textSize="30px"
+            a:text="@string/training_agency_fragment_poster_item_cost"/>
+        
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_cost_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_toRightOf="@id/training_agency_fragment_poster_item_txt_cost"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_title"
+            a:layout_marginTop="13px"
+            a:textColor="#eb4084"
+            a:textSize="30px"/>
+        
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_feature"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/training_agency_fragment_poster_item_txt_title"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_cost_content"
+            a:layout_marginTop="13px"
+            a:textColor="#616161"
+            a:textSize="30px"
+            a:text="@string/training_agency_fragment_poster_item_feature"/>
+        
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_feature_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_toRightOf="@id/training_agency_fragment_poster_item_txt_feature"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_cost_content"
+            a:layout_marginTop="13px"
+            a:textColor="#616161"
+            a:textSize="30px"/>
+        
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_goal"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/training_agency_fragment_poster_item_txt_title"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_feature_content"
+            a:layout_marginTop="13px"
+            a:textColor="#616161"
+            a:textSize="30px"
+            a:text="@string/training_agency_fragment_poster_item_goal"/>
+        
+        <x.TextView
+            a:id="@+id/training_agency_fragment_poster_item_txt_goal_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_toRightOf="@id/training_agency_fragment_poster_item_txt_goal"
+            a:layout_below="@id/training_agency_fragment_poster_item_txt_feature_content"
+            a:layout_marginTop="19px"
+            a:textColor="#616161"
+            a:textSize="24px"/>
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

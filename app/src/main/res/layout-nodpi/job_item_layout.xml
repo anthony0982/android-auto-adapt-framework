@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/list_item_color_selector">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutHeader"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/mTxtSalary"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="60px"
+            a:textColor="#fe6c6c"
+            a:textSize="@dimen/font_size_42" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="30px"
+            a:layout_marginTop="50px"
+            a:layout_toLeftOf="@id/mTxtSalary"
+            a:lineSpacingMultiplier="1.3"
+            a:singleLine="false"
+            a:textColor="@color/black"
+            a:textSize="@dimen/font_size_52" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mTxtSalary"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="8px"
+            a:textColor="#cbcbcb"
+            a:textSize="@dimen/font_size_36" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutTags"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mTxtTitle"
+            a:layout_marginTop="30px" />
+
+        <com.halo.view.RoundCornerImageView
+            a:id="@+id/mImgAvatar"
+            style="@style/RoundCornerImageView"
+            a:layout_width="140px"
+            a:layout_height="140px"
+            a:layout_below="@id/mLayoutTags"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="30px" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/TextView.MultiLine"
+            a:layout_below="@id/mLayoutTags"
+            a:layout_marginLeft="30px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="34px"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:lineSpacingMultiplier="1.3"
+            a:singleLine="false"
+            a:textColor="#323232"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/mTxtLocation"
+            style="@style/TextView"
+            a:layout_alignLeft="@id/mTxtName"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginTop="10px"
+            a:textColor="#989898"
+            a:textSize="36px" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="20px"
+        a:layout_below="@id/mLayoutHeader"
+        a:layout_marginTop="50px"
+        a:background="@color/gray_fa" />
+</x.RelativeLayout>

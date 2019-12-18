@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <im.clazz.ui.component.MainRecyclerView
+        a:id="@+id/fancy_recycler_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.TextView
+        a:id="@+id/fancy_view_empty"
+        style="@style/TextView.Empty"
+        a:paddingBottom="150px" />
+
+    <x.TextView
+        a:id="@+id/fancy_error"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+    <ProgressBar
+        a:id="@+id/fancy_loading"
+        a:layout_width="136px"
+        a:layout_height="286px"
+        a:layout_centerInParent="true"
+        a:indeterminate="true"
+        a:indeterminateDrawable="@drawable/progressbar"
+        a:paddingBottom="150px" />
+
+</RelativeLayout>

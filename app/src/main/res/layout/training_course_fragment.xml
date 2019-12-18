@@ -1,0 +1,341 @@
+<com.cpoopc.scrollablelayoutlib.ScrollableLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/training_course_fragment_scrollableLayout"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical" 
+    tools:context="im.clazz.ui.training.TrainingCourseActivity">
+
+    <RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content" >
+
+        <x.ImageView
+            a:id="@+id/training_course_fragment_img_info"
+            a:layout_width="45px"
+            a:layout_height="45px"
+            a:layout_marginLeft="42px"
+            a:layout_marginTop="48px"
+            a:src="@drawable/training_course_info" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="37px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/training_course_fragment_img_info"
+            a:text="UI设计师精修班"
+            a:textColor="#57534a"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_times"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="27px"
+            a:layout_marginTop="48px"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_name"
+            a:text="(第105期)"
+            a:textColor="#7e7e7e"
+            a:textSize="34px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_score"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="40px"
+            a:text="3.9"
+            a:textColor="#ff2663"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_core_content_title"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_name"
+            a:layout_below="@id/training_course_fragment_info_txt_name"
+            a:layout_marginTop="40px"
+            a:text="@string/training_course_info_core_content"
+            a:textColor="#57534a"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_core_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_course_fragment_info_txt_name"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_core_content_title"
+            a:text="手机应用UI设计"
+            a:textColor="#57534a"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_price_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_core_content_title"
+            a:layout_below="@id/training_course_fragment_info_txt_core_content_title"
+            a:text="@string/training_course_info_price" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_price"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_course_fragment_info_txt_core_content_title"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_price_title"
+            a:text="￥9800"
+            a:textColor="#eb4084"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_price_origin"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_course_fragment_info_txt_core_content_title"
+            a:layout_marginLeft="24px"
+            a:layout_marginTop="50px"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_price"
+            a:text="(原价:￥12800)"
+            a:textColor="#ffbbd5"
+            a:textSize="34px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_quota_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_price_title"
+            a:layout_below="@id/training_course_fragment_info_txt_price_title"
+            a:text="@string/training_course_info_quota" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_quota"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_info_txt_price_title"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_quota_title"
+            a:text="25个" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_expiration_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_quota_title"
+            a:layout_below="@id/training_course_fragment_info_txt_quota_title"
+            a:text="@string/training_course_info_expiration" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_expiration"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_info_txt_quota_title"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_expiration_title"
+            a:text="2014/12/10" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_group_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_info_txt_expiration_title"
+            a:text="@string/training_course_info_group" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_group"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_toRightOf="@id/training_course_fragment_info_txt_group_title"
+            a:text="在校学生，在职人员，未就业人员" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_provide"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/training_course_fragment_info_txt_group_title"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="57px"
+            a:text="@string/training_course_info_provide"
+            a:textColor="#a8a9a9"
+            a:textSize="30px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_company"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_course_fragment_info_txt_group_title"
+            a:layout_marginRight="18px"
+            a:layout_marginTop="57px"
+            a:layout_toLeftOf="@id/training_course_fragment_info_txt_provide"
+            a:text="智库灯塔教育有限公司"
+            a:textColor="#007fff"
+            a:textSize="30px" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_info_txt_this_course"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/training_course_fragment_info_txt_group_title"
+            a:layout_marginRight="18px"
+            a:layout_marginTop="57px"
+            a:layout_toLeftOf="@id/training_course_fragment_info_txt_company"
+            a:text="@string/training_course_info_this_course"
+            a:textColor="#a8a9a9"
+            a:textSize="30px" />
+
+        <View
+            a:id="@+id/training_course_fragment_info_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/training_course_fragment_info_txt_this_course"
+            a:layout_marginTop="40px"
+            a:background="#e6e6e6" />
+
+        <x.ImageView
+            a:id="@+id/training_course_fragment_img_time"
+            a:layout_width="45px"
+            a:layout_height="45px"
+            a:layout_alignLeft="@id/training_course_fragment_img_info"
+            a:layout_below="@id/training_course_fragment_info_line"
+            a:layout_marginTop="48px"
+            a:src="@drawable/training_course_time" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_start_date_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_info_line"
+            a:text="@string/training_course_time_start_date" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_start_date"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_info_line"
+            a:layout_toRightOf="@id/training_course_fragment_time_txt_start_date_title"
+            a:text="2014/12/23" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_course_time_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_time_txt_start_date_title"
+            a:text="@string/training_course_time_course_time" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_course_time"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_time_txt_start_date_title"
+            a:layout_toRightOf="@id/training_course_fragment_time_txt_course_time_title"
+            a:text="周一到周五，9:30~18:30" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_period_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_time_txt_course_time_title"
+            a:text="@string/training_course_time_period" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_period"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_time_txt_course_time_title"
+            a:layout_toRightOf="@id/training_course_fragment_time_txt_period_title"
+            a:text="3个月" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_location_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_time_txt_period_title"
+            a:text="@string/training_course_time_location" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_location"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_time_txt_period_title"
+            a:layout_toRightOf="@id/training_course_fragment_time_txt_location_title"
+            a:text="北京，朝阳" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_time_txt_schedule"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignRight="@id/training_course_fragment_info_txt_provide"
+            a:layout_below="@id/training_course_fragment_time_txt_period_title"
+            a:text="@string/training_course_time_schedule"
+            a:textColor="#007fff" />
+
+        <View
+            a:id="@+id/training_course_fragment_time_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/training_course_fragment_time_txt_location"
+            a:layout_marginTop="40px"
+            a:background="#e6e6e6" />
+
+        <x.ImageView
+            a:id="@+id/training_course_fragment_img_guarantee"
+            a:layout_width="45px"
+            a:layout_height="45px"
+            a:layout_alignLeft="@id/training_course_fragment_img_info"
+            a:layout_below="@id/training_course_fragment_time_line"
+            a:layout_marginTop="48px"
+            a:src="@drawable/training_course_guarantee" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_guarantee_txt_basic_demand_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_time_line"
+            a:text="@string/training_course_guarantee_basic_demand" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_guarantee_txt_basic_demand"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_time_line"
+            a:layout_toRightOf="@id/training_course_fragment_guarantee_txt_basic_demand_title"
+            a:text="有Photoshop基础" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_guarantee_txt_course_guarantee_title"
+            style="@style/TextView.TrainingCourse"
+            a:layout_alignLeft="@id/training_course_fragment_info_txt_expiration_title"
+            a:layout_below="@id/training_course_fragment_guarantee_txt_basic_demand_title"
+            a:text="@string/training_course_guarantee_course_guarantee" />
+
+        <x.TextView
+            a:id="@+id/training_course_fragment_guarantee_txt_course_guarantee"
+            style="@style/TextView.TrainingCourse"
+            a:layout_below="@id/training_course_fragment_guarantee_txt_basic_demand_title"
+            a:layout_toRightOf="@id/training_course_fragment_guarantee_txt_course_guarantee_title"
+            a:text="8K就业，学费可退" />
+
+        <View
+            a:id="@+id/training_course_fragment_guarantee_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/training_course_fragment_guarantee_txt_course_guarantee"
+            a:layout_marginTop="40px"
+            a:background="#e6e6e6" />
+        
+    </RelativeLayout>
+    
+    <com.astuetz.PagerIndicator
+        a:id="@+id/training_course_fragment_indicator"
+        a:layout_width="fill_parent"
+        a:layout_height="116px"
+        a:background="@null"
+        a:overScrollMode="never"
+        x:pstsIndicatorColor="#FF666666"
+        x:pstsIndicatorHeight="6px"
+        x:pstsTabPaddingLeftRight="20px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="#FF000000"
+        x:pstsTextSize="38px"
+        x:pstsTextSizeHighlight="50px"
+        x:pstsUnderlineHeight="2px" />
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/training_course_fragment_pager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"/>
+    
+</com.cpoopc.scrollablelayoutlib.ScrollableLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:text="@string/schedule"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/list_item_color_selector"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        a:paddingTop="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtAdd"
+            style="@style/RoundTextView"
+            a:layout_alignParentRight="true"
+            a:text="@string/add"
+            a:textSize="@dimen/font_size_44"
+            x:round_padding_horizontal="1.8" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_alignParentLeft="true"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@id/mTxtAdd"
+            a:singleLine="false"
+            a:textColor="@color/gray_22"
+            a:textSize="@dimen/font_size_56" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagTeacher"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginTop="48px"
+            a:text="@string/teacher_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtTeacher"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagTeacher"
+            a:layout_toRightOf="@id/mTxtTagTeacher"
+            a:text="@string/teacher_tag" />
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtTeacher"
+            a:layout_marginTop="50px" />
+
+    </x.RelativeLayout>
+</x.LinearLayout>

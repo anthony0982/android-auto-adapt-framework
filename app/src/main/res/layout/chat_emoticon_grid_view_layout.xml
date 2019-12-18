@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@null"
+        a:fadingEdge="vertical"
+        a:paddingBottom="14px"
+        a:paddingLeft="12px"
+        a:paddingRight="12px"
+        a:paddingTop="14px"
+        a:scrollbarStyle="outsideOverlay"
+        a:scrollbars="vertical" />
+
+    <x.TextView
+        a:id="@+id/mTxtEmpty"
+        style="@style/RecyclerView.Empty"
+        a:text="@string/recent_emoticon_empty" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+</merge>

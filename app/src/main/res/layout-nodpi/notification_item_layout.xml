@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutNotification"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTitle"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="40px">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mImgAvatar"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="40px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/GroupMoment.Item.Subtitle"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="46px" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/GroupMoment.Item.GroupName"
+            a:layout_marginLeft="30px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:singleLine="false" />
+
+        <x.TextView
+            a:id="@+id/mTxtAuthor"
+            style="@style/GroupMoment.Item.Subtitle"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginLeft="30px"
+            a:layout_marginRight="50px"
+            a:layout_toRightOf="@id/mImgAvatar" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/Notification.Item.Title"
+        a:layout_below="@id/mLayoutTitle"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="40px" />
+
+    <com.halo.view.RoundCornerImageView
+        a:id="@+id/mImgPicture"
+        style="@style/RoundCornerImageView"
+        a:layout_width="match_parent"
+        a:layout_height="600px"
+        a:layout_below="@id/mTxtTitle"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="40px"/>
+
+    <x.TextView
+        a:id="@+id/mTxtPictureCount"
+        a:layout_width="70px"
+        a:layout_height="70px"
+        a:layout_alignBottom="@id/mImgPicture"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="40px"
+        a:layout_marginRight="90px"
+        a:gravity="center"
+        a:textColor="@android:color/white"
+        a:textSize="@dimen/font_size_40"
+        a:visibility="visible"
+        x:bg="@drawable/profile_list_item_picture_count_bg" />
+
+    <x.TextView
+        a:id="@+id/mTxtDigest"
+        style="@style/Notification.Item.Digest"
+        a:layout_below="@id/mImgPicture"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="30px"
+        a:paddingBottom="40px" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutBottom"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtDigest"
+        a:visibility="gone"
+        a:paddingBottom="40px">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLeftBottom"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_toLeftOf="@+id/notification_item_img_center">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutRepliers"
+                a:layout_width="380px"
+                a:layout_height="58px"
+                a:layout_centerVertical="true"
+                a:paddingLeft="32px">
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+                <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+            </x.LinearLayout>
+
+            <x.ImageView
+                a:id="@+id/mImgMore"
+                style="@style/ImageView"
+                a:layout_width="56px"
+                a:layout_height="13px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="58px"
+                x:src="@drawable/ic_notification_item_more" />
+
+            <x.ImageView
+                a:id="@+id/mImgSplitLine"
+                style="@style/ImageView"
+                a:layout_width="3px"
+                a:layout_height="37px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:visibility="gone"
+                x:src="@drawable/ic_notification_item_split" />
+        </x.RelativeLayout>
+
+        <x.ImageView
+            a:id="@+id/notification_item_img_center"
+            style="@style/ImageView"
+            a:layout_width="0px"
+            a:layout_height="0px"
+            a:layout_centerInParent="true" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutResponse"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:visibility="gone"
+            a:paddingRight="50px">
+
+            <x.TextView
+                a:id="@+id/mTxtResponseCount"
+                style="@style/Notification.Item.ResponseCount"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_gravity="center_vertical" />
+
+            <x.ImageView
+                a:id="@+id/mImgResponse"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="64px"
+                a:tint="@color/blue"
+                x:src="@drawable/ic_notification_response" />
+        </x.LinearLayout>
+    </x.RelativeLayout>
+
+
+    <View
+        a:id="@+id/notification_item_bottom_line"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutBottom"
+        a:background="@color/gray_f0" />
+</x.RelativeLayout>

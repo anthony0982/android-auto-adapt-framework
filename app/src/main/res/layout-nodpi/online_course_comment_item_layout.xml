@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/list_item_color_selector"
+    a:paddingBottom="30px"
+    a:paddingTop="30px">
+
+    <im.clazz.ui.component.RatingBar
+        a:id="@+id/mRatingBar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:star_only="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtContent"
+        style="@style/TextView.MultiLine"
+        a:layout_below="@id/mRatingBar"
+        a:layout_marginTop="22px"
+        a:lineSpacingMultiplier="1.3"
+        a:textColor="#353535"
+        a:textSize="44px" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/TextView"
+        a:layout_below="@id/mTxtContent"
+        a:layout_marginTop="22px"
+        a:textColor="#2c3f4e"
+        a:textSize="32px" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/TextView"
+        a:layout_below="@id/mTxtContent"
+        a:layout_marginLeft="24px"
+        a:layout_marginTop="22px"
+        a:layout_toRightOf="@id/mTxtName"
+        a:textColor="#999999"
+        a:textSize="32px" />
+
+</x.RelativeLayout>

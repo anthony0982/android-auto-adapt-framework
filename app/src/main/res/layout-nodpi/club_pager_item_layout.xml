@@ -1,0 +1,25 @@
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+        a:id="@+id/club_image_preview_progress"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_centerInParent="true"
+        a:background="#FFFFFE"
+        x:circleWidth="11px" />
+
+    
+    <com.alexvasilkov.gestures.views.GestureImageView
+        a:id="@+id/club_image_preview_gestureImageView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <im.clazz.ui.component.ContentBar
+        a:id="@+id/club_image_preview_contentbar"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+</x.RelativeLayout>

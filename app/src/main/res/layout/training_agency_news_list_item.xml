@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        a:layout_width="780px"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="52px"
+        a:textColor="#6b6d75"
+        a:textSize="38px" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        a:layout_width="180px"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="52px"
+        a:layout_toRightOf="@id/mTxtTitle"
+        a:textColor="#83807b"
+        a:textSize="30px" />
+
+</RelativeLayout>

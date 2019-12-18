@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutVersion"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/round_corner_gray_rectangle_shape"
+        a:paddingBottom="25px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        a:paddingTop="25px">
+
+        <x.TextView
+            a:id="@+id/mTxtCreatorName"
+            style="@style/TextView"
+            a:textColor="@color/light_blue"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutCourseSessions"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mTxtCreatorName"
+            a:orientation="vertical" />
+
+        <x.ImageView
+            a:id="@+id/mImgSelect"
+            style="@style/ImageView"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentTop="true"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutOtherVersions"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutVersion"
+        a:layout_marginTop="30px"
+        a:background="@drawable/round_corner_gray_rectangle_shape"
+        a:paddingLeft="50px"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/mTxtOtherVersions"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:text="@string/other_versions"
+            a:textColor="@color/light_blue"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.ImageView
+            a:id="@+id/mImgDive"
+            style="@style/SettingsItem.Dive" />
+    </x.RelativeLayout>
+
+</merge>

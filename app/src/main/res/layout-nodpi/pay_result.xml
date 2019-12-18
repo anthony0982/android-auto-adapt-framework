@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <TextView
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:gravity="center"
+        a:text="Pay Result Here!"
+        a:textColor="#ff000000"
+        a:textSize="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtLabel"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="4px"
+        a:gravity="center_vertical|left"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_44" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/list_item_color_selector">
+
+        <x.ImageView
+            a:id="@+id/mImgFileType"
+            style="@style/ImageView"
+            a:layout_width="104px"
+            a:layout_height="60px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="50px"
+            x:src="@drawable/ic_type_ppt" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_marginLeft="30px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="60px"
+            a:layout_toRightOf="@id/mImgFileType"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mTxtTitle"
+            a:layout_marginLeft="30px"
+            a:layout_marginTop="10px"
+            a:layout_toRightOf="@id/mImgFileType"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_36" />
+
+        <View
+            a:id="@+id/mBottomLine"
+            a:layout_width="match_parent"
+            a:layout_height="1px"
+            a:layout_below="@id/mTxtTime"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="60px"
+            a:background="@color/gray_f0" />
+    </x.RelativeLayout>
+</x.LinearLayout>

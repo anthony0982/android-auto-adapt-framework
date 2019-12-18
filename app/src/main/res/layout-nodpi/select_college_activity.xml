@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/select_college" />
+    </x.RelativeLayout>
+
+    <com.halo.view.MaterialEditText
+        a:id="@+id/mMaterialEditText"
+        style="@style/MaterialEditText"
+        a:layout_width="match_parent"
+        a:layout_height="130px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:hint="@string/select_college_hint"
+        a:maxLength="60"
+        a:singleLine="true"
+        a:textSize="@dimen/font_size_44"
+        a:textStyle="normal"
+        x:met_hideUnderline="true"
+        x:met_textColor="@color/black"
+        x:met_underlineColorFocused="@color/blue"
+        x:met_underlineColorUnFocused="@color/gray_9b" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mProgress"
+        style="@style/LoadingView.Blue"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginRight="80px"
+        a:layout_marginTop="25px"
+        a:visibility="gone" />
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mMaterialEditText"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+</RelativeLayout>

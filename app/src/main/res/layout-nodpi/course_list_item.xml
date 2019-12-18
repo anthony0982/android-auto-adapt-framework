@@ -1,0 +1,69 @@
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@android:color/white"
+    a:orientation="vertical"
+    tools:context="com.example.course_ui.CourseActivity" >
+
+    <RelativeLayout
+        a:layout_width="wrap_content"
+        a:layout_height="310px" >
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/course_head_portrait"
+            a:layout_width="115px"
+            a:layout_height="115px"
+            a:layout_marginLeft="35px"
+            a:layout_marginTop="25px"
+            a:background="@drawable/course_list_head_portrait_bg_shape"
+            x:corner_radius="75px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/course_post_student"
+            style="@style/TextView"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/course_head_portrait"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_46" />
+
+        <x.TextView
+            a:id="@+id/course_post_comment_time"
+            style="@style/TextView"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="105px"
+            a:layout_toRightOf="@id/course_head_portrait"
+            a:textColor="@color/course_txt_time_color"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/course_post_comment"
+            style="@style/TextView"
+            a:layout_marginLeft="40px"
+            a:layout_marginRight="70px"
+            a:layout_marginTop="180px"
+            a:layout_toRightOf="@id/course_head_portrait"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_3"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.ImageView
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_marginLeft="970px"
+            a:layout_marginTop="40px"
+            x:src="@drawable/ic_couse_praise" />
+
+        <x.ImageView
+            a:layout_width="900px"
+            a:layout_height="1px"
+            a:layout_alignParentBottom="true"
+            a:layout_marginLeft="35px"
+            a:layout_toRightOf="@id/course_head_portrait"
+            a:background="@color/common_linecolor" />
+    </RelativeLayout>
+
+</LinearLayout>

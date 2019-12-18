@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_long_click_select_fragment_layout"
+        a:layout_width="515px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_round_corner_white"
+        a:paddingBottom="10px"
+        a:paddingTop="10px" >
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_menu_item_edit_course"
+            a:layout_width="match_parent"
+            a:layout_height="180px"
+            a:background="@drawable/material_list_item_bg_color_selector" >
+
+            <x.ImageView
+                a:id="@+id/schedule_select_fragment_img_edit"
+                a:layout_width="54px"
+                a:layout_height="54px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="105px"/>
+
+            <x.TextView
+                a:id="@+id/schedule_long_click_select_fragment_txt_edit_course"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="46px"
+                a:layout_toRightOf="@id/schedule_select_fragment_img_edit"
+                a:text="@string/schedule_edit_course_edit"
+                a:textColor="#292525"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_menu_item_remove_course"
+            a:layout_width="match_parent"
+            a:layout_height="180px"
+            a:layout_below="@id/schedule_menu_item_edit_course"
+            a:background="@drawable/material_list_item_bg_color_selector" >
+
+            <x.ImageView
+                a:id="@+id/schedule_select_fragment_img_delete"
+                a:layout_width="54px"
+                a:layout_height="54px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="105px"
+                a:src="@drawable/ic_delete" />
+
+            <x.TextView
+                a:id="@+id/schedule_long_click_select_fragment_txt_remove_course"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="46px"
+                a:layout_toRightOf="@id/schedule_select_fragment_img_delete"
+                a:text="@string/schedule_remove_course_remove"
+                a:textColor="#292525"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</merge>

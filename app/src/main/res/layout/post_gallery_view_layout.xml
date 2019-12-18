@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <View
+        a:id="@+id/post_gallery_view_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:background="@color/gray_e6" />
+
+    <HorizontalScrollView
+        a:id="@+id/post_gallery_scroll_view"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/post_gallery_view_line"
+        a:layout_centerHorizontal="true"
+        a:orientation="horizontal"
+        a:scrollbars="none">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSelectedImage"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="124px"
+            a:orientation="horizontal"
+            a:paddingLeft="50px"
+            a:paddingRight="50px">
+
+            <x.ImageView
+                a:id="@+id/mImgSelectPicture"
+                style="@style/ImageView"
+                a:layout_width="250px"
+                a:layout_height="250px"
+                a:layout_marginTop="24px"
+                a:tint="@color/gray_a5"
+                x:src="@drawable/ic_upload" />
+
+        </x.LinearLayout>
+    </HorizontalScrollView>
+
+    <x.TextView
+        a:id="@+id/mTxtSelectedPictureCount"
+        style="@style/TextView"
+        a:layout_below="@id/post_gallery_scroll_view"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="120px"
+        a:layout_marginTop="80px"
+        a:text="@string/post_uploaded_image_hint"
+        a:textColor="#a6b7be"
+        a:textSize="@dimen/font_size_38" />
+</merge>

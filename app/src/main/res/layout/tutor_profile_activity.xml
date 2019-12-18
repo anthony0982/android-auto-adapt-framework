@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <im.clazz.ui.component.ProfileTitleBar
+        a:id="@+id/tutor_profile_activity_title_bar"
+        style="@style/TitleBar.Main"
+        a:layout_height="150px" />
+
+    <com.cpoopc.scrollablelayoutlib.ScrollableLayout
+        a:id="@+id/tutor_profile_activity_scrollableLayout"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/tutor_profile_activity_title_bar"
+        a:orientation="vertical">
+
+        <x.RelativeLayout
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content">
+
+            <x.RelativeLayout
+                a:id="@+id/tutor_profile_activity_layout_profile"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:background="#8188ab"
+                a:paddingBottom="30px">
+
+                <x.RelativeLayout
+                    a:id="@+id/tutor_profile_activity_layout_avatar_border"
+                    a:layout_width="232px"
+                    a:layout_height="232px"
+                    a:layout_marginLeft="39px"
+                    a:layout_marginTop="47px"
+                    x:bg="@drawable/tutor_profile_avatar_bg">
+
+                    <com.makeramen.RoundedImageView
+                        a:id="@+id/tutor_profile_activity_img_icon"
+                        a:layout_width="222px"
+                        a:layout_height="222px"
+                        a:layout_centerInParent="true"
+                        x:corner_radius="111px"
+                        x:mutate_background="true"
+                        x:oval="true" />
+                </x.RelativeLayout>
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_gender"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_marginLeft="63px"
+                    a:layout_marginTop="53px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_layout_avatar_border"
+                    a:text="女"
+                    a:textColor="#ffffff"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_seniority"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_marginLeft="79px"
+                    a:layout_marginTop="53px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_gender"
+                    a:text="15年"
+                    a:textColor="#ffffff"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_title"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_marginLeft="60px"
+                    a:layout_marginTop="53px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_seniority"
+                    a:text="大学生教师"
+                    a:textColor="#ffffff"
+                    a:textSize="40px" />
+
+                <im.clazz.ui.component.RankView
+                    a:id="@+id/tutor_profile_activity_rank_view_score"
+                    a:layout_width="224px"
+                    a:layout_height="31px"
+                    a:layout_alignLeft="@id/tutor_profile_activity_txt_gender"
+                    a:layout_below="@id/tutor_profile_activity_txt_title"
+                    a:layout_marginTop="24px"
+                    a:max="5"
+                    a:numStars="5" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_score"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_title"
+                    a:layout_marginLeft="15px"
+                    a:layout_marginTop="21px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_rank_view_score"
+                    a:text="3.9"
+                    a:textColor="#ffffff"
+                    a:textSize="34px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_class_fees"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_txt_gender"
+                    a:layout_below="@id/tutor_profile_activity_txt_score"
+                    a:layout_marginTop="21px"
+                    a:text="@string/tutor_profile_class_fees"
+                    a:textColor="#ffffff"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_original_price"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_score"
+                    a:layout_marginLeft="20px"
+                    a:layout_marginTop="21px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_class_fees"
+                    a:text="300元/小时"
+                    a:textColor="#d3ceed"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_current_price"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_score"
+                    a:layout_marginLeft="15px"
+                    a:layout_marginTop="12px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_original_price"
+                    a:text="100元/小时"
+                    a:textColor="#ffffff"
+                    a:textSize="50px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_tutored"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_txt_gender"
+                    a:layout_below="@id/tutor_profile_activity_txt_original_price"
+                    a:layout_marginTop="21px"
+                    a:text="@string/tutor_profile_tutored"
+                    a:textColor="#ffffff"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_tutored_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_original_price"
+                    a:layout_marginLeft="20px"
+                    a:layout_marginTop="21px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_tutored"
+                    a:text="358人"
+                    a:textColor="#ffffff"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_class_hours"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_txt_gender"
+                    a:layout_below="@id/tutor_profile_activity_txt_tutored_content"
+                    a:layout_marginTop="21px"
+                    a:text="@string/tutor_profile_class_hours"
+                    a:textColor="#ffffff"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_class_hours_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_tutored_content"
+                    a:layout_marginLeft="20px"
+                    a:layout_marginTop="21px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_txt_class_hours"
+                    a:text="7210小时"
+                    a:textColor="#ffffff"
+                    a:textSize="38px" />
+
+                <x.ImageView
+                    a:id="@+id/tutor_profile_activity_img_location"
+                    a:layout_width="24px"
+                    a:layout_height="30px"
+                    a:layout_alignParentLeft="true"
+                    a:layout_below="@id/tutor_profile_activity_txt_tutored_content"
+                    a:layout_marginLeft="55px"
+                    a:layout_marginTop="29px"
+                    a:src="@drawable/tutor_profile_location"
+                    a:tint="#ffffff" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_txt_location"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_txt_tutored_content"
+                    a:layout_marginLeft="15px"
+                    a:layout_marginTop="26px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_img_location"
+                    a:text="北京，海淀"
+                    a:textColor="#ffffff"
+                    a:textSize="32px" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/tutor_profile_activity_layout_qualification"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/tutor_profile_activity_layout_profile"
+                a:layout_marginLeft="29px"
+                a:layout_marginRight="29px"
+                a:layout_marginTop="26px"
+                a:background="@drawable/tutor_profile_bg">
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_teacher_identification"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="10px"
+                    a:text="@string/tutor_profile_teacher_identification"
+                    a:textColor="#423f37"
+                    a:textSize="40px" />
+
+                <x.LinearLayout
+                    a:id="@+id/tutor_profile_activity_teacher_identification_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="10px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_teacher_identification"
+                    a:orientation="horizontal"></x.LinearLayout>
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_teaching_subjects"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_below="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_marginTop="37px"
+                    a:text="@string/tutor_profile_teaching_subjects"
+                    a:textColor="#423f37"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_teaching_subjects_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="37px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_teaching_subjects"
+                    a:text="初中数学，高中数学"
+                    a:textColor="#423f37"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_order_time"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_below="@id/tutor_profile_activity_teaching_subjects_content"
+                    a:layout_marginTop="37px"
+                    a:text="@string/tutor_profile_order_time"
+                    a:textColor="#57534a"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_order_time_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_teaching_subjects_content"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="37px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_order_time"
+                    a:lineSpacingExtra="10px"
+                    a:singleLine="false"
+                    a:text="周一到周五晚上18:00-晚上22:00\n周六周日上午9:00-晚上21:00"
+                    a:textColor="#57534a"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_class_location"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_below="@id/tutor_profile_activity_order_time_content"
+                    a:layout_marginTop="37px"
+                    a:text="@string/tutor_profile_class_location"
+                    a:textColor="#57534a"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_class_location_content"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/tutor_profile_activity_order_time_content"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="37px"
+                    a:layout_toRightOf="@id/tutor_profile_activity_class_location"
+                    a:text="学生家里，老师住处"
+                    a:textColor="#57534a"
+                    a:textSize="38px" />
+
+                <x.TextView
+                    a:id="@+id/tutor_profile_activity_abstract"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/tutor_profile_activity_teacher_identification"
+                    a:layout_below="@id/tutor_profile_activity_class_location_content"
+                    a:layout_marginTop="55px"
+                    a:lineSpacingExtra="10px"
+                    a:paddingBottom="10px"
+                    a:singleLine="false"
+                    a:textColor="#93918d"
+                    a:textSize="38px" />
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+
+        <com.astuetz.PagerIndicator
+            a:id="@+id/tutor_profile_activity_indicator"
+            a:layout_width="fill_parent"
+            a:layout_height="116px"
+            a:background="@null"
+            a:overScrollMode="never"
+            x:pstsIndicatorColor="#FF666666"
+            x:pstsIndicatorHeight="6px"
+            x:pstsTabPaddingLeftRight="20px"
+            x:pstsTextColor="#FFA3A3A3"
+            x:pstsTextColorHighlight="#FF000000"
+            x:pstsTextSize="38px"
+            x:pstsTextSizeHighlight="50px"
+            x:pstsUnderlineHeight="2px" />
+
+        <android.support.v4.view.ViewPager
+            a:id="@+id/tutor_profile_activity_pager"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent" />
+    </com.cpoopc.scrollablelayoutlib.ScrollableLayout>
+
+    <RelativeLayout
+        a:id="@+id/tutor_profile_activity_layout_order"
+        a:layout_width="226px"
+        a:layout_height="226px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="195px"
+        a:layout_marginRight="50px"
+        a:background="@drawable/training_course_sign_up">
+
+        <x.TextView
+            a:id="@+id/tutor_profile_activity_txt_order"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:paddingBottom="10px"
+            a:text="@string/tutor_profile_order"
+            a:textColor="#ffffff"
+            a:textSize="60px" />
+    </RelativeLayout>
+
+</RelativeLayout>

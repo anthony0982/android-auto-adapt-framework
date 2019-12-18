@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:background="@drawable/list_item_color_selector"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/lesson_comment_item_img_avatar"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_marginLeft="38px"
+        a:layout_marginTop="15px"
+        a:paddingTop="15px"
+        a:paddingBottom="15px"
+        x:corner_radius="19px"
+        x:mutate_background="true"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/lesson_comment_item_txt_comment"
+        a:layout_height="wrap_content"
+        a:layout_width="630px"
+        a:layout_alignTop="@id/lesson_comment_item_img_avatar"
+        a:paddingTop="17px"
+        a:paddingBottom="30px"
+        a:layout_marginLeft="35px"
+        a:singleLine="false"
+        a:textSize="40px"
+        a:textColor="#8d8d8d"
+        a:lineSpacingMultiplier="1.5"
+        a:layout_toRightOf="@id/lesson_comment_item_img_avatar" />
+
+    <x.TextView
+        a:id="@+id/lesson_comment_item_txt_time"
+        a:layout_height="wrap_content"
+        a:layout_width="wrap_content"
+        a:layout_alignTop="@id/lesson_comment_item_txt_comment"
+        a:layout_marginTop="20px"
+        a:singleLine="false"
+        a:textSize="32px"
+        a:textColor="#a0a0a0"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"/>
+
+</RelativeLayout>

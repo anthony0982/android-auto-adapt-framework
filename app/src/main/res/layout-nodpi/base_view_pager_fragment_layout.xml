@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/group_moment_coordinator_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        x:pstsIndicatorColor="@color/black"
+        x:pstsIndicatorHeight="4px"
+        x:pstsShouldAnimateText="false"
+        x:pstsTabPaddingLeftRight="0px"
+        x:pstsTabWidth="500px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="@color/black"
+        x:pstsTextSize="40px"
+        x:pstsTextSizeHighlight="40px"
+        x:pstsUnderlineHeight="0px"
+        a:layout_width="match_parent"
+        a:layout_height="116px"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:background="@null"
+        a:overScrollMode="never" />
+
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mPagerIndicator"
+        a:overScrollMode="never" />
+
+</RelativeLayout>

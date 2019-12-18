@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <com.halo.view.ObservableRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar"
+        a:fadingEdgeLength="0px"
+        a:overScrollMode="never" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@color/white">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Black"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@+id/mTxtComment"
+            a:text="@string/see_course" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditorView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <x.RelativeLayout
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:paddingBottom="6px"
+        a:paddingLeft="12px"
+        a:paddingRight="12px"
+        a:paddingTop="6px">
+
+        <x.ImageView
+            a:id="@+id/chat_emoticon_item_img"
+            style="@style/ImageView"
+            a:layout_width="516px"
+            a:layout_height="wrap_content"
+            a:scaleType="centerCrop" />
+
+        <x.TextView
+            a:id="@+id/mTxtCover"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="#88000000"
+            a:gravity="center"
+            a:paddingLeft="20px"
+            a:paddingRight="20px"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_medium" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

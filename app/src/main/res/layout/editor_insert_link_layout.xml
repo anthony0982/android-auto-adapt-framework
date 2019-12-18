@@ -1,0 +1,88 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/editor_insert_link_layout_content"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerInParent="true"
+        a:orientation="vertical"
+        a:paddingBottom="6px"
+        a:paddingTop="6px">
+
+
+        <x.TextView
+            a:id="@+id/txt_insert_link_title"
+            style="@style/TextView"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="40px"
+            a:gravity="center_vertical"
+            a:text="@string/editor_add_link"
+            a:textColor="#242424"
+            a:textSize="@dimen/font_size_54" />
+
+
+        <com.materialedittext.MaterialEditText
+            a:id="@+id/txt_insert_link_content"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/txt_insert_link_title"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="90px"
+            a:focusableInTouchMode="true"
+            a:hint="@string/editor_add_link_hint"
+            a:inputType="textUri"
+            a:singleLine="true"
+            a:text="@string/editor_add_link_hint"
+            a:textCursorDrawable="@drawable/material_input_cursor_color"
+            a:textSize="@dimen/font_size_medium"
+            a:textStyle="normal"
+            x:met_floatingLabel="none"
+            x:met_floatingLabelAnimating="true"
+            x:met_floatingLabelPadding="10px"
+            x:met_floatingLabelText="@string/title"
+            x:met_floatingLabelTextColor="@color/translunt_gray_44"
+            x:met_hideUnderline="true"
+            x:met_primaryColor="@color/blue"
+            x:met_textColor="@color/black"
+            x:met_textColorHint="@color/translunt_gray_44"
+            x:met_underlineColorFocused="@color/material_input_under_line_color" />
+
+
+        <x.TextView
+            a:id="@+id/txt_insert_link_btn_confirm"
+            style="@style/TextView"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/txt_insert_link_content"
+            a:layout_marginLeft="40px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="40px"
+            a:gravity="center_vertical"
+            a:padding="20px"
+            a:text="@string/confirm"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_medium" />
+
+
+        <x.TextView
+            a:id="@+id/txt_insert_link_btn_cancel"
+            style="@style/TextView"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_below="@id/txt_insert_link_content"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="40px"
+            a:layout_toLeftOf="@id/txt_insert_link_btn_confirm"
+            a:gravity="center_vertical"
+            a:padding="20px"
+            a:text="@string/cancel"
+            a:textColor="@color/gray_9a"
+            a:textSize="@dimen/font_size_medium" />
+
+    </x.RelativeLayout>
+
+</merge>

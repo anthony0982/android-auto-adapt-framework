@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <View
+        a:id="@+id/mTabBg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/translucent_60_dark" />
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="wrap_content"
+        a:layout_height="match_parent"
+        a:layout_alignParentRight="true"
+        a:fillViewport="true"
+        a:overScrollMode="never"
+        a:scrollbars="none">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutMenu"
+            a:layout_width="840px"
+            a:layout_height="match_parent"
+            a:layout_gravity="right"
+            a:background="@color/white"
+            a:orientation="vertical">
+
+            <RelativeLayout
+                a:id="@+id/chat_settings_layout_top"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="54px">
+
+                <x.ImageView
+                    a:id="@+id/img_chat_settings_avatar_bg"
+                    style="@style/ImageView"
+                    a:layout_width="290px"
+                    a:layout_height="290px"
+                    a:layout_centerInParent="true"
+                    x:src="@drawable/bg_chat_settings_avatar" />
+
+                <com.makeramen.RoundedImageView
+                    a:id="@+id/mImgAvatar"
+                    style="@style/ImageView"
+                    a:layout_width="280px"
+                    a:layout_height="280px"
+                    a:layout_centerInParent="true"
+                    x:oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                a:id="@+id/chat_settings_layout_notification"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="80px">
+
+                <x.ImageView
+                    a:id="@+id/mImgNotification"
+                    style="@style/ImageView"
+                    a:layout_width="44px"
+                    a:layout_height="44px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="60px"
+                    x:src="@drawable/ic_notification_open" />
+
+                <x.TextView
+                    a:id="@+id/txt_chat_settings_notification"
+                    style="@style/TextView"
+                    a:layout_height="62px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="30px"
+                    a:layout_toRightOf="@id/mImgNotification"
+                    a:gravity="center_vertical"
+                    a:text="@string/notification"
+                    a:textColor="@color/gray_44"
+                    a:textSize="40px" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    a:id="@+id/mSwitchNotification"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="60px" />
+            </RelativeLayout>
+
+            <com.halo.view.RecyclerView
+                a:id="@+id/mRecyclerView"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="120px"
+                a:background="@null"
+                a:fadingEdge="none"
+                a:overScrollMode="never"
+                a:paddingLeft="16px"
+                a:paddingRight="16px"
+                a:scrollbarStyle="outsideOverlay"
+                a:scrollbars="none" />
+
+            <x.TextView
+                a:id="@+id/mTxtMemberCount"
+                style="@style/TextView"
+                a:layout_below="@id/mRecyclerView"
+                a:layout_gravity="right"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="40px"
+                a:paddingBottom="40px"
+                a:paddingLeft="40px"
+                a:paddingTop="40px"
+                a:text="@string/chat_settings_check_all_member"
+                a:textColor="#242424"
+                a:textSize="38px" />
+
+        </x.LinearLayout>
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutAllMembers"
+        a:layout_width="840px"
+        a:layout_height="match_parent"
+        a:layout_alignParentRight="true"
+        a:background="@color/white"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/mTxtAllMemberCount"
+            style="@style/TextView"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="40px"
+            a:text="@string/chat_settings_check_all_member"
+            a:textColor="#242424"
+            a:textSize="38px" />
+
+        <x.ImageView
+            a:id="@+id/mImgPullDown"
+            style="@style/ImageView"
+            a:layout_width="200px"
+            a:layout_height="110px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentTop="true"
+            x:src="@drawable/ic_chat_settings_pull_down" />
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/mRecyclerViewAllMembers"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mImgPullDown"
+            a:background="@null"
+            a:fadingEdge="none"
+            a:overScrollMode="never"
+            a:paddingLeft="16px"
+            a:paddingRight="16px"
+            a:scrollbarStyle="outsideOverlay"
+            a:scrollbars="none" />
+    </x.RelativeLayout>
+
+</merge>

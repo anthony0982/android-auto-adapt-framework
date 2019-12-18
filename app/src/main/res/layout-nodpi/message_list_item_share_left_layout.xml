@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <include layout="@layout/message_list_item_time_split_layout" />
+
+    <x.RelativeLayout
+        a:layout_width="1080px"
+        a:layout_height="wrap_content"
+        a:paddingLeft="16px">
+
+        <x.TextView
+            a:id="@+id/message_list_item_txt_name_left"
+            style="@style/Message.Name" />
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/message_list_item_avatar_left"
+            style="@style/Message.Avatar.Left" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutShare"
+            style="@style/Message.Share.Left"
+            a:layout_width="700px"
+            a:layout_height="wrap_content"
+            a:paddingBottom="20px"
+            a:paddingLeft="20px">
+
+            <x.TextView
+                a:id="@+id/mTxtType"
+                style="@style/TextView"
+                a:layout_marginLeft="20px"
+                a:paddingLeft="10px"
+                a:paddingTop="12px"
+                a:paddingBottom="10px"
+                a:textColor="@color/gray_88"
+                a:textSize="36px" />
+
+            <View
+                a:id="@+id/mTxtTypeLine"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_below="@id/mTxtType"
+                a:background="@color/gray_dd" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TextView.MultiLine"
+                a:layout_below="@id/mTxtTypeLine"
+                a:layout_marginLeft="20px"
+                a:layout_marginRight="20px"
+                a:layout_marginTop="10px"
+                a:maxLines="2"
+                a:padding="6px"
+                a:textColor="@color/gray_33"
+                a:textSize="@dimen/font_size_42" />
+
+            <x.ImageView
+                a:id="@+id/mImgPicture"
+                style="@style/ImageView"
+                a:layout_width="120px"
+                a:layout_height="120px"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/mTxtTitle"
+                a:layout_marginRight="20px"
+                a:layout_marginTop="10px"
+                a:scaleType="centerCrop" />
+
+            <x.TextView
+                a:id="@+id/mTxtDigest"
+                style="@style/TextView.MultiLine"
+                a:layout_width="match_parent"
+                a:layout_below="@id/mTxtTitle"
+                a:layout_marginLeft="20px"
+                a:layout_marginRight="20px"
+                a:layout_toLeftOf="@id/mImgPicture"
+                a:lineSpacingMultiplier="1.2"
+                a:maxLines="3"
+                a:padding="6px"
+                a:textColor="@color/gray_99"
+                a:textSize="@dimen/font_size_36" />
+
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</LinearLayout>

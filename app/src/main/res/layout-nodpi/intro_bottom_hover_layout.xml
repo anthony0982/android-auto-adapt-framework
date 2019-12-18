@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/white" />
+
+    <View
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line"
+        android:background="#FF622805" />
+
+    <RelativeLayout
+        android:id="@+id/intro_bottom_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line"
+        android:gravity="center"
+        android:paddingBottom="30px"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:paddingTop="20px">
+
+        <x.TextView
+            android:id="@+id/txt_author_location"
+            style="@style/TextView.CyanBrick.XXXXXLarge"
+            android:visibility="gone" />
+
+        <x.TextView
+            android:id="@+id/txt_author_word"
+            style="@style/TextView.CyanBrick.XXXXXLarge"
+            android:layout_height="180px"
+            android:layout_below="@id/txt_author_location"
+            android:gravity="center_vertical|left"
+            android:singleLine="false"
+            android:text="@string/intro_bottom_word"
+            android:textColor="#8FFFFFFF"
+            android:textSize="50px" />
+
+        <RelativeLayout
+            android:id="@+id/layout_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right|bottom">
+
+            <com.makeramen.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_author_avatar"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                app:border_color="#57ffffff"
+                app:border_width="1dp"
+                app:corner_radius="10dip"
+                app:mutate_background="true"
+                app:oval="true" />
+
+            <x.TextView
+                android:id="@+id/txt_author_name"
+                style="@style/TextView.CyanBrick.XXXXXLarge.Center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="@string/app_name"
+                android:textColor="#8FFFFFFF"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <x.TextView
+            android:id="@+id/txt_author_club"
+            style="@style/TextView.CyanBrick.XXXXXLarge"
+            android:layout_alignBottom="@id/layout_author_name"
+            android:layout_alignTop="@id/layout_author_name"
+            android:gravity="center_vertical|left"
+            android:text="@string/intro_bottom_club"
+            android:textColor="#5CFFFFFF"
+            android:textSize="30px" />
+    </RelativeLayout>
+
+</merge>

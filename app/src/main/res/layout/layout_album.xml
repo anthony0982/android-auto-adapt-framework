@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="@dimen/albumitem_height"
+    a:gravity="center_vertical"
+    a:paddingLeft="15dp"
+    a:paddingRight="15dp">
+
+    <RelativeLayout
+        a:id="@+id/layout_left_la"
+        a:layout_width="@dimen/albumitem_content_height"
+        a:layout_height="@dimen/albumitem_content_height"
+        a:layout_centerVertical="true" >
+
+        <ImageView
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@drawable/bg_album_border"
+            a:scaleType="fitCenter" />
+
+        <ImageView
+            a:id="@+id/iv_album_la"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_marginBottom="5dp"
+            a:layout_marginRight="5dp"
+            a:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_centerVertical="true"
+        a:layout_toRightOf="@+id/layout_left_la"
+        a:gravity="center_vertical"
+        a:paddingLeft="5dp" >
+
+        <LinearLayout
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:orientation="vertical" >
+
+            <TextView
+                a:id="@+id/tv_name_la"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:textColor="@android:color/black"
+                a:textSize="17sp" />
+
+            <TextView
+                a:id="@+id/tv_count_la"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            a:id="@+id/iv_index_la"
+            a:layout_width="@dimen/albumitem_image_height"
+            a:layout_height="@dimen/albumitem_image_height"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:src="@drawable/ic_choice_green" />
+    </RelativeLayout>
+
+</RelativeLayout>

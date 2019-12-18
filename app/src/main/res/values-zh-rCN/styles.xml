@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="ShellTheme" />
+
+    <style name="ShellTheme.WindowDisablePreview">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置没有标题 -->
+        <item name="android:textSize">20sp</item>
+        <!-- 设置文本大小 -->
+        <item name="android:textColor">#F34141</item>
+        <item name="android:background">@android:color/background_light</item>
+        <!-- 取消应用启动默认预览画面（黑背景） -->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="ShellTheme.Animation_Slide_RightIn_LeftOut">
+
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="ShellTheme.Animation_FadeIn_FadeOut">
+
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimationFade</item>
+    </style>
+
+    <style name="activityAnimationFade" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.NoDisplay" parent="@android:style/Theme.NoDisplay">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

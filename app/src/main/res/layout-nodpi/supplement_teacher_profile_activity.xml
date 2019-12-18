@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/supplement_profile_title" />
+    </x.RelativeLayout>
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mAvatar"
+        style="@style/ImageView"
+        a:layout_width="200px"
+        a:layout_height="200px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="110px"
+        x:oval="true" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutGender"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mAvatar"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="70px">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutGenderMale"
+            a:layout_width="270px"
+            a:layout_height="100px">
+
+            <x.ImageView
+                a:id="@+id/mImgGenderMaleBg"
+                style="@style/ImageView"
+                a:layout_width="270px"
+                a:layout_height="100px"
+                x:src="@drawable/bg_rect_gender" />
+
+            <x.ImageView
+                a:id="@+id/mImgGenderMale"
+                style="@style/ImageView"
+                a:layout_width="60px"
+                a:layout_height="60px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="60px"
+                x:src="@drawable/ic_gender_male" />
+
+            <x.TextView
+                a:id="@+id/mTxtGenderMale"
+                style="@style/TextView"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/mImgGenderMale"
+                a:text="@string/male"
+                a:textColor="@color/blue"
+                a:textSize="@dimen/font_size_46" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutGenderFemale"
+            a:layout_width="270px"
+            a:layout_height="100px"
+            a:layout_marginLeft="28px"
+            a:layout_toRightOf="@id/mLayoutGenderMale">
+
+            <x.ImageView
+                a:id="@+id/mImgGenderFemaleBg"
+                style="@style/ImageView"
+                a:layout_width="270px"
+                a:layout_height="100px"
+                a:alpha="0"
+                x:src="@drawable/bg_rect_gender" />
+
+            <x.ImageView
+                a:id="@+id/mImgGenderFemale"
+                style="@style/ImageView"
+                a:layout_width="60px"
+                a:layout_height="60px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="60px"
+                x:src="@drawable/ic_gender_female" />
+
+            <x.TextView
+                a:id="@+id/mTxtGenderFemale"
+                style="@style/TextView"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/mImgGenderFemale"
+                a:text="@string/female"
+                a:textColor="#DFAD8B"
+                a:textSize="@dimen/font_size_46" />
+        </x.RelativeLayout>
+
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="898px"
+        a:layout_height="130px"
+        a:layout_below="@id/mLayoutGender"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="80px"
+        a:background="@drawable/bg_rect_change_password">
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/mEditTextName"
+            style="@style/MaterialEditText"
+            a:layout_width="match_parent"
+            a:layout_height="130px"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="80px"
+            a:editable="false"
+            a:hint="@string/profile_edit_name"
+            a:inputType="text"
+            a:maxLength="20"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_44"
+            a:textStyle="normal"
+            x:met_hideUnderline="true"
+            x:met_textColor="@color/black" />
+
+        <x.TextView
+            a:id="@+id/mTxtNameLetters"
+            style="@style/TextView"
+            a:layout_alignBottom="@id/mEditTextName"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="40px"
+            a:layout_marginRight="20px"
+            a:textColor="@color/gray_9b"
+            a:textSize="@dimen/font_size_30" />
+
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutValidateMessage"
+        a:layout_width="898px"
+        a:layout_height="60px"
+        a:layout_below="@id/mLayoutEnrollmentStatus"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="16px"
+        a:alpha="0"
+        a:paddingLeft="40px">
+
+        <x.ImageView
+            a:id="@+id/mImgValidateMessage"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_centerVertical="true"
+            x:src="@drawable/ic_warning" />
+
+        <x.TextView
+            a:id="@+id/mTxtValidateMessage"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="8px"
+            a:layout_toRightOf="@id/mImgValidateMessage"
+            a:gravity="center_vertical"
+            a:textColor="@color/red"
+            a:textSize="@dimen/font_size_42" />
+    </x.RelativeLayout>
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutContent"
+        a:layout_marginTop="82px">
+
+        <x.TextView
+            a:id="@+id/mTxtSubmit"
+            style="@style/TextView.Center.Blue"
+            a:layout_width="900px"
+            a:layout_height="150px"
+            a:layout_centerHorizontal="true"
+            a:text="@string/submit"
+            a:textSize="@dimen/font_size_60"
+            x:bg="@drawable/bg_button_900_150" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/progress"
+            style="@style/LoadingView.Blue"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="136px"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

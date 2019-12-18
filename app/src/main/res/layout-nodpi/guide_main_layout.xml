@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white" >
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/guide_pager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <com.halo.viewpager.CircleIndicator
+        a:id="@+id/guide_indicator"
+        a:layout_width="fill_parent"
+        a:layout_height="@dimen/guide_indicator_height"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="@dimen/guide_indicator_margin_bottom"
+        x:ci_drawable="@drawable/guide_active_shape"
+        x:ci_height="20px"
+        x:ci_width="20px" />
+
+    <x.ImageView
+        a:id="@+id/guide_img_dive_in"
+        style="@style/ImageView"
+        a:layout_width="@dimen/guide_btn_dive_width"
+        a:layout_height="@dimen/guide_btn_dive_height"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        x:src="@drawable/ic_guide_next" />
+
+    <x.TextView
+        a:id="@+id/guide_txt_start"
+        style="@style/TextView.White.Center.Large"
+        a:layout_width="@dimen/guide_btn_start_width"
+        a:layout_height="@dimen/guide_btn_start_height"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="@dimen/guide_btn_start_margin_bottom"
+        a:text="@string/guide_start"
+        a:visibility="gone"
+        x:bg="@drawable/bg_green_round_circle_shape" />
+
+</RelativeLayout>

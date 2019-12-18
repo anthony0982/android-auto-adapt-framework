@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:text="@string/activity"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtGroup"
+        a:background="@drawable/list_item_color_selector"
+        a:paddingBottom="50px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        a:paddingTop="50px">
+
+
+        <com.halo.view.RoundCornerImageView
+            a:id="@+id/mImgPoster"
+            style="@style/RoundCornerImageView"
+            a:layout_width="240px"
+            a:layout_height="360px"
+            a:layout_alignParentRight="true"
+            a:layout_marginLeft="20px" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutTitle"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_toLeftOf="@id/mImgPoster"
+            a:gravity="left"
+            a:layoutDirection="rtl">
+
+            <x.TextView
+                a:id="@+id/mTxtLevel"
+                style="@style/RoundTextView.Red"
+                a:layout_marginBottom="4px"
+                a:layout_marginLeft="14px"
+                a:layout_marginRight="14px"
+                a:textColor="#f39700"
+                a:textSize="@dimen/font_size_28"
+                x:round_backgroundColor="@color/white"
+                x:round_borderColor="#f39700"
+                x:round_borderWidth="2px"
+                x:round_isRadiusAdjustBounds="false"
+                x:round_padding_horizontal="0.6"
+                x:round_padding_vertical="0.3"
+                x:round_radius="6px" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/ActivityItem.Title"
+                a:gravity="left"
+                a:minHeight="84px" />
+
+        </x.LinearLayout>
+
+
+        <x.ImageView
+            a:id="@+id/mImgStartTime"
+            style="@style/ActivityItem.SubTitleIcon"
+            a:layout_below="@id/mLayoutTitle"
+            x:src="@drawable/ic_activity_item_time" />
+
+        <x.TextView
+            a:id="@+id/mTxtStartTime"
+            style="@style/ActivityItem.SubTitle"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mLayoutTitle"
+            a:layout_toLeftOf="@id/mImgPoster"
+            a:layout_toRightOf="@id/mImgStartTime" />
+
+        <x.ImageView
+            a:id="@+id/mImgLocation"
+            style="@style/ActivityItem.SubTitleIcon"
+            a:layout_below="@id/mTxtStartTime"
+            x:src="@drawable/ic_activity_item_location" />
+
+        <x.TextView
+            a:id="@+id/mTxtLocation"
+            style="@style/ActivityItem.SubTitle"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mTxtStartTime"
+            a:layout_toLeftOf="@id/mImgPoster"
+            a:layout_toRightOf="@id/mImgLocation" />
+
+        <x.ImageView
+            a:id="@+id/mImgSponsor"
+            style="@style/ActivityItem.SubTitleIcon"
+            a:layout_below="@id/mTxtLocation"
+            x:src="@drawable/ic_activity_item_sponsor" />
+
+        <x.TextView
+            a:id="@+id/mTxtSponsor"
+            style="@style/ActivityItem.SubTitle"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mTxtLocation"
+            a:layout_toLeftOf="@id/mImgPoster"
+            a:layout_toRightOf="@id/mImgSponsor"
+            a:maxLines="1"
+            a:singleLine="true" />
+
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutContent"
+        a:background="@color/gray_f0" />
+
+</x.RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <x.TextView
+        android:id="@+id/txt_app_name"
+        style="@style/TextView.CyanBrick.XXXXXLarge.Center"
+        android:layout_above="@id/center"
+        android:layout_centerHorizontal="true"
+        android:text="用户引导" />
+
+    <x.ImageView
+        android:id="@+id/img_logo"
+        style="@style/ImageView"
+        android:layout_width="@dimen/splash_icon_size"
+        android:layout_height="@dimen/splash_icon_size"
+        android:layout_above="@id/txt_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/splash_icon_margin_bottom"
+        android:src="@drawable/icon"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/splash_copyright_margin_bottom"
+        android:visibility="gone" >
+
+        <x.TextView
+            android:id="@+id/txt_copyright_sign"
+            style="@style/TextView.CyanBrickLight.MEDIUM_52.Center"
+            android:layout_centerVertical="true"
+            android:text="@string/copyright_sign" />
+
+        <x.TextView
+            android:id="@+id/txt_copyright"
+            style="@style/TextView.CyanBrickLight.SMALL_44.Center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/splash_copyright_margin"
+            android:layout_toRightOf="@id/txt_copyright_sign"
+            android:text="@string/copyright" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content" >
+
+    <x.RelativeLayout
+        a:id="@+id/layout_school_course_item"
+        a:layout_width="460px"
+        a:layout_height="wrap_content"
+        a:background="@drawable/school_course_item_bg_normal"
+        a:padding="5px"
+        a:paddingTop="6px" >
+
+        <x.ImageView
+            style="@style/ImageView"
+            a:layout_width="200px"
+            a:layout_height="200px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="58px" />
+
+        <x.ImageView
+            a:id="@+id/img_school_course_item_avatar"
+            style="@style/ImageView"
+            a:layout_width="450px"
+            a:layout_height="316px"
+            a:layout_centerHorizontal="true"
+            a:scaleType="fitCenter" />
+
+        <x.ImageView
+            a:id="@+id/img_school_course_item_line"
+            a:layout_width="450px"
+            a:layout_height="2px"
+            a:layout_below="@id/img_school_course_item_avatar"
+            a:layout_marginTop="4px"
+            a:src="@color/bg_color_gray" />
+
+        <x.LinearLayout
+            a:id="@+id/layout_school_course_title"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/img_school_course_item_line"
+            a:orientation="vertical" >
+
+            <x.TextView
+                a:id="@+id/img_school_course_item_title"
+                style="@style/SchoolCourseItemTitle"
+                a:layout_marginLeft="15px"
+                a:layout_marginTop="18px"
+                a:text="北师大附小" />
+
+            <im.clazz.ui.component.RankView
+                a:id="@+id/rank_school_course_item"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="15px"
+                a:layout_marginTop="18px"
+                a:visibility="gone" />
+        </x.LinearLayout>
+
+        <x.TextView
+            a:id="@+id/txt_school_course_item_rank_txt"
+            style="@style/SchoolCourseItemRankText"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/img_school_course_item_line"
+            a:layout_marginRight="6px"
+            a:layout_marginTop="82px"
+            a:text="4.8"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/txt_school_course_item_rank"
+            style="@style/SchoolCourseItemRankText"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/img_school_course_item_line"
+            a:layout_marginRight="36px"
+            a:layout_marginTop="20px"
+            a:text="4.8"
+            a:visibility="gone" />
+
+        <x.LinearLayout
+            a:id="@+id/layout_school_course_sub_title_line_1"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/layout_school_course_title"
+            a:layout_marginLeft="15px"
+            a:orientation="vertical" >
+
+            <x.RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="20px" >
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_sub_title"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:text="小六语文：词组与写作" />
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_sub_title_right"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginRight="20px"
+                    a:text="小六语文：词组与写作"
+                    a:textColor="#EB4084"
+                    a:visibility="gone" />
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_sub_title_right_2"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:layout_toLeftOf="@id/img_school_course_item_sub_title_right"
+                    a:text="小六语文：词组与写作"
+                    a:visibility="gone" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/layout_school_course_sub_title_line_2"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="20px" >
+
+                <x.TextView
+                    a:id="@+id/txt_school_course_item_sub_title_line_2"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:text="小六语文：词组与写作" />
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_sub_title_line_2_right"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:layout_alignParentRight="true"
+                    a:text="小六语文：词组与写作"
+                    a:visibility="gone" />
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_sub_title_line_2_right_2"
+                    style="@style/SchoolCourseItemSubTitle"
+                    a:layout_alignParentRight="true"
+                    a:layout_toLeftOf="@id/img_school_course_item_sub_title_right"
+                    a:text="小六语文：词组与写作"
+                    a:visibility="gone" />
+            </x.RelativeLayout>
+
+            <x.LinearLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="20px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_course_item_location"
+                    style="@style/ImageView"
+                    a:layout_width="30px"
+                    a:layout_height="30px"
+                    a:layout_gravity="center_vertical"
+                    a:layout_marginRight="4px"
+                    a:visibility="gone"
+                    x:src="@drawable/school_course_item_ic_location" />
+
+                <x.TextView
+                    a:id="@+id/img_school_course_item_state"
+                    style="@style/SchoolCourseItemState"
+                    a:text="更新：2014-11-20" />
+            </x.LinearLayout>
+        </x.LinearLayout>
+
+        <x.ImageView
+            a:id="@+id/img_school_course_item_cover"
+            style="@style/ImageView"
+            a:layout_width="450px"
+            a:layout_height="match_parent"
+            a:alpha="0.0"
+            a:src="@color/translucent_30_dark" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/layout_school_course_item_more"
+        a:layout_width="300px"
+        a:layout_height="match_parent"
+        a:background="@drawable/bg_item_color_selector"
+        a:padding="5px"
+        a:visibility="gone" >
+
+        <x.ImageView
+            a:id="@+id/img_school_course_item_more"
+            style="@style/ImageView"
+            a:layout_width="38px"
+            a:layout_height="178px"
+            a:layout_centerInParent="true"
+            a:src="@drawable/school_course_item_more" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

@@ -1,0 +1,209 @@
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/drawer_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <FrameLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white">
+
+        <RelativeLayout
+            a:id="@+id/mSlideLayout"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_gravity="right|bottom"
+            a:background="@color/white">
+
+            <WebView
+                a:id="@+id/mWebView"
+                style="@style/WebView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingViewAbove"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <im.clazz.widget.LoadingView
+                a:id="@+id/mLoadingView"
+                style="@style/LoadingView.Blue"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            a:id="@+id/mWebViewControlsLayout"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent">
+
+            <x.ImageView
+                a:id="@+id/mBtnRefresh"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentLeft="true"
+                a:layout_alignParentTop="true"
+                a:layout_marginLeft="60px"
+                a:layout_marginTop="60px"
+                a:tint="@color/black"
+                x:src="@drawable/ic_refresh" />
+
+            <x.ImageView
+                a:id="@+id/mBtnDrawMode"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentLeft="true"
+                a:layout_alignParentTop="true"
+                a:layout_marginLeft="200px"
+                a:layout_marginTop="60px"
+                a:tint="@color/black"
+                x:src="@drawable/ic_pencil_slide" />
+
+            <x.ImageView
+                a:id="@+id/mBtnErase"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentTop="true"
+                a:layout_marginLeft="60px"
+                a:layout_marginTop="60px"
+                a:layout_toRightOf="@id/mBtnDrawMode"
+                a:tint="@color/black"
+                x:src="@drawable/ic_erase_slide" />
+
+            <x.ImageView
+                a:id="@+id/mBtnFullScreen"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentBottom="true"
+                a:layout_alignParentLeft="true"
+                a:layout_marginBottom="60px"
+                a:layout_marginLeft="60px"
+                a:tint="@color/black"
+                x:src="@drawable/ic_video_fullscreen_shrink" />
+
+            <x.ImageView
+                a:id="@+id/mBtnAutoSlide"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentRight="true"
+                a:layout_alignParentTop="true"
+                a:layout_marginRight="60px"
+                a:layout_marginTop="60px"
+                a:tint="@color/black"
+                x:src="@drawable/ic_auto_slide_off" />
+
+            <x.ImageView
+                a:id="@+id/mBtnPlayAudio"
+                style="@style/ImageView"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentBottom="true"
+                a:layout_centerHorizontal="true"
+                a:layout_marginBottom="60px"
+                x:src="@drawable/ic_slide_pause" />
+
+
+            <View
+                a:id="@+id/mBtnDirectionCenter"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentBottom="true"
+                a:layout_alignParentRight="true"
+                a:layout_marginBottom="180px"
+                a:layout_marginRight="180px" />
+
+
+            <x.ImageView
+                a:id="@+id/mBtnRight"
+                style="@style/ImageView"
+                a:layout_width="120px"
+                a:layout_height="120px"
+                a:layout_alignParentBottom="true"
+                a:layout_alignParentRight="true"
+                a:layout_marginBottom="160px"
+                a:layout_marginRight="40px"
+                a:rotation="-90"
+                x:src="@drawable/ic_slide_down" />
+
+            <x.ImageView
+                a:id="@+id/mBtnDown"
+                style="@style/ImageView"
+                a:layout_width="120px"
+                a:layout_height="120px"
+                a:layout_alignParentBottom="true"
+                a:layout_marginBottom="40px"
+                a:layout_toLeftOf="@id/mBtnRight"
+                x:src="@drawable/ic_slide_down" />
+
+            <x.ImageView
+                a:id="@+id/mBtnLeft"
+                style="@style/ImageView"
+                a:layout_width="120px"
+                a:layout_height="120px"
+                a:layout_alignTop="@id/mBtnRight"
+                a:layout_toLeftOf="@id/mBtnDown"
+                a:rotation="90"
+                x:src="@drawable/ic_slide_down" />
+
+            <x.ImageView
+                a:id="@+id/mBtnUp"
+                style="@style/ImageView"
+                a:layout_width="120px"
+                a:layout_height="120px"
+                a:layout_above="@id/mBtnRight"
+                a:layout_toLeftOf="@id/mBtnRight"
+                a:rotation="180"
+                x:src="@drawable/ic_slide_down" />
+
+        </RelativeLayout>
+
+        <TextView
+            a:id="@+id/toast_text_view"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_gravity="left|center_vertical"
+            a:background="@color/translunt_gray"
+            a:padding="16dp"
+            a:textSize="16sp"
+            a:visibility="gone" />
+
+        <TableLayout
+            a:id="@+id/hud_view"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_gravity="right|center_vertical"
+            a:background="@color/translunt_gray"
+            a:padding="8dp"
+            a:visibility="gone" />
+
+        <android.support.v7.widget.Toolbar
+            a:id="@+id/toolbar"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:background="@color/translunt_gray"
+            a:minHeight="?attr/actionBarSize"
+            a:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            a:visibility="gone"
+            x:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </FrameLayout>
+
+    <im.clazz.video.AndroidMediaController
+        a:id="@+id/controller_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+</FrameLayout>

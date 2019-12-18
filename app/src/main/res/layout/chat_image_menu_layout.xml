@@ -1,0 +1,39 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        a:layout_width="700px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_dialog"
+        a:orientation="vertical"
+        a:paddingBottom="24px"
+        a:paddingTop="24px" >
+
+        <TextView
+            a:id="@+id/txt_redirect_image"
+            style="@style/TextView.ChatMenu"
+            a:visibility="gone"
+            a:text="@string/redirect" />
+
+        <TextView
+            a:id="@+id/txt_save_image"
+            style="@style/TextView.ChatMenu"
+            a:text="@string/save_image" />
+
+        <TextView
+            a:id="@+id/txt_save_emoticon"
+            style="@style/TextView.ChatMenu"
+            a:text="@string/share_emoticon" />
+
+        <TextView
+            a:id="@+id/txt_share_emoticon"
+            style="@style/TextView.ChatMenu"
+            a:text="@string/share_emoticon" />
+
+        <TextView
+            a:id="@+id/txt_delete"
+            style="@style/TextView.ChatMenu"
+            a:text="@string/delete" />
+    </LinearLayout>
+
+</merge>

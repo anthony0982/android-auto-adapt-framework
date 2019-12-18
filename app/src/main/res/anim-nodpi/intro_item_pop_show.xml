@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 弹出的动画 -->
+    <scale
+		android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+		android:fromXScale="0.0"
+		android:toXScale="1.03"
+		android:fromYScale="0.0"
+		android:toYScale="1.03"
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:fillAfter="false"
+		android:duration="@integer/intro_item_pic_pop" />
+    
+    <!-- 恢复的动画 -->
+    <scale
+		android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+		android:fromXScale="1.03"
+		android:toXScale="1.0"
+		android:fromYScale="1.03"
+		android:toYScale="1.0"
+		android:pivotX="50%"
+		android:pivotY="100%"
+		android:fillAfter="false"
+		android:duration="@integer/intro_item_pic_restore"
+		android:startOffset="@integer/intro_item_pic_pop" />
+</set>

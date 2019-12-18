@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="132px" >
+
+    <x.TextView
+        a:id="@+id/txt_target_title"
+        style="@style/TextView.Black"
+        a:layout_centerVertical="true"
+        a:paddingLeft="110px"
+        a:textSize="@dimen/font_size_44" />
+
+    <x.TextView
+        a:id="@+id/txt_target_subtitle"
+        style="@style/TextView"
+        a:layout_centerVertical="true"
+        a:layout_toRightOf="@id/txt_target_title"
+        a:textColor="#FFA0A0A1"
+        a:textSize="@dimen/font_size_44"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/img_school_target_selected"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:layout_marginRight="54px"
+        x:src="@drawable/school_target_selected_ic_delete" />
+
+    <x.ImageView
+        a:id="@+id/img_school_target_selected_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:layout_marginLeft="80px"
+        a:layout_marginRight="20px"
+        a:layout_marginTop="134px"
+        a:src="@color/light_grey_material_bg" />
+
+</RelativeLayout>

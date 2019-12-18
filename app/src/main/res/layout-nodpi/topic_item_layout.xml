@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/topic_item_layout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_title"
+        style="@style/TitleBar.NotificationTitle"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_time"
+        style="@style/Topic.Item.Subtitle"
+        a:layout_below="@id/txt_topic_item_title"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="20px" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_sponsor_tag"
+        style="@style/Topic.Item.Subtitle"
+        a:layout_below="@id/txt_topic_item_title"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="20px"
+        a:layout_toRightOf="@id/txt_topic_item_time"
+        a:text="@string/sponsor_tag" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_sponsor"
+        style="@style/Topic.Item.Subtitle"
+        a:layout_below="@id/txt_topic_item_title"
+        a:layout_marginTop="20px"
+        a:layout_toRightOf="@id/txt_topic_item_sponsor_tag"
+        a:textColor="#fc8d9e" />
+
+    <x.ImageView
+        a:id="@+id/img_topic_item_image"
+        style="@style/ImageView"
+        a:layout_width="match_parent"
+        a:layout_height="600px"
+        a:layout_below="@id/txt_topic_item_time"
+        a:layout_marginTop="40px"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:scaleType="centerCrop" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_picture_count"
+        a:layout_width="70px"
+        a:layout_height="70px"
+        a:layout_alignBottom="@id/img_topic_item_image"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="40px"
+        a:layout_marginRight="90px"
+        a:gravity="center"
+        a:textColor="@android:color/white"
+        a:textSize="@dimen/font_size_40"
+        a:visibility="visible"
+        x:bg="@drawable/profile_list_item_picture_count_bg" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_digest"
+        style="@style/Topic.Item.Digest"
+        a:layout_below="@id/img_topic_item_image"
+        a:layout_marginTop="20px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <x.ImageView
+        a:id="@+id/img_topic_item_comment"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/txt_topic_item_digest"
+        a:layout_marginRight="70px"
+        a:layout_marginTop="50px"
+        x:src="@drawable/ic_topic_item_comment" />
+
+    <x.TextView
+        a:id="@+id/txt_topic_item_comment_count"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/txt_topic_item_digest"
+        a:layout_marginRight="30px"
+        a:layout_marginTop="50px"
+        a:layout_toLeftOf="@id/img_topic_item_comment"
+        a:textColor="@color/gray_9a"
+        a:textSize="@dimen/font_size_38" />
+
+    <View
+        a:id="@+id/topic_item_split_line"
+        a:layout_width="3px"
+        a:layout_height="36px"
+        a:layout_below="@id/txt_topic_item_digest"
+        a:layout_marginRight="42px"
+        a:layout_marginTop="58px"
+        a:layout_toLeftOf="@id/txt_topic_item_comment_count"
+        a:background="#9a9a9a" />
+
+    <x.ImageView
+        a:id="@+id/img_topic_item_comment_ellips"
+        a:layout_width="60px"
+        a:layout_height="60px"
+        a:layout_below="@id/txt_topic_item_digest"
+        a:layout_marginRight="42px"
+        a:layout_marginTop="45px"
+        a:layout_toLeftOf="@id/topic_item_split_line"
+        x:src="@drawable/ic_topic_item_ellipsis" />
+
+    <x.LinearLayout
+        a:id="@+id/topic_item_layout_participants"
+        a:layout_width="wrap_content"
+        a:layout_height="78px"
+        a:layout_alignLeft="@id/txt_topic_item_digest"
+        a:layout_below="@id/txt_topic_item_digest"
+        a:layout_marginTop="34px"
+        a:paddingLeft="32px">
+
+        <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+        <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+        <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+        <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+
+        <com.makeramen.RoundedImageView style="@style/Topic.Item.Participant" />
+    </x.LinearLayout>
+
+    <View
+        a:id="@+id/topic_item_bottom_line"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/topic_item_layout_participants"
+        a:layout_marginTop="38px"
+        a:background="@color/gray_b9" />
+</x.RelativeLayout>

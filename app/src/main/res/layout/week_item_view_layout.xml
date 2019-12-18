@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <x.BorderedTextView
+        a:id="@+id/mWeekView"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="100px"
+        a:background="@drawable/bg_week_item_selector"
+        a:textColor="@color/week_text_color_selector"
+        a:textSize="@dimen/font_size_52" />
+</x.RelativeLayout>

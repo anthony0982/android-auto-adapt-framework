@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/notification_layout_title_bar"
+        a:layout_width="match_parent"
+        a:layout_height="164px"
+        a:background="@color/white"
+        a:paddingLeft="50px">
+
+        <x.ImageView
+            a:id="@+id/mImgClose"
+            style="@style/ImageView"
+            a:layout_width="42px"
+            a:layout_height="40px"
+            a:layout_marginLeft="10px"
+            a:tint="@color/light_blue"
+            a:layout_marginTop="70px"
+            a:src="@drawable/ic_notification_activity_close" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/Notification.SenderName"
+            a:layout_marginLeft="58px"
+            a:layout_marginTop="50px"
+            a:layout_toRightOf="@id/mImgClose" />
+
+        <x.ImageView
+            a:id="@+id/mImgMore"
+            style="@style/ToolBar.Icon.White"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="40px"
+            a:visibility="gone"
+            a:layout_marginTop="50px"
+            x:src="@drawable/ic_toolbar_more" />
+    </x.RelativeLayout>
+
+
+    <com.halo.view.ObservableRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/notification_layout_title_bar"
+        a:background="@color/white"
+        a:fadingEdgeLength="0px"
+        a:overScrollMode="never" />
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditorView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/activity_select_grade" />
+
+        <x.TextView
+            a:id="@+id/mTxtConfirm"
+            style="@style/TitleBar.Text.Right"
+            a:enabled="false"
+            a:text="@string/confirm" />
+
+        <x.TextView
+            a:id="@+id/mTxtSelectAll"
+            style="@style/TitleBar.Text.Right"
+            a:layout_marginRight="280px"
+            a:text="@string/select_all"
+            a:textColor="@color/gray_9b" />
+
+    </x.RelativeLayout>
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:background="@color/gray_fa" />
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty"
+        a:paddingBottom="150px"
+        a:text="@string/notification_select_orgnization_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error" />
+</x.RelativeLayout>

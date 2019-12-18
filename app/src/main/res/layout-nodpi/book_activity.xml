@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <com.halo.view.ObservableRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:fadingEdgeLength="0px"
+        a:overScrollMode="never" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTitleBarCover"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:alpha="0"
+        a:background="@color/white">
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBarCover"
+            style="@style/TitleBar.Text"
+            a:layout_height="@dimen/title_bar_height"
+            a:layout_centerVertical="false" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@null">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditorView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+    <View
+        a:id="@+id/mLoadingCover"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerInParent="true"
+        a:background="@color/white" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+
+</RelativeLayout>

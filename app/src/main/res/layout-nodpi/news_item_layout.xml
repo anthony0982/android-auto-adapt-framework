@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutNews"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="46px" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/GroupMoment.Item.GroupName"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginLeft="30px"
+        a:layout_marginRight="50px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+    <com.halo.view.RoundCornerImageView
+        a:id="@+id/mImgPicture"
+        style="@style/RoundCornerImageView"
+        a:layout_width="match_parent"
+        a:layout_height="500px"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="40px" />
+
+    <com.halo.view.RoundCornerImageView
+        a:id="@+id/mImgVideoPlay"
+        style="@style/RoundCornerImageView"
+        a:layout_width="match_parent"
+        a:layout_height="500px"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="40px"
+        a:src="@drawable/ic_video_play" />
+
+    <x.TextView
+        a:id="@+id/mTxtPictureCount"
+        a:layout_width="70px"
+        a:layout_height="70px"
+        a:layout_alignBottom="@id/mImgPicture"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="40px"
+        a:layout_marginRight="90px"
+        a:gravity="center"
+        a:textColor="@android:color/white"
+        a:textSize="@dimen/font_size_40"
+        a:visibility="visible"
+        x:bg="@drawable/profile_list_item_picture_count_bg" />
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/Topic.Item.Title"
+        a:layout_below="@id/mImgPicture"
+        a:layout_marginTop="40px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <x.TextView
+        a:id="@+id/mTxtDigest"
+        style="@style/Topic.Item.Digest"
+        a:layout_below="@id/mTxtTitle"
+        a:layout_marginTop="30px"
+        a:ellipsize="end"
+        a:maxLines="4"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItemBottom"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mTxtDigest"
+        a:gravity="center_vertical"
+        a:paddingRight="50px"
+        a:paddingTop="50px">
+
+        <x.ImageView
+            a:id="@+id/mImgComment"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            x:src="@drawable/ic_moment_comment" />
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="16px"
+            a:textColor="@color/gray_88"
+            a:textSize="@dimen/font_size_30" />
+
+    </x.LinearLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutView"
+        a:layout_width="wrap_content"
+        a:layout_height="126px"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/mTxtDigest">
+
+        <x.TextView
+            a:id="@+id/mTxtViewCount"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="50px"
+            a:textColor="@color/gray_66"
+            a:textSize="@dimen/font_size_32" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutView"
+        a:background="@color/gray_f0" />
+</x.RelativeLayout>

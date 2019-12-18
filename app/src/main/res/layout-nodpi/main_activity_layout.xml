@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/main_root"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipChildren="false"
+    a:clipToPadding="false"
+    a:fitsSystemWindows="true">
+
+    <FrameLayout
+        a:id="@+id/other_frame"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_gravity="right|bottom" />
+
+    <FrameLayout
+        a:id="@+id/main_frame"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_gravity="right|bottom" />
+
+    <FrameLayout
+        a:id="@+id/picker_frame"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_gravity="right|bottom" />
+
+</FrameLayout>

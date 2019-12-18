@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/main_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:paddingTop="30px">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="120px"
+        a:layout_height="120px"
+        a:layout_marginLeft="50px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/GroupMoment.Item.GroupName"
+        a:layout_marginLeft="30px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px" />
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginLeft="30px"
+        a:layout_marginRight="50px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/Topic.Item.Title"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:textSize="70px" />
+
+    <WebView
+        a:id="@+id/mWebView"
+        style="@style/Club.WebView"
+        a:layout_below="@id/mTxtTitle" />
+
+    <x.TextView
+        a:id="@+id/mTxtViewCount"
+        a:layout_width="wrap_content"
+        a:layout_height="126px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mWebView"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:gravity="center"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_32" />
+
+
+    <View
+        a:id="@+id/group_split_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTxtViewCount"
+        a:background="@color/gray_f0" />
+
+    <View
+        a:id="@+id/news_bottom_split"
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:layout_below="@id/group_split_line"
+        a:background="@color/gray_fa" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutCommentTitle"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_below="@id/news_bottom_split">
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            style="@style/TextView.Center"
+            a:layout_height="148px"
+            a:layout_alignParentLeft="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/comment"
+            a:textColor="@color/gray_3b"
+            a:textSize="@dimen/font_size_50" />
+
+        <View
+            a:id="@+id/comment_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/mTxtCommentCount"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:background="@color/gray_e0" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCommentEmpty"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="300px"
+        a:layout_below="@id/news_bottom_split"
+        a:text="@string/no_comment"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mImgComment"
+        style="@style/Comment.Write"
+        a:layout_below="@id/news_bottom_split" />
+</RelativeLayout>

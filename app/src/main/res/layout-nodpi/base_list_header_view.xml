@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <im.clazz.view.SearchBar
+        a:id="@+id/mSearchBar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_toLeftOf="@+id/mTitleButton" />
+
+    <x.TextView
+        a:id="@+id/mTitleButton"
+        style="@style/TitleBar.NotificationTitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="40px"
+        a:padding="20px"
+        a:paddingTop="28px" />
+
+</RelativeLayout>

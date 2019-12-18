@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:singleLine="true"
+            a:text="@string/activity_detail" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            x:src="@drawable/ic_toobar_confirm_selector" />
+
+    </x.RelativeLayout>
+
+
+    <com.halo.view.MaterialEditText
+        a:id="@+id/mEditor"
+        style="@style/CommentEditText.Black"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:gravity="top|left"
+        a:hint="@string/post_comment"
+        a:scrollbars="vertical"
+        a:textColorHint="@color/gray_b3"
+        x:met_hideUnderline="true" />
+</RelativeLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_add_plan_fragment_layout"
+        a:layout_width="1030px"
+        a:layout_height="1465px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/schedule_add_course_bg_shadow">
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_add"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_marginLeft="75px"
+            a:layout_marginTop="85px"
+            a:src="@drawable/schedule_add_plan_ic_add" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_add"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="75px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_add"
+            a:text="@string/schedule_add_plan_add"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.EditText
+            a:id="@+id/schedule_add_plan_fragment_edt_plan"
+            a:layout_width="835px"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_add"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_add"
+            a:layout_marginTop="40px"
+            a:background="@null"
+            a:hint="添加计划"
+            a:textColorHint="@color/gray_cc"
+            a:singleLine="true"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_meeting"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_add"
+            a:layout_below="@id/schedule_add_plan_fragment_edt_plan"
+            a:layout_marginTop="40px"
+            a:text="会议"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <View
+            a:id="@+id/schedule_add_plan_fragment_line_a"
+            a:layout_width="845px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_meeting"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="35px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_add"
+            a:background="#FFefefef" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_set_time"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_img_add"
+            a:layout_below="@id/schedule_add_plan_fragment_line_a"
+            a:layout_marginTop="40px"
+            a:src="@drawable/schedule_add_course_ic_time" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_line_a"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_set_time"
+            a:text="@string/schedule_add_plan_time"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_btn_add_a"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_alignRight="@id/schedule_add_plan_fragment_line_a"
+            a:layout_below="@id/schedule_add_plan_fragment_line_a"
+            a:layout_marginTop="35px"
+            a:src="@drawable/schedule_add_course_btn_add" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_date"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_marginTop="47px"
+            a:text="2014年11月20日"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_marginLeft="420px"
+            a:layout_marginTop="47px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_set_time"
+            a:text="18:40:00"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_day"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_marginLeft="640px"
+            a:layout_marginTop="47px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_set_time"
+            a:text="星期三"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_classroom"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_date"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_date"
+            a:layout_marginTop="40px"
+            a:text="教学楼305"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_frequency"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_time"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_time"
+            a:layout_marginTop="40px"
+            a:text="每周"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_btn_remove_a"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignRight="@id/schedule_add_plan_fragment_line_a"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_set_time"
+            a:layout_marginTop="98px"
+            a:src="@drawable/schedule_add_course_btn_remove" />
+
+        <View
+            a:id="@+id/schedule_add_plan_fragment_line_b"
+            a:layout_width="845px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_classroom"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="35px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_add"
+            a:background="#FFefefef" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_alarm"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_img_set_time"
+            a:layout_below="@id/schedule_add_plan_fragment_line_b"
+            a:layout_marginTop="35px"
+            a:src="@drawable/schedule_add_plan_ic_alarm" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_alarm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_line_b"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="25px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_alarm"
+            a:text="@string/schedule_add_plan_alarm"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_btn_add_b"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_alignRight="@id/schedule_add_plan_fragment_line_b"
+            a:layout_below="@id/schedule_add_plan_fragment_line_b"
+            a:layout_marginTop="27px"
+            a:src="@drawable/schedule_add_course_btn_add" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_alarm_ahead"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_alarm"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_alarm"
+            a:layout_marginTop="45px"
+            a:text="提前5分钟"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_alarm_style"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_alarm_ahead"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_alarm_ahead"
+            a:layout_marginTop="40px"
+            a:text="响铃+震动"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_alarm_frequency"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_frequency"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_alarm_ahead"
+            a:layout_marginTop="40px"
+            a:text="每次提醒"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_btn_remove_b"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignRight="@id/schedule_add_plan_fragment_line_b"
+            a:layout_below="@id/schedule_add_plan_fragment_line_b"
+            a:layout_marginTop="168px"
+            a:src="@drawable/schedule_add_course_btn_remove" />
+
+        <View
+            a:id="@+id/schedule_add_plan_fragment_line_c"
+            a:layout_width="845px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_alarm_style"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="35px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_add"
+            a:background="#FFefefef" />
+
+        <x.ImageView
+            a:id="@+id/schedule_add_plan_fragment_img_group"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_img_add"
+            a:layout_below="@id/schedule_add_plan_fragment_line_c"
+            a:layout_marginTop="52px"
+            a:src="@drawable/schedule_add_course_ic_group" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_group"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_line_c"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="42px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_group"
+            a:text="@string/schedule_add_plan_group"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_choose_group"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_plan_fragment_txt_group"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_group"
+            a:layout_marginTop="46px"
+            a:text="木工13-01班"
+            a:textColor="#292525"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_cancel"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_choose_group"
+            a:layout_marginLeft="530px"
+            a:layout_marginTop="55px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_group"
+            a:text="@string/schedule_add_course_cancel"
+            a:textColor="@color/gray_cc"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_plan_fragment_txt_confirm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_add_plan_fragment_txt_choose_group"
+            a:layout_marginLeft="725px"
+            a:layout_marginTop="55px"
+            a:layout_toRightOf="@id/schedule_add_plan_fragment_img_group"
+            a:text="@string/schedule_add_course_confirm"
+            a:textColor="@color/confirm_normal"
+            a:textSize="40px" />
+    </x.RelativeLayout>
+</x.RelativeLayout>

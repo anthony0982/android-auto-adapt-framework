@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_notification_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/post_moment" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+
+    </x.RelativeLayout>
+
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@+id/mBottomBar"
+        a:layout_below="@id/mLayoutToolBar"
+        a:scrollbars="vertical">
+
+        <RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@color/white">
+
+            <com.materialedittext.MaterialEditText
+                a:id="@+id/mEditContent"
+                style="@style/MaterialEditText"
+                a:layout_height="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="30px"
+                a:hint="@string/hint_content"
+                a:textSize="@dimen/font_size_medium"
+                a:textStyle="normal"
+                x:met_floatingLabelText="@string/title"
+                x:met_hideUnderline="true"
+                x:met_textColor="@color/black"
+                x:met_underLineHeight="4px" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_above="@+id/mBottomBar"
+        a:background="@color/gray_e6" />
+
+    <x.RelativeLayout
+        a:id="@+id/mBottomBar"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:background="@color/gray_f3">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutBottom"
+            a:layout_width="fill_parent"
+            a:layout_height="146px"
+            a:orientation="horizontal">
+
+            <x.ImageView
+                a:id="@+id/mImgSelectPicture"
+                style="@style/Icon.Chat"
+                a:layout_width="146px"
+                a:layout_height="146px"
+                a:layout_marginLeft="30px"
+                x:src="@drawable/ic_post_notification_picture" />
+
+            <x.TextView
+                a:id="@+id/mTxtImageCount"
+                style="@style/TextView"
+                a:layout_gravity="center_vertical"
+                a:textColor="@color/blue"
+                a:textSize="42px" />
+        </x.LinearLayout>
+
+        <ViewStub
+            a:id="@+id/mStubGallery"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mLayoutBottom"
+            a:layout="@layout/post_gallery_stub_layout" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

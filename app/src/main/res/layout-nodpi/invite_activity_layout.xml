@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.RelativeLayout
+        a:id="@+id/invite_layout_title_bar"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/white" >
+
+        <x.ImageView
+            a:id="@+id/invite_activity_img_back"
+            style="@style/ImageView"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            x:src="@drawable/ic_back_120" />
+
+
+        <x.TextView
+            a:id="@+id/invite_activity_txt_title"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:text="@string/invite_title"
+            a:textColor="#FF000000"
+            a:textSize="56px" />
+
+        <View
+            a:id="@+id/invite_activity_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_alignBottom="@id/invite_activity_txt_title"
+            a:background="#FFd7d7d7" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/invite_layout"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/invite_layout_title_bar" >
+
+        <x.TextView
+            a:id="@+id/invite_invite_txt_tip"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_height="100px"
+            a:layout_below="@id/invite_layout_title_bar"
+            a:background="@color/light_grey_disable"
+            a:gravity="center_vertical"
+            a:paddingLeft="66px"
+            a:singleLine="false"
+            a:text="@string/invite_tip"
+            a:textColor="#FF9E9E9E"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/empty_friend"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:text="暂未找到可邀请的小伙伴"
+            a:textSize="50px"
+            a:visibility="invisible" />
+
+        <x.TextView
+            a:id="@+id/all_invited"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:text="所有的小伙伴均已邀请成功"
+            a:textSize="50px"
+            a:visibility="invisible" />
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/invite_invite_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/invite_invite_txt_tip"
+            a:layout_marginBottom="300px"
+            a:overScrollMode="never"
+            a:scrollbars="vertical" />
+
+        <x.TextView
+            a:id="@+id/invite_invite_btn_invite_all"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="130px"
+            a:layout_alignParentBottom="true"
+            a:layout_marginBottom="100px"
+            a:layout_marginLeft="90px"
+            a:background="@drawable/bg_green_rectangle_selector"
+            a:paddingLeft="50px"
+            a:paddingRight="50px"
+            a:text="@string/invite_all_anonymous"
+            a:textColor="@color/btn_green_color_selector"
+            a:textSize="@dimen/font_size_50" />
+
+        <x.TextView
+            a:id="@+id/invite_invite_btn_invite"
+            style="@style/TextView.Center"
+            a:layout_width="300px"
+            a:layout_height="130px"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="100px"
+            a:layout_marginRight="90px"
+            a:background="@drawable/bg_green_rectangle_selector"
+            a:enabled="false"
+            a:text="@string/invite"
+            a:textColor="@color/btn_green_color_selector"
+            a:textSize="@dimen/font_size_50" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

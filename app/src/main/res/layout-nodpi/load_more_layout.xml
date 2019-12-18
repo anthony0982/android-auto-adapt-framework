@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/layout_loading"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:paddingBottom="40px"
+    a:paddingTop="40px" >
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:gravity="center" >
+
+        <ProgressBar
+            a:id="@+id/progressBar"
+            a:layout_width="80px"
+            a:layout_height="80px"/>
+
+        <x.TextView
+            
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="35px"
+            a:layout_toRightOf="@id/progressBar"
+            a:text="正在加载..."
+            a:textColor="@color/text_color_dark_gray"
+            a:textSize="@dimen/font_size_38" />
+    </RelativeLayout>
+
+</RelativeLayout>

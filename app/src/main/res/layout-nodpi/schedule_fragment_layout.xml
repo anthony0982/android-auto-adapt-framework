@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white">
+
+    <RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Title"
+            a:text="@string/weekly_schedule"
+            a:textSize="@dimen/font_size_60"
+            a:textStyle="normal" />
+
+        <x.TextView
+            a:id="@+id/mTxtYear"
+            style="@style/TitleBar.SubTitle"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="18px"
+            a:layout_toRightOf="@id/mTxtTitle" />
+
+        <x.TextView
+            a:id="@+id/mTxtTerm"
+            style="@style/TitleBar.SubTitle"
+            a:layout_below="@id/mTxtYear"
+            a:layout_marginLeft="20px"
+            a:layout_toRightOf="@id/mTxtTitle" />
+
+        <x.TextView
+            a:id="@+id/mTxtWeek"
+            style="@style/TitleBar.SubTitle"
+            a:layout_below="@id/mTxtYear"
+            a:layout_marginLeft="12px"
+            a:layout_toRightOf="@id/mTxtTerm" />
+
+        <x.ImageView
+            a:id="@+id/mImgAdd"
+            style="@style/TitleBar.Icon"
+            x:src="@drawable/ic_toolbar_add" />
+
+        <x.ImageView
+            a:id="@+id/mImgSwitch"
+            style="@style/TitleBar.Icon"
+            a:layout_marginRight="130px"
+            x:src="@drawable/ic_schedule_weekly" />
+
+    </RelativeLayout>
+
+    <im.clazz.schedule.WeeklyScheduleView
+        a:id="@+id/mWeeklyScheduleView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar" />
+
+    <im.clazz.schedule.DailyScheduleView
+        a:id="@+id/mDailyScheduleView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:visibility="gone" />
+
+    <im.clazz.ui.component.ScheduleMenuView
+        a:id="@+id/mScheduleMenuView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+</RelativeLayout>

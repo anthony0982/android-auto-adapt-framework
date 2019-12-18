@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="144px"
+    a:layout_gravity="center_vertical"
+    a:gravity="center_vertical"
+    a:orientation="horizontal"
+    a:paddingLeft="30px"
+    a:paddingRight="30px">
+
+
+    <x.ImageView
+        a:id="@+id/action_h1"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_h1" />
+
+    <x.ImageView
+        a:id="@+id/action_h2"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_h2" />
+
+    <x.ImageView
+        a:id="@+id/action_h3"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_h3" />
+
+    <x.ImageView
+        a:id="@+id/action_bold"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_bold" />
+
+    <x.ImageView
+        a:id="@+id/action_italic"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_italic" />
+
+
+    <x.ImageView
+        a:id="@+id/action_insert_link"
+        style="@style/Editor.ImageView"
+        x:src="@drawable/ic_editor_link" />
+
+</x.LinearLayout>

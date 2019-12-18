@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <im.clazz.widget.PullRefreshLayout
+        a:id="@+id/base_list_swipe_to_refresh"
+        style="@style/PullRefreshLayout"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white">
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/base_list_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:visibility="gone" />
+    </im.clazz.widget.PullRefreshLayout>
+
+    <im.clazz.ui.component.EmptyView
+        a:id="@+id/mEmptyView"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:text="@string/base_list_empty" />
+
+    <x.TextView
+        a:id="@+id/base_list_error"
+        style="@style/TextView.Error" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+    <com.halo.view.FloatingActionButton
+        a:id="@+id/mFabInListFragment"
+        a:layout_width="130px"
+        a:layout_height="130px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentEnd="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="80px"
+        a:layout_marginRight="50px"
+        a:src="@drawable/ic_menu"
+        a:visibility="gone"
+        x:fab_colorNormal="@color/color_primary"
+        x:fab_colorPressed="@color/sky_blue"
+        x:fab_colorRipple="@color/color_primary"
+        x:fab_size="100px" />
+
+    <com.hlab.fabrevealmenu.view.FABRevealMenu
+        a:id="@+id/mFabMenuInListFragment"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerInParent="true"
+        x:animateItems="true"
+        x:menuBackgroundColor="@color/color_primary_dark"
+        x:menuDirection="up"
+        x:menuTitleTextColor="@color/colorWhite"
+        x:overlayBackground="@color/translucent_50_white"
+        x:showOverlay="true"
+        x:showTitle="true" />
+
+</x.RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:text="@string/book"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtGroup"
+        a:background="@drawable/list_item_color_selector"
+        a:paddingLeft="50px"
+        a:paddingRight="50px">
+
+        <x.ImageView
+            a:id="@+id/mImage"
+            style="@style/ImageView"
+            a:layout_width="214px"
+            a:layout_height="282px"
+            a:layout_marginTop="40px"
+            a:scaleType="centerCrop"
+            a:src="@color/gray_ee" />
+
+        <TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/Book.Item.Title"
+            a:layout_toRightOf="@id/mImage" />
+
+        <x.TextView
+            a:id="@+id/mTxtAuthor"
+            style="@style/Book.Item.SubTitle"
+            a:layout_below="@id/mTxtTitle"
+            a:layout_toRightOf="@id/mImage" />
+
+        <x.TextView
+            a:id="@+id/mTxtPublisher"
+            style="@style/Book.Item.SubTitle"
+            a:layout_below="@id/mTxtAuthor"
+            a:layout_toRightOf="@id/mImage" />
+
+        <x.TextView
+            a:id="@+id/mTxtPublishDate"
+            style="@style/Book.Item.SubTitle"
+            a:layout_below="@id/mTxtAuthor"
+            a:layout_toRightOf="@id/mTxtPublisher" />
+
+        <x.TextView
+            a:id="@+id/mTxtTotalCount"
+            style="@style/Book.Item.SubTitle"
+            a:layout_below="@id/mTxtPublisher"
+            a:layout_toRightOf="@id/mImage" />
+
+        <x.TextView
+            a:id="@+id/mTxtIdleCount"
+            style="@style/Book.Item.SubTitle"
+            a:layout_below="@id/mTxtPublisher"
+            a:layout_marginLeft="264px"
+            a:layout_toRightOf="@id/mImage"
+            a:textColor="@color/blue" />
+
+        <View
+            a:id="@+id/txt_book_item_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/mImage"
+            a:layout_marginTop="48px"
+            a:textColor="@color/gray_ee" />
+    </x.RelativeLayout>
+</x.RelativeLayout>

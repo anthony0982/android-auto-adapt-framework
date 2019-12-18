@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto">
+
+    <View
+        a:id="@+id/picker_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:alpha="0"
+        a:background="#33000000" />
+
+    <x.RelativeLayout
+        a:id="@+id/picker_content_layout"
+        a:layout_width="match_parent"
+        a:layout_height="750px"
+        a:layout_alignParentBottom="true"
+        a:alpha="0">
+
+        <View
+            a:id="@+id/bar_top_bg"
+            a:layout_width="match_parent"
+            a:layout_height="120px"
+            a:background="@color/picker_bar_bg" />
+
+        <View
+            a:id="@+id/view_center"
+            a:layout_width="0px"
+            a:layout_height="0px"
+            a:layout_centerInParent="true" />
+
+        <TextView
+            a:id="@+id/bar_btn_cancel"
+            style="@style/TextView.Orange.Center.SLarge"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:background="@null"
+            a:paddingLeft="54px"
+            a:paddingRight="54px"
+            a:text="@string/cancel"
+            a:textColor="@color/gray_9b"
+            a:textSize="50px" />
+
+        <TextView
+            a:id="@+id/bar_btn_confirm"
+            style="@style/TextView.Orange.Center.SLarge"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:background="@null"
+            a:paddingLeft="54px"
+            a:paddingRight="54px"
+            a:text="@string/confirm"
+            a:textColor="@color/picker_btn_color_selector"
+            a:textSize="50px" />
+
+        <TextView
+            a:id="@+id/bar_btn_title"
+            style="@style/TextView.Orange.Center.SLarge"
+            a:layout_height="120px"
+            a:layout_centerHorizontal="true"
+            a:background="@null"
+            a:paddingLeft="54px"
+            a:paddingRight="54px"
+            a:text="@string/confirm"
+            a:textColor="@color/gray"
+            a:textSize="50px"
+            a:visibility="gone" />
+
+        <x.LinearLayout
+            a:layout_width="1080px"
+            a:layout_height="match_parent"
+            a:layout_below="@id/bar_top_bg"
+            a:background="@color/white"
+            a:orientation="horizontal">
+
+            <com.example.wheel.WheelView
+                a:id="@+id/wheel_view_year"
+                style="@style/WheelView"
+                a:layout_width="200px" />
+
+            <com.example.wheel.WheelViewSplitter
+                a:id="@+id/wheel_view_splitter_year"
+                style="@style/WheelViewSplit"
+                wheel:unitText="@string/year" />
+
+            <com.example.wheel.WheelView
+                a:id="@+id/wheel_view_month"
+                style="@style/WheelView"
+                a:layout_width="146px" />
+
+            <com.example.wheel.WheelViewSplitter
+                a:id="@+id/wheel_view_splitter_month"
+                style="@style/WheelViewSplit"
+                wheel:unitText="@string/month" />
+
+            <com.example.wheel.WheelView
+                a:id="@+id/wheel_view_day"
+                style="@style/WheelView"
+                a:layout_width="146px"
+                a:layout_height="match_parent" />
+
+            <com.example.wheel.WheelViewSplitter
+                a:id="@+id/wheel_view_splitter_day"
+                style="@style/WheelViewSplit"
+                wheel:unitText="@string/day" />
+
+            <com.example.wheel.WheelView
+                a:id="@+id/wheel_view_hour"
+                style="@style/WheelView"
+                a:layout_width="146px"
+                a:layout_height="match_parent" />
+
+            <com.example.wheel.WheelViewSplitter
+                a:id="@+id/wheel_view_splitter_hour"
+                style="@style/WheelViewSplit"
+                wheel:unitText="@string/hour_txt" />
+
+            <com.example.wheel.WheelView
+                a:id="@+id/wheel_view_minute"
+                style="@style/WheelView"
+                a:layout_width="146px" />
+
+            <com.example.wheel.WheelViewSplitter
+                a:id="@+id/wheel_view_splitter_minute"
+                style="@style/WheelViewSplit"
+                a:paddingRight="30px"
+                wheel:unitText="@string/minute_txt" />
+
+        </x.LinearLayout>
+    </x.RelativeLayout>
+</merge>

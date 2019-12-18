@@ -1,0 +1,178 @@
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:background="@android:color/white" >
+
+        <x.ImageView
+            a:id="@+id/course_img_info"
+            a:layout_width="50px"
+            a:layout_height="55px"
+            a:layout_marginLeft="60px"
+            a:layout_marginTop="25px"
+            a:src="@drawable/ic_course_information" />
+
+        <x.TextView
+            a:id="@+id/course_txt_infomation"
+            style="@style/TextView"
+            a:layout_marginLeft="5px"
+            a:layout_marginTop="15px"
+            a:layout_toRightOf="@id/course_img_info"
+            a:text="@string/course_txt_infomation"
+            a:textColor="@color/course_txt_color_1"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_txt_major"
+            style="@style/TextView"
+            a:layout_below="@id/course_txt_infomation"
+            a:layout_marginLeft="115px"
+            a:layout_marginTop="30px"
+            a:text="@string/course_txt_major"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_post_major"
+            style="@style/TextView"
+            a:layout_below="@id/course_txt_infomation"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/course_txt_major"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_txt_school"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_major"
+            a:layout_marginLeft="115px"
+            a:layout_marginTop="30px"
+            a:text="@string/course_txt_school"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_post_school"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_major"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/course_txt_school"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_txt_teacher"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_school"
+            a:layout_marginLeft="115px"
+            a:layout_marginTop="30px"
+            a:text="@string/course_txt_teacher"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_post_teacher"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_school"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/course_txt_teacher"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_txt_update_time"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_teacher"
+            a:layout_marginLeft="115px"
+            a:layout_marginTop="30px"
+            a:text="@string/course_txt_update_time"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_post_update_time"
+            style="@style/TextView"
+            a:layout_below="@id/course_post_teacher"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/course_txt_update_time"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_txt_textbook"
+            style="@style/TextView"
+            a:layout_below="@id/course_txt_update_time"
+            a:layout_marginLeft="115px"
+            a:layout_marginTop="30px"
+            a:text="@string/course_txt_textbook"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/course_post_textbook"
+            style="@style/TextView"
+            a:layout_below="@id/course_txt_update_time"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/course_txt_textbook"
+            a:singleLine="false"
+            a:textColor="@color/course_txt_color_2"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/coursr_post_score"
+            style="@style/TextView"
+            a:layout_width="200px"
+            a:layout_height="95px"
+            a:layout_marginLeft="850px"
+            a:layout_marginTop="25px"
+            a:gravity="center"
+            a:textColor="@android:color/white"
+            a:textSize="@dimen/font_size_56"
+            x:background="@drawable/course_txt_score_shape" />
+
+        <x.TextView
+            a:id="@+id/course_btn_collect"
+            style="@style/TextView"
+            a:layout_marginLeft="865px"
+            a:layout_marginTop="160px"
+            a:background="@drawable/login_button_selector"
+            a:text="@string/course_btn_collect"
+            a:textColor="@color/course_txt_color_1"
+            a:textSize="@dimen/font_size_50" />
+
+        <x.ImageView
+            a:id="@+id/course_img_student_comment"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="670px"
+            x:src="@drawable/ic_course_student_comment" />
+
+        <x.TextView
+            a:id="@+id/course_txt_student_comment"
+            style="@style/TextView"
+            a:layout_marginLeft="5px"
+            a:layout_marginTop="660px"
+            a:layout_toRightOf="@id/course_img_student_comment"
+            a:text="@string/course_txt_student_comment"
+            a:textColor="@color/course_txt_color_1"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.ImageView
+            a:layout_width="fill_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/course_img_student_comment"
+            a:layout_marginTop="25px"
+            a:background="@color/common_linecolor" />
+    </RelativeLayout>
+
+</LinearLayout>

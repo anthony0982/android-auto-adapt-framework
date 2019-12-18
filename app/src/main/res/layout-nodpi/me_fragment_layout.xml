@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:scrollbars="none">
+
+    <x.RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent">
+
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutAvatar"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="48px">
+
+            <com.makeramen.RoundedImageView
+                a:id="@+id/mImgAvatar"
+                style="@style/ImageView"
+                a:layout_width="200px"
+                a:layout_height="200px"
+                a:layout_centerInParent="true"
+                x:oval="true" />
+
+            <x.ImageView
+                a:id="@+id/mImgAvatarCover"
+                style="@style/ImageView"
+                a:layout_width="214px"
+                a:layout_height="214px"
+                a:layout_centerInParent="true"
+                x:src="@drawable/ic_cover_avatar_red" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="wrap_content"
+            a:layout_height="200px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="48px"
+            a:layout_toRightOf="@id/mLayoutAvatar">
+
+            <x.TextView
+                a:id="@+id/mTxtName"
+                style="@style/TextView"
+                a:layout_centerVertical="true"
+                a:maxWidth="570px"
+                a:textSize="@dimen/font_size_60"
+                a:textStyle="bold" />
+
+            <x.ImageView
+                a:id="@+id/mImgGender"
+                style="@style/ImageView"
+                a:layout_width="36px"
+                a:layout_height="36px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/mTxtName"
+                x:src="@drawable/ic_profile_gender_female" />
+
+            <x.ImageView
+                a:id="@+id/mImgDive"
+                style="@style/DiveImageView"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true" />
+        </x.RelativeLayout>
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/Me.Line"
+            a:layout_below="@id/mLayoutContent"
+            a:layout_marginTop="38px" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLike"
+            a:layout_width="326px"
+            a:layout_height="160px"
+            a:layout_below="@id/mLine"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="20px"
+            a:gravity="center">
+
+            <x.TextView
+                a:id="@+id/mTxtLikeCount"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:text="132"
+                a:textSize="@dimen/font_size_36" />
+
+            <x.TextView
+                a:id="@+id/mTxtLike"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:layout_below="@id/mTxtLikeCount"
+                a:text="@string/do_like"
+                a:textColor="@color/gray_88"
+                a:textSize="@dimen/font_size_40" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutFollowing"
+            a:layout_width="326px"
+            a:layout_height="160px"
+            a:layout_below="@id/mLine"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="20px"
+            a:gravity="center">
+
+            <x.TextView
+                a:id="@+id/mTxtFollowingCount"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:text="32"
+                a:textSize="@dimen/font_size_36" />
+
+            <x.TextView
+                a:id="@+id/mTxtFollow"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:layout_below="@id/mTxtFollowingCount"
+                a:text="@string/follow"
+                a:textColor="@color/gray_88"
+                a:textSize="@dimen/font_size_40" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutFollowed"
+            a:layout_width="326px"
+            a:layout_height="160px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mLine"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="20px"
+            a:gravity="center">
+
+            <x.TextView
+                a:id="@+id/mTxtFollowedCount"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:text="32"
+                a:textSize="@dimen/font_size_36" />
+
+            <x.TextView
+                a:id="@+id/mTxtFollowed"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:layout_below="@id/mTxtFollowedCount"
+                a:text="@string/fans"
+                a:textColor="@color/gray_88"
+                a:textSize="@dimen/font_size_40" />
+        </x.RelativeLayout>
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mLayoutFollowed"
+            a:orientation="vertical">
+
+            <View
+                a:id="@+id/mViewSplitTarget"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mAtMe"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_at_me"
+                x:settings_title="@string/setting_at_me"
+                x:show_image_left="true" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mSchedule"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_settings_schedule"
+                x:settings_title="@string/time_setting"
+                x:show_image_left="true" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mQuery"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_setting_search"
+                x:settings_title="@string/query_setting"
+                x:show_image_left="true"
+                x:show_line="false" />
+
+            <View
+                a:id="@+id/mViewSplitLevel"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mEditProfile"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_change_profile"
+                x:settings_title="@string/setting_profile"
+                x:show_image_left="true" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mBinding"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_settings_binding"
+                x:settings_title="@string/setting_binding"
+                x:show_image_left="true" />
+
+            <View
+                a:id="@+id/mViewSplitBinding"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mSettings"
+                style="@style/SettingsItemView"
+                x:icon="@drawable/ic_settings_setting"
+                x:settings_title="@string/setting_settings"
+                x:show_image_left="true"
+                x:show_line="false" />
+
+            <View
+                a:id="@+id/mViewSplitBottom"
+                style="@style/EditItem.Split" />
+
+        </x.LinearLayout>
+    </x.RelativeLayout>
+</ScrollView>

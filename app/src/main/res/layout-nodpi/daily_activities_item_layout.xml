@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/gray_fb">
+
+        <View
+            a:id="@+id/mBottomBorder"
+            a:layout_width="0px"
+            a:layout_height="4px"
+            a:background="@color/cyan_gray"
+            x:layout_constraintBottom_toBottomOf="parent"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent" />
+
+
+        <x.TextView
+            a:id="@+id/mTxtLabel"
+            style="@style/TextView"
+            a:layout_marginLeft="80px"
+            a:layout_marginTop="30px"
+            a:text="@string/activities_label"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <x.TextView
+            a:id="@+id/mTxtMore"
+            style="@style/TextView"
+            a:layout_marginRight="56px"
+            a:layout_marginTop="30px"
+            a:text="@string/check_all"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <com.halo.view.HorizontalScrollView
+            a:id="@+id/mScrollView"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginBottom="60px"
+            a:layout_marginTop="50px"
+            a:overScrollMode="never"
+            a:scrollbars="none"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mTxtLabel">
+
+            <x.LinearLayout
+                a:id="@+id/mActivityContentLayout"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:paddingRight="50px" />
+        </com.halo.view.HorizontalScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+</x.RelativeLayout>

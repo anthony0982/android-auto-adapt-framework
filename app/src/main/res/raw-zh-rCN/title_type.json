@@ -1,0 +1,5 @@
+﻿[{"name":"教授","code":"prof"},
+{"name":"副教授","code":"ajunc_prof"},
+{"name":"讲师","code":"lect"},
+  {"name":"助教","code":"assis"},
+  {"name":"其他","code":"other"}]

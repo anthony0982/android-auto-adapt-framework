@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        a:layout_width="match_parent"
+        a:layout_height="372px"
+        a:layout_marginLeft="66px"
+        a:layout_marginRight="66px"
+        a:layout_marginTop="192px"
+        a:gravity="center_vertical"
+        a:orientation="vertical">
+
+        <x.combo.ComboTextView
+            a:id="@+id/profile_edit_two_student_combo_txt_major"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:visibility="gone" />
+
+        <x.combo.ComboTextView
+            a:id="@+id/profile_edit_two_student_combo_txt_enter_year"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:visibility="gone" />
+
+        <x.combo.ComboTextView
+            a:id="@+id/profile_edit_two_student_combo_txt_class"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:visibility="gone" />
+    </LinearLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/profile_edit_two_student_year_picker"
+        style="@style/Picker" />
+
+    <RelativeLayout
+        a:id="@+id/profile_edit_one_layout_search_major"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/profile_edit_two_student_img_back_major"
+            style="@style/ImageView"
+            a:layout_width="150px"
+            a:layout_height="150px"
+            a:layout_marginTop="36px"
+            x:src="@drawable/common_icon_back" />
+
+        <x.combo.ComboEditText
+            a:id="@+id/profile_edit_two_student_edit_text_major"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:layout_marginLeft="150px"
+            a:layout_marginRight="66px"
+            a:layout_marginTop="50px" />
+
+        <x.TextView
+            a:id="@+id/profile_edit_one_major_create_new"
+            style="@style/TextView.Center.Blue"
+            a:layout_height="fill_parent"
+            a:layout_alignBottom="@id/profile_edit_two_student_edit_text_major"
+            a:layout_alignRight="@id/profile_edit_two_student_edit_text_major"
+            a:layout_alignTop="@id/profile_edit_two_student_edit_text_major"
+            a:layout_marginRight="50px"
+            a:text="@string/confirm"
+            a:textSize="46px"
+            a:visibility="gone" />
+
+        <RelativeLayout
+            a:id="@+id/profile_edit_one_layout_create_major"
+            a:layout_width="match_parent"
+            a:layout_height="200px"
+            a:layout_below="@id/profile_edit_two_student_edit_text_major"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="280px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/profile_edit_one_major_not_found"
+                style="@style/TextView.Right"
+                a:layout_height="150px"
+                a:paddingBottom="32px"
+                a:text="@string/not_found_major"
+                a:textColor="#4F202020"
+                a:textSize="50px" />
+
+            <x.TextView
+                a:id="@+id/profile_edit_one_major_create"
+                style="@style/TextView.Center.Blue"
+                a:layout_height="150px"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/profile_edit_one_major_not_found"
+                a:paddingBottom="32px"
+                a:text="@string/create"
+                a:textSize="50px"
+                a:visibility="gone" />
+        </RelativeLayout>
+
+        <im.clazz.fragment.profile.edit.EditProfileSearchResultListView
+            a:id="@+id/profile_edit_two_student_recycler_view_major"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/profile_edit_two_student_edit_text_major"
+            a:background="@color/white"
+            a:fadingEdge="none"
+            a:scrollbars="vertical"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/profile_edit_one_layout_search_class"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/profile_edit_two_student_img_back_class"
+            style="@style/ImageView"
+            a:layout_width="150px"
+            a:layout_height="150px"
+            a:layout_marginTop="36px"
+            x:src="@drawable/common_icon_back" />
+
+        <x.combo.ComboEditText
+            a:id="@+id/profile_edit_two_student_edit_text_class"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:layout_marginLeft="150px"
+            a:layout_marginRight="66px"
+            a:layout_marginTop="50px" />
+
+        <x.TextView
+            a:id="@+id/profile_edit_one_class_create_new"
+            style="@style/TextView.Center.Blue"
+            a:layout_height="fill_parent"
+            a:layout_alignBottom="@id/profile_edit_two_student_edit_text_class"
+            a:layout_alignRight="@id/profile_edit_two_student_edit_text_class"
+            a:layout_alignTop="@id/profile_edit_two_student_edit_text_class"
+            a:layout_marginRight="50px"
+            a:text="@string/confirm"
+            a:textSize="46px"
+            a:visibility="gone" />
+
+        <RelativeLayout
+            a:id="@+id/profile_edit_one_layout_create_class"
+            a:layout_width="match_parent"
+            a:layout_height="200px"
+            a:layout_below="@id/profile_edit_two_student_edit_text_class"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="280px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/profile_edit_one_class_not_found"
+                style="@style/TextView.Right"
+                a:layout_height="150px"
+                a:paddingBottom="32px"
+                a:text="@string/not_found_class"
+                a:textColor="#4F202020"
+                a:textSize="50px" />
+
+            <x.TextView
+                a:id="@+id/profile_edit_one_class_create"
+                style="@style/TextView.Center.Blue"
+                a:layout_height="150px"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/profile_edit_one_class_not_found"
+                a:paddingBottom="32px"
+                a:text="@string/create"
+                a:textSize="50px"
+                a:visibility="gone" />
+        </RelativeLayout>
+
+        <im.clazz.fragment.profile.edit.EditProfileSearchResultListView
+            a:id="@+id/profile_edit_two_student_recycler_view_class"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/profile_edit_two_student_edit_text_class"
+            a:background="@color/white"
+            a:fadingEdge="none"
+            a:scrollbars="vertical"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+</merge>

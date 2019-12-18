@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/notification_responser_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/notification_select_targets" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true" />
+    </x.RelativeLayout>
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        x:pstsIndicatorColor="@color/black"
+        a:layout_below="@id/mTitleBar"
+        x:pstsIndicatorHeight="4px"
+        x:pstsShouldAnimateText="false"
+        x:pstsTabPaddingLeftRight="0px"
+        x:pstsTabWidth="500px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="@color/black"
+        x:pstsTextSize="40px"
+        x:pstsTextSizeHighlight="40px"
+        x:pstsUnderlineHeight="0px"
+        a:layout_width="match_parent"
+        a:layout_height="116px"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:background="@null"
+        a:overScrollMode="never" />
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mPagerIndicator"
+        a:overScrollMode="never" />
+
+    <x.RelativeLayout
+        a:id="@+id/mSelectedLayout"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="120px"
+        a:layout_marginRight="74px">
+
+        <x.ImageView
+            a:id="@+id/mImgSelectedBg"
+            style="@style/ImageView"
+            a:layout_width="172px"
+            a:layout_height="172px"
+            a:src="@drawable/bg_blue_round" />
+
+        <x.TextView
+            a:id="@+id/mImgSelectedTxtTitle"
+            style="@style/TextView.White"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="32px"
+            a:text="@string/notification_selected"
+            a:textSize="@dimen/font_size_36" />
+
+        <x.TextView
+            a:id="@+id/mTxtSelectedCount"
+            style="@style/TextView.White"
+            a:layout_below="@id/mImgSelectedTxtTitle"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="16px"
+            a:text="100"
+            a:textSize="@dimen/font_size_38" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

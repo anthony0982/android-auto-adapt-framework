@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="28px"
+        a:layout_marginRight="28px"
+        a:layout_marginTop="6px"
+        a:background="@drawable/tutor_profile_result_bg" >
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/tutor_profile_result_list_item_img_icon"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_marginLeft="33px"
+            a:layout_marginTop="31px"
+            a:src="@drawable/tutor_profile_result_icon"
+            x:corner_radius="22px"
+            x:mutate_background="true"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="25px"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_img_icon"
+            a:textColor="#423f37"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_grade"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="60px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_txt_name"
+            a:textColor="#787263"
+            a:textSize="34px" />
+
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_school"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="72px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_txt_grade"
+            a:textColor="#787263"
+            a:textSize="34px" />
+
+        <View
+            a:id="@+id/tutor_profile_result_list_item_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/tutor_profile_result_list_item_txt_school"
+            a:layout_marginLeft="10px"
+            a:layout_marginRight="10px"
+            a:layout_marginTop="30px"
+            a:background="#e1d3cf" />
+
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_subject"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/tutor_profile_result_list_item_img_icon"
+            a:layout_below="@id/tutor_profile_result_list_item_line"
+            a:layout_marginTop="24px"
+            a:textColor="#423f37"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_score_before_tutored"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_line"
+            a:layout_marginLeft="260px"
+            a:layout_marginTop="24px"
+            a:textColor="#423f37"
+            a:textSize="40px" 
+            a:text="@string/tutor_profile_result_before_tutored"/>
+        
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_score_before_tutored_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_line"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_txt_score_before_tutored"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="24px"
+            a:textColor="#ef4984"
+            a:textSize="40px" />
+        
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_score_after_tutored"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_line"
+            a:layout_marginLeft="690px"
+            a:layout_marginTop="24px"
+            a:textColor="#423f37"
+            a:textSize="40px" 
+            a:text="@string/tutor_profile_result_after_tutored"/>
+        
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_score_after_tutored_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_line"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_txt_score_after_tutored"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="24px"
+            a:textColor="#55acee"
+            a:textSize="40px" />
+        
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_teacher_remark"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_txt_score_after_tutored_content"
+            a:layout_alignLeft="@id/tutor_profile_result_list_item_img_icon"
+            a:layout_marginTop="30px"
+            a:textColor="#423f37"
+            a:textSize="40px" 
+            a:text="@string/tutor_profile_result_teacher_remark"/>
+        
+        <x.TextView
+            a:id="@+id/tutor_profile_result_list_item_txt_teacher_remark_content"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tutor_profile_result_list_item_txt_score_after_tutored_content"
+            a:layout_toRightOf="@id/tutor_profile_result_list_item_txt_teacher_remark"
+            a:layout_marginRight="30px"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="33px"
+            a:paddingBottom="30px"
+            a:singleLine="false"
+            a:lineSpacingExtra="10px"
+            a:textColor="#817f79"
+            a:textSize="34px"/>
+    </x.RelativeLayout>
+
+</RelativeLayout>

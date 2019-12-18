@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_edit_school_list_item_bg_color_selector"
+    android:paddingLeft="66px">
+
+    <x.TextView
+        android:id="@+id/profile_edit_search_result_list_item_title"
+        style="@style/TextView"
+        android:layout_height="150px"
+        android:layout_marginLeft="80px"
+        android:duplicateParentState="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingTop="40px"
+        android:text="@string/create"
+        android:textColor="@drawable/profile_edit_school_list_item_title_color_selector"
+        android:textSize="50px" />
+
+    <View
+        android:id="@+id/profile_edit_search_result_list_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80px"
+        android:background="@drawable/profile_edit_school_list_item_line_color_selector"
+        android:duplicateParentState="true" />
+
+</RelativeLayout>

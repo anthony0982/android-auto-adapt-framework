@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/join_club_title" />
+
+        <x.ImageView
+            a:id="@+id/mImgSearch"
+            style="@style/Icon"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="40px"
+            a:layout_toLeftOf="@+id/mImgCreate"
+            a:src="@drawable/ic_search"
+            a:tint="#586370" />
+
+        <x.ImageView
+            a:id="@+id/mImgCreate"
+            style="@style/Icon"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:src="@drawable/ic_add_thin"
+            a:tint="#586370" />
+    </x.RelativeLayout>
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        style="@style/PagerIndicator"
+        a:layout_width="match_parent"
+        a:layout_height="100px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="24px"
+        a:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:layout_below="@id/mPagerIndicator" />
+
+</x.RelativeLayout>

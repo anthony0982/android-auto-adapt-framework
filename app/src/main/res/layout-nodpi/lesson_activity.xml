@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@color/white">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Black"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@+id/mTxtComment"
+            a:text="@string/see_course" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        style="@style/PagerIndicator" />
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mPagerIndicator" />
+
+    <com.halo.view.FloatingActionButton
+        a:id="@+id/mFab"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentEnd="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="80px"
+        a:layout_marginRight="50px"
+        a:src="@drawable/ic_pencil"
+        a:visibility="gone"
+        x:fab_colorNormal="@color/color_primary"
+        x:fab_colorPressed="@color/sky_blue"
+        x:fab_colorRipple="@color/color_primary"
+        x:fab_size="100px" />
+</RelativeLayout>

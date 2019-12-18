@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent" >
+
+    <View
+        a:id="@+id/school_menu_list_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/translucent_60_dark" />
+
+    <ScrollView
+        a:id="@+id/school_menu_scroll_view"
+        a:layout_width="wrap_content"
+        a:layout_height="match_parent"
+        a:background="@color/blue"
+        a:fillViewport="true"
+        a:overScrollMode="never"
+        a:paddingBottom="0px"
+        a:paddingRight="0px"
+        a:paddingTop="0px"
+        a:scrollbars="none" >
+
+        <LinearLayout
+            a:id="@+id/school_menu_layout"
+            a:layout_width="600px"
+            a:layout_height="match_parent"
+            a:background="@color/white"
+            a:orientation="vertical"
+            a:paddingBottom="150px" >
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_course"
+                a:layout_width="match_parent"
+                a:layout_height="140px"
+                a:visibility="gone" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_course"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_class" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_course"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_course"
+                    a:text="@string/school_menu_course" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_target_interest"
+                a:layout_width="match_parent"
+                a:layout_height="140px"
+                a:visibility="gone" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_target_interest"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_target" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_target_interest"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_target_interest"
+                    a:text="@string/school_menu_target_interest" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_listen"
+                a:layout_width="match_parent"
+                a:layout_height="140px"
+                a:visibility="gone" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_listen"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_listen" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_listen"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_listen"
+                    a:text="@string/school_menu_listen" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_training"
+                a:layout_width="match_parent"
+                a:layout_height="140px"
+                a:visibility="gone" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_training"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_class" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_training"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_training"
+                    a:text="@string/school_menu_training" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_service"
+                a:layout_width="match_parent"
+                a:layout_height="140px"
+                a:visibility="gone" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_service"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_service" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_service"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_service"
+                    a:text="@string/school_menu_service" />
+            </x.RelativeLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_school"
+                a:layout_width="match_parent"
+                a:layout_height="140px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_school"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_school" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_school"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_school"
+                    a:text="@string/school_menu_school_follow" />
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_school_triangle_down"
+                    style="@style/ImageView"
+                    a:layout_width="36px"
+                    a:layout_height="36px"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="50px"
+                    x:src="@drawable/ic_menu_triangle_down" />
+            </x.RelativeLayout>
+
+            <GridLayout
+                a:id="@+id/school_menu_grid"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_below="@id/school_menu_layout_school"
+                a:alignmentMode="alignBounds"
+                a:background="@color/white"
+                a:columnCount="1"
+                a:columnOrderPreserved="false"
+                a:orientation="vertical"
+                a:rowCount="3"
+                a:useDefaultMargins="false" />
+            <!--
+            <x.RelativeLayout
+                a:id="@+id/school_menu_layout_school_follow"
+                a:layout_width="match_parent"
+                a:layout_height="140px" >
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_school_follow"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="54px"
+                    x:src="@drawable/school_menu_ic_follow" />
+
+                <x.TextView
+                    a:id="@+id/txt_school_menu_school_follow"
+                    style="@style/MenuText.MediumX"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="26px"
+                    a:layout_toRightOf="@id/img_school_menu_school_follow"
+                    a:text="@string/school_menu_school_follow" />
+
+                <x.ImageView
+                    a:id="@+id/img_school_menu_school_follow_triangle_down"
+                    style="@style/ImageView"
+                    a:layout_width="36px"
+                    a:layout_height="36px"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="50px"
+                    x:src="@drawable/ic_menu_triangle_down" />
+            </x.RelativeLayout>
+
+            <GridLayout
+                a:id="@+id/school_menu_grid_follow"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_below="@id/school_menu_layout_school_follow"
+                a:alignmentMode="alignBounds"
+                a:background="@color/white"
+                a:columnCount="1"
+                a:columnOrderPreserved="false"
+                a:orientation="vertical"
+                a:rowCount="3"
+                a:useDefaultMargins="false" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

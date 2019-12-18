@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/my_course" />
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTitleBar"
+        a:alpha="0">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutBoughtTitle"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="30px">
+
+                <x.TextView
+                    a:id="@+id/mTxtBought"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="50px"
+                    a:text="@string/course_bought"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutBoughtMore"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:padding="30px">
+
+                    <x.ImageView
+                        a:id="@+id/mImgBoughtDive"
+                        style="@style/SettingsItem.DiveOnly" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtBoughtMore"
+                        style="@style/TextView"
+                        a:layout_centerVertical="true"
+                        a:layout_toLeftOf="@id/mImgBoughtDive"
+                        a:text="@string/more"
+                        a:textColor="@color/gray_99"
+                        a:textSize="@dimen/font_size_36" />
+                </x.RelativeLayout>
+
+            </x.RelativeLayout>
+
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutBought"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical" />
+
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutFollowedTitle"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="30px">
+
+                <x.TextView
+                    a:id="@+id/mTxtFollowed"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="50px"
+                    a:text="@string/course_followed"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutFollowedMore"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:padding="30px">
+
+                    <x.ImageView
+                        a:id="@+id/mImgFollowedDive"
+                        style="@style/SettingsItem.DiveOnly" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtFollowedMore"
+                        style="@style/TextView"
+                        a:layout_centerVertical="true"
+                        a:layout_toLeftOf="@id/mImgFollowedDive"
+                        a:text="@string/more"
+                        a:textColor="@color/gray_99"
+                        a:textSize="@dimen/font_size_36" />
+                </x.RelativeLayout>
+
+            </x.RelativeLayout>
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutFollowed"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical" />
+        </x.LinearLayout>
+    </ScrollView>
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/my_course_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px"
+        a:visibility="gone" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</x.RelativeLayout>

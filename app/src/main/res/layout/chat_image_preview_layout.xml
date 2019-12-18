@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/mRootView"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <im.clazz.ui.component.ImagePreviewer
+        a:id="@+id/chat_image_previewer"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+</RelativeLayout>

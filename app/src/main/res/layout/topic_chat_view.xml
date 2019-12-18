@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/topic_chat_layout_root"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <x.RelativeLayout
+        a:id="@+id/post_notification_tool_bar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutEdit"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:background="@color/gray_f4">
+
+            <View
+                a:id="@+id/topic_chat_img_line"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_alignParentTop="true"
+                a:background="#FFDDDDDD" />
+
+            <x.RelativeLayout
+                a:id="@+id/topic_chat_layout_picture"
+                a:layout_width="120px"
+                a:layout_height="wrap_content"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="14px">
+
+                <x.ImageView
+                    a:id="@+id/topic_chat_img_picture"
+                    style="@style/Icon.Chat"
+                    a:layout_width="100px"
+                    a:layout_height="100px"
+                    a:layout_centerVertical="true"
+                    x:src="@drawable/chat_ic_picture" />
+
+                <x.TextView
+                    a:id="@+id/topic_chat_btn_send"
+                    style="@style/Button"
+                    a:layout_centerVertical="true"
+                    a:padding="14px"
+                    a:text="@string/send"
+                    a:textColor="@color/white"
+                    a:textSize="@dimen/font_size_42"
+                    a:visibility="gone"
+                    x:bg="@drawable/chat_btn_send_selector" />
+            </x.RelativeLayout>
+
+            <x.EditText
+                a:id="@+id/topic_chat_edit_text"
+                style="@style/Chat.EditText"
+                a:layout_alignParentLeft="true"
+                a:layout_marginLeft="50px"
+                a:hint="@string/join_topic" />
+        </x.RelativeLayout>
+
+    </x.RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        a:id="@+id/topic_chat_layout_swipe_refresh"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@id/post_notification_tool_bar"
+        a:background="@color/gray_eb">
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/topic_chat_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@null"
+            a:fadingEdge="vertical"
+            a:scrollbarStyle="outsideOverlay"
+            a:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <x.TextView
+        a:id="@+id/topic_chat_txt_tip_new_message"
+        style="@style/TextView"
+        a:layout_above="@id/post_notification_tool_bar"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="20px"
+        a:layout_marginRight="80px"
+        a:gravity="center_horizontal|top"
+        a:minHeight="100px"
+        a:minWidth="180px"
+        a:paddingBottom="40px"
+        a:paddingLeft="20px"
+        a:paddingRight="20px"
+        a:paddingTop="24px"
+        a:text="@string/tip_new_message"
+        a:textColor="#FF9000FC"
+        a:textSize="40px"
+        a:visibility="gone" />
+
+</x.RelativeLayout>

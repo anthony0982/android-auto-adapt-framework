@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="820px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:paddingLeft="50px"
+        a:paddingRight="50px"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_alignParentLeft="true"
+            a:layout_marginTop="50px"
+            a:textColor="@color/gray_22"
+            a:textSize="@dimen/font_size_56" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagTeacher"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginTop="48px"
+            a:text="@string/teacher_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtTeacher"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagTeacher"
+            a:layout_toRightOf="@id/mTxtTagTeacher"
+            a:text="@string/teacher_tag" />
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtTeacher"
+            a:layout_marginTop="48px" />
+
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSessions"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mLine"
+            a:orientation="vertical" />
+
+        <x.TextView
+            a:id="@+id/mTxtBack"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mLayoutSessions"
+            a:layout_marginBottom="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="200px"
+            a:text="@string/schedule_conflict_back"
+            a:textColor="@color/gray_22"
+            a:textSize="@dimen/font_size_46" />
+
+    </x.RelativeLayout>
+</merge>

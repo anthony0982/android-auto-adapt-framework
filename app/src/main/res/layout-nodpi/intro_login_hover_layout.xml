@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <View
+        a:id="@+id/intro_login_top_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:background="@color/white" />
+
+    <View
+        a:id="@+id/intro_login_img_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/intro_login_top_line"
+        a:background="#FF622805" />
+
+    <View
+        a:id="@+id/intro_login_img_bg_cover"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="#FFFFFFFF" />
+
+    <RelativeLayout
+        a:id="@+id/intro_login_layout_main"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <RelativeLayout
+            a:id="@+id/intro_login_layout_title"
+            a:layout_width="match_parent"
+            a:layout_height="300px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/intro_login_txt_title"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:layout_marginTop="74px"
+                a:text="@string/intro_login_title"
+                a:textColor="#FFFFFFFF"
+                a:textSize="64px" />
+
+            <x.TextView
+                a:id="@+id/intro_login_txt_subtitle"
+                style="@style/TextView.Center"
+                a:layout_width="match_parent"
+                a:layout_marginTop="178px"
+                a:text="@string/intro_login_subtitle"
+                a:textColor="#9FFFFFFF"
+                a:textSize="50px" />
+        </RelativeLayout>
+
+        <x.ImageView
+            a:id="@+id/intro_login_img_close"
+            style="@style/ImageView"
+            a:layout_width="66px"
+            a:layout_height="66px"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="58px"
+            a:layout_marginTop="66px"
+            x:src="@drawable/common_icon_close_normal" />
+
+        <View
+            a:id="@+id/intro_login_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_marginTop="188px"
+            a:background="#FFd7d7d7" />
+
+        <RelativeLayout
+            a:id="@+id/intro_login_layout_content"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_marginTop="188px"
+            a:paddingLeft="66px"
+            a:paddingRight="66px">
+
+            <RelativeLayout
+                a:id="@+id/intro_login_layout_content_line_1"
+                a:layout_width="match_parent"
+                a:layout_height="170px">
+
+
+                <x.TextView
+                    a:id="@+id/intro_login_txt_country_code"
+                    style="@style/TextView.White.Center"
+                    a:layout_width="230px"
+                    a:layout_height="match_parent"
+                    a:text="+1-441"
+                    a:textColor="@color/intro_login_text_country_code_color_selector"
+                    a:textSize="50px" />
+
+                <View
+                    a:id="@+id/intro_login_line_country_code"
+                    a:layout_width="2px"
+                    a:layout_height="130px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="230px"
+                    a:background="#FFd7d7d7" />
+
+                <com.halo.view.MaterialEditText
+                    a:id="@+id/intro_edttxt_phone"
+                    style="@style/MaterialEditText.NoUnderline"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    a:hint="@string/intro_login_edittext_hint"
+                    a:maxLength="11"
+                    a:paddingLeft="300px" />
+
+                <com.halo.view.MaterialEditTextUnderline
+                    a:id="@+id/intro_edttxt_phone_underline"
+                    a:layout_width="match_parent"
+                    a:layout_height="2px"
+                    a:layout_alignBottom="@id/intro_edttxt_phone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                a:id="@+id/intro_login_layout_content_line_2"
+                a:layout_width="match_parent"
+                a:layout_height="170px"
+                a:layout_below="@id/intro_login_layout_content_line_1"
+                a:visibility="gone">
+
+                <com.halo.view.MaterialEditText
+                    a:id="@+id/intro_edttxt_verify_code"
+                    style="@style/MaterialEditText"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    a:hint="@string/intro_login_edittext_verify_code_hint"
+                    a:maxLength="6"
+                    a:paddingLeft="300px" />
+
+                <x.ImageView
+                    a:id="@+id/intro_login_verify_code_img_check_ok"
+                    style="@style/ImageView"
+                    a:layout_width="50px"
+                    a:layout_height="50px"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="70px"
+                    a:visibility="gone"
+                    x:src="@drawable/icon_intro_login_check_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                a:id="@+id/intro_login_layout_content_line_username"
+                a:layout_width="match_parent"
+                a:layout_height="170px"
+                a:layout_below="@id/intro_login_layout_content_line_2"
+                a:visibility="gone">
+
+                <x.ImageView
+                    a:id="@+id/intro_login_username_img_check_ok"
+                    style="@style/ImageView"
+                    a:layout_width="50px"
+                    a:layout_height="50px"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="70px"
+                    a:visibility="gone"
+                    x:src="@drawable/icon_intro_login_check_right" />
+            </RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/intro_login_btn_login"
+                style="@style/TextView.White.Center"
+                a:layout_width="880px"
+                a:layout_height="130px"
+                a:layout_below="@id/intro_login_layout_content_line_username"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="64px"
+                a:background="@drawable/bg_blue_round_corner_rectangle_selector"
+                a:enabled="false"
+                a:text="@string/intro_login_btn_send_verify_code"
+                a:textSize="60px" />
+
+            <RelativeLayout
+                a:id="@+id/intro_login_layout_content_line_checkbox"
+                a:layout_width="match_parent"
+                a:layout_height="80px"
+                a:layout_alignLeft="@id/intro_login_btn_login"
+                a:layout_below="@id/intro_login_btn_login"
+                a:layout_marginTop="58px"
+                a:visibility="gone">
+
+                <x.CheckBox
+                    a:id="@+id/intro_login_check_box_contacts"
+                    style="@style/ImageView"
+                    a:layout_width="40px"
+                    a:layout_height="40px"
+                    a:layout_centerVertical="true"
+                    a:button="@null"
+                    a:checked="true"
+                    x:bg="@drawable/common_icon_check_box_checked" />
+
+                <x.TextView
+                    a:id="@+id/intro_login_txt_contacts"
+                    style="@style/TextView.White.Center"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="22px"
+                    a:layout_toRightOf="@id/intro_login_check_box_contacts"
+                    a:text="@string/intro_login_check_box_allow_access_contacts"
+                    a:textColor="@color/blue"
+                    a:textSize="40px" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            a:id="@+id/intro_login_pick_bg"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@null"
+            a:visibility="gone" />
+
+        <com.example.picker.CountryCodePicker
+            a:id="@+id/intro_login_country_code_picker"
+            a:layout_width="match_parent"
+            a:layout_height="750px"
+            a:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</merge>

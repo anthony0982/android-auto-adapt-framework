@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_class_tool_auto_record_fragment_layout"
+        a:layout_width="960px"
+        a:layout_height="1160px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="95px"
+        x:bg="@drawable/schedule_tools_record_ic_auto_record_bg" >
+
+        <ImageView
+            a:id="@+id/schedule_class_tool_auto_record_fragment_img_auto_record"
+            a:layout_width="42px"
+            a:layout_height="42px"
+            a:layout_marginLeft="71px"
+            a:layout_marginTop="76px"
+            a:src="@drawable/schedule_tools_record_ic_auto_record" />
+
+        <TextView
+            a:id="@+id/schedule_class_tool_auto_record_fragment_txt_auto_record"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="26px"
+            a:layout_marginTop="66px"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_fragment_img_auto_record"
+            a:text="@string/lesson_auto_record"
+            a:textColor="#737373"
+            a:textSize="48px" />
+
+        <TextView
+            a:id="@+id/schedule_class_tool_auto_record_fragment_txt_start_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_class_tool_auto_record_fragment_txt_auto_record"
+            a:layout_marginLeft="380px"
+            a:layout_marginTop="60px"
+            a:text="@string/start_time"
+            a:textColor="#bdbdbd"
+            a:textSize="40px" />
+
+        <TextView
+            a:id="@+id/schedule_class_tool_auto_record_fragment_txt_length"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_class_tool_auto_record_fragment_txt_auto_record"
+            a:layout_marginLeft="120px"
+            a:layout_marginTop="60px"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_fragment_txt_start_time"
+            a:text="@string/lesson_duration"
+            a:textColor="#bdbdbd"
+            a:textSize="40px" />
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_class_tool_auto_record_fragment_layout_cancel"
+            a:layout_width="270px"
+            a:layout_height="210px"
+            a:layout_alignParentBottom="true"
+            a:layout_marginLeft="340px" >
+
+            <TextView
+                a:id="@+id/schedule_class_tool_auto_record_fragment_txt_cancel"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerInParent="true"
+                a:text="@string/schedule_add_course_cancel"
+                a:textColor="#aeaeae"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_class_tool_auto_record_fragment_layout_confirm"
+            a:layout_width="270px"
+            a:layout_height="210px"
+            a:layout_alignParentBottom="true"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_fragment_layout_cancel" >
+
+            <TextView
+                a:id="@+id/schedule_class_tool_auto_record_fragment_txt_confirm"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerInParent="true"
+                a:text="@string/schedule_add_course_confirm"
+                a:textColor="@color/blue"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+
+        <ListView
+            a:id="@+id/schedule_class_tool_auto_record_fragment_list_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_above="@id/schedule_class_tool_auto_record_fragment_layout_cancel"
+            a:layout_below="@id/schedule_class_tool_auto_record_fragment_txt_length"
+            a:layout_marginLeft="12px"
+            a:layout_marginRight="12px"
+            a:layout_marginTop="60px"
+            a:background="@null"
+            a:divider="@null"
+            a:fillViewport="true"
+            a:scrollbars="none" />
+
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

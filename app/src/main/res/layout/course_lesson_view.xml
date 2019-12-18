@@ -1,0 +1,54 @@
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@drawable/list_item_color_selector"
+    a:paddingBottom="25px"
+    a:paddingTop="25px">
+
+    <x.ImageView
+        a:id="@+id/mImgLearned"
+        style="@style/ImageView"
+        a:layout_width="48px"
+        a:layout_height="48px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="20px"
+        a:layout_marginTop="20px"
+        a:visibility="gone"
+        x:src="@drawable/ic_checkbox_checked" />
+
+    <x.TextView
+        a:id="@+id/mTxtIndex"
+        style="@style/TextView.Center"
+        a:layout_width="90px"
+        a:layout_height="90px"
+        a:layout_centerVertical="true"
+        a:textColor="@color/color_lesson_index"
+        a:textSize="36px" />
+
+    <x.TextView
+        a:id="@+id/mTxtLessonTitle"
+        style="@style/TextView.MultiLine"
+        a:layout_width="match_parent"
+        a:layout_marginLeft="20px"
+        a:layout_toLeftOf="@id/mImgLearned"
+        a:layout_toRightOf="@id/mTxtIndex"
+        a:lineSpacingMultiplier="1.3"
+        a:paddingBottom="10px"
+        a:paddingTop="10px"
+        a:text="@string/choose"
+        a:textColor="@color/color_lesson_title"
+        a:textSize="44px" />
+
+    <x.TextView
+        a:id="@+id/mTxtDuration"
+        style="@style/TextView"
+        a:layout_below="@id/mTxtLessonTitle"
+        a:layout_marginLeft="20px"
+        a:layout_marginTop="4px"
+        a:layout_toRightOf="@id/mTxtIndex"
+        a:text="@string/choose"
+        a:textColor="@color/color_lesson_duration"
+        a:textSize="32px" />
+
+</x.RelativeLayout>

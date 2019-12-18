@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/register_title" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutUsernamePassword"
+        a:layout_width="898px"
+        a:layout_height="260px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="90px"
+        a:background="@drawable/bg_login_input">
+
+        <x.TextView
+            a:id="@+id/mTxtAccount"
+            style="@style/TextView"
+            a:layout_width="530px"
+            a:layout_height="130px"
+            a:layout_marginLeft="50px"
+            a:gravity="center_vertical"
+            a:textColor="@color/gray_cc"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mTxtRequestVerifyCode"
+            style="@style/TextView"
+            a:layout_height="130px"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="40px"
+            a:gravity="center_vertical"
+            a:text="@string/login_hint_verify_code_request"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mTxtRequestVerifyCodeRetry"
+            style="@style/TextView"
+            a:layout_height="130px"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="40px"
+            a:gravity="center_vertical"
+            a:textColor="@color/gray_9b"
+            a:textSize="@dimen/font_size_44" />
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/mEditTextVerifyCode"
+            style="@style/MaterialEditText"
+            a:layout_width="match_parent"
+            a:layout_height="130px"
+            a:layout_below="@id/mTxtAccount"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_toLeftOf="@+id/mImgEye"
+            a:hint="@string/login_hint_verify_code"
+            a:inputType="number"
+            a:maxLength="10"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_44"
+            a:textStyle="normal"
+            x:met_hideUnderline="true"
+            x:met_textColor="@color/black" />
+
+    </x.RelativeLayout>
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLayoutUsernamePassword"
+        a:layout_marginTop="82px">
+
+        <x.TextView
+            a:id="@+id/mTxtSubmit"
+            style="@style/TextView.Center.Blue"
+            a:layout_width="900px"
+            a:layout_height="150px"
+            a:layout_centerHorizontal="true"
+            a:text="@string/finish"
+            a:textSize="@dimen/font_size_60"
+            x:bg="@drawable/bg_button_900_150" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/progress"
+            style="@style/LoadingView.Blue"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="136px"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/mLayoutHelpTip"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="40px">
+
+        <x.TextView
+            a:id="@+id/mTxtHelpTip"
+            style="@style/TextView"
+            a:text="@string/register_help_tip"
+            a:textColor="@color/gray_cc"
+            a:textSize="@dimen/font_size_38" />
+
+        <x.TextView
+            a:id="@+id/mTxtHelpPhone"
+            style="@style/TextView"
+            a:layout_toRightOf="@id/mTxtHelpTip"
+            a:text="@string/clazz_service_phone"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_38" />
+    </RelativeLayout>
+
+</RelativeLayout>

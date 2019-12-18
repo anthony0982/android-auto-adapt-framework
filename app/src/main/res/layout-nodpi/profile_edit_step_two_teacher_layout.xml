@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <x.combo.ComboEditText
+        android:id="@+id/profile_edit_two_teacher_subject_edit_text"
+        style="@style/TextView.Center"
+        android:layout_width="match_parent"
+        android:layout_height="124px"
+        android:layout_marginLeft="66px"
+        android:layout_marginRight="66px"
+        android:layout_marginTop="316px" />
+
+</merge>

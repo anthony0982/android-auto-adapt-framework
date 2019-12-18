@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_blue_btn_selector"
+    a:gravity="center"
+    a:paddingBottom="12px"
+    a:paddingLeft="10px"
+    a:paddingRight="34px"
+    a:paddingTop="12px" >
+
+    <x.ImageView
+        a:id="@+id/school_flow_item_img_1"
+        a:layout_width="40px"
+        a:layout_height="40px"
+        a:layout_centerVertical="true"
+        a:visibility="gone"
+        x:src="@drawable/ic_school_college_selector" />
+
+    <x.ImageView
+        a:id="@+id/school_flow_item_img_2"
+        a:layout_width="40px"
+        a:layout_height="40px"
+        a:layout_centerVertical="true"
+        a:visibility="gone"
+        x:src="@drawable/ic_school_department_selector" />
+
+    <x.ImageView
+        a:id="@+id/school_flow_item_img_3"
+        a:layout_width="40px"
+        a:layout_height="40px"
+        a:layout_centerVertical="true"
+        a:visibility="gone"
+        x:src="@drawable/ic_school_service_selector" />
+
+    <x.ImageView
+        a:id="@+id/school_flow_item_img_4"
+        a:layout_width="40px"
+        a:layout_height="40px"
+        a:layout_centerVertical="true"
+        a:visibility="gone"
+        x:src="@drawable/ic_school_product_selector" />
+
+    <x.TextView
+        a:id="@+id/school_flow_item_txt"
+        style="@style/TextView"
+        a:paddingLeft="50px"
+        a:textColor="@color/gray_btn_color"
+        a:textSize="@dimen/font_size_44" />
+
+</x.RelativeLayout>

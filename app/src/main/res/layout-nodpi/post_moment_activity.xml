@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_moment_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white">
+
+
+        <ScrollView
+            a:id="@+id/mScrollView"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_above="@+id/tools"
+            a:layout_below="@+id/mLayoutToolBar"
+            a:scrollbars="vertical">
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:background="@color/white">
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutSelectGroup"
+                    a:layout_width="wrap_content"
+                    a:layout_height="90px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginTop="20px"
+                    a:minWidth="100px"
+                    x:bg="@drawable/bg_ediitor_target_round_corner_rectangle_shape">
+
+                    <com.makeramen.RoundedImageView
+                        a:id="@+id/mImgGroupAvatar"
+                        style="@style/Message.Avatar.Left"
+                        a:layout_width="90px"
+                        a:layout_height="90px" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtName"
+                        style="@style/TopSelector"
+                        a:layout_toRightOf="@id/mImgGroupAvatar"
+                        a:text="@string/select_group" />
+
+                </x.RelativeLayout>
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditTitle"
+                    style="@style/MaterialEditText"
+                    a:layout_below="@id/mLayoutSelectGroup"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="20px"
+                    a:hint="@string/title"
+                    a:textSize="@dimen/font_size_60"
+                    a:textStyle="bold"
+                    x:met_floatingLabelText="@string/title"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+
+                <com.github.irshulx.Editor
+                    a:id="@+id/mEditContent"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    a:layout_below="@id/mEditTitle"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="30px"
+                    x:firstLineWarningHint="@string/editor_first_line_warning"
+                    x:imageDescriptionHint="@string/hint_image_description"
+                    x:placeholder="@string/hint_content"
+                    x:render_type="Editor"
+                    x:uploadFailHint="@string/editor_upload_fail"
+                    x:uploadSuccessHint="@string/editor_upload_success"
+                    x:uploadingHint="@string/editor_uploading" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutToolBar"
+            style="@style/TitleBar.Main"
+            a:layout_width="match_parent">
+
+            <x.ImageView
+                a:id="@+id/mImgBack"
+                style="@style/ToolBar.Icon.Back" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TitleBar.Text"
+                a:text="@string/post_group_moment" />
+
+            <x.ImageView
+                a:id="@+id/mImgConfirm"
+                style="@style/ToolBar.Confirm"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                x:src="@drawable/ic_toobar_confirm_selector" />
+
+        </x.RelativeLayout>
+
+
+        <include layout="@layout/editor_toobar_horizontal" />
+    </x.RelativeLayout>
+
+    <im.clazz.view.EditorRecorderView
+        a:id="@+id/mRecorderView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mPicker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+</x.RelativeLayout>

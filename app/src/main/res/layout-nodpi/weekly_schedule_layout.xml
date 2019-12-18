@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <weekview.WeekView
+        a:id="@+id/mWeekView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        x:columnGap="0px"
+        x:dayBackgroundColor="#00000000"
+        x:eventCornerRadius="20px"
+        x:eventTextColor="@color/white"
+        x:headerColumnBackground="#ffffffff"
+        x:headerColumnPadding="8dp"
+        x:headerColumnTextColor="@color/toolbar_text"
+        x:headerRowBackgroundColor="@color/toolbar"
+        x:headerRowPadding="30px"
+        x:headerTextSize="@dimen/font_size_36"
+        x:hourHeight="60dp"
+        x:hourSeparatorColor="#FFF4F8F8"
+        x:noOfVisibleDays="3"
+        x:timeTextSize="@dimen/font_size_24"
+        x:todayBackgroundColor="#1848adff"
+        x:todayHeaderBackgroundColor="@color/light_blue"
+        x:todayHeaderTextColor="@color/accent"
+        x:weekViewtextSize="40px" />
+
+    <x.ImageView
+        a:id="@+id/mBtnBack"
+        style="@style/ImageView"
+        a:layout_width="132px"
+        a:layout_height="132px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="74px"
+        a:layout_marginRight="74px"
+        x:src="@drawable/ic_schedule_back" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error" />
+
+    <ProgressBar
+        a:id="@+id/mProgressBarLoading"
+        a:layout_width="136px"
+        a:layout_height="286px"
+        a:layout_centerInParent="true"
+        a:indeterminate="true"
+        a:indeterminateDrawable="@drawable/progressbar"
+        a:visibility="gone" />
+
+</RelativeLayout>

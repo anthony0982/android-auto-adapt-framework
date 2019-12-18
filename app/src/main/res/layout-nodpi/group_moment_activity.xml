@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <com.halo.view.ObservableRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar"
+        a:fadingEdgeLength="0px"
+        a:overScrollMode="never" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@color/white">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Gray"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.ImageView
+            a:id="@+id/mImgMore"
+            style="@style/ToolBar.Icon.More.Gray"
+            a:visibility="gone" />
+
+        <x.ImageView
+            a:id="@+id/mImgShare"
+            style="@style/ToolBar.Icon.Gray.Right"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="50px"
+            a:layout_toLeftOf="@id/mImgMore"
+            a:visibility="gone"
+            x:src="@drawable/ic_toolbar_share" />
+
+        <x.TextView
+            a:id="@+id/mTxtComment"
+            style="@style/ToolBar.TextView"
+            a:layout_width="wrap_content"
+            a:layout_height="90px"
+            a:layout_centerVertical="true"
+            a:layout_toLeftOf="@id/mImgShare"
+            a:gravity="center_horizontal"
+            a:minWidth="90px"
+            a:paddingLeft="18px"
+            a:paddingRight="18px"
+            a:paddingTop="18px"
+            a:textColor="@color/gray_3b"
+            a:textSize="@dimen/font_size_30"
+            a:visibility="gone"
+            x:bg="@drawable/ic_toolbar_comment" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mTitleLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTitleBar"
+        a:background="@color/gray_ee" />
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditorView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+    <View
+        a:id="@+id/mLoadingCover"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerInParent="true"
+        a:background="@color/white" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+</RelativeLayout>

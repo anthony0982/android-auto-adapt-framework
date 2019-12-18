@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:orientation="vertical">
+
+        <x.TextView
+            a:id="@+id/mTxtTagSession"
+            style="@style/CourseSesion.Tag"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="48px"
+            a:text="@string/course_session_tag" />
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtTagSession"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="28px" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mClassroom"
+            style="@style/SettingsItemView.Dive"
+            x:settings_title="@string/classroom_tag2" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mWeeks"
+            style="@style/SettingsItemView.Dive"
+            x:settings_title="@string/weeks_tag2" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mClassTime"
+            style="@style/SettingsItemView.Dive"
+            x:settings_title="@string/classes_tag2" />
+
+        <View
+            a:id="@+id/mViewSplitTarget"
+            style="@style/EditItem.Split" />
+    </x.LinearLayout>
+</x.LinearLayout>

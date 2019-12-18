@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="horizontal"
+    a:paddingBottom="30px"
+    a:paddingLeft="40px"
+    a:paddingRight="10px"
+    a:paddingTop="30px">
+
+    <x.ImageView
+        a:id="@+id/message_menu_group_img"
+        style="@style/ImageView"
+        a:layout_width="60px"
+        a:layout_height="60px" />
+
+    <TextView
+        a:id="@+id/message_menu_group_txt"
+        style="@style/MenuText.MediumX"
+        a:layout_marginLeft="30px" />
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_lost_found_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/gray_f4"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/post_lost_found_content_layout"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white">
+
+        <x.RelativeLayout
+            a:id="@+id/post_lost_found_layout_tool_bar"
+            style="@style/TitleBar.Main"
+            a:layout_width="match_parent">
+
+            <x.ImageView
+                a:id="@+id/mImgBack"
+                style="@style/ToolBar.Icon"
+                a:layout_alignParentLeft="true"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="30px"
+                x:src="@drawable/ic_toolbar_back" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TitleBar.Text"
+                a:layout_centerInParent="true" />
+
+            <x.TextView
+                a:id="@+id/mBtnPublish"
+                style="@style/Button"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="50px"
+                a:enabled="false"
+                a:padding="14px"
+                a:text="@string/publish"
+                a:textColor="@color/text_white_color_selector"
+                a:textSize="@dimen/font_size_46" />
+
+        </x.RelativeLayout>
+
+
+        <ScrollView
+            a:id="@+id/editor_scroll_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_above="@+id/post_lost_found_tool_bar"
+            a:layout_below="@id/post_lost_found_layout_tool_bar"
+            a:scrollbars="vertical">
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:background="@color/white">
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditTitle"
+                    style="@style/MaterialEditText"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="20px"
+                    a:hint="@string/lost_name"
+                    a:textSize="@dimen/font_size_60"
+                    a:textStyle="bold"
+                    x:met_floatingLabelText="@string/title"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditLocation"
+                    style="@style/MaterialEditText"
+                    a:layout_below="@id/mEditTitle"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="20px"
+                    a:hint="@string/lost_location"
+                    a:textSize="@dimen/font_size_medium"
+                    a:textStyle="normal"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/mEditDescription"
+                    style="@style/MaterialEditText"
+                    a:layout_height="match_parent"
+                    a:layout_below="@id/mEditLocation"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="30px"
+                    a:hint="@string/lost_description"
+                    a:textSize="@dimen/font_size_medium"
+                    a:textStyle="normal"
+                    x:met_hideUnderline="true"
+                    x:met_textColor="@color/black"
+                    x:met_underLineHeight="4px" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <View
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_above="@+id/post_lost_found_tool_bar"
+            a:background="@color/gray_e6" />
+
+        <x.RelativeLayout
+            a:id="@+id/post_lost_found_tool_bar"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:background="@color/gray_f3">
+
+            <x.LinearLayout
+                a:id="@+id/post_lost_found_tool_bar_content"
+                a:layout_width="fill_parent"
+                a:layout_height="146px"
+                a:orientation="horizontal">
+
+                <x.ImageView
+                    a:id="@+id/mImgSelectPicture"
+                    style="@style/Icon.Chat"
+                    a:layout_width="146px"
+                    a:layout_height="146px"
+                    a:layout_marginLeft="30px"
+                    x:src="@drawable/ic_post_notification_picture" />
+
+                <x.TextView
+                    a:id="@+id/mTxtImageCount"
+                    style="@style/TextView"
+                    a:layout_gravity="center_vertical"
+                    a:textColor="@color/blue"
+                    a:textSize="42px" />
+
+            </x.LinearLayout>
+
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutSelectDeadline"
+                a:layout_width="540px"
+                a:layout_height="146px"
+                a:layout_alignParentRight="true"
+                a:descendantFocusability="blocksDescendants">
+
+                <x.TextView
+                    a:id="@+id/mTxtSelectDeadline"
+                    style="@style/TextView"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="30px"
+                    a:text="@string/lost_select_date"
+                    a:textColor="@color/gray_9b"
+                    a:textSize="@dimen/font_size_44" />
+
+                <x.ImageView
+                    a:id="@+id/mImgSelectDeadline"
+                    style="@style/Icon.Chat"
+                    a:layout_width="50px"
+                    a:layout_height="50px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="10px"
+                    a:layout_toLeftOf="@+id/mTxtSelectDeadline"
+                    a:tint="@color/gray_9b"
+                    x:src="@drawable/ic_date_50" />
+
+            </x.RelativeLayout>
+
+            <ViewStub
+                a:id="@+id/mStubGallery"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/post_lost_found_tool_bar_content"
+                a:layout="@layout/post_gallery_stub_layout" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/post_lost_found_organization_picker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <com.example.picker.DatePicker
+        a:id="@+id/mDatePicker"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:fromNowOn="true"
+        x:fromNowOnYears="1" />
+
+</x.RelativeLayout>

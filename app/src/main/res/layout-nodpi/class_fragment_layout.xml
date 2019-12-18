@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/class_coordinator_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        a:id="@+id/class_layout_swipe_refresh"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <im.clazz.ui.component.MainRecyclerView
+            a:id="@+id/class_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@color/gray_ee" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <x.TextView
+        a:id="@+id/class_empty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/class_moment_empty" />
+
+    <x.TextView
+        a:id="@+id/class_error"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+    <ProgressBar
+        a:id="@+id/class_loading"
+        a:layout_width="136px"
+        a:layout_height="286px"
+        a:layout_centerInParent="true"
+        a:indeterminate="true"
+        a:indeterminateDrawable="@drawable/progressbar"
+        a:paddingBottom="150px"
+        a:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        a:id="@+id/class_fab"
+        a:layout_width="130px"
+        a:layout_height="130px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentEnd="true"
+        a:layout_alignParentRight="true"
+        a:layout_margin="30px"
+        a:src="@drawable/ic_menu_more"
+        x:backgroundTint="@color/color_primary"
+        x:fabSize="normal" />
+
+    <com.hlab.fabrevealmenu.view.FABRevealMenu
+        a:id="@+id/class_fab_menu"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerInParent="true"
+        x:animateItems="true"
+        x:menuBackgroundColor="@color/color_primary_dark"
+        x:menuDirection="up"
+        x:menuTitleTextColor="@color/colorWhite"
+        x:overlayBackground="@color/translucent_50_white"
+        x:showOverlay="true"
+        x:showTitle="true" />
+
+</RelativeLayout>

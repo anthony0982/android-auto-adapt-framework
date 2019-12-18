@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/mTxtTagTime"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginTop="48px"
+            a:text="@string/time_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagTime"
+            a:layout_toRightOf="@id/mTxtTagTime" />
+
+        <x.TextView
+            a:id="@+id/mTxtWeek"
+            style="@style/CourseSesion.SubText"
+            a:layout_alignTop="@id/mTxtTime"
+            a:layout_toRightOf="@id/mTxtTime" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagClassroom"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtTime"
+            a:layout_marginLeft="0px"
+            a:layout_marginTop="48px"
+            a:text="@string/classroom_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtClassroom"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagClassroom"
+            a:layout_toRightOf="@id/mTxtTagClassroom" />
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtClassroom"
+            a:layout_marginLeft="0px"
+            a:layout_marginRight="0px"
+            a:layout_marginTop="48px" />
+    </x.RelativeLayout>
+</x.LinearLayout>

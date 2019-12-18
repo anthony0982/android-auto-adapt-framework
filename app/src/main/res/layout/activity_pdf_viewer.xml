@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pdf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <es.voghdev.pdfviewpager.library.RemotePDFViewPager
+        android:id="@+id/pdfViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <RelativeLayout
+        android:id="@+id/pdf_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:paddingTop="95px"
+        android:paddingLeft="50px"
+        android:background="#11000000">
+
+        <x.ImageView
+            android:id="@+id/pdf_icon"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@drawable/schedule_class_tool_ic_attachment"
+            android:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/pdf_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pdf_icon"
+            android:layout_marginLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="50px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="30px"
+        android:textColor="#bfbfbf"
+        android:textSize="40px" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="1000px"
+        android:layout_height="8px"
+        android:layout_centerInParent="true"
+        android:max="300"
+        android:progress="0"
+        android:progressDrawable="@drawable/pdf_load_progressbar" />
+
+</RelativeLayout>

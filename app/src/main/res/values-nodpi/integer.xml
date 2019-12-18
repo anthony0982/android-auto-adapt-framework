@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部的操作栏退出窗口的动画时间 -->
+    <integer name="anim_down_slide_out_duration">80</integer>
+    <!-- 底部操作栏弹出的动画时间 -->
+    <integer name="anim_up_slide_in_duration">120</integer>
+    
+    <!-- 整个窗口从右侧推入的动画时间 -->
+    <integer name="anim_right_slide_in_duration">400</integer>
+    <!-- 整个窗口从左侧推出的动画时间 -->
+    <integer name="anim_left_slide_out_duration">400</integer>
+    
+    <!-- 整个窗口从左侧推入（返回时）的动画时间 -->
+    <integer name="anim_left_slide_in_duration">400</integer>
+    <!-- 整个窗口从右侧推出（返回时）的动画时间 -->
+    <integer name="anim_right_slide_out_duration">400</integer>
+    
+    <!-- 气泡弹起时的时间 -->
+    <integer name="anim_bubble_pop_duration">100</integer>
+    <!-- 气泡恢复时的时间 -->
+    <integer name="anim_bubble_restore_duration">50</integer>
+    <!-- 气泡恢复的延迟时间=窗口动画时间+气泡弹起时间 -->
+    <integer name="anim_bubble_restore_delay">720</integer>
+    
+    <!-- 常用地址搜索框动画的时间 -->
+    <integer name="anim_title_fade_out">300</integer>
+    
+    <!-- Intro Item Text Pop time -->
+    <integer name="intro_item_txt_pop">200</integer>
+    <!-- Intro Item Text Restore time -->
+    <integer name="intro_item_txt_restore">50</integer>
+
+    <!-- Picture Item Pop Time -->
+    <integer name="intro_item_pic_pop">200</integer>
+    <!-- Picture Item Restore time -->
+    <integer name="intro_item_pic_restore">50</integer>
+</resources>

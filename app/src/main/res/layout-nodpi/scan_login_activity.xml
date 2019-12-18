@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <RelativeLayout
+        a:id="@+id/mLayoutHeader"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="200px"
+        a:gravity="center_horizontal">
+
+        <x.ImageView
+            a:id="@+id/mImgLogo"
+            style="@style/ImageView"
+            a:layout_width="128px"
+            a:layout_height="128px"
+            x:src="@drawable/ic_logo_128" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="20px"
+            a:layout_toRightOf="@id/mImgLogo"
+            a:gravity="center"
+            a:text="@string/login_from_windows"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_50" />
+    </RelativeLayout>
+
+    <x.ImageView
+        a:id="@+id/mImgDeviceType"
+        style="@style/ImageView"
+        a:layout_width="300px"
+        a:layout_height="300px"
+        a:layout_below="@id/mLayoutHeader"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="400px"
+        x:src="@drawable/ic_windows" />
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mImgDeviceType"
+        a:layout_marginTop="400px">
+
+        <x.TextView
+            a:id="@+id/mTxtLogin"
+            style="@style/RoundTextView"
+            a:layout_width="600px"
+            a:layout_height="150px"
+            a:layout_centerHorizontal="true"
+            a:text="@string/login"
+            a:textSize="@dimen/font_size_60" />
+
+        <x.TextView
+            a:id="@+id/mTxtLogining"
+            style="@style/RoundTextView"
+            a:layout_width="600px"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true"
+            a:layout_centerVertical="true"
+            a:text="..."
+            a:textSize="@dimen/font_size_60"
+            a:visibility="gone" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/progress"
+            style="@style/LoadingView.Blue"
+            a:layout_width="80px"
+            a:layout_height="80px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="136px"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

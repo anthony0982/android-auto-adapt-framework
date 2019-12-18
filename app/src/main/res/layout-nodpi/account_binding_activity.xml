@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <View
+                a:id="@+id/mViewSplitTarget"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mBindingDeansOffice"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/binding_deans_office" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mBindingLibrary"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/binding_library" />
+        </x.LinearLayout>
+
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:text="@string/setting_binding" />
+
+    </x.RelativeLayout>
+
+
+</RelativeLayout>

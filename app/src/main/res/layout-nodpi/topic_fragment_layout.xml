@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/topic_coordinator_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <im.clazz.widget.PullRefreshLayout
+        a:id="@+id/topic_layout_swipe_refresh"
+        style="@style/PullRefreshLayout"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/gray_fa">
+
+        <im.clazz.ui.component.MainRecyclerView
+            a:id="@+id/topic_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent" />
+    </im.clazz.widget.PullRefreshLayout>
+
+    <x.TextView
+        a:id="@+id/topic_empty"
+        style="@style/TextView.Empty"
+        a:paddingBottom="150px"
+        a:text="@string/topic_empty" />
+
+    <x.TextView
+        a:id="@+id/topic_error"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/topic_loading_view"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        a:id="@+id/topic_fab"
+        a:layout_width="130px"
+        a:layout_height="130px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentEnd="true"
+        a:layout_alignParentRight="true"
+        a:layout_margin="30px"
+        a:src="@drawable/ic_pencil"
+        x:backgroundTint="@color/blue"
+        x:borderWidth="0dp"
+        x:elevation="6dp"
+        x:fabSize="auto"
+        x:pressedTranslationZ="12dp"
+        x:rippleColor="#a6a6a6" />
+
+</RelativeLayout>

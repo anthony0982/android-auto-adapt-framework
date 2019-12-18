@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <View
+        a:id="@+id/content_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.RelativeLayout
+        a:id="@+id/content_layout"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:background="#88000000"
+        a:paddingLeft="30px"
+        a:paddingRight="30px" >
+
+        <x.TextView
+            a:id="@+id/tv_position"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="25px"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_50"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/tv_total"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="42px"
+            a:layout_toRightOf="@id/tv_position"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_30" />
+
+        <x.TextView
+            a:id="@+id/tv_title"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="20px"
+            a:layout_toRightOf="@id/tv_total"
+            a:paddingTop="25px"
+            a:singleLine="true"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/tv_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:paddingTop="33px"
+            a:singleLine="true"
+            a:text="2016/11/11"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/tv_content"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/tv_title"
+            a:layout_marginTop="30px"
+            a:lineSpacingMultiplier="1.3"
+            a:textColor="#AAAAAA"
+            a:textSize="@dimen/font_size_42" />
+    </x.RelativeLayout>
+
+</merge>

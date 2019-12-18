@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            x:src="@drawable/ic_toobar_confirm_selector" />
+
+    </x.RelativeLayout>
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="224px"
+        a:layout_height="224px"
+        a:layout_below="@id/mToolBar"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="45px"
+        a:src="@color/gray_f3"
+        x:mutate_background="true"
+        x:oval="true" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginTop="100px"
+        a:background="@color/white"
+        a:orientation="vertical">
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mItemLevel"
+            style="@style/SettingsItemView.Dive"
+            a:layout_height="140px"
+            x:settings_hint="@string/create_group_name_hint"
+            x:settings_title="@string/create_group_name" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mItemType"
+            style="@style/SettingsItemView.Dive"
+            a:layout_height="140px"
+            x:settings_hint="@string/create_group_type_hint"
+            x:settings_title="@string/create_group_type" />
+
+        <im.clazz.view.SettingsItemView
+            a:id="@+id/mItemDescription"
+            style="@style/SettingsItemView.Dive"
+            a:layout_height="140px"
+            x:settings_hint="@string/create_group_description_hint"
+            x:settings_title="@string/create_group_description" />
+
+    </x.LinearLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mPicker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:visibility="gone"
+        a:layout_centerInParent="true" />
+
+</x.RelativeLayout>

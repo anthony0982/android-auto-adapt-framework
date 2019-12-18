@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:layout_width="1080px"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/message_list_item_txt_manage"
+            style="@style/TextView"
+            a:layout_centerHorizontal="true"
+            a:gravity="center"
+            a:maxWidth="800px"
+            a:layout_marginTop="10px"
+            a:layout_marginBottom="10px"
+            a:padding="16px"
+            a:singleLine="false"
+            a:text="15:22"
+            a:textColor="@color/white"
+            a:textSize="34px"
+            x:bg="@drawable/chat_round_conerned_shape" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

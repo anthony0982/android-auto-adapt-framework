@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <RelativeLayout
+        a:id="@+id/join_class_activity_layout_title_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="fill_parent">
+
+        <x.TextView
+            a:id="@+id/join_class_activity_txt_title"
+            style="@style/TitleBar.Text"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:text="@string/join_class_title"
+            a:textSize="56px" />
+
+        <x.ImageView
+            a:id="@+id/join_class_activity_img_back"
+            style="@style/Icon"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            x:src="@drawable/ic_back_120" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/join_class_activity_layout_scroll_view"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:layout_below="@id/join_class_activity_layout_title_bar"
+        a:scrollbars="none">
+
+        <x.RelativeLayout
+            a:id="@+id/join_class_activity_layout_content"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content">
+
+            <x.RelativeLayout
+                a:id="@+id/join_class_activity_layout_row_school"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content">
+
+                <x.TextView
+                    a:id="@+id/join_class_activity_txt_hint_school"
+                    style="@style/JoinClassTextHint"
+                    a:text="@string/school" />
+
+                <x.TextView
+                    a:id="@+id/join_class_activity_txt_hint_major"
+                    style="@style/JoinClassTextHint"
+                    a:layout_below="@id/join_class_activity_txt_hint_school"
+                    a:text="@string/major" />
+
+                <x.TextView
+                    a:id="@+id/join_class_activity_txt_school"
+                    style="@style/JoinClassText"
+                    a:text="东北大学" />
+
+                <x.TextView
+                    a:id="@+id/join_class_activity_txt_major"
+                    style="@style/JoinClassText"
+                    a:layout_below="@id/join_class_activity_txt_hint_school"
+                    a:text="软件工程" />
+            </x.RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_hint_year"
+                style="@style/JoinClassTextHint"
+                a:layout_below="@id/join_class_activity_layout_row_school"
+                a:text="@string/enter_year" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_hint_name"
+                style="@style/JoinClassTextHint"
+                a:layout_below="@id/join_class_activity_txt_hint_year"
+                a:text="@string/name" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_hint_school_number"
+                style="@style/JoinClassTextHint"
+                a:layout_below="@id/join_class_activity_txt_hint_name"
+                a:text="@string/school_number" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_hint_class"
+                style="@style/JoinClassTextHint"
+                a:layout_below="@id/join_class_activity_txt_hint_school_number"
+                a:text="@string/clazz" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_year"
+                style="@style/JoinClassText"
+                a:layout_below="@id/join_class_activity_layout_row_school"
+                a:text="2015" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_name"
+                style="@style/JoinClassText"
+                a:layout_below="@id/join_class_activity_txt_hint_year"
+                a:text="田雨橙"
+                a:textColor="#CCA9A9A9" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_school_number"
+                style="@style/JoinClassText"
+                a:layout_below="@id/join_class_activity_txt_hint_name"
+                a:text="20150923"
+                a:visibility="gone" />
+
+            <x.EditText
+                a:id="@+id/join_class_activity_edittext_school_number"
+                style="@style/JoinClassText"
+                a:layout_width="500px"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/join_class_activity_txt_hint_name"
+                a:background="@null"
+                a:cursorVisible="true"
+                a:gravity="center_vertical|left"
+                a:hint="@string/school_number_hint"
+                a:maxLength="50"
+                a:singleLine="true"
+                a:textColor="@color/school_search_edittext_text_color"
+                a:textColorHint="@color/school_search_edittext_hint_color"
+                a:textCursorDrawable="@drawable/school_search_input_cursor_shape"
+                a:textSize="@dimen/font_size_50" />
+
+            <x.ImageView
+                a:id="@+id/img_school_number_line"
+                style="@style/JoinClassText"
+                a:layout_width="500px"
+                a:layout_height="2px"
+                a:layout_below="@id/join_class_activity_edittext_school_number"
+                a:layout_marginLeft="340px"
+                a:layout_marginTop="10px"
+                a:src="@drawable/line_color_selector"
+                a:visibility="gone" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_txt_class"
+                style="@style/JoinClassText"
+                a:layout_below="@id/join_class_activity_txt_hint_school_number"
+                a:text="选择班级"
+                a:textColor="@color/black" />
+
+            <x.TextView
+                a:id="@+id/join_class_activity_btn_confirm"
+                style="@style/JoinClassText"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/join_class_activity_txt_hint_school_number"
+                a:layout_marginRight="120px"
+                a:text="@string/confirm" />
+        </x.RelativeLayout>
+    </ScrollView>
+
+    <View
+        a:id="@+id/join_class_activity_pick_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="#33000000"
+        a:visibility="gone" />
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/join_class_activity_institute_picker"
+        a:layout_width="match_parent"
+        a:layout_height="750px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/white"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/join_class_layout_search_school"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/join_class_img_back"
+            style="@style/ImageView"
+            a:layout_width="150px"
+            a:layout_height="150px"
+            a:layout_marginTop="36px"
+            x:src="@drawable/common_icon_back" />
+
+        <x.combo.ComboEditText
+            a:id="@+id/join_class_combo_edit_school"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:layout_marginLeft="150px"
+            a:layout_marginRight="66px"
+            a:layout_marginTop="50px" />
+
+        <x.RelativeLayout
+            a:id="@+id/join_class_layout_create_school"
+            a:layout_width="match_parent"
+            a:layout_height="200px"
+            a:layout_below="@id/join_class_combo_edit_school"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="120px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/join_class_school_not_found"
+                style="@style/TextView.Right"
+                a:layout_height="150px"
+                a:paddingBottom="32px"
+                a:text="@string/not_found"
+                a:textColor="#8F202020"
+                a:textSize="50px" />
+
+            <x.TextView
+                a:id="@+id/join_class_school_create"
+                style="@style/TextView.Center.Blue"
+                a:layout_height="150px"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/join_class_school_not_found"
+                a:paddingBottom="32px"
+                a:text="@string/create"
+                a:textSize="50px" />
+        </x.RelativeLayout>
+
+        <im.clazz.fragment.profile.edit.EditProfileSchoolListView
+            a:id="@+id/join_class_school_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/join_class_combo_edit_school"
+            a:background="@color/white"
+            a:fadingEdge="none"
+            a:scrollbars="vertical" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/join_class_layout_search_major"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/join_class_img_back_major"
+            style="@style/ImageView"
+            a:layout_width="150px"
+            a:layout_height="150px"
+            a:layout_marginTop="36px"
+            x:src="@drawable/common_icon_back" />
+
+        <x.combo.ComboEditText
+            a:id="@+id/join_class_edit_text_major"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:layout_marginLeft="150px"
+            a:layout_marginRight="66px"
+            a:layout_marginTop="50px" />
+
+        <x.TextView
+            a:id="@+id/join_class_major_create_new"
+            style="@style/TextView.Center.Blue"
+            a:layout_height="fill_parent"
+            a:layout_alignBottom="@id/join_class_edit_text_major"
+            a:layout_alignRight="@id/join_class_edit_text_major"
+            a:layout_alignTop="@id/join_class_edit_text_major"
+            a:layout_marginRight="50px"
+            a:text="@string/confirm"
+            a:textSize="46px"
+            a:visibility="gone" />
+
+        <x.RelativeLayout
+            a:id="@+id/join_class_layout_create_major"
+            a:layout_width="match_parent"
+            a:layout_height="200px"
+            a:layout_below="@id/join_class_edit_text_major"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="280px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/join_class_major_not_found"
+                style="@style/TextView.Right"
+                a:layout_height="150px"
+                a:paddingBottom="32px"
+                a:text="@string/not_found_major"
+                a:textColor="#4F202020"
+                a:textSize="50px"
+                a:visibility="gone" />
+
+            <x.TextView
+                a:id="@+id/join_class_major_create"
+                style="@style/TextView.Center.Blue"
+                a:layout_height="150px"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/join_class_major_not_found"
+                a:paddingBottom="32px"
+                a:text="@string/create"
+                a:textSize="50px"
+                a:visibility="gone" />
+        </x.RelativeLayout>
+
+        <im.clazz.fragment.profile.edit.EditProfileSearchResultListView
+            a:id="@+id/join_class_recycler_view_major"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/join_class_edit_text_major"
+            a:background="@color/white"
+            a:fadingEdge="none"
+            a:scrollbars="vertical"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/join_class_year_picker"
+        style="@style/Picker" />
+
+    <x.RelativeLayout
+        a:id="@+id/join_class_layout_search_class"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/white"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone">
+
+        <x.ImageView
+            a:id="@+id/join_class_img_back_class"
+            style="@style/ImageView"
+            a:layout_width="150px"
+            a:layout_height="150px"
+            a:layout_marginTop="36px"
+            x:src="@drawable/common_icon_back" />
+
+        <x.combo.ComboEditText
+            a:id="@+id/join_class_edit_text_class"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="124px"
+            a:layout_marginLeft="150px"
+            a:layout_marginRight="66px"
+            a:layout_marginTop="50px" />
+
+        <x.TextView
+            a:id="@+id/join_class_class_create_new"
+            style="@style/TextView.Center.Blue"
+            a:layout_height="fill_parent"
+            a:layout_alignBottom="@id/join_class_edit_text_class"
+            a:layout_alignRight="@id/join_class_edit_text_class"
+            a:layout_alignTop="@id/join_class_edit_text_class"
+            a:layout_marginRight="50px"
+            a:text="@string/confirm"
+            a:textSize="46px"
+            a:visibility="gone" />
+
+        <x.RelativeLayout
+            a:id="@+id/join_class_layout_create_class"
+            a:layout_width="match_parent"
+            a:layout_height="200px"
+            a:layout_below="@id/join_class_edit_text_class"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="280px"
+            a:gravity="center_horizontal">
+
+            <x.TextView
+                a:id="@+id/join_class_class_not_found"
+                style="@style/TextView.Right"
+                a:layout_height="150px"
+                a:paddingBottom="32px"
+                a:text="@string/not_found_class"
+                a:textColor="#4F202020"
+                a:textSize="50px" />
+
+            <x.TextView
+                a:id="@+id/join_class_class_create"
+                style="@style/TextView.Center.Blue"
+                a:layout_height="150px"
+                a:layout_marginLeft="20px"
+                a:layout_toRightOf="@id/join_class_class_not_found"
+                a:paddingBottom="32px"
+                a:text="@string/create"
+                a:textSize="50px"
+                a:visibility="gone" />
+        </x.RelativeLayout>
+
+        <im.clazz.fragment.profile.edit.EditProfileSearchResultListView
+            a:id="@+id/join_class_recycler_view_class"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/join_class_edit_text_class"
+            a:background="@color/white"
+            a:fadingEdge="none"
+            a:scrollbars="vertical"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

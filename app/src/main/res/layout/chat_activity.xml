@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mRootView"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/chat_bg_color"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTitleBar"
+        style="@style/TitleBar.Main">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back"
+            a:tint="#586370" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_toLeftOf="@+id/mTxtFollow"
+            a:textColor="#586370" />
+
+        <x.TextView
+            a:id="@+id/mTxtFollow"
+            style="@style/TitleBar.Text"
+            a:layout_width="wrap_content"
+            a:layout_marginRight="50px"
+            a:layout_toLeftOf="@+id/mImgMenu"
+            a:text="@string/add_follow"
+            a:textColor="#586370"
+            a:textSize="40px" />
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            style="@style/ToolBar.Menu" />
+
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/post_notification_tool_bar"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:background="@color/white">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutEdit"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:background="@color/gray_f4">
+
+            <View
+                a:id="@+id/chat_activity_img_line"
+                a:layout_width="match_parent"
+                a:layout_height="2px"
+                a:layout_alignParentTop="true"
+                a:background="@color/gray_dd" />
+
+            <x.ImageView
+                a:id="@+id/mImgEmoticon"
+                style="@style/Icon.Chat"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="30px"
+                a:tint="@color/light_blue"
+                x:src="@drawable/ic_keyboard" />
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutPicture"
+                a:layout_width="120px"
+                a:layout_height="wrap_content"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="14px">
+
+                <x.ImageView
+                    a:id="@+id/mImgSelectPicture"
+                    style="@style/Icon.Chat"
+                    a:layout_width="100px"
+                    a:layout_height="100px"
+                    a:layout_centerVertical="true"
+                    a:tint="@color/light_blue"
+                    x:src="@drawable/chat_ic_picture" />
+
+                <x.TextView
+                    a:id="@+id/mBtnSend"
+                    style="@style/Button"
+                    a:layout_centerVertical="true"
+                    a:padding="14px"
+                    a:text="@string/send"
+                    a:textColor="@color/white"
+                    a:textSize="@dimen/font_size_42"
+                    a:visibility="gone"
+                    x:bg="@drawable/chat_btn_send_selector" />
+            </x.RelativeLayout>
+
+            <x.EditText
+                a:id="@+id/mEditText"
+                style="@style/Chat.EditText"
+                a:layout_toRightOf="@id/mImgEmoticon" />
+        </x.RelativeLayout>
+
+        <ViewStub
+            a:id="@+id/mStubChatEmoticon"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout="@layout/chat_emoticon_stub_layout" />
+    </x.RelativeLayout>
+
+
+    <im.clazz.widget.PullRefreshLayout
+        a:id="@+id/mSwipeRefreshLayout"
+        style="@style/PullRefreshLayout"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_above="@id/post_notification_tool_bar"
+        a:layout_below="@id/mLayoutTitleBar">
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/mRecyclerView"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:background="@null"
+            a:fadingEdge="vertical"
+            a:scrollbarStyle="outsideOverlay"
+            a:scrollbars="vertical" />
+    </im.clazz.widget.PullRefreshLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutNewMessage"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_above="@id/post_notification_tool_bar"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="32px"
+        a:alpha="0"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/mTxtNewMessage"
+            style="@style/RoundTextView.White.Left"
+            a:layout_above="@id/post_notification_tool_bar"
+            a:layout_alignParentRight="true"
+            a:gravity="center_vertical|right"
+            a:minHeight="100px"
+            a:minWidth="180px"
+            a:paddingBottom="40px"
+            a:paddingLeft="70px"
+            a:paddingRight="20px"
+            a:paddingTop="24px"
+            a:text="@string/tip_new_message"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_46" />
+
+        <x.ImageView
+            a:id="@+id/mImgNewMessage"
+            style="@style/ImageView"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_alignLeft="@id/mTxtNewMessage"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="40px"
+            x:src="@drawable/ic_new_message_down" />
+    </x.RelativeLayout>
+
+    <ViewStub
+        a:id="@+id/mStubChatSettings"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutTitleBar"
+        a:layout="@layout/chat_settings_stub_layout" />
+
+</x.RelativeLayout>

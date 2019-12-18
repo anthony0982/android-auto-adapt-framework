@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <x.RelativeLayout
+        a:id="@+id/topic_content_bottom_layout"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:clickable="true"
+        a:focusableInTouchMode="true"
+        a:paddingBottom="30px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px">
+
+        <x.ImageView
+            a:id="@+id/topic_img_pull_up"
+            style="@style/ImageView"
+            a:layout_width="56px"
+            a:layout_height="56px"
+            a:layout_alignParentRight="true"
+            a:layout_marginTop="54px"
+            x:src="@drawable/ic_topic_block_up" />
+
+        <x.ImageView
+            a:id="@+id/topic_img_talk"
+            style="@style/ImageView"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_alignParentLeft="true"
+            a:layout_marginTop="54px"
+            x:src="@drawable/ic_topic_item_comment" />
+
+        <x.TextView
+            a:id="@+id/topic_txt_comment_count"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="60px"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="50px"
+            a:layout_toRightOf="@id/topic_img_talk"
+            a:text="0"
+            a:textColor="#FF10B7F3"
+            a:textSize="@dimen/font_size_38" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/topic_content_top_bar"
+        a:layout_width="0px"
+        a:layout_height="0px" />
+
+    <com.halo.view.ScrollView
+        a:id="@+id/topic_content_scroll_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@id/topic_content_bottom_layout"
+        a:layout_below="@id/topic_content_top_bar"
+        a:overScrollMode="never"
+        a:scrollbars="vertical">
+
+        <x.LinearLayout
+            a:id="@+id/topic_content_layout"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:gravity="left"
+            a:orientation="vertical">
+
+            <x.TextView
+                a:id="@+id/txt_topic_digest"
+                style="@style/Topic.Item.Digest"
+                a:layout_marginTop="20px"
+                a:paddingLeft="50px"
+                a:paddingRight="50px" />
+
+        </x.LinearLayout>
+    </com.halo.view.ScrollView>
+
+</x.RelativeLayout>

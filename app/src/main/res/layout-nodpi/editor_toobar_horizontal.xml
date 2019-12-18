@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.LinearLayout
+        a:id="@+id/tools_layout_text"
+        a:layout_width="match_parent"
+        a:layout_height="144px"
+        a:layout_alignParentBottom="true"
+        a:layout_gravity="center_vertical"
+        a:background="@color/gray_f3"
+        a:gravity="center_vertical"
+        a:orientation="horizontal"
+        a:paddingLeft="30px"
+        a:paddingRight="30px">
+
+
+        <x.ImageView
+            a:id="@+id/action_h1"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_h1" />
+
+        <x.ImageView
+            a:id="@+id/action_h2"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_h2" />
+
+        <x.ImageView
+            a:id="@+id/action_h3"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_h3" />
+
+        <x.ImageView
+            a:id="@+id/action_bold"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_bold" />
+
+        <x.ImageView
+            a:id="@+id/action_italic"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_italic" />
+
+
+        <x.ImageView
+            a:id="@+id/action_insert_link"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_link" />
+
+    </x.LinearLayout>
+
+    <View
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_above="@+id/tools_layout"
+        a:background="@color/gray_e6" />
+
+    <x.RelativeLayout
+        a:id="@+id/tools_layout"
+        a:layout_width="match_parent"
+        a:layout_height="144px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/gray_f3"
+        a:paddingLeft="30px"
+        a:paddingRight="30px">
+
+        <x.ImageView
+            a:id="@+id/action_text"
+            style="@style/Editor.ImageView"
+            x:src="@drawable/ic_editor_text" />
+
+        <x.ImageView
+            a:id="@+id/action_bulleted"
+            style="@style/Editor.ImageView"
+            a:layout_toRightOf="@id/action_text"
+            x:src="@drawable/ic_editor_list_bulleted" />
+
+        <x.ImageView
+            a:id="@+id/action_unordered_numbered"
+            style="@style/Editor.ImageView"
+            a:layout_toRightOf="@id/action_bulleted"
+            x:src="@drawable/ic_editor_list_number" />
+
+        <x.ImageView
+            a:id="@+id/action_indent"
+            style="@style/Editor.ImageView"
+            a:layout_toRightOf="@id/action_unordered_numbered"
+            x:src="@drawable/ic_editor_indent" />
+
+        <x.ImageView
+            a:id="@+id/action_hr"
+            style="@style/Editor.ImageView"
+            a:layout_toRightOf="@id/action_indent"
+            x:src="@drawable/ic_editor_hr" />
+
+
+        <x.ImageView
+            a:id="@+id/action_insert_image"
+            style="@style/Editor.ImageView"
+            a:layout_alignParentRight="true"
+            x:src="@drawable/ic_editor_image" />
+
+        <x.ImageView
+            a:id="@+id/action_record"
+            style="@style/Editor.ImageView"
+            a:layout_toLeftOf="@id/action_insert_image"
+            x:src="@drawable/ic_editor_record" />
+
+    </x.RelativeLayout>
+</merge>

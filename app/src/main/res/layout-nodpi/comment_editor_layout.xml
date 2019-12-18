@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/comment_edit_layout"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/gray_fa"
+        a:minHeight="150px">
+
+        <View
+            a:id="@+id/comment_edit_img_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_alignParentTop="true"
+            a:background="@color/gray_e6" />
+
+        <x.TextView
+            a:id="@+id/mBtnPost"
+            style="@style/Button"
+            a:layout_width="194px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:enabled="false"
+            a:padding="14px"
+            a:text="@string/post"
+            a:textColor="@color/btn_comment_post_color_selector"
+            a:textSize="@dimen/font_size_42" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutAnonymous"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:visibility="gone">
+
+            <x.TextView
+                a:id="@+id/mTxtAnonymous"
+                style="@style/Button"
+                a:layout_width="match_parent"
+                a:layout_alignLeft="@+id/mSwitchAnonymous"
+                a:layout_alignRight="@+id/mSwitchAnonymous"
+                a:gravity="center"
+                a:text="@string/anonymous"
+                a:textColor="@color/gray_7c"
+                a:textSize="@dimen/font_size_36" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                a:id="@+id/mSwitchAnonymous"
+                a:layout_width="70px"
+                a:layout_height="36px"
+                a:layout_alignParentLeft="true"
+                a:layout_below="@id/mTxtAnonymous"
+                a:layout_marginLeft="40px"
+                a:layout_marginTop="8px"
+                x:thumb_height="36px"
+                x:thumb_width="36px" />
+        </x.RelativeLayout>
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/comment_edit_edit_text"
+            style="@style/CommentEditText"
+            a:layout_width="match_parent"
+            a:layout_marginLeft="50px"
+            a:layout_toLeftOf="@id/mBtnPost"
+            a:layout_toRightOf="@id/mLayoutAnonymous"
+            a:hint="@string/post_comment"
+            a:textColorHint="@color/gray_b3"
+            x:met_hideUnderline="true" />
+    </x.RelativeLayout>
+
+</RelativeLayout>

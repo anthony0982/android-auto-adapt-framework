@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:paddingBottom="10px"
+    a:paddingLeft="0px"
+    a:paddingRight="18px"
+    a:paddingTop="10px">
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/RoundTextView"
+        a:paddingLeft="60px"
+        a:textColor="@color/white"
+        a:textSize="36px"
+        x:round_backgroundColor="@color/transparent"
+        x:round_borderColor="@color/white"
+        x:round_borderWidth="2px"
+        x:round_padding_horizontal="1.0"
+        x:round_padding_vertical="0.5" />
+
+    <x.ImageView
+        a:id="@+id/mImgIcon"
+        style="@style/ImageView"
+        a:layout_width="38px"
+        a:layout_height="38px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="36px" />
+
+</x.RelativeLayout>

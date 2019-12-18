@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical"
+    a:paddingBottom="30px"
+    a:paddingTop="30px">
+
+    <ImageView
+        a:id="@+id/mImageView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:adjustViewBounds="true"
+        a:src="@color/gray_ee" />
+
+    <RelativeLayout
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true">
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/mLoadingView"
+            a:layout_width="60px"
+            a:layout_height="60px"
+            a:layout_centerHorizontal="true"
+            a:visibility="gone" />
+
+        <TextView
+            a:id="@+id/mTxtStatus"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/progress"
+            a:layout_centerInParent="true"
+            a:layout_marginTop="15dp"
+            a:gravity="center_horizontal"
+            a:paddingBottom="2dp"
+            a:paddingLeft="8dp"
+            a:paddingRight="8dp"
+            a:paddingTop="2dp"
+            a:text="@string/editor_uploading"
+            a:textColor="@color/f5f5f5"
+            a:textSize="@dimen/font_size_40"
+            a:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ImageView
+        a:id="@+id/mImgCover"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignBottom="@id/mImageView"
+        a:layout_alignTop="@id/mImageView"
+        a:adjustViewBounds="true"
+        a:background="@drawable/editor_img_cover"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mImgRemove"
+        a:layout_width="108px"
+        a:layout_height="108px"
+        a:layout_alignParentRight="true"
+        a:background="@android:color/transparent"
+        a:maxHeight="40dp"
+        a:maxWidth="40dp"
+        a:src="@drawable/ic_editor_delte_img"
+        a:visibility="gone" />
+
+</RelativeLayout>

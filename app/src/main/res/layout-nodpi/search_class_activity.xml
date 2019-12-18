@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main.White">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray49"
+            a:text="@string/search_class" />
+
+        <x.ImageView
+            a:id="@+id/mImgCreate"
+            style="@style/Icon"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:src="@drawable/ic_add_thin"
+            a:tint="#586370" />
+    </x.RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/mLayoutHeader"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTitleBar">
+
+        <x.TextView
+            a:id="@+id/mTxtBg"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_height="90px"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="184px"
+            a:layout_marginTop="50px"
+            x:round="true"
+            x:round_backgroundColor="@color/gray_f0"
+            x:round_isRadiusAdjustBounds="false"
+            x:round_padding_horizontal="1.0"
+            x:round_padding_vertical="1.0"
+            x:round_radius="10px" />
+
+        <x.TextView
+            a:id="@+id/mTxtCancel"
+            style="@style/TextView.Center"
+            a:layout_width="183px"
+            a:layout_height="90px"
+            a:layout_alignParentRight="true"
+            a:layout_marginTop="50px"
+            a:text="@string/cancel"
+            a:textColor="#adadad"
+            a:textSize="36px" />
+
+        <x.ImageView
+            a:id="@+id/mImgSearch"
+            style="@style/ImageView"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_marginLeft="70px"
+            a:layout_marginTop="70px"
+            a:tint="#969696"
+            x:src="@drawable/ic_search" />
+
+        <com.halo.view.MaterialEditText
+            a:id="@+id/mMaterialEditText"
+            style="@style/MaterialEditText"
+            a:layout_width="match_parent"
+            a:layout_height="90px"
+            a:layout_marginLeft="30px"
+            a:layout_marginRight="200px"
+            a:layout_marginTop="50px"
+            a:layout_toRightOf="@id/mImgSearch"
+            a:hint="@string/search_class_hint"
+            a:maxLength="60"
+            a:singleLine="true"
+            a:textSize="@dimen/font_size_44"
+            a:textStyle="normal"
+            x:met_hideUnderline="true"
+            x:met_textColor="@color/black"
+            x:met_underlineColorFocused="@color/blue"
+            x:met_underlineColorUnFocused="@color/gray_9b" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/mProgress"
+            style="@style/LoadingView"
+            a:layout_width="30px"
+            a:layout_height="30px"
+            a:layout_alignRight="@id/mMaterialEditText"
+            a:layout_alignTop="@id/mMaterialEditText"
+            a:layout_marginRight="30px"
+            a:layout_marginTop="30px"
+            a:visibility="gone"
+            x:qmui_loading_size="30px" />
+
+    </RelativeLayout>
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutHeader" />
+
+    <TextView
+        a:id="@+id/mTxtEmpty"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:text="@string/not_found_class"
+        a:textColor="#cdcdcd"
+        a:textSize="46px"
+        a:visibility="gone" />
+</RelativeLayout>

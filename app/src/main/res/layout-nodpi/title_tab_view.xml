@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="116px">
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/title_bar_indicator"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:background="@null"
+        a:overScrollMode="never"
+        x:pstsIndicatorColor="@color/black"
+        x:pstsIndicatorHeight="4px"
+        x:pstsShouldAnimateText="false"
+        x:pstsTabPaddingLeftRight="0px"
+        x:pstsTabWidth="500px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="@color/black"
+        x:pstsTextSize="40px"
+        x:pstsTextSizeHighlight="40px"
+        x:pstsUnderlineHeight="0px" />
+
+</x.RelativeLayout>

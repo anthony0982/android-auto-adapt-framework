@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <View
+                a:id="@+id/mViewSplitTarget"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mChangePassword"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/setting_change_password" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mPushUpdate"
+                style="@style/SettingsItemView.Switch"
+                x:icon="@drawable/ic_settings_schedule"
+                x:settings_title="@string/setting_push_update" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mUpdate"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/setting_update" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mAbout"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/setting_about" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mProtocol"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/setting_protocol" />
+
+
+            <x.TextView
+                a:id="@+id/mTxtLogout"
+                style="@style/RoundTextView.Red"
+                a:layout_width="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="102px"
+                a:text="@string/setting_logout"
+                a:textSize="@dimen/font_size_medium"
+                x:round_padding_vertical="0.8" />
+
+        </x.LinearLayout>
+
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:singleLine="true"
+            a:text="@string/setting_settings" />
+
+    </x.RelativeLayout>
+
+
+</RelativeLayout>

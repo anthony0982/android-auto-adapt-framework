@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/mTxtMyBorrows"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:visibility="gone"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:padding="50px"
+            a:text="@string/library_my_borrow"
+            a:textColor="@color/gray_82"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLogo"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="40px">
+
+            <x.ImageView
+                a:id="@+id/mImgLogo"
+                style="@style/ImageView"
+                a:layout_width="818px"
+                a:layout_height="232px"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="40px"
+                a:scaleType="fitStart"
+                a:src="@color/gray_ee" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TextView.Center.Blue"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:paddingBottom="40px"
+                a:paddingTop="60px"
+                a:text="@string/library"
+                a:textSize="@dimen/font_size_120"
+                a:visibility="gone" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutSearch"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mLayoutLogo"
+            a:layout_marginTop="20px">
+
+            <x.ImageView
+                a:id="@+id/library_input_bg"
+                style="@style/ImageView"
+                a:layout_width="match_parent"
+                a:layout_height="100px"
+                a:layout_centerHorizontal="true"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                x:src="@drawable/bg_rect_search" />
+
+            <x.TextView
+                a:id="@+id/mEditText"
+                style="@style/TextView"
+                a:layout_width="match_parent"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:gravity="center_vertical"
+                a:paddingLeft="50px"
+                a:text="@string/library_search_hint"
+                a:textColor="@color/gray_b2"
+                a:textSize="@dimen/font_size_42"
+                a:textStyle="normal" />
+
+            <x.ImageView
+                a:id="@+id/mImgSearch"
+                style="@style/ImageView"
+                a:layout_width="54px"
+                a:layout_height="54px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="100px"
+                a:src="@drawable/ic_library_search" />
+
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutAnnouncements"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mLayoutSearch"
+            a:layout_marginLeft="58px"
+            a:layout_marginTop="80px">
+
+            <x.TextView
+                a:id="@+id/library_txt_annoucements_title"
+                style="@style/TextView"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:text="@string/library_announcement"
+                a:textColor="@color/gray_82"
+                a:textSize="@dimen/font_size_medium" />
+
+            <com.halo.view.RecyclerView
+                a:id="@+id/mRecyclerViewAnnouncements"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_below="@id/library_txt_annoucements_title"
+                a:layout_marginTop="40px" />
+
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtInviteSchool"
+        style="@style/RoundTextView.LightBlue"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="600px"
+        a:text="@string/library_invite_school"
+        a:textColor="@color/white"
+        a:textSize="@dimen/font_size_medium"
+        a:visibility="gone"
+        x:round_isRadiusAdjustBounds="false"
+        x:round_padding_vertical="0.8"
+        x:round_radius="10px" />
+
+    <x.TextView
+        a:id="@+id/mTxtEmpty"
+        style="@style/RecyclerView.Empty"
+        a:layout_height="wrap_content"
+        a:layout_centerHorizontal="true"
+        a:layout_centerInParent="false"
+        a:layout_marginTop="500px"
+        a:text="@string/library_not_setup"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/mTxtError"
+        style="@style/TextView.Error" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+</x.RelativeLayout>

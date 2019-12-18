@@ -1,0 +1,6 @@
+﻿[{"name":"Counselor","code":"counselor"},
+{"name":"Student","code":"student"},
+{"name":"Teacher","code":"teacher"},
+{"name":"Parent","code":"parent"},
+{"name":"School","code":"staff"},
+{"name":"Merchant","code":"merchant"}]

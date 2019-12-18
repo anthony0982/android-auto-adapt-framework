@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical"
+            a:paddingBottom="50px">
+
+            <com.makeramen.RoundedImageView
+                a:id="@+id/mImgAvatar"
+                style="@style/ImageView"
+                a:layout_width="200px"
+                a:layout_height="200px"
+                a:layout_centerHorizontal="true"
+                a:layout_gravity="center_horizontal"
+                a:layout_marginTop="100px"
+                x:oval="true" />
+
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutGender"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_gravity="center_horizontal"
+                a:layout_marginTop="70px">
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutGenderMale"
+                    a:layout_width="270px"
+                    a:layout_height="100px">
+
+                    <x.ImageView
+                        a:id="@+id/mImgGenderMaleBg"
+                        style="@style/ImageView"
+                        a:layout_width="270px"
+                        a:layout_height="100px"
+                        x:src="@drawable/bg_rect_gender" />
+
+                    <x.ImageView
+                        a:id="@+id/mImgGenderMale"
+                        style="@style/ImageView"
+                        a:layout_width="60px"
+                        a:layout_height="60px"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="60px"
+                        x:src="@drawable/ic_gender_male" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtGenderMale"
+                        style="@style/TextView"
+                        a:layout_width="wrap_content"
+                        a:layout_height="wrap_content"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="20px"
+                        a:layout_toRightOf="@id/mImgGenderMale"
+                        a:text="@string/male"
+                        a:textColor="@color/blue"
+                        a:textSize="@dimen/font_size_46" />
+                </x.RelativeLayout>
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutGenderFemale"
+                    a:layout_width="270px"
+                    a:layout_height="100px"
+                    a:layout_marginLeft="28px"
+                    a:layout_toRightOf="@id/mLayoutGenderMale">
+
+                    <x.ImageView
+                        a:id="@+id/mImgGenderFemaleBg"
+                        style="@style/ImageView"
+                        a:layout_width="270px"
+                        a:layout_height="100px"
+                        a:alpha="0"
+                        x:src="@drawable/bg_rect_gender" />
+
+                    <x.ImageView
+                        a:id="@+id/mImgGenderFemale"
+                        style="@style/ImageView"
+                        a:layout_width="60px"
+                        a:layout_height="60px"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="60px"
+                        x:src="@drawable/ic_gender_female" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtGenderFemale"
+                        style="@style/TextView"
+                        a:layout_width="wrap_content"
+                        a:layout_height="wrap_content"
+                        a:layout_centerVertical="true"
+                        a:layout_marginLeft="20px"
+                        a:layout_toRightOf="@id/mImgGenderFemale"
+                        a:text="@string/female"
+                        a:textColor="#DFAD8B"
+                        a:textSize="@dimen/font_size_46" />
+                </x.RelativeLayout>
+
+            </x.RelativeLayout>
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mName"
+                style="@style/SettingsItemView.Dive"
+                a:layout_marginTop="80px"
+                x:settings_title="@string/profile_name" />
+
+            <View style="@style/EditItem.Split" />
+
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutSchoolProfile"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content">
+
+                <x.TextView
+                    a:id="@+id/mTxtSchoolProfile"
+                    style="@style/TextView"
+                    a:layout_marginLeft="50px"
+                    a:paddingBottom="48px"
+                    a:paddingTop="48px"
+                    a:text="@string/school_profile_teacher"
+                    a:textColor="@color/gray_ab"
+                    a:textSize="40px" />
+
+                <x.TextView
+                    a:id="@+id/mTxtSchoolProfileState"
+                    style="@style/TextView"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:layout_marginRight="120px"
+                    a:paddingBottom="48px"
+                    a:paddingTop="48px"
+                    a:text="@string/auditing"
+                    a:textColor="@color/blue"
+                    a:textSize="36px" />
+            </x.RelativeLayout>
+
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mSchool"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/school" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mCollege"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/college" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mProfessionTitle"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/profession_title" />
+        </x.LinearLayout>
+
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:text="@string/setting_profile" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true" />
+
+    </x.RelativeLayout>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mPicker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+
+</RelativeLayout>

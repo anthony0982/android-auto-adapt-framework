@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_homework_fragment_attachment_img"
+        style="@style/ImageView.ScheduleRecord"
+        a:layout_marginTop="18px"
+        a:src="@drawable/schedule_class_tool_ic_dot" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_attachment_txt"
+        style="@style/TextView.ScheduleHomeworkItem"
+        a:textColor="#6a879a"
+        a:layout_marginLeft="14px"
+        a:layout_marginTop="22px"
+        a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_attachment_img" />
+
+</RelativeLayout>

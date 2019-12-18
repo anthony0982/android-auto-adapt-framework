@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <x.RelativeLayout
+        a:id="@+id/editor_player_bar"
+        a:layout_width="match_parent"
+        a:layout_height="160px"
+        a:layout_marginBottom="20px"
+        a:layout_marginTop="20px"
+        a:background="@color/gray_f3">
+
+        <x.ImageView
+            a:id="@+id/editor_player_img_play"
+            style="@style/ImageView"
+            a:layout_width="160px"
+            a:layout_height="160px"
+            a:layout_centerVertical="true"
+            a:src="@drawable/lesson_player_btn_play" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/uploading_progress_bar"
+            style="@style/ChatImageLoadingView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentLeft="true" />
+
+        <SeekBar
+            a:id="@+id/editor_player_seekbar_position"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="150px"
+            a:max="10000"
+            a:maxHeight="8px"
+            a:minHeight="8px"
+            a:paddingEnd="17px"
+            a:paddingLeft="17px"
+            a:paddingRight="17px"
+            a:paddingStart="17px"
+            a:progress="0"
+            a:progressDrawable="@drawable/seek_bar_progress_drawable"
+            a:secondaryProgress="0"
+            a:splitTrack="false"
+            a:thumb="@drawable/lesson_player_btn_seeker" />
+
+        <x.TextView
+            a:id="@+id/editor_player_txt_current_position"
+            a:layout_width="300px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/editor_player_seekbar_position"
+            a:layout_toRightOf="@id/editor_player_img_play"
+            a:text="00:00"
+            a:textColor="@color/gray_9a"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/editor_player_txt_duration"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/editor_player_seekbar_position"
+            a:layout_marginRight="26px"
+            a:text="30:00"
+            a:textColor="@color/gray_9a"
+            a:textSize="@dimen/font_size_34" />
+    </x.RelativeLayout>
+
+</merge>

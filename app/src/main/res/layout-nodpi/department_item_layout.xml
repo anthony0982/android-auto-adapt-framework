@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_marginLeft="50px"
+        a:paddingBottom="40px"
+        a:paddingTop="40px"
+        a:textColor="@color/gray_99"
+        a:textSize="@dimen/font_size_40" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/list_item_color_selector"
+        a:paddingTop="30px">
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/TextView"
+            a:layout_marginLeft="70px"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_medium" />
+
+        <View
+            a:id="@+id/mBottomLine"
+            a:layout_width="match_parent"
+            a:layout_height="1px"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="36px"
+            a:background="@color/gray_f0" />
+    </x.RelativeLayout>
+</x.LinearLayout>

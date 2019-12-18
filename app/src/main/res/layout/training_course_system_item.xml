@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+    <x.ImageView 
+        a:id="@+id/training_course_system_item_img_poster"
+        style="@style/ImageView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        />
+
+</RelativeLayout>

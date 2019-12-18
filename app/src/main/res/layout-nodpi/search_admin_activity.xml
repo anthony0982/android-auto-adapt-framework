@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_width="wrap_content"
+            a:text="@string/select_admin_candidates" />
+
+    </x.RelativeLayout>
+
+    <com.halo.view.MaterialEditText
+        a:id="@+id/mMaterialEditText"
+        style="@style/MaterialEditText"
+        a:layout_width="match_parent"
+        a:layout_height="130px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="70px"
+        a:layout_marginRight="50px"
+        a:hint="@string/search_admin_hint"
+        a:maxLength="60"
+        a:singleLine="true"
+        a:textSize="@dimen/font_size_44"
+        a:textStyle="normal"
+        x:met_hideUnderline="true"
+        x:met_textColor="@color/black"
+        x:met_underlineColorFocused="@color/blue"
+        x:met_underlineColorUnFocused="@color/gray_9b" />
+
+    <im.clazz.ui.component.MainRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mMaterialEditText"
+        a:background="@color/gray_fa" />
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/admin_list_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+</x.RelativeLayout>

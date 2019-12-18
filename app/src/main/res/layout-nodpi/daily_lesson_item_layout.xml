@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content">
+
+        <View
+            a:id="@+id/mBottomBorder"
+            a:layout_width="0px"
+            a:layout_height="4px"
+            a:background="@color/cyan_gray"
+            x:layout_constraintBottom_toBottomOf="parent"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            a:id="@+id/mLeftBorder"
+            a:layout_width="6px"
+            a:layout_height="0px"
+            a:background="#b5e881"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/TextView"
+            a:layout_marginLeft="80px"
+            a:layout_marginTop="66px"
+            a:textColor="@color/gray_35"
+            a:textSize="@dimen/font_size_medium"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <x.TextView
+            a:id="@+id/mTxtClass"
+            style="@style/TextView"
+            a:layout_marginBottom="6px"
+            a:layout_marginLeft="10px"
+            a:textColor="@color/gray_35"
+            a:textSize="@dimen/font_size_34"
+            x:layout_constraintBottom_toBottomOf="@id/mTxtTime"
+            x:layout_constraintLeft_toRightOf="@id/mTxtTime" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:layout_marginLeft="80px"
+            a:layout_marginTop="36px"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mTxtTime" />
+
+        <x.TextView
+            a:id="@+id/mTxtLocation"
+            style="@style/TextView"
+            a:layout_marginBottom="52px"
+            a:layout_marginLeft="80px"
+            a:layout_marginTop="20px"
+            a:textColor="@color/gray_9c"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mTxtTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+</x.RelativeLayout>

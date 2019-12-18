@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/list_item_color_selector">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="44px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/Comment.Name"
+        a:layout_marginLeft="20px"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+    <x.TextView
+        a:id="@+id/mTxtSchoolName"
+        style="@style/Comment.Name"
+        a:layout_marginLeft="20px"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/mTxtName"
+        a:maxWidth="400px"
+        a:textColor="@color/gray_b2"
+        a:textSize="@dimen/font_size_38" />
+
+    <x.TextView
+        a:id="@+id/mTxtContent"
+        style="@style/Comment.Content"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginLeft="20px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="10px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/Comment.Time"
+        a:layout_below="@id/mTxtContent"
+        a:layout_marginLeft="20px"
+        a:layout_marginTop="10px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:paddingBottom="24px" />
+
+    <View
+        a:id="@+id/mLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTxtTime"
+        a:layout_marginLeft="20px"
+        a:layout_marginRight="50px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:background="@color/gray_f0" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutLike"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignBottom="@id/mTxtTime"
+        a:layout_alignParentRight="true"
+        a:paddingBottom="24px"
+        a:paddingLeft="50px"
+        a:paddingRight="80px"
+        a:paddingTop="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtLikeCount"
+            style="@style/Comment.LikeCount"
+            a:layout_marginTop="50px" />
+
+        <x.ImageView
+            a:id="@+id/mImgLike"
+            style="@style/Comment.Like"
+            a:layout_marginLeft="10px"
+            a:layout_marginTop="50px"
+            x:src="@drawable/ic_like" />
+
+    </x.LinearLayout>
+
+    <View
+        a:id="@+id/mLastBottom"
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:layout_below="@id/mTxtTime" />
+
+</x.RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/topic_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <im.clazz.campus.topic.TopicChatView
+        a:id="@+id/topic_chat_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/topic_header" />
+
+    <im.clazz.campus.topic.TopicContentView
+        a:id="@+id/topic_content_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_marginBottom="@dimen/chat_input_min_height"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <x.LinearLayout
+        a:id="@+id/topic_header"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:orientation="vertical">
+
+        <x.RelativeLayout
+            a:id="@+id/topic_layout_tool_bar"
+            style="@style/TitleBar.Main"
+            a:layout_width="match_parent">
+
+            <x.ImageView
+                a:id="@+id/topic_img_back"
+                style="@style/ToolBar.Icon"
+                a:layout_alignParentLeft="true"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="30px"
+                x:src="@drawable/ic_toolbar_back" />
+
+            <x.TextView
+                a:id="@+id/topic_toolbar_txt_title"
+                style="@style/TitleBar.Text"
+                a:layout_centerInParent="true"
+                a:text="@string/topic_talk" />
+
+            <x.ImageView
+                a:id="@+id/topic_img_more"
+                style="@style/ToolBar.Icon"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="40px"
+                x:src="@drawable/ic_toolbar_more" />
+
+            <x.ImageView
+                a:id="@+id/topic_img_share"
+                style="@style/ToolBar.Icon.Right"
+                a:layout_centerVertical="true"
+                a:layout_toLeftOf="@id/topic_img_more"
+                x:src="@drawable/ic_toolbar_share" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/topic_top_layout"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:background="@color/white"
+            a:paddingBottom="38px">
+
+            <x.TextView
+                a:id="@+id/txt_topic_title"
+                style="@style/TitleBar.NotificationTitle"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="40px"
+                a:singleLine="false" />
+
+            <x.TextView
+                a:id="@+id/txt_topic_time"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_below="@id/txt_topic_title"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="20px" />
+
+            <x.TextView
+                a:id="@+id/txt_topic_sponsor_tag"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_below="@id/txt_topic_title"
+                a:layout_marginLeft="30px"
+                a:layout_marginTop="20px"
+                a:layout_toRightOf="@id/txt_topic_time"
+                a:text="@string/sponsor_tag" />
+
+            <x.TextView
+                a:id="@+id/txt_topic_sponsor"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_below="@id/txt_topic_title"
+                a:layout_marginTop="20px"
+                a:layout_toRightOf="@id/txt_topic_sponsor_tag"
+                a:textColor="#fc8d9e" />
+
+            <x.ImageView
+                a:id="@+id/topic_img_pull_down"
+                style="@style/ImageView"
+                a:layout_width="56px"
+                a:layout_height="56px"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/txt_topic_title"
+                a:layout_marginRight="42px"
+                a:layout_marginTop="10px"
+                x:src="@drawable/ic_topic_block_down" />
+        </x.RelativeLayout>
+    </x.LinearLayout>
+
+</x.RelativeLayout>

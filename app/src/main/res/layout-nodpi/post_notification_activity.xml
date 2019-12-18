@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:scrollbars="vertical">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mSponsor"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_sponsor_hint"
+                x:settings_title="@string/notification_sponsor" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mTargets"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_targets_hint"
+                x:settings_title="@string/notification_targets" />
+
+            <View
+                a:id="@+id/mViewSplitTarget"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mTitle"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_title_hint"
+                x:settings_title="@string/notification_title" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mContent"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_content_hint"
+                x:settings_title="@string/notification_content" />
+
+            <View
+                a:id="@+id/mViewSplitDeadline"
+                style="@style/EditItem.Split" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mDeadline"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_deadline_hint"
+                x:settings_title="@string/notification_deadline" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mPics"
+                style="@style/SettingsItemView.Dive"
+                x:settings_hint="@string/notification_pics_hint"
+                x:settings_title="@string/notification_pics" />
+
+        </x.LinearLayout>
+    </ScrollView>
+
+    <com.example.picker.SingleWheelPicker
+        a:id="@+id/mOrganizationPicker"
+        style="@style/Picker"
+        a:layout_marginTop="@dimen/title_bar_height" />
+
+    <com.example.picker.DateHourPicker
+        a:id="@+id/mDateHourPicker"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:fromNowOn="true"
+        x:fromNowOnYears="1" />
+
+    <ViewStub
+        a:id="@+id/mStubGallery"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:layout="@layout/post_gallery_stub_layout"
+        a:visibility="gone" />
+
+</x.RelativeLayout>

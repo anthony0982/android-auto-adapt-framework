@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/note_layout_title_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@color/white">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Gray"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Gray"
+            a:layout_marginRight="20px"
+            a:layout_toLeftOf="@+id/mImgFork"
+            a:singleLine="true"
+            a:text="@string/note_public" />
+
+        <x.ImageView
+            a:id="@+id/mImgFork"
+            style="@style/ToolBar.Icon.More"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            a:tint="#4990ee"
+            a:layout_marginRight="50px"
+            x:src="@drawable/ic_mark" />
+
+        <x.TextView
+            a:id="@+id/mTxtForkCount"
+            style="@style/TextView.Center"
+            a:layout_centerVertical="true"
+            a:layout_toLeftOf="@id/mImgFork"
+            a:paddingRight="0px"
+            a:textColor="@color/gray_82"
+            a:textSize="@dimen/font_size_44" />
+
+    </x.RelativeLayout>
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditor"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+    <com.halo.view.ObservableRecyclerView
+        a:id="@+id/mRecyclerView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@id/mCommentEditor"
+        a:layout_below="@id/note_layout_title_bar"
+        a:background="@color/white"
+        a:fadingEdgeLength="0px"
+        a:overScrollMode="never" />
+
+    <View
+        a:id="@+id/mLoadingCover"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerInParent="true"
+        a:background="@color/white" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutBarCodeContent"
+        a:layout_width="680px"
+        a:layout_height="800px"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_dialog">
+
+        <x.ImageView
+            a:id="@+id/mImgBarCode"
+            style="@style/ImageView"
+            a:layout_width="456px"
+            a:layout_height="456px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="82px" />
+
+        <View
+            a:id="@+id/club_activity_line"
+            a:layout_width="620px"
+            a:layout_height="2px"
+            a:layout_below="@id/mImgBarCode"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="54px"
+            a:background="#FFD4D3D3" />
+
+        <x.TextView
+            a:id="@+id/club_activity_txt_guide"
+            style="@style/TextView.Center"
+            a:layout_width="640px"
+            a:layout_below="@id/club_activity_line"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="32px"
+            a:lineSpacingMultiplier="1.3"
+            a:singleLine="false"
+            a:text="@string/barcode_guide"
+            a:textColor="#FFABACB2"
+            a:textSize="42px" />
+    </x.RelativeLayout>
+</merge>

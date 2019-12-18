@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Title"
+            a:layout_width="wrap_content"
+            a:text="@string/online_course" />
+
+        <x.ImageView
+            a:id="@+id/mImgAdd"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:tint="@color/light_blue"
+            x:src="@drawable/ic_toolbar_add" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutSearch"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="false"
+            a:layout_marginRight="150px">
+
+            <x.ImageView
+                a:id="@+id/mImgSearch"
+                style="@style/TitleBar.Icon"
+                a:layout_width="62px"
+                a:layout_height="62px"
+                a:layout_centerInParent="true"
+                a:tint="@color/light_blue"
+                x:src="@drawable/ic_search" />
+        </x.RelativeLayout>
+
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTitleBar"
+        a:visibility="gone">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content">
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutRecommendTitle"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginTop="30px">
+
+                <x.ImageView
+                    a:id="@+id/mImgRecommend"
+                    a:layout_width="62px"
+                    a:layout_height="62px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="50px"
+                    x:src="@drawable/ic_course_recommend" />
+
+                <x.TextView
+                    a:id="@+id/mTxtRecommend"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="30px"
+                    a:layout_toRightOf="@id/mImgRecommend"
+                    a:text="@string/course_recommend"
+                    a:textSize="@dimen/font_size_medium" />
+
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutRecommendMore"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:padding="30px">
+
+                    <x.ImageView
+                        a:id="@+id/mImgRecommendDive"
+                        style="@style/SettingsItem.DiveOnly" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtRecommendMore"
+                        style="@style/TextView"
+                        a:layout_centerVertical="true"
+                        a:layout_toLeftOf="@id/mImgRecommendDive"
+                        a:text="@string/more"
+                        a:textColor="@color/gray_99"
+                        a:textSize="@dimen/font_size_36" />
+                </x.RelativeLayout>
+
+            </x.RelativeLayout>
+
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutRecommend"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/mLayoutRecommendTitle"
+                a:orientation="vertical" />
+
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutHotTitle"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/mLayoutRecommend"
+                a:layout_marginTop="30px">
+
+                <x.ImageView
+                    a:id="@+id/mImgHot"
+                    a:layout_width="62px"
+                    a:layout_height="62px"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="50px"
+                    x:src="@drawable/ic_course_hot" />
+
+                <x.TextView
+                    a:id="@+id/mTxtHot"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:layout_marginLeft="30px"
+                    a:layout_toRightOf="@id/mImgHot"
+                    a:text="@string/course_hot"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.RelativeLayout
+                    a:id="@+id/mLayoutHotMore"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:padding="30px">
+
+                    <x.ImageView
+                        a:id="@+id/mImgHotDive"
+                        style="@style/SettingsItem.DiveOnly" />
+
+                    <x.TextView
+                        a:id="@+id/mTxtHotMore"
+                        style="@style/TextView"
+                        a:layout_centerVertical="true"
+                        a:layout_toLeftOf="@id/mImgHotDive"
+                        a:text="@string/more"
+                        a:textColor="@color/gray_99"
+                        a:textSize="@dimen/font_size_36" />
+                </x.RelativeLayout>
+
+            </x.RelativeLayout>
+
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutHot"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/mLayoutHotTitle"
+                a:orientation="vertical" />
+        </x.RelativeLayout>
+    </ScrollView>
+
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutEmpty"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:gravity="center"
+        a:orientation="vertical"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/message_fragment_txt_empty"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="@string/live_list_empty"
+            a:textColor="@color/gray_b2"
+            a:textSize="50px" />
+
+    </x.LinearLayout>
+
+    <im.clazz.ui.component.OnlineCourseMenuView
+        a:id="@+id/mOnlineCourseMenuView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:visibility="gone" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtSelectCategoryTip"
+        style="@style/RoundTextView.LightBlue"
+        a:layout_centerInParent="true"
+        a:text="@string/select_course_categories_tip"
+        a:textColor="@color/white"
+        a:textSize="@dimen/font_size_medium"
+        a:visibility="gone"
+        x:round_isRadiusAdjustBounds="false"
+        x:round_padding_vertical="0.8"
+        x:round_radius="10px" />
+
+
+</RelativeLayout>

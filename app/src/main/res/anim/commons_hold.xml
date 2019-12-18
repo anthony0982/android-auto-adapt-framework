@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_mediumAnimTime"
+    android:fromXDelta="0"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:toXDelta="0"/>
+<!-- From: file:/Users/Alex/Work/Mine/Projects/fluffy-commons/library/src/main/res/anim/commons_hold.xml -->

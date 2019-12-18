@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.TextView
+        a:id="@+id/txt_school_course_category"
+        style="@style/SchoolCourseTitle"
+        a:layout_marginTop="44px"
+        a:paddingLeft="40px"
+        a:text="@string/school_course_in_school" />
+
+    <x.TextView
+        a:id="@+id/txt_school_course_category_show_all"
+        style="@style/SchoolCourseTitle"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="40px"
+        a:paddingBottom="40px"
+        a:paddingLeft="40px"
+        a:paddingTop="82px"
+        a:text="@string/show_all"
+        a:textColor="@color/gray_btn_color_show_all"
+        a:textSize="@dimen/font_size_40" />
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/recycler_view_school_course"
+        a:layout_width="match_parent"
+        a:layout_height="530px"
+        a:layout_below="@id/txt_school_course_category"
+        a:layout_marginTop="10px"
+        a:fadingEdge="none" />
+
+    <View
+        a:id="@+id/line_view_school_course"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/recycler_view_school_course"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="64px"
+        a:background="#FFE0E0E0" />
+
+</merge>

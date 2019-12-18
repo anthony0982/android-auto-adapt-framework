@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <RelativeLayout
+        a:id="@+id/mViewPagerLayout"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <com.halo.viewpager.ViewPager
+            a:id="@+id/mViewPager"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error" />
+
+    <x.ImageView
+        a:id="@+id/mDailyImage"
+        style="@style/ImageView"
+        a:layout_width="1080px"
+        a:layout_height="1541px"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mBtnBack"
+        style="@style/ImageView"
+        a:layout_width="132px"
+        a:layout_height="132px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="74px"
+        a:layout_marginRight="74px"
+        x:src="@drawable/ic_schedule_back" />
+
+    <ProgressBar
+        a:id="@+id/mProgressBarLoading"
+        a:layout_width="136px"
+        a:layout_height="286px"
+        a:layout_centerInParent="true"
+        a:indeterminate="true"
+        a:indeterminateDrawable="@drawable/progressbar" />
+
+</RelativeLayout>

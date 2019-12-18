@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@android:color/white"
+    a:orientation="vertical">
+
+    <RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main">
+
+        <x.ImageView
+            a:id="@+id/mBtnBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/about_txt_title" />
+    </RelativeLayout>
+
+    <View
+        a:id="@+id/mTitleLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mTitleBar"
+        a:background="@color/gray_ee" />
+
+    <x.ImageView
+        a:id="@+id/mImgLogo"
+        a:layout_width="260px"
+        a:layout_height="260px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_centerHorizontal="true"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginTop="100px"
+        x:src="@drawable/icon" />
+
+    <x.TextView
+        a:id="@+id/mTxtAppName"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mImgLogo"
+        a:layout_centerHorizontal="true"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginTop="50px"
+        a:text="@string/about_txt_app_name"
+        a:textColor="@color/gray_99"
+        a:textSize="38px" />
+
+    <x.TextView
+        a:id="@+id/mTxtDescription"
+        style="@style/TextView.MultiLine"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtAppName"
+        a:layout_centerHorizontal="true"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginTop="80px"
+        a:lineSpacingMultiplier="1.2"
+        a:padding="80px"
+        a:text="@string/about_txt_description"
+        a:textColor="@color/gray_99"
+        a:textSize="40px" />
+
+    <x.ImageView
+        a:id="@+id/mLine"
+        a:layout_width="fill_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mTxtDescription"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="50px"
+        a:background="@color/common_linecolor" />
+
+    <RelativeLayout
+        a:id="@+id/mBtnEstimate"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLine"
+        a:layout_centerHorizontal="true"
+        a:background="@drawable/list_item_color_selector">
+
+        <x.TextView
+            a:id="@+id/about_btn_to_estimate"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="80px"
+            a:layout_marginTop="30px"
+            a:text="@string/about_btn_to_estimate"
+            a:textColor="@color/gray_66"
+            a:textSize="40px" />
+
+        <x.ImageView
+            a:id="@+id/about_activity_img_next_1"
+            a:layout_width="20px"
+            a:layout_height="42px"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="80px"
+            a:layout_marginTop="30px"
+            x:src="@drawable/common_ic_next" />
+
+        <x.ImageView
+            a:layout_width="fill_parent"
+            a:layout_height="1px"
+            a:layout_marginTop="115px"
+            a:background="@color/common_linecolor" />
+    </RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCopyRight"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="60px"
+        a:text="@string/about_txt_copyright"
+        a:textColor="@color/gray_99"
+        a:textSize="34px" />
+
+</RelativeLayout>

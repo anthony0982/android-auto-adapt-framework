@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/join_group" />
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutGroups"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:orientation="vertical"
+            a:paddingBottom="50px">
+
+            <x.RelativeLayout
+                a:id="@+id/mTitleBarClass"
+                a:layout_width="match_parent"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px">
+
+                <x.TextView
+                    a:id="@+id/mTxtClass"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:text="@string/my_class"
+                    a:textColor="#171717"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.TextView
+                    a:id="@+id/mTxtClassMore"
+                    style="@style/TextView"
+                    a:layout_height="match_parent"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:gravity="center_vertical"
+                    a:paddingLeft="50px"
+                    a:paddingRight="50px"
+                    a:text="@string/dive_to_more"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_36" />
+            </x.RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/mViewEmptyClass"
+                style="@style/RecyclerView.Empty.Fragment"
+                a:layout_height="210px"
+                a:text="@string/have_not_join_class" />
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutClass"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical" />
+
+            <x.RelativeLayout
+                a:id="@+id/mTitleBarClub"
+                a:layout_width="match_parent"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px">
+
+                <x.TextView
+                    a:id="@+id/mTxtClub"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:text="@string/recommend_club"
+                    a:textColor="#171717"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.TextView
+                    a:id="@+id/mTxtClubMore"
+                    style="@style/TextView"
+                    a:layout_height="match_parent"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:gravity="center_vertical"
+                    a:paddingLeft="50px"
+                    a:paddingRight="50px"
+                    a:text="@string/dive_to_more"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_36" />
+            </x.RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/mViewEmptyClub"
+                style="@style/RecyclerView.Empty.Fragment"
+                a:layout_height="210px"
+                a:text="@string/no_recommend_club_1" />
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutClub"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical" />
+
+            <x.RelativeLayout
+                a:id="@+id/mTitleBarCircle"
+                a:layout_width="match_parent"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px">
+
+                <x.TextView
+                    a:id="@+id/mTxtCircle"
+                    style="@style/TextView"
+                    a:layout_centerVertical="true"
+                    a:text="@string/recommend_circle"
+                    a:textColor="#171717"
+                    a:textSize="@dimen/font_size_medium" />
+
+                <x.TextView
+                    a:id="@+id/mTxtCircleMore"
+                    style="@style/TextView"
+                    a:layout_height="match_parent"
+                    a:layout_alignParentRight="true"
+                    a:layout_centerVertical="true"
+                    a:gravity="center_vertical"
+                    a:paddingLeft="50px"
+                    a:paddingRight="50px"
+                    a:text="@string/dive_to_more"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_36" />
+            </x.RelativeLayout>
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutCircle"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical" />
+
+        </x.LinearLayout>
+    </ScrollView>
+
+    <x.TextView
+        a:id="@+id/mViewEmpty"
+        style="@style/RecyclerView.Empty.Fragment"
+        a:paddingBottom="150px"
+        a:text="@string/notification_responser_list_empty" />
+
+    <x.TextView
+        a:id="@+id/mViewError"
+        style="@style/TextView.Error"
+        a:layout_marginBottom="150px" />
+
+</x.RelativeLayout>

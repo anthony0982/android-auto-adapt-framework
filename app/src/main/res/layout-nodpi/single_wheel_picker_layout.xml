@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/picker_content_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <View
+        a:id="@+id/bar_top_bg"
+        a:layout_width="match_parent"
+        a:layout_height="120px"
+        a:background="@color/picker_bar_bg" />
+
+    <TextView
+        a:id="@+id/bar_btn_cancel"
+        style="@style/TextView.Orange.Center.SLarge"
+        a:layout_height="120px"
+        a:layout_alignParentLeft="true"
+        a:background="@null"
+        a:paddingLeft="54px"
+        a:paddingRight="54px"
+        a:text="@string/cancel"
+        a:textColor="@color/gray_9b"
+        a:textSize="50px" />
+
+    <TextView
+        a:id="@+id/bar_btn_confirm"
+        style="@style/TextView.Orange.Center.SLarge"
+        a:layout_height="120px"
+        a:layout_alignParentRight="true"
+        a:background="@null"
+        a:paddingLeft="54px"
+        a:paddingRight="54px"
+        a:text="@string/confirm"
+        a:textColor="@color/picker_btn_color_selector"
+        a:textSize="50px" />
+
+    <TextView
+        a:id="@+id/bar_btn_title"
+        style="@style/TextView.Orange.Center.SLarge"
+        a:layout_height="120px"
+        a:layout_centerHorizontal="true"
+        a:background="@null"
+        a:paddingLeft="54px"
+        a:paddingRight="54px"
+        a:text="@string/confirm"
+        a:textColor="@color/gray"
+        a:textSize="50px"
+        a:visibility="gone" />
+
+    <com.example.wheel.WheelView
+        a:id="@+id/picker_wheel_view"
+        style="@style/WheelView"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/bar_top_bg"
+        a:layout_toLeftOf="@+id/wheel_view_center"
+        a:paddingLeft="60px"
+        a:paddingRight="60px" />
+</x.RelativeLayout>

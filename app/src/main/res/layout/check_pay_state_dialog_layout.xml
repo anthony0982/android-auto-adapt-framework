@@ -1,0 +1,51 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayout"
+        a:layout_width="820px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:paddingBottom="40px"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="50px"
+            a:paddingTop="50px"
+            a:text="@string/pay_result_check"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutChecking"
+            a:layout_width="820px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/mTxtTitle"
+            a:padding="50px">
+
+            <im.clazz.widget.LoadingView
+                a:id="@+id/mLoadingView"
+                style="@style/LoadingView.Blue"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_alignParentLeft="true"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="50px" />
+
+            <x.TextView
+                a:id="@+id/mTxtTip"
+                style="@style/Submitting.Text"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_toRightOf="@id/mLoadingView"
+                a:paddingLeft="50px"
+                a:text="@string/checking_order" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</merge>

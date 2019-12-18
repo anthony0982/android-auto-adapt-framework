@@ -1,0 +1,7 @@
+﻿[{"name":"大学/大专","code":"univ"},
+{"name":"高中/中专","code":"high"},
+{"name":"初中","code":"mid"},
+{"name":"小学","code":"pri"},
+{"name":"早教幼教","code":"pre"},
+{"name":"职业教育","code":"voc"},
+{"name":"培训机构","code":"tra"}]

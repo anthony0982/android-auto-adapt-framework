@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/white"
+        a:minHeight="120px"
+        a:paddingLeft="50px">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mImgAvatar"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            a:layout_centerVertical="true"
+            a:layout_marginBottom="24px"
+            a:layout_marginRight="28px"
+            x:corner_radius="75px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/NotificationReplier.Name"
+            a:layout_centerVertical="true"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:maxWidth="700px" />
+
+        <x.ImageView
+            a:id="@+id/mImgCheckBox"
+            style="@style/NotificationReplier.CheckBox"
+            a:layout_width="44px"
+            a:layout_height="44px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="60px"
+            x:src="@drawable/ic_check_box" />
+
+        <View
+            a:id="@+id/mCheckBoxCover"
+            a:layout_width="188px"
+            a:layout_height="188px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true" />
+    </x.RelativeLayout>
+</x.LinearLayout>

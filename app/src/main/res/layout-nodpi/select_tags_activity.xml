@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mLayoutToolBar"
+        a:scrollbars="vertical">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutCategories"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="20px"
+            a:orientation="vertical"
+            a:paddingBottom="50px" />
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            a:layout_marginLeft="50px"
+            style="@style/ToolBar.Icon.Close.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text.Blue"
+            a:text="@string/select_tags" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm" />
+
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

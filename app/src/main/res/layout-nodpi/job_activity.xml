@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_notification_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/gray_ee"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitlebar"
+            style="@style/TitleBar.Text"
+            a:text="@string/job_detail" />
+
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:id="@+id/mScrollViewAnswer"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@+id/mLayoutBottomBar"
+        a:layout_below="@id/mLayoutToolBar"
+        a:scrollbars="vertical">
+
+        <LinearLayout
+            a:id="@+id/mLayoutScroll"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <RelativeLayout
+                a:id="@+id/mLayoutCompany"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:background="@color/white"
+                a:layout_marginTop="20px"
+                a:paddingBottom="50px"
+                a:paddingTop="50px">
+
+                <com.halo.view.RoundCornerImageView
+                    a:id="@+id/mImgAvatar"
+                    style="@style/RoundCornerImageView"
+                    a:layout_width="140px"
+                    a:layout_height="140px"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginTop="30px" />
+
+                <x.TextView
+                    a:id="@+id/mTxtName"
+                    style="@style/TextView.MultiLine"
+                    a:layout_marginLeft="30px"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="34px"
+                    a:layout_toRightOf="@id/mImgAvatar"
+                    a:lineSpacingMultiplier="1.3"
+                    a:singleLine="false"
+                    a:textColor="#323232"
+                    a:textSize="42px" />
+
+
+                <x.ImageView
+                    a:id="@+id/mImgLocation"
+                    style="@style/ActivityItem.SubTitleIcon"
+                    a:layout_width="30px"
+                    a:layout_height="40px"
+                    a:layout_alignLeft="@id/mTxtName"
+                    a:layout_below="@id/mTxtName"
+                    a:layout_marginTop="12px"
+                    a:tint="@color/light_blue"
+                    x:src="@drawable/ic_location_school" />
+
+                <x.TextView
+                    a:id="@+id/mTxtLocation"
+                    style="@style/TextView"
+                    a:layout_below="@id/mTxtName"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginTop="10px"
+                    a:layout_toRightOf="@id/mImgLocation"
+                    a:textColor="@color/light_blue"
+                    a:textSize="36px" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                a:id="@+id/mLayoutJobTitle"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="30px"
+                a:background="@drawable/round_corner_white_rectangle_shape_4dp"
+                a:paddingBottom="50px">
+
+                <x.TextView
+                    a:id="@+id/mTxtSalary"
+                    style="@style/TextView"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="60px"
+                    a:textColor="#fe6c6c"
+                    a:textSize="@dimen/font_size_42" />
+
+                <x.TextView
+                    a:id="@+id/mTxtTitle"
+                    style="@style/TextView.MultiLine"
+                    a:layout_width="match_parent"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="30px"
+                    a:layout_marginTop="50px"
+                    a:layout_toLeftOf="@id/mTxtSalary"
+                    a:lineSpacingMultiplier="1.3"
+                    a:singleLine="false"
+                    a:textColor="@color/black"
+                    a:textSize="@dimen/font_size_52" />
+
+                <x.TextView
+                    a:id="@+id/mTxtTime"
+                    style="@style/TextView"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/mTxtSalary"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="8px"
+                    a:textColor="#cbcbcb"
+                    a:textSize="@dimen/font_size_36" />
+
+                <x.LinearLayout
+                    a:id="@+id/mLayoutTags"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/mTxtTitle"
+                    a:layout_marginTop="30px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                a:id="@+id/mLayoutJobDescription"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="30px"
+                a:background="@drawable/round_corner_white_rectangle_shape_4dp"
+                a:paddingBottom="50px">
+
+                <x.TextView
+                    a:id="@+id/mTxtTitleDescription"
+                    style="@style/TextView"
+                    a:layout_width="match_parent"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="30px"
+                    a:layout_marginTop="50px"
+                    a:singleLine="false"
+                    a:text="@string/job_description"
+                    a:textColor="@color/black"
+                    a:textSize="@dimen/font_size_50" />
+
+                <x.TextView
+                    a:id="@+id/mTxtDescription"
+                    style="@style/TextView.MultiLine"
+                    a:layout_below="@id/mTxtTitleDescription"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginRight="30px"
+                    a:layout_marginTop="50px"
+                    a:lineSpacingMultiplier="1.3"
+                    a:minHeight="1000px"
+                    a:textColor="#8d8d8d"
+                    a:textSize="@dimen/font_size_40" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutBottomBar"
+        a:layout_width="match_parent"
+        a:layout_height="140px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/light_blue">
+
+        <x.TextView
+            a:id="@+id/mTxtJoin"
+            style="@style/RoundTextView.Blue"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/job_post_resume"
+            a:textSize="40px"
+            x:round_backgroundColor="#5facfe"
+            x:round_borderColor="@color/white"
+            x:round_borderWidth="2px"
+            x:round_isRadiusAdjustBounds="false"
+            x:round_padding_horizontal="0.6"
+            x:round_padding_vertical="0.3"
+            x:round_radius="6px" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mViewSplitTitleBar"
+        style="@style/EditItem.Split"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutToolBar" />
+
+</x.RelativeLayout>

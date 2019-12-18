@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content"
+    a:layout_gravity="center"
+    a:minWidth="600px"
+    a:padding="32px" >
+
+    <LinearLayout
+        a:id="@+id/material_background"
+        a:layout_width="900px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:background="@drawable/material_card"
+        a:orientation="vertical" >
+
+        <LinearLayout
+            a:id="@+id/contentView"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:orientation="vertical" >
+
+            <TextView
+                a:id="@+id/title"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="69px"
+                a:layout_marginRight="69px"
+                a:layout_marginTop="69px"
+                a:tag="defaultFont"
+                a:text="Material title"
+                a:textColor="#DE000000"
+                a:textSize="69px" />
+
+            <ScrollView
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginBottom="42px"
+                a:layout_marginTop="60px" >
+
+                <LinearLayout
+                    a:id="@+id/message_content_view"
+                    a:layout_width="wrap_content"
+                    a:layout_height="match_parent"
+                    a:paddingLeft="69px"
+                    a:paddingRight="69px" >
+
+                    <TextView
+                        a:id="@+id/message"
+                        a:layout_width="fill_parent"
+                        a:layout_height="wrap_content"
+                        a:lineSpacingMultiplier="1.3"
+                        a:tag="defaultFont"
+                        a:text="message"
+                        a:textColor="#8a000000"
+                        a:textSize="48px" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            a:id="@+id/button_layout"
+            a:layout_width="wrap_content"
+            a:layout_height="match_parent"
+            a:layout_gravity="center"
+            a:gravity="center"
+            a:orientation="horizontal" 
+            a:paddingBottom="40px"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutActivity"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/gray_f4">
+
+    <x.ImageView
+        a:id="@+id/mImgHeaderBg"
+        style="@style/ImageView"
+        a:layout_width="1080px"
+        a:layout_height="1920px"
+        a:scaleType="centerCrop"
+        x:src="@drawable/bg_online_course_header" />
+
+    <x.ImageView
+        a:id="@+id/mImgHeaderStatusBar"
+        style="@style/ImageView"
+        a:layout_width="1080px"
+        a:layout_height="0px"
+        a:scaleType="centerCrop"
+        a:src="#55000000" />
+
+    <x.ImageView
+        a:id="@+id/mImgHeaderCover"
+        style="@style/ImageView"
+        a:layout_width="1080px"
+        a:layout_height="1920px"
+        a:scaleType="centerCrop"
+        a:src="@color/translucent_60_dark" />
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent"
+        a:background="@android:color/transparent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue"
+            a:tint="@color/white" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBarTitle"
+            style="@style/TitleBar.Text"
+            a:layout_width="match_parent"
+            a:layout_marginRight="50px"
+            a:alpha="0"
+            a:textColor="@color/white" />
+    </x.RelativeLayout>
+
+
+    <com.halo.view.ScrollView
+        a:id="@+id/mScrollView"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mTitleBar"
+        a:alpha="0">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayout"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutHeader"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:gravity="center_horizontal"
+                a:orientation="vertical"
+                a:paddingBottom="70px">
+
+                <x.ImageView
+                    a:id="@+id/mImgPoster"
+                    style="@style/ImageView"
+                    a:layout_width="216px"
+                    a:layout_height="216px"
+                    a:layout_marginTop="30px"
+                    a:scaleType="centerCrop" />
+
+                <x.TextView
+                    a:id="@+id/mTxtTitle"
+                    style="@style/TextView.MultiLine"
+                    a:layout_marginTop="50px"
+                    a:lineSpacingMultiplier="1.3"
+                    a:paddingLeft="68px"
+                    a:paddingRight="68px"
+                    a:textColor="@color/white"
+                    a:textSize="60px" />
+
+                <x.TextView
+                    a:id="@+id/mTxtSponsor"
+                    style="@style/TextView.MultiLine"
+                    a:layout_marginTop="16px"
+                    a:lineSpacingMultiplier="1.3"
+                    a:paddingLeft="68px"
+                    a:paddingRight="68px"
+                    a:textColor="@color/white"
+                    a:textSize="36px" />
+
+                <x.TextView
+                    a:id="@+id/mTxtSpeaker"
+                    style="@style/TextView.MultiLine"
+                    a:layout_marginTop="16px"
+                    a:lineSpacingMultiplier="1.3"
+                    a:paddingLeft="68px"
+                    a:paddingRight="68px"
+                    a:textColor="@color/white"
+                    a:textSize="36px" />
+
+                <x.TextView
+                    a:id="@+id/mTxtTimeLocation"
+                    style="@style/TextView.MultiLine"
+                    a:layout_marginTop="16px"
+                    a:lineSpacingMultiplier="1.3"
+                    a:paddingLeft="68px"
+                    a:paddingRight="68px"
+                    a:textColor="@color/white"
+                    a:textSize="36px" />
+            </x.LinearLayout>
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutBottom"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_below="@id/mLayoutHeader"
+                a:background="@color/white"
+                a:minHeight="1600px"
+                a:paddingBottom="250px">
+
+                <x.TextView
+                    a:id="@+id/mTxtJoin"
+                    style="@style/RoundTextView.Red"
+                    a:layout_width="460px"
+                    a:layout_height="130px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginRight="56px"
+                    a:layout_marginTop="80px"
+                    a:text="@string/activity_join"
+                    a:textColor="@color/gray_66"
+                    a:textSize="@dimen/font_size_50"
+                    a:textStyle="bold"
+                    x:round_backgroundColor="@color/gray_f6"
+                    x:round_isRadiusAdjustBounds="false"
+                    x:round_radius="10px" />
+
+                <x.ImageView
+                    a:id="@+id/mImgChat"
+                    style="@style/ImageView"
+                    a:layout_width="60px"
+                    a:layout_height="60px"
+                    a:layout_alignRight="@id/mTxtJoin"
+                    a:layout_alignTop="@id/mTxtJoin"
+                    a:layout_marginRight="52px"
+                    a:layout_marginTop="35px"
+                    x:src="@drawable/ic_message" />
+
+                <x.TextView
+                    a:id="@+id/mTxtJoinedCount"
+                    style="@style/TextView"
+                    a:layout_marginLeft="56px"
+                    a:layout_marginTop="80px"
+                    a:textColor="@color/black"
+                    a:textSize="54px"
+                    a:textStyle="bold" />
+
+                <x.TextView
+                    a:id="@+id/mTxtJoinedCountTag"
+                    style="@style/TextView"
+                    a:layout_below="@id/mTxtJoinedCount"
+                    a:layout_marginLeft="56px"
+                    a:layout_marginTop="10px"
+                    a:text="@string/activity_joined_tag"
+                    a:textColor="@color/gray_9a"
+                    a:textSize="32px" />
+
+
+                <x.TextView
+                    a:id="@+id/mTxtTagBrief"
+                    style="@style/TextView"
+                    a:layout_below="@id/mTxtJoin"
+                    a:layout_marginLeft="56px"
+                    a:layout_marginTop="120px"
+                    a:text="@string/activity_brief"
+                    a:textColor="@color/black"
+                    a:textSize="@dimen/font_size_54"
+                    a:textStyle="bold" />
+
+                <x.TextView
+                    a:id="@+id/mTxtBrief"
+                    style="@style/TextView.MultiLine"
+                    a:layout_below="@id/mTxtTagBrief"
+                    a:layout_marginLeft="56px"
+                    a:layout_marginRight="56px"
+                    a:layout_marginTop="64px"
+                    a:lineSpacingMultiplier="1.5"
+                    a:textColor="@color/black"
+                    a:textSize="@dimen/font_size_medium" />
+
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+    </com.halo.view.ScrollView>
+
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/mLoadingView"
+        style="@style/LoadingView.Gray"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+</x.RelativeLayout>

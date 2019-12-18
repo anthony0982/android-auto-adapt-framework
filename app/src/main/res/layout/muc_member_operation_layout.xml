@@ -1,0 +1,82 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.RelativeLayout
+        a:id="@+id/chat_settings_layout_operate_member_content"
+        a:layout_width="784px"
+        a:layout_height="784px"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/bg_round_corner_white" >
+
+        <x.TextView
+            a:id="@+id/txt_chat_settings_operate_member_title"
+            style="@style/TextView"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="86px"
+            a:text="@string/confirm_delete_member_tip"
+            a:textColor="#FF717171"
+            a:textSize="52px" />
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/img_operate_chat_member_avatar"
+            style="@style/ImageView"
+            a:layout_width="180px"
+            a:layout_height="180px"
+            a:layout_below="@id/txt_chat_settings_operate_member_title"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="100px"
+            x:oval="true" />
+
+        <x.TextView
+            a:id="@+id/txt_operate_chat_member_name"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_below="@id/img_operate_chat_member_avatar"
+            a:layout_centerHorizontal="true"
+            a:ellipsize="none"
+            a:gravity="center_horizontal"
+            a:maxLines="2"
+            a:paddingBottom="24px"
+            a:paddingLeft="10px"
+            a:paddingRight="10px"
+            a:paddingTop="30px"
+            a:singleLine="false"
+            a:text="@string/notification"
+            a:textColor="#242424"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/txt_operate_chat_member_cancel"
+            style="@style/TextView"
+            a:layout_below="@id/txt_operate_chat_member_name"
+            a:layout_marginLeft="130px"
+            a:layout_marginTop="70px"
+            a:gravity="center"
+            a:paddingBottom="40px"
+            a:paddingLeft="38px"
+            a:paddingRight="38px"
+            a:paddingTop="28px"
+            a:text="@string/cancel"
+            a:textColor="#FF919191"
+            a:textSize="46px" />
+
+        <x.TextView
+            a:id="@+id/txt_operate_chat_member_confirm"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/txt_operate_chat_member_name"
+            a:layout_marginRight="130px"
+            a:layout_marginTop="70px"
+            a:gravity="center"
+            a:paddingBottom="40px"
+            a:paddingLeft="38px"
+            a:paddingRight="38px"
+            a:paddingTop="28px"
+            a:text="@string/confirm"
+            a:textColor="@color/blue"
+            a:textSize="46px" />
+    </x.RelativeLayout>
+
+</merge>

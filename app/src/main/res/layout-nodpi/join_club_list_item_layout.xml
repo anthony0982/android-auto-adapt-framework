@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_item_white_trans_blue_color_selector" >
+
+    <View
+        a:id="@+id/join_club_item_empty_view"
+        a:layout_width="0px"
+        a:layout_height="170px" />
+
+    <View
+        a:id="@+id/join_club_list_item_top_margin"
+        a:layout_width="1px"
+        a:layout_height="68px"
+        a:background="@null" />
+
+    <x.TextView
+        a:id="@+id/join_club_list_item_txt_title"
+        style="@style/TextView"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="52px"
+        a:gravity="center_vertical"
+        a:maxWidth="160dp"
+        a:paddingBottom="20px"
+        a:paddingTop="20px"
+        a:singleLine="false"
+        a:textColor="#FF4D4D4D"
+        a:textSize="50px" />
+
+    <x.ImageView
+        a:id="@+id/join_club_list_item_img_tag"
+        style="@style/ImageView"
+        a:layout_width="66px"
+        a:layout_height="44px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="14px"
+        a:layout_toRightOf="@id/join_club_list_item_txt_title"
+        a:visibility="gone"
+        x:src="@drawable/ic_hot" />
+
+    <x.TextView
+        a:id="@+id/join_club_list_item_txt_tag_vitality"
+        style="@style/TextView"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="22px"
+        a:layout_marginTop="20px"
+        a:text="@string/vitality"
+        a:textColor="#FF6A6885"
+        a:textSize="34px"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/join_club_list_item_txt_vitality"
+        style="@style/TextView.Center"
+        a:layout_width="100px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/join_club_list_item_top_margin"
+        a:layout_marginRight="22px"
+        a:singleLine="false"
+        a:text="@string/vitality"
+        a:textColor="#FF6A6885"
+        a:textSize="40px" />
+
+    <x.TextView
+        a:id="@+id/join_club_list_item_txt_tag_member"
+        style="@style/TextView"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="200px"
+        a:layout_marginTop="20px"
+        a:text="@string/member_count"
+        a:textColor="#FF6A6885"
+        a:textSize="34px"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/join_club_list_item_txt_member"
+        style="@style/TextView.Center"
+        a:layout_width="100px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/join_club_list_item_top_margin"
+        a:layout_marginRight="200px"
+        a:singleLine="false"
+        a:text="@string/member_count"
+        a:textColor="#FF6A6885"
+        a:textSize="40px" />
+
+    <x.ImageView
+        a:id="@+id/join_club_list_item_img_trend"
+        style="@style/ImageView"
+        a:layout_width="30px"
+        a:layout_height="30px"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/join_club_list_item_top_margin"
+        a:layout_marginRight="366px"
+        a:layout_marginTop="16px"
+        a:visibility="gone"
+        x:src="@drawable/ic_trend_down" />
+
+    <x.RelativeLayout
+        a:id="@+id/join_club_list_item_layout_add"
+        style="@style/ImageView"
+        a:layout_width="186px"
+        a:layout_height="170px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:visibility="gone" >
+
+        <x.ImageView
+            a:id="@+id/join_club_list_item_img_add"
+            style="@style/ImageView"
+            a:layout_width="30px"
+            a:layout_height="30px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="130px"
+            x:src="@drawable/join_club_item_ic_add" />
+
+        <x.TextView
+            a:id="@+id/join_club_list_item_txt_add"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="28px"
+            a:text="@string/join"
+            a:textColor="#FF437038"
+            a:textSize="44px" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/join_club_item_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:background="#44E0E0E0" />
+
+</x.RelativeLayout>

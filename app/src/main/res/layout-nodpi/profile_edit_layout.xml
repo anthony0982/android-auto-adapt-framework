@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:id="@+id/profile_edit_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:gravity="center" >
+
+        <x.TextView
+            android:id="@+id/profile_edit_txt_title"
+            style="@style/TextView.Center"
+            android:layout_width="wrap_content"
+            android:text="@string/profile_edit_title"
+            android:textColor="#FF000000"
+            android:textSize="56px" />
+
+        <x.TextView
+            android:id="@+id/profile_edit_txt_subtitle"
+            style="@style/TextView.Center"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="12px"
+            android:layout_toRightOf="@id/profile_edit_txt_title"
+            android:text="@string/profile_edit_subtitle"
+            android:textColor="#7F000000"
+            android:textSize="50px" />
+
+        <x.ImageView
+            android:id="@+id/profile_edit_img_close"
+            style="@style/ImageView"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="58px"
+            android:visibility="gone"
+            x:src="@drawable/common_icon_close_normal" />
+    </RelativeLayout>
+
+    <x.ImageView
+        android:id="@+id/profile_edit_img_back"
+        style="@style/ImageView"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_alignParentLeft="true"
+        x:src="@drawable/common_icon_back" />
+
+    <View
+        android:id="@+id/profile_edit_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="152px"
+        android:background="#FFd7d7d7" />
+
+    <x.TextView
+        android:id="@+id/intro_profile_edit_btn_next"
+        style="@style/TextView.White.Center"
+        android:layout_width="880px"
+        android:layout_height="130px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="664px"
+        android:background="@drawable/bg_blue_round_corner_rectangle_selector"
+        android:text="@string/profile_edit_btn_next"
+        android:textSize="60px" />
+
+    <im.clazz.fragment.profile.edit.EditProfileStepOne
+        android:id="@+id/intro_profile_edit_step_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <im.clazz.fragment.profile.edit.EditProfileStepTwo
+        android:id="@+id/intro_profile_edit_step_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <im.clazz.fragment.profile.edit.EditProfileStepThree
+        android:id="@+id/intro_profile_edit_step_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</merge>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_height="wrap_content"
+    a:layout_width="wrap_content">
+
+    <x.ImageView
+        a:id="@+id/overseas_service_add_member_fragment_bg"
+        a:layout_width="1050px"
+        a:layout_height="1490px"
+        a:layout_centerInParent="true"
+        x:bg="@drawable/material_card" />
+
+    <x.RelativeLayout
+        a:id="@+id/overseas_service_add_member_fragment_layout"
+        a:layout_width="1020px"
+        a:layout_height="1460px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_dialog" >
+
+        <x.TextView
+            a:id="@+id/overseas_service_add_member_fragment_title"
+            style="@style/TextView.Center"
+            a:layout_width="wrap_content"
+            a:layout_height="150px"
+            a:layout_centerHorizontal="true"
+            a:text="@string/overseas_service_team_add_member"
+            a:textColor="#FF000000"
+            a:textSize="58px" />
+
+        <x.ImageView
+            a:id="@+id/overseas_service_add_member_fragment_img_close"
+            a:layout_width="142px"
+            a:layout_height="144px"
+            a:layout_alignParentRight="true"
+            a:layout_marginTop="3px"
+            x:src="@drawable/lesson_ic_close" />
+
+        <View
+            a:id="@+id/overseas_service_add_member_fragment_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_marginTop="140px"
+            a:background="#FFf7f7f7" />
+
+        <x.TextView
+            a:id="@+id/overseas_service_add_member_fragment_txt_confirm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="45px"
+            a:layout_marginRight="154px"
+            a:text="@string/teacher_add_paper_confirm"
+            a:textColor="#259bff"
+            a:textSize="50px" />
+
+        <ScrollView
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_above="@id/overseas_service_add_member_fragment_txt_confirm"
+            a:layout_below="@id/overseas_service_add_member_fragment_title_line">
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content" >
+
+                <x.RelativeLayout
+                    a:id="@+id/overseas_service_add_member_fragment_avatar_border"
+                    a:layout_width="280px"
+                    a:layout_height="332px"
+                    a:layout_centerHorizontal="true"
+                    a:layout_marginTop="56px"
+                    x:bg="@drawable/training_course_teacher_avatar_background" >
+
+                    <x.ImageView
+                        a:id="@+id/overseas_service_add_member_fragment_img_avatar"
+                        a:layout_width="266px"
+                        a:layout_height="318px"
+                        a:layout_centerInParent="true"
+                        a:src="@drawable/teacher_a" />
+                </x.RelativeLayout>
+
+                <x.TextView
+                    a:id="@+id/overseas_service_add_member_fragment_txt_gender"
+                    a:layout_width="105px"
+                    a:layout_height="60px"
+                    a:layout_below="@id/overseas_service_add_member_fragment_avatar_border"
+                    a:layout_centerHorizontal="true"
+                    a:layout_marginTop="45px"
+                    a:gravity="center_horizontal"
+                    a:text="@string/gender_female"
+                    a:textColor="@color/gender_famale"
+                    a:textSize="45px" />
+
+                <x.TextView
+                    a:id="@+id/overseas_service_add_member_fragment_txt_name"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_gender"
+                    a:layout_marginLeft="40px"
+                    a:layout_marginTop="70px"
+                    a:text="@string/overseas_service_team_add_member_name"
+                    a:textColor="#333333"
+                    a:textSize="45px" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/overseas_service_add_member_fragment_edt_name"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_gender"
+                    a:layout_marginLeft="46px"
+                    a:layout_marginTop="60px"
+                    a:layout_toRightOf="@id/overseas_service_add_member_fragment_txt_name"
+                    a:focusableInTouchMode="true"
+                    a:textSize="50px"
+                    a:textCursorDrawable="@drawable/material_input_cursor_color"
+                    x:met_underlineColorFocused="#ffd7d7d7"
+                    x:met_primaryColor="@color/blue"
+                    x:met_textColor="@color/blue" />
+
+                <x.TextView
+                    a:id="@+id/overseas_service_add_member_fragment_txt_title"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignRight="@id/overseas_service_add_member_fragment_txt_name"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_name"
+                    a:layout_marginTop="100px"
+                    a:text="@string/proset_zhicheng"
+                    a:textColor="#333333"
+                    a:textSize="45px" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/overseas_service_add_member_fragment_edt_title"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_name"
+                    a:layout_marginLeft="46px"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/overseas_service_add_member_fragment_txt_title"
+                    a:focusableInTouchMode="true"
+                    a:textSize="50px"
+                    a:textCursorDrawable="@drawable/material_input_cursor_color"
+                    x:met_underlineColorFocused="#ffd7d7d7"
+                    x:met_primaryColor="@color/blue"
+                    x:met_textColor="@color/blue" />
+
+                <x.TextView
+                    a:id="@+id/overseas_service_add_member_fragment_txt_profile"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignRight="@id/overseas_service_add_member_fragment_txt_name"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_title"
+                    a:layout_marginTop="100px"
+                    a:text="@string/training_course_teachers_add_teacher_profile"
+                    a:textColor="#333333"
+                    a:textSize="45px" />
+
+                <com.materialedittext.MaterialEditText
+                    a:id="@+id/overseas_service_add_member_fragment_edt_profile"
+                    a:layout_width="match_parent"
+                    a:layout_height="wrap_content"
+                    a:layout_below="@id/overseas_service_add_member_fragment_txt_title"
+                    a:layout_marginLeft="46px"
+                    a:layout_marginRight="100px"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/overseas_service_add_member_fragment_txt_profile"
+                    a:focusableInTouchMode="true"
+                    a:textSize="50px"
+                    a:textCursorDrawable="@drawable/material_input_cursor_color"
+                    x:met_underlineColorFocused="#ffd7d7d7"
+                    x:met_primaryColor="@color/blue"
+                    x:met_textColor="@color/blue" />
+            </RelativeLayout>
+        </ScrollView>
+    </x.RelativeLayout>
+
+</RelativeLayout>

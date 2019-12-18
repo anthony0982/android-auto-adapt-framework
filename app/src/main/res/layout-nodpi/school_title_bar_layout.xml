@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <x.ImageView
+        a:id="@+id/img_school_title_bar_ic_menu"
+        style="@style/Icon"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="35px"
+        a:src="@drawable/ic_menu_normal" />
+
+    <x.TextView
+        a:id="@+id/txt_school_title"
+        style="@style/TitleBar.Text"
+        a:layout_centerInParent="true"
+        a:text="@string/find" />
+
+    <x.ImageView
+        a:id="@+id/img_school_title_bar_ic_add"
+        style="@style/Icon"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:layout_marginRight="40px"
+        a:src="@drawable/school_title_ic_add" />
+
+    <x.ImageView
+        a:id="@+id/img_school_title_bar_ic_home"
+        style="@style/Icon"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentRight="true"
+        a:layout_centerVertical="true"
+        a:layout_marginRight="274px"
+        a:src="@drawable/school_title_ic_home" />
+
+</RelativeLayout>

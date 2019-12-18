@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/main_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/TextView.MultiLine"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="50px"
+        a:singleLine="false"
+        a:textColor="@color/gray_22"
+        a:textSize="@dimen/font_size_medium" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTeacher"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px">
+
+        <x.TextView
+            a:id="@+id/mTxtTagTeacher"
+            style="@style/CourseSesion.Tag"
+            a:layout_marginTop="48px"
+            a:text="@string/teacher_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtTeacher"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagTeacher"
+            a:layout_toLeftOf="@+id/mTxtAdd"
+            a:layout_toRightOf="@id/mTxtTagTeacher" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagCollege"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtTeacher"
+            a:layout_marginTop="48px"
+            a:text="@string/college_tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtCollege"
+            style="@style/CourseSesion.Text"
+            a:layout_alignTop="@id/mTxtTagCollege"
+            a:layout_toLeftOf="@+id/mTxtAdd"
+            a:layout_toRightOf="@id/mTxtTagCollege" />
+
+        <x.TextView
+            a:id="@+id/mTxtAdd"
+            style="@style/RoundTextView.LightBlue"
+            a:layout_above="@+id/mLine"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="40px"
+            a:text="@string/add"
+            x:round_padding_horizontal= "1.0"
+            x:round_padding_vertical= "0.3"
+            a:textSize="@dimen/font_size_medium"
+            a:visibility="gone" />
+
+        <View
+            a:id="@+id/mLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtCollege"
+            a:layout_marginTop="48px" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCourseSession"
+        style="@style/TextView"
+        a:layout_below="@id/mLayoutTeacher"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="50px"
+        a:text="@string/course_sessions"
+        a:textColor="@color/gray_22"
+        a:textSize="@dimen/font_size_medium" />
+
+    <im.clazz.course.CourseVersionView
+        a:id="@+id/mCourseVersionView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtCourseSession"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:orientation="vertical" />
+
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutSessionsEdit"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_alignTop="@id/mTxtCourseSession"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="20px"
+        a:orientation="horizontal">
+
+        <x.ImageView
+            a:id="@+id/mImgSessionsEdit"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="46px"
+            x:src="@drawable/ic_course_edit" />
+
+        <x.TextView
+            a:id="@+id/mTxtSessionsEdit"
+            style="@style/TextView"
+            a:layout_marginLeft="10px"
+            a:text="@string/edit"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_36" />
+    </x.LinearLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutStudent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mCourseVersionView"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="15px">
+
+        <x.TextView
+            a:id="@+id/mTxtStudents"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:text="@string/course_students"
+            a:textColor="@color/gray_22"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutStudents"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="20px"
+            a:layout_toLeftOf="@+id/mTxtStudentCount"
+            a:layout_toRightOf="@id/mTxtStudents"
+            a:orientation="horizontal">
+
+            <com.makeramen.RoundedImageView style="@style/StudentAvatar" />
+
+            <com.makeramen.RoundedImageView style="@style/StudentAvatar" />
+
+            <com.makeramen.RoundedImageView style="@style/StudentAvatar" />
+
+            <com.makeramen.RoundedImageView style="@style/StudentAvatar" />
+
+            <com.makeramen.RoundedImageView style="@style/StudentAvatar" />
+        </x.LinearLayout>
+
+
+        <x.ImageView
+            a:id="@+id/mImgDive"
+            style="@style/SettingsItem.Dive"
+            a:layout_centerVertical="true" />
+
+        <x.TextView
+            a:id="@+id/mTxtStudentCount"
+            style="@style/SettingsItem.Text"
+            a:layout_centerVertical="true"
+            a:layout_toLeftOf="@id/mImgDive"
+            a:gravity="center_vertical" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mLineProfile"
+        style="@style/CourseSesion.Line"
+        a:layout_below="@id/mLayoutStudent"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="15px" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mLineProfile"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutProfileEdit"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_marginTop="20px"
+            a:orientation="horizontal">
+
+            <x.ImageView
+                a:id="@+id/mImgProfileEdit"
+                style="@style/ImageView"
+                a:layout_width="48px"
+                a:layout_height="46px"
+                x:src="@drawable/ic_course_edit" />
+
+            <x.TextView
+                a:id="@+id/mTxtProfileEdit"
+                style="@style/TextView"
+                a:layout_marginLeft="10px"
+                a:text="@string/edit"
+                a:textColor="@color/gray_99"
+                a:textSize="@dimen/font_size_36" />
+        </x.LinearLayout>
+
+        <x.TextView
+            a:id="@+id/mTxtProfileTitle"
+            style="@style/TextView"
+            a:text="@string/course_profile"
+            a:textColor="@color/gray_22"
+            a:textSize="@dimen/font_size_medium" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagPreCourse"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtProfileTitle"
+            a:layout_marginLeft="0px"
+            a:layout_marginTop="60px"
+            a:text="@string/course_pre_course" />
+
+        <x.TextView
+            a:id="@+id/mTxtPreCourse"
+            style="@style/TextView.MultiLine"
+            a:layout_below="@id/mTxtTagPreCourse"
+            a:layout_marginTop="28px"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagBooks"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtPreCourse"
+            a:layout_marginLeft="0px"
+            a:layout_marginTop="48px"
+            a:text="@string/course_books" />
+
+        <x.TextView
+            a:id="@+id/mTxtBooks"
+            style="@style/TextView.MultiLine"
+            a:layout_below="@id/mTxtTagBooks"
+            a:layout_marginTop="28px"
+            a:hint="@string/course_books"
+            a:minHeight="40px"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_44" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagApply"
+            style="@style/CourseSesion.Tag"
+            a:layout_below="@id/mTxtBooks"
+            a:layout_marginLeft="0px"
+            a:layout_marginTop="48px"
+            a:text="@string/course_apply" />
+
+        <x.TextView
+            a:id="@+id/mTxtApply"
+            style="@style/TextView.MultiLine"
+            a:layout_below="@id/mTxtTagApply"
+            a:layout_marginTop="28px"
+            a:minHeight="40px"
+            a:textColor="@color/gray_33"
+            a:textSize="@dimen/font_size_44" />
+
+        <View
+            a:id="@+id/mProfileLine"
+            style="@style/CourseSesion.Line"
+            a:layout_below="@id/mTxtApply"
+            a:layout_marginTop="48px" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/news_bottom_split"
+        a:layout_width="match_parent"
+        a:layout_height="45px"
+        a:layout_below="@id/mLayoutContent"
+        a:background="@color/gray_fa" />
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutCommentTitle"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_below="@id/news_bottom_split">
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            style="@style/TextView.Center"
+            a:layout_height="148px"
+            a:layout_alignParentLeft="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/comment"
+            a:textColor="@color/gray_3b"
+            a:textSize="@dimen/font_size_50" />
+
+        <View
+            a:id="@+id/comment_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/mTxtCommentCount"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="50px"
+            a:background="@color/gray_e0" />
+    </x.RelativeLayout>
+
+    <x.TextView
+        a:id="@+id/mTxtCommentEmpty"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="300px"
+        a:layout_below="@id/news_bottom_split"
+        a:text="@string/no_comment"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mImgComment"
+        style="@style/Comment.Write"
+        a:layout_below="@id/news_bottom_split" />
+</RelativeLayout>

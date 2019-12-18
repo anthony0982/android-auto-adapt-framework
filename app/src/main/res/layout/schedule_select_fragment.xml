@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_select_fragment_layout"
+        a:layout_width="515px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_round_corner_white"
+        a:paddingBottom="10px"
+        a:paddingTop="10px" >
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_select_fragment_add_course_layout"
+            a:layout_width="match_parent"
+            a:layout_height="180px"
+            a:background="@drawable/material_list_item_bg_color_selector" >
+
+            <x.ImageView
+                a:id="@+id/schedule_select_fragment_img_add_course"
+                a:layout_width="40px"
+                a:layout_height="40px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="105px"
+                a:src="@drawable/schedule_add_course_ic_add" />
+
+            <x.TextView
+                a:id="@+id/schedule_select_fragment_txt_add_course"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="46px"
+                a:layout_toRightOf="@id/schedule_select_fragment_img_add_course"
+                a:text="@string/schedule_add_course_add"
+                a:textColor="#292525"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_select_fragment_add_plan_layout"
+            a:layout_width="match_parent"
+            a:layout_height="180px"
+            a:layout_below="@id/schedule_select_fragment_add_course_layout"
+            a:background="@drawable/material_list_item_bg_color_selector" >
+
+            <x.ImageView
+                a:id="@+id/schedule_select_fragment_img_add_plan"
+                a:layout_width="40px"
+                a:layout_height="40px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="105px"
+                a:src="@drawable/schedule_add_plan_ic_add" />
+
+            <x.TextView
+                a:id="@+id/schedule_select_fragment_txt_add_plan"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="46px"
+                a:layout_toRightOf="@id/schedule_select_fragment_img_add_plan"
+                a:text="@string/schedule_add_plan_add"
+                a:textColor="#292525"
+                a:textSize="45px" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

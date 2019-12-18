@@ -1,0 +1,7 @@
+﻿[{"name":"班主任","code":"director"},
+{"name":"辅导员","code":"counselor"},
+{"name":"学生","code":"student"},
+{"name":"老师","code":"teacher"},
+{"name":"家长","code":"parent"},
+{"name":"学校管理人员","code":"staff"},
+{"name":"校外商家","code":"merchant"}]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.TextView
+        a:id="@+id/tutor_profile_experience_list_item_txt_period"
+        a:layout_width="460px"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:textColor="#000000"
+        a:textSize="38px" />
+
+    <x.TextView
+        a:id="@+id/tutor_profile_experience_list_item_txt_school"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="32px"
+        a:layout_toRightOf="@id/tutor_profile_experience_list_item_txt_period"
+        a:textColor="#000000"
+        a:textSize="38px" />
+
+    <x.TextView
+        a:id="@+id/tutor_profile_experience_list_item_txt_experience"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/tutor_profile_experience_list_item_txt_period"
+        a:layout_below="@id/tutor_profile_experience_list_item_txt_period"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="36px"
+        a:lineSpacingExtra="18px"
+        a:singleLine="false"
+        a:textColor="#6e695e"
+        a:textSize="38px" />
+
+    <View
+        a:id="@+id/tutor_profile_experience_list_item_bottom_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/tutor_profile_experience_list_item_txt_experience"
+        a:layout_marginTop="30px"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:background="#e3d6d2" />
+
+</RelativeLayout>

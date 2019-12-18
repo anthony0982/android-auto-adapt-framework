@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_remove_course_fragment_layout"
+        a:layout_width="1030px"
+        a:layout_height="1160px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/schedule_add_course_bg_shadow" >
+
+        <x.ImageView
+            a:id="@+id/schedule_remove_course_fragment_img_remove"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_marginLeft="75px"
+            a:layout_marginTop="85px"
+            a:src="@drawable/schedule_add_course_ic_delete" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_remove"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="75px"
+            a:layout_toRightOf="@id/schedule_remove_course_fragment_img_remove"
+            a:text="@string/schedule_remove_course"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_course"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_remove"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_remove"
+            a:layout_marginTop="40px"
+            a:text="高等数学"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_user_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_remove"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_course"
+            a:layout_marginTop="40px"
+            a:text="高晓梅"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_collage"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_course"
+            a:layout_marginLeft="420px"
+            a:layout_marginTop="40px"
+            a:layout_toRightOf="@id/schedule_remove_course_fragment_img_remove"
+            a:text="土木学院"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.ImageView
+            a:id="@+id/schedule_remove_course_fragment_img_set_time"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_img_remove"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_user_name"
+            a:layout_marginTop="75px"
+            a:src="@drawable/schedule_add_course_ic_time" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_set_time"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_user_name"
+            a:layout_marginLeft="18px"
+            a:layout_marginTop="65px"
+            a:layout_toRightOf="@id/schedule_remove_course_fragment_img_set_time"
+            a:text="@string/schedule_add_course_time"
+            a:textColor="#292525"
+            a:textSize="45px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_week"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_set_time"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_set_time"
+            a:layout_marginTop="47px"
+            a:text="01-11周"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_classroom"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_collage"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_set_time"
+            a:layout_marginTop="47px"
+            a:text="教学楼305"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_day"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_week"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_week"
+            a:layout_marginTop="40px"
+            a:text="星期三"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_class"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_classroom"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_classroom"
+            a:layout_marginTop="40px"
+            a:text="上午1-2节"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <View
+            a:id="@+id/schedule_remove_course_fragment_line"
+            a:layout_width="870px"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_remove_course_fragment_txt_class"
+            a:layout_marginTop="35px"
+            a:layout_centerHorizontal="true"
+            a:background="@drawable/dash_line" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_tip"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="137px"
+            a:layout_below="@id/schedule_remove_course_fragment_line"
+            a:layout_alignLeft="@id/schedule_remove_course_fragment_txt_day"
+            a:text="确定将该课程从课程表删除吗？"
+            a:textColor="#292525"
+            a:textSize="45px" />
+     
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_cancel"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="530px"
+            a:layout_marginBottom="85px"
+            a:layout_alignParentBottom="true"
+            a:layout_toRightOf="@id/schedule_remove_course_fragment_img_set_time"
+            a:text="@string/schedule_add_course_cancel"
+            a:textColor="@color/gray_cc"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/schedule_remove_course_fragment_txt_confirm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="725px"
+            a:layout_marginBottom="85px"
+            a:layout_alignParentBottom="true"
+            a:layout_toRightOf="@id/schedule_remove_course_fragment_img_set_time"
+            a:text="@string/schedule_add_course_confirm"
+            a:textColor="@color/confirm_normal"
+            a:textSize="40px" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

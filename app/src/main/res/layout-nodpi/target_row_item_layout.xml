@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:paddingBottom="20px">
+
+    <x.TextView
+        a:id="@+id/txt_target_category_name"
+        style="@style/TextView.Black"
+        a:layout_width="match_parent"
+        a:layout_height="80px"
+        a:background="@color/light_grey_disable"
+        a:gravity="center_vertical"
+        a:paddingLeft="40px"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+
+    <x.TextView
+        a:id="@+id/txt_target_type_name"
+        style="@style/TextView.Black"
+        a:layout_width="230px"
+        a:layout_marginLeft="40px"
+        a:gravity="right"
+        a:paddingBottom="10px"
+        a:paddingTop="10px"
+        a:alpha="0.4"
+        a:singleLine="false"
+        a:textSize="@dimen/font_size_46" />
+
+    <com.halo.component.FlowLayout
+        a:id="@+id/layout_target_content"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_toRightOf="@id/txt_target_type_name"
+        a:paddingRight="40px" />
+
+</RelativeLayout>

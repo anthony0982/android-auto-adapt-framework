@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_notification_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/assignment_summary" />
+
+    </x.RelativeLayout>
+
+
+    <ScrollView
+        a:id="@+id/mScrollViewAnswer"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/mLayoutToolBar"
+        a:scrollbars="vertical">
+
+        <LinearLayout
+            a:id="@+id/mLayoutScroll"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:orientation="vertical">
+
+
+            <RelativeLayout
+                a:id="@+id/mLayoutQuestionTag"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:background="@color/white">
+
+                <x.TextView
+                    a:id="@+id/mTxtQuestionTag"
+                    style="@style/TextView"
+                    a:layout_gravity="center_vertical"
+                    a:layout_marginLeft="50px"
+                    a:layout_marginTop="50px"
+                    a:text="@string/assignment_question"
+                    a:textColor="@color/gray_66"
+                    a:textSize="46px" />
+
+                <x.ImageView
+                    a:id="@+id/mImgCloseQuestion"
+                    style="@style/ImageView"
+                    a:layout_width="56px"
+                    a:layout_height="56px"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginRight="50px"
+                    a:layout_marginTop="50px"
+                    a:visibility="gone"
+                    x:src="@drawable/ic_topic_block_up" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                a:id="@+id/mLayoutQuestion"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="40px"
+                a:background="@color/white">
+
+                <x.TextView
+                    a:id="@+id/mTxtQuestion"
+                    style="@style/TextView.MultiLine"
+                    a:layout_width="match_parent"
+                    a:layout_toLeftOf="@+id/mImgShowQuestion"
+                    a:ellipsize="end"
+                    a:maxLines="1"
+                    a:textColor="@color/gray_33"
+                    a:textSize="46px" />
+
+                <x.ImageView
+                    a:id="@+id/mImgShowQuestion"
+                    style="@style/ImageView"
+                    a:layout_width="56px"
+                    a:layout_height="56px"
+                    a:layout_alignParentRight="true"
+                    x:src="@drawable/ic_topic_block_down" />
+
+                <LinearLayout
+                    a:id="@+id/mLayoutQuestionAttachments"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    a:layout_below="@id/mTxtQuestion"
+                    a:background="@color/white"
+                    a:orientation="vertical"
+                    a:visibility="gone" />
+            </RelativeLayout>
+
+            <x.TextView
+                a:id="@+id/mTxtCount"
+                style="@style/TextView"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px"
+                a:textColor="#98a4ab"
+                a:textSize="@dimen/font_size_38" />
+
+            <View
+                a:id="@+id/mViewSplitTarget"
+                style="@style/EditItem.Split"
+                a:layout_height="30px"
+                a:layout_marginTop="50px"
+                a:background="@color/gray_f3" />
+
+            <x.TextView
+                a:id="@+id/mTxtMarkListTag"
+                style="@style/TextView"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px"
+                a:text="@string/assignment_mark_list"
+                a:textColor="@color/gray_66"
+                a:textSize="46px" />
+
+            <LinearLayout
+                a:id="@+id/mLayoutClassList"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:layout_marginTop="20px"
+                a:background="@color/white"
+                a:orientation="vertical"
+                a:paddingBottom="30px">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        a:id="@+id/mViewSplitTitleBar"
+        style="@style/EditItem.Split"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutToolBar" />
+
+</x.RelativeLayout>

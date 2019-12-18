@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <com.alexvasilkov.gestures.views.GestureImageView
+        a:id="@+id/preview_full_image"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <im.clazz.widget.LoadingView
+        a:id="@+id/preview_loading_view"
+        style="@style/LoadingView.White"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerInParent="true" />
+
+</RelativeLayout>

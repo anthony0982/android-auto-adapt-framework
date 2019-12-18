@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="notification_icon_width">64dp</dimen>
+    <dimen name="notification_icon_height">60dp</dimen>
+
+    <dimen name="message_text_padding_bottom">6px</dimen>
+
+</resources>

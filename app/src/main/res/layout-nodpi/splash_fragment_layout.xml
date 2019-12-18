@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/sky_blue_light">
+
+    <x.ImageView
+        a:id="@+id/img_logo"
+        style="@style/ImageView"
+        a:layout_width="@dimen/splash_icon_size"
+        a:layout_height="@dimen/splash_icon_size"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="360px"
+        x:src="@drawable/icon_512" />
+
+    <x.ImageView
+        a:id="@+id/img_copy_right"
+        style="@style/ImageView"
+        a:layout_width="710px"
+        a:layout_height="54px"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:layout_marginBottom="100px"
+        x:src="@drawable/copy_right" />
+
+</RelativeLayout>

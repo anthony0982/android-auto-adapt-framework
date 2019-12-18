@@ -1,0 +1,300 @@
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical"
+    x:bg="@color/profile_activity_bg_color">
+
+    <x.RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="340px"
+        a:background="@android:color/white">
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutAvatar"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="60px"
+            a:layout_marginTop="55px">
+
+            <com.makeramen.RoundedImageView
+                a:id="@+id/mImgAvatar"
+                style="@style/ImageView"
+                a:layout_width="200px"
+                a:layout_height="200px"
+                a:layout_centerInParent="true"
+                x:oval="true" />
+
+            <x.ImageView
+                a:id="@+id/mImgAvatarCover"
+                style="@style/ImageView"
+                a:layout_width="214px"
+                a:layout_height="214px"
+                a:layout_centerInParent="true"
+                x:oval="true"
+                x:src="@drawable/ic_avatar_cover_red" />
+        </x.RelativeLayout>
+
+        <x.ImageView
+            a:id="@+id/mImgEditSignature"
+            style="@style/ImageView"
+            a:layout_width="36px"
+            a:layout_height="36px"
+            a:layout_alignParentRight="true"
+            a:layout_marginLeft="12px"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="90px"
+            a:tint="@color/gray_66"
+            x:src="@drawable/ic_edit" />
+
+        <x.TextView
+            a:id="@+id/mTxtSignature"
+            style="@style/TextView.LineSpacingMultiplier"
+            a:layout_height="180px"
+            a:layout_marginLeft="45px"
+            a:layout_marginRight="30px"
+            a:layout_marginTop="50px"
+            a:layout_toLeftOf="@+id/mImgEditSignature"
+            a:layout_toRightOf="@id/mLayoutAvatar"
+            a:gravity="center_vertical"
+            a:text="@string/default_signature"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_40" />
+
+
+        <x.TextView
+            a:id="@+id/mTxtFollowingCount"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtSignature"
+            a:layout_marginLeft="45px"
+            a:layout_marginTop="15px"
+            a:layout_toRightOf="@id/mLayoutAvatar"
+            a:textColor="@color/profile_txt_color_3"
+            a:textSize="@dimen/font_size_36" />
+
+        <x.TextView
+            a:id="@+id/mTxtFollowTag"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtSignature"
+            a:layout_marginTop="15px"
+            a:layout_toRightOf="@id/mTxtFollowingCount"
+            a:paddingLeft="6px"
+            a:paddingTop="4px"
+            a:text="@string/follow"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_32" />
+
+        <x.TextView
+            a:id="@+id/mTxtFollowersCount"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtSignature"
+            a:layout_marginLeft="150px"
+            a:layout_marginTop="15px"
+            a:layout_toRightOf="@id/mTxtFollowingCount"
+            a:textColor="@color/profile_txt_color_3"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/mTxtFollwersTag"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtSignature"
+            a:layout_marginTop="15px"
+            a:layout_toRightOf="@id/mTxtFollowersCount"
+            a:paddingLeft="6px"
+            a:paddingTop="4px"
+            a:text="@string/fans"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_32" />
+
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutLike"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="30px"
+            a:layout_marginRight="116px">
+
+            <x.ImageView
+                a:id="@+id/mImgLike"
+                style="@style/ImageView"
+                a:layout_width="60px"
+                a:layout_height="60px"
+                a:layout_centerHorizontal="true"
+                x:src="@drawable/ic_heart" />
+
+            <x.TextView
+                a:id="@+id/mTxtLikeTag"
+                style="@style/TextView"
+                a:layout_below="@id/mImgLike"
+                a:layout_centerHorizontal="true"
+                a:layout_marginTop="6px"
+                a:text="@string/liked"
+                a:textColor="@color/gray_99"
+                a:textSize="@dimen/font_size_24" />
+        </x.RelativeLayout>
+
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:layout_width="990px"
+        a:layout_height="100px"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="5px"
+        a:layout_marginTop="25px"
+        a:paddingRight="35px"
+        x:bg="@drawable/profile_head_bg_shape">
+
+        <x.TextView
+            a:id="@+id/mTxtClass"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/mTxtGrade"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="35px"
+            a:layout_toLeftOf="@id/mTxtClass"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/mTxtCollege"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="35px"
+            a:layout_toLeftOf="@id/mTxtGrade"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_34" />
+
+        <x.TextView
+            a:id="@+id/mTxtSchool"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="35px"
+            a:layout_toLeftOf="@id/mTxtCollege"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_34" />
+    </x.RelativeLayout>
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutEduExp"
+        a:layout_width="990px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="5px"
+        a:layout_marginTop="25px"
+        a:paddingLeft="50px"
+        x:bg="@drawable/profile_head_bg_shape">
+
+        <x.TextView
+            a:id="@+id/mTxtTitleEduExp"
+            style="@style/TextView"
+            a:layout_marginTop="50px"
+            a:text="@string/education_experience"
+            a:textColor="@color/black"
+            a:textSize="@dimen/font_size_50"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/mTxtEduExp"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mTxtTitleEduExp"
+            a:layout_marginTop="50px"
+            a:lineSpacingMultiplier="1.3"
+            a:paddingBottom="50px"
+            a:paddingRight="50px"
+            a:textColor="@color/gray_66"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.ImageView
+            a:id="@+id/mImgEditEduExp"
+            style="@style/ImageView"
+            a:layout_width="130px"
+            a:layout_height="130px"
+            a:layout_alignParentRight="true"
+            a:padding="50px"
+            a:tint="@color/gray_33"
+            x:src="@drawable/ic_pencil" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutTeachExp"
+        a:layout_width="990px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="5px"
+        a:layout_marginTop="25px"
+        a:paddingLeft="50px"
+        x:bg="@drawable/profile_head_bg_shape">
+
+        <x.TextView
+            a:id="@+id/mTxtTitleTeachExp"
+            style="@style/TextView"
+            a:layout_marginTop="50px"
+            a:text="@string/teach_experience"
+            a:textColor="@color/black"
+            a:textSize="@dimen/font_size_50"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/mTxtTeachExp"
+            style="@style/TextView.MultiLine"
+            a:layout_width="match_parent"
+            a:layout_below="@id/mTxtTitleTeachExp"
+            a:layout_marginTop="50px"
+            a:lineSpacingMultiplier="1.3"
+            a:paddingBottom="50px"
+            a:paddingRight="50px"
+            a:textColor="@color/gray_66"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.ImageView
+            a:id="@+id/mImgEditTeachExp"
+            style="@style/ImageView"
+            a:layout_width="130px"
+            a:layout_height="130px"
+            a:layout_alignParentRight="true"
+            a:padding="50px"
+            a:tint="@color/gray_33"
+            x:src="@drawable/ic_pencil" />
+    </x.RelativeLayout>
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutCourses"
+        a:layout_width="990px"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_horizontal"
+        a:layout_marginBottom="5px"
+        a:layout_marginTop="25px"
+        a:orientation="vertical"
+        x:bg="@drawable/profile_head_bg_shape">
+
+        <x.TextView
+            a:id="@+id/mTxtTitleCourses"
+            style="@style/TextView"
+            a:paddingLeft="50px"
+            a:paddingTop="50px"
+            a:text="@string/my_course"
+            a:textColor="@color/black"
+            a:textSize="@dimen/font_size_50"
+            a:textStyle="bold" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleCoursesMore"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:paddingBottom="30px"
+            a:paddingTop="30px"
+            a:text="@string/see_more"
+            a:textColor="@color/light_blue"
+            a:textSize="@dimen/font_size_44" />
+    </x.LinearLayout>
+</LinearLayout>

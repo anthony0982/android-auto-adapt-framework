@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_more_comment_fragment_img_head"
+        a:layout_width="42px"
+        a:layout_height="42px"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="50px"
+        a:src="@drawable/lesson_ic_comment" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_more_comment__fragment_txt_head"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_toRightOf="@id/schedule_class_tool_more_comment_fragment_img_head"
+        a:layout_marginLeft="18px"
+        a:layout_marginTop="42px"
+        a:paddingBottom="27px"
+        a:text="@string/lesson_comment"
+        a:textColor="#737373"
+        a:textSize="38px" />
+
+</merge>

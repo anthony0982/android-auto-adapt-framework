@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_student_stub_layout" />
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_teacher_stub_layout" />
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_counselor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_counselor_stub_layout" />
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_staff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_staff_stub_layout" />
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_parent_stub_layout" />
+
+    <ViewStub
+        android:id="@+id/profile_edit_two_stub_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/profile_edit_step_two_merchant_stub_layout" />
+
+</merge>

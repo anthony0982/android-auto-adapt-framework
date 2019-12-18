@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutGroupMoment"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="110px"
+        a:layout_height="110px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtName"
+        style="@style/GroupMoment.Item.GroupName"
+        a:layout_marginLeft="30px"
+        a:layout_marginTop="50px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:singleLine="false" />
+
+    <x.TextView
+        a:id="@+id/mTxtAuthor"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignLeft="@id/mTxtName"
+        a:layout_below="@id/mTxtName"
+        a:layout_marginTop="10px" />
+
+    <x.TextView
+        a:id="@+id/mTxtTime"
+        style="@style/GroupMoment.Item.Subtitle"
+        a:layout_alignParentRight="true"
+        a:layout_alignTop="@id/mTxtName"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="10px" />
+
+    <x.TextView
+        a:id="@+id/mTxtDigest"
+        style="@style/Topic.Item.Digest"
+        a:layout_below="@id/mImgAvatar"
+        a:layout_marginTop="30px"
+        a:paddingLeft="50px"
+        a:paddingRight="50px" />
+
+    <android.support.v7.widget.GridLayout
+        a:id="@+id/mLayoutAttachments"
+        style="@style/MomentGridView"
+        a:layout_below="@id/mTxtDigest"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="30px"
+        a:layout_marginTop="30px"
+        a:tag="ignore"
+        x:columnCount="3"
+        x:useDefaultMargins="true" />
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/mLayoutAttachments"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="50px"
+        a:background="@color/gray_ee" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItemBottom"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignParentRight="true"
+        a:layout_below="@id/mBottomLine"
+        a:gravity="center_vertical"
+        a:paddingBottom="30px"
+        a:paddingRight="50px"
+        a:paddingTop="30px">
+
+        <x.ImageView
+            a:id="@+id/mImgComment"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            x:src="@drawable/ic_moment_comment" />
+
+        <x.TextView
+            a:id="@+id/mTxtCommentCount"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="16px"
+            a:textColor="@color/gray_88"
+            a:textSize="@dimen/font_size_30" />
+
+        <x.ImageView
+            a:id="@+id/mImgFavorite"
+            style="@style/ImageView"
+            a:layout_width="48px"
+            a:layout_height="48px"
+            a:layout_marginLeft="40px"
+            x:src="@drawable/ic_moment_like_gray" />
+
+        <x.TextView
+            a:id="@+id/mTxtFavoriteCount"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="16px"
+            a:textColor="@color/gray_88"
+            a:textSize="@dimen/font_size_30" />
+
+    </x.LinearLayout>
+
+
+    <View
+        a:id="@+id/mBottomLine2"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutItemBottom"
+        a:background="@color/gray_f0" />
+</x.RelativeLayout>

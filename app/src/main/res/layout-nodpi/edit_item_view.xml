@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutEditItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/EditItem.Tag" />
+
+        <x.TextView
+            a:id="@+id/mTxtText"
+            style="@style/EditItem.Text" />
+
+        <x.ImageView
+            a:id="@+id/mImage"
+            style="@style/EditItem.Image" />
+
+        <im.clazz.widget.LoadingView
+            a:id="@+id/mImageLoading"
+            style="@style/EditItem.ImageLoading" />
+
+        <x.ImageView
+            a:id="@+id/mImgDive"
+            style="@style/EditItem.Dive" />
+
+        <View
+            a:id="@+id/mImgLine"
+            style="@style/EditItem.Line" />
+
+    </x.RelativeLayout>
+</x.RelativeLayout>

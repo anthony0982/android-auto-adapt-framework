@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content">
+
+    <com.halo.view.RoundCornerImageView
+        a:id="@+id/mImgPicture"
+        style="@style/RoundCornerImageView"
+        a:layout_width="970px"
+        a:layout_height="430px"
+        a:src="@color/gray_f0"
+        x:layout_constraintLeft_toLeftOf="parent" />
+
+    <x.TextView
+        a:id="@+id/mTxtJoin"
+        style="@style/RoundTextView"
+        a:layout_marginTop="54px"
+        a:text="@string/join_now"
+        a:textSize="@dimen/font_size_36"
+        x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+        x:layout_constraintRight_toRightOf="@id/mImgPicture"
+        x:layout_constraintTop_toBottomOf="@id/mImgPicture" />
+
+    <x.TextView
+        a:id="@+id/mTxtTitle"
+        style="@style/TextView"
+        a:layout_width="0px"
+        a:layout_marginLeft="15px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="20px"
+        a:lineSpacingMultiplier="1.25"
+        a:maxLines="2"
+        a:singleLine="false"
+        a:textColor="@color/gray_9c"
+        a:textSize="@dimen/font_size_36"
+        x:layout_constraintLeft_toLeftOf="parent"
+        x:layout_constraintRight_toLeftOf="@id/mTxtJoin"
+        x:layout_constraintTop_toBottomOf="@id/mImgPicture" />
+
+    <x.ImageView
+        a:id="@+id/mImgLocation"
+        style="@style/ImageView"
+        a:layout_width="42px"
+        a:layout_height="42px"
+        a:layout_marginLeft="4px"
+        a:layout_marginTop="24px"
+        x:layout_constraintLeft_toLeftOf="parent"
+        x:layout_constraintTop_toBottomOf="@id/mTxtTitle"
+        x:src="@drawable/ic_daily_location" />
+
+    <x.TextView
+        a:id="@+id/mTxtLocation"
+        style="@style/TextView"
+        a:layout_marginTop="24px"
+        a:textColor="@color/gray_9c"
+        a:textSize="@dimen/font_size_32"
+        x:layout_constraintLeft_toRightOf="@id/mImgLocation"
+        x:layout_constraintTop_toBottomOf="@id/mTxtTitle" />
+
+
+</android.support.constraint.ConstraintLayout>

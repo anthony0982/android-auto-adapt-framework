@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <x.ImageView
+        a:id="@+id/schedule_class_tool_homework_fragment_img_homework"
+        style="@style/ImageView.ScheduleRecord"
+        a:layout_marginLeft="38px"
+        a:layout_marginTop="48px"
+        a:src="@drawable/schedule_class_tool_ic_homework_fragment" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_txt_homework"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="14px"
+        a:layout_marginTop="44px"
+        a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_img_homework"
+        a:text="@string/assignment"
+        a:textColor="#737373"
+        a:textSize="38px" />
+
+    <x.TextView
+        a:id="@+id/schedule_class_tool_homework_fragment_txt_homework_number"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="10px"
+        a:layout_marginTop="46px"
+        a:layout_toRightOf="@id/schedule_class_tool_homework_fragment_txt_homework"
+        a:textColor="#969696"
+        a:textSize="38px" />
+
+</merge>

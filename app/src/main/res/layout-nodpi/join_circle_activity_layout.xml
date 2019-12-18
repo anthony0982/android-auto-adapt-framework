@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/join_circle_layout_title_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="fill_parent">
+
+        <x.ImageView
+            a:id="@+id/join_circle_activity_img_back"
+            style="@style/Icon"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            x:src="@drawable/ic_back_120" />
+
+        <x.TextView
+            a:id="@+id/join_circle_activity_txt_title"
+            style="@style/TitleBar.Text"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:text="@string/join_circle_title"
+            a:textSize="56px" />
+
+        <x.TextView
+            a:id="@+id/join_circle_activity_txt_title_search"
+            style="@style/TitleBar.Text"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:text="@string/join_circle_title_search"
+            a:textSize="56px"
+            a:visibility="gone" />
+
+        <x.ImageView
+            a:id="@+id/join_circle_activity_img_create"
+            style="@style/Icon"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px"
+            a:src="@drawable/school_title_ic_add" />
+    </x.RelativeLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/join_circle_activity_layout_search"
+        a:layout_width="100px"
+        a:layout_height="100px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="160px"
+        a:layout_marginTop="10px">
+
+        <x.ImageView
+            a:id="@+id/join_circle_activity_img_search"
+            style="@style/Icon"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            a:src="@drawable/school_title_ic_search" />
+
+        <x.ImageView
+            a:id="@+id/join_circle_activity_img_search_blue"
+            style="@style/ImageView"
+            a:layout_width="100px"
+            a:layout_height="100px"
+            a:src="@drawable/school_title_ic_search_blue"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/join_circle_indicator"
+        a:layout_width="fill_parent"
+        a:layout_height="116px"
+        a:layout_below="@id/join_circle_layout_title_bar"
+        a:background="@null"
+        a:overScrollMode="never"
+        x:pstsIndicatorColor="#FF666666"
+        x:pstsIndicatorHeight="6px"
+        x:pstsTabPaddingLeftRight="20px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="#FF000000"
+        x:pstsTextSize="38px"
+        x:pstsTextSizeHighlight="50px"
+        x:pstsUnderlineHeight="2px" />
+
+    <android.support.v4.view.ViewPager
+        a:id="@+id/join_circle_pager"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:layout_below="@id/join_circle_indicator" />
+
+    <x.RelativeLayout
+        a:id="@+id/join_circle_layout_search"
+        a:layout_width="fill_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/join_circle_layout_title_bar"
+        a:background="@color/white"
+        a:visibility="gone">
+
+        <x.EditText
+            a:id="@+id/join_circle_edttxt_search"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="98px"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="70px"
+            a:background="@null"
+            a:cursorVisible="true"
+            a:gravity="center_vertical|left"
+            a:hint="@string/input_hint_circle"
+            a:maxLength="50"
+            a:paddingRight="150px"
+            a:singleLine="true"
+            a:textColor="#FF0747FF"
+            a:textColorHint="@color/school_search_edittext_hint_color"
+            a:textCursorDrawable="@drawable/school_search_input_cursor_shape"
+            a:textSize="55px" />
+
+        <x.ImageView
+            a:id="@+id/join_circle_line"
+            a:layout_width="fill_parent"
+            a:layout_height="2px"
+            a:layout_marginTop="160px"
+            a:paddingLeft="56px"
+            a:paddingRight="56px"
+            a:src="#FF728EE1" />
+
+        <x.TextView
+            a:id="@+id/join_circle_activity_empty"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_centerInParent="true"
+            a:text="@string/circle_empty"
+            a:textColor="#33000000"
+            a:textSize="55px"
+            a:visibility="gone" />
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/join_circle_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_below="@id/join_circle_line" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/club_layout_root"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <im.clazz.ui.component.ClubImagePreviewer
+        a:id="@+id/club_image_previewer"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <View
+        a:id="@+id/club_image_preview_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.RelativeLayout
+        a:id="@+id/layout_top"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentTop="true"
+        a:background="#88000000"
+        a:paddingBottom="70px"
+        a:paddingLeft="30px"
+        a:paddingRight="30px"
+        a:paddingTop="70px" >
+
+        <x.TextView
+            a:id="@+id/tv_club_name"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true"
+            a:text="留学社"
+            a:textColor="#DDDDDD"
+            a:textSize="@dimen/font_size_44" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

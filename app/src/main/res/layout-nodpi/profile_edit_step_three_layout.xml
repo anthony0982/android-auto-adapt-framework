@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.ImageView
+        a:id="@+id/profile_edit_three_img_avatar"
+        style="@style/ImageView"
+        a:layout_width="200px"
+        a:layout_height="200px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="228px"
+        a:focusable="true"
+        a:focusableInTouchMode="true"
+        x:src="@drawable/ic_search_all" />
+
+    <x.combo.ComboEditText
+        a:id="@+id/profile_edit_three_combo_edit_name"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="124px"
+        a:layout_marginLeft="66px"
+        a:layout_marginRight="66px"
+        a:layout_marginTop="460px" />
+
+    <x.combo.ComboTextView
+        a:id="@+id/profile_edit_three_combo_txt_gender"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="124px"
+        a:layout_marginLeft="66px"
+        a:layout_marginRight="66px"
+        a:layout_marginTop="594px" />
+
+    <x.combo.ComboTextView
+        a:id="@+id/profile_edit_three_combo_txt_birthday"
+        style="@style/TextView.Center"
+        a:layout_width="match_parent"
+        a:layout_height="124px"
+        a:layout_marginLeft="66px"
+        a:layout_marginRight="66px"
+        a:layout_marginTop="728px" />
+
+    <com.example.picker.DatePicker
+        a:id="@+id/profile_edit_three_picker_date"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:fromNowOn="true"
+        x:fromNowOnYears="1" />
+
+</merge>

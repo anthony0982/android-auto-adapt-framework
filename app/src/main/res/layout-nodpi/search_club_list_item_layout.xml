@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/bg_item_white_trans_blue_color_selector"
+    a:paddingLeft="56px">
+
+    <x.TextView
+        a:id="@+id/search_club_list_item_txt_title"
+        style="@style/TextView"
+        a:layout_height="180px"
+        a:layout_centerVertical="true"
+        a:gravity="center_vertical"
+        a:maxWidth="160dp"
+        a:paddingBottom="20px"
+        a:paddingLeft="42px"
+        a:paddingTop="20px"
+        a:singleLine="false"
+        a:textColor="#FF4D4D4D"
+        a:textSize="50px" />
+
+    <View
+        a:id="@+id/search_club_item_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignParentBottom="true"
+        a:background="#44E0E0E0" />
+
+</x.RelativeLayout>

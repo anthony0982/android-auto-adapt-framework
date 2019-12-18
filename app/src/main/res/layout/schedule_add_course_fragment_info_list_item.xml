@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+    <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_week"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="22px"
+            a:text="01-11周"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_classroom"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="402px"
+            a:layout_marginTop="22px"
+            a:text="教学楼305"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_day"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_week"
+            a:layout_below="@id/schedule_add_course_fragment_txt_week"
+            a:layout_marginTop="40px"
+            a:text="星期三"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+        <x.TextView
+            a:id="@+id/schedule_add_course_fragment_txt_class"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_classroom"
+            a:layout_below="@id/schedule_add_course_fragment_txt_classroom"
+            a:layout_marginTop="40px"
+            a:text="上午1-2节"
+            a:textColor="#7c7c7c"
+            a:textSize="42px" />
+
+
+        <View
+            a:id="@+id/schedule_add_course_fragment_line_b"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_below="@id/schedule_add_course_fragment_txt_class"
+            a:layout_marginTop="35px"
+            a:layout_alignLeft="@id/schedule_add_course_fragment_txt_day"
+            a:background="#FFefefef" />
+
+</RelativeLayout>

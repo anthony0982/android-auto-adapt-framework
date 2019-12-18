@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.halo.flipper.ImageFlipperCell xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <x.ImageView
+        a:id="@+id/image_fliper_cell_img_bg"
+        style="@style/ImageView"
+        a:layout_width="410px"
+        a:layout_height="410px"
+        a:layout_centerInParent="true" />
+
+    <x.ImageView
+        a:id="@+id/image_fliper_cell_img"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerInParent="true"
+        a:background="@android:color/transparent"
+        a:scaleType="fitXY" />
+
+</com.halo.flipper.ImageFlipperCell>

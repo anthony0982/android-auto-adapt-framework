@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <View
+        a:id="@+id/mGridLayoutBg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_centerInParent="true" />
+
+    <GridLayout
+        a:id="@+id/mGridLayout"
+        a:layout_width="match_parent"
+        a:layout_height="@dimen/tab_bar_height"
+        a:layout_alignParentBottom="true"
+        a:alignmentMode="alignBounds"
+        a:background="@color/white"
+        a:columnCount="4"
+        a:columnOrderPreserved="false"
+        a:orientation="horizontal"
+        a:rowCount="1"
+        a:useDefaultMargins="false">
+
+        <im.clazz.ui.component.TabButton
+            a:id="@+id/tab_campus"
+            a:layout_height="match_parent"
+            x:src="@drawable/ic_campus"
+            x:src_active="@drawable/ic_campus_active"
+            x:text="@string/campus" />
+
+        <im.clazz.ui.component.TabButton
+            a:id="@+id/tab_schedule"
+            a:layout_height="match_parent"
+            x:src="@drawable/ic_schedule"
+            x:src_active="@drawable/ic_schedule_active"
+            x:text="@string/schedule" />
+
+        <!--<im.clazz.ui.component.TabButton-->
+            <!--a:id="@+id/tab_live"-->
+            <!--a:layout_height="match_parent"-->
+            <!--x:src="@drawable/ic_video"-->
+            <!--x:src_active="@drawable/ic_video_active"-->
+            <!--x:text="@string/schedule" />-->
+
+        <im.clazz.ui.component.TabButton
+            a:id="@+id/tab_message"
+            a:layout_height="match_parent"
+            x:src="@drawable/ic_message"
+            x:src_active="@drawable/ic_message_active"
+            x:text="@string/message" />
+
+        <im.clazz.ui.component.TabButton
+            a:id="@+id/tab_me"
+            a:layout_height="match_parent"
+            x:src="@drawable/ic_me"
+            x:src_active="@drawable/ic_me_active"
+            x:text="@string/me" />
+    </GridLayout>
+
+    <View
+        a:layout_width="match_parent"
+        a:layout_height="10px"
+        a:layout_above="@id/mGridLayout"
+        a:background="@drawable/ic_gradient_gray" />
+
+</merge>

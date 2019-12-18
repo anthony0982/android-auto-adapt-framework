@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.halo.view.ScrollView xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/mScrollView"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:alpha="0"
+    a:background="@color/white"
+    a:fillViewport="true"
+    a:scrollbars="vertical">
+
+    <RelativeLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <LinearLayout
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:orientation="vertical">
+
+            <android.support.v7.widget.GridLayout
+                a:id="@+id/mFunctionsRecyclerView"
+                style="@style/Campus.Category.Grid"
+                a:tag="ignore" />
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content">
+
+                <x.TextView
+                    a:id="@+id/category_fragment_txt_split_added"
+                    style="@style/Split.TextView"
+                    a:background="@color/gray_fa"
+                    a:text="@string/modules_added"
+                    a:textColor="@color/gray_9a"
+                    a:textSize="@dimen/font_size_40" />
+
+                <x.TextView
+                    a:id="@+id/mTxtManageAdded"
+                    style="@style/Split.TextView"
+                    a:layout_width="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_marginRight="50px"
+                    a:background="@color/gray_fa"
+                    a:text="@string/manage"
+                    a:textColor="@color/gray_3b"
+                    a:textSize="@dimen/font_size_40" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.GridLayout
+                a:id="@+id/mAddedModulesRecyclerView"
+                style="@style/Campus.Category.Grid"
+                a:tag="ignore" />
+
+            <x.TextView
+                a:id="@+id/mViewEmptyAdded"
+                style="@style/Campus.Category.Empty"
+                a:text="@string/modules_added_empty"
+                a:visibility="gone" />
+
+            <x.TextView
+                a:id="@+id/category_fragment_txt_split_available"
+                style="@style/Split.TextView"
+                a:background="@color/gray_fa"
+                a:text="@string/add_module"
+                a:textColor="@color/gray_9a"
+                a:textSize="@dimen/font_size_40" />
+
+            <android.support.v7.widget.GridLayout
+                a:id="@+id/mAvailableModulesRecyclerView"
+                style="@style/Campus.Category.Grid"
+                a:tag="ignore" />
+
+            <x.TextView
+                a:id="@+id/mViewEmptyAvailable"
+                style="@style/Campus.Category.Empty"
+                a:text="@string/modules_available_empty"
+                a:visibility="gone" />
+        </LinearLayout>
+
+        <x.TextView
+            a:id="@+id/notification_empty"
+            style="@style/TextView.Empty"
+            a:paddingBottom="150px"
+            a:text="@string/notice_no_content" />
+
+        <x.TextView
+            a:id="@+id/mViewError"
+            style="@style/TextView.Error"
+            a:layout_marginBottom="150px" />
+
+        <ProgressBar
+            a:id="@+id/mProgressBarLoading"
+            a:layout_width="136px"
+            a:layout_height="286px"
+            a:layout_centerInParent="true"
+            a:indeterminate="true"
+            a:indeterminateDrawable="@drawable/progressbar"
+            a:paddingBottom="150px"
+            a:visibility="gone" />
+
+    </RelativeLayout>
+
+</com.halo.view.ScrollView>

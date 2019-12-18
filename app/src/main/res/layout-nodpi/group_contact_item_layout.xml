@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutAdmin"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36" />
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/list_item_color_selector"
+        a:paddingRight="50px">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mImgAvatar"
+            style="@style/ChatList.Avatar"
+            a:layout_marginBottom="30px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="30px" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/NotificationReplier.Name"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="36px"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:maxWidth="500px" />
+
+        <x.TextView
+            a:id="@+id/mTxtTagMemberCount"
+            style="@style/Tag.Group"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="48px"
+            a:layout_toRightOf="@id/mTxtName"
+            x:round_backgroundColor="#f06747" />
+
+        <x.ImageView
+            a:id="@+id/mImgGender"
+            style="@style/ImageView"
+            a:layout_width="36px"
+            a:layout_height="36px"
+            a:layout_marginLeft="20px"
+            a:layout_marginTop="48px"
+            a:layout_toRightOf="@id/mTxtName"
+            a:visibility="gone"
+            x:src="@drawable/ic_profile_gender_female" />
+
+        <x.TextView
+            a:id="@+id/mTxtRole"
+            style="@style/Tag.Group"
+            a:layout_marginLeft="28px"
+            a:layout_marginTop="50px"
+            a:layout_toRightOf="@id/mImgGender"
+            a:textSize="@dimen/font_size_24"
+            a:visibility="gone"
+            x:round_backgroundColor="#5b6bc2" />
+
+        <x.TextView
+            a:id="@+id/mTxtSignature"
+            style="@style/TextView"
+            a:layout_below="@id/mTxtName"
+            a:layout_marginLeft="40px"
+            a:layout_marginTop="8px"
+            a:layout_toLeftOf="@+id/mImgDelete"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_40" />
+
+
+        <x.ImageView
+            a:id="@+id/mImgDelete"
+            style="@style/ImageView"
+            a:layout_width="64px"
+            a:layout_height="64px"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="20px"
+            a:visibility="gone"
+            x:src="@drawable/ic_post_delete_image" />
+
+        <View
+            a:id="@+id/mBottomLine"
+            a:layout_width="match_parent"
+            a:layout_height="1px"
+            a:layout_alignParentBottom="true"
+            a:layout_toRightOf="@id/mImgAvatar"
+            a:background="@color/gray_f0" />
+    </x.RelativeLayout>
+
+</x.LinearLayout>

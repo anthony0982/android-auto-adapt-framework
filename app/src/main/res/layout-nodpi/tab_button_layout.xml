@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="130px">
+
+    <x.TextView
+        a:id="@+id/mText"
+        style="@style/TextView.Center"
+        a:layout_alignParentBottom="true"
+        a:layout_centerHorizontal="true"
+        a:paddingBottom="6px"
+        a:paddingTop="6px"
+        a:textColor="@color/tab_button_color_normal"
+        a:textSize="24px"
+        a:visibility="gone" />
+
+    <x.ImageView
+        a:id="@+id/mIcon"
+        style="@style/ImageView"
+        a:layout_width="64px"
+        a:layout_height="64px"
+        a:layout_centerInParent="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtBadge"
+        style="@style/TextView.Center"
+        a:layout_width="54px"
+        a:layout_height="54px"
+        a:layout_alignParentRight="true"
+        a:layout_alignParentTop="true"
+        a:layout_marginRight="48px"
+        a:layout_marginTop="14px"
+        a:background="@drawable/messag_item_ic_spot"
+        a:textColor="@color/white"
+        a:textSize="@dimen/font_size_30"
+        a:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:layout_width="wrap_content"
+        a:layout_height="140px" >
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_auto_record_list_txt_day"
+            a:layout_width="76px"
+            a:layout_height="48px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="96px"
+            a:textColor="#525151"
+            a:textSize="38px" />
+
+        <x.TextView
+            a:id="@+id/schedule_class_tool_auto_record_list_txt_lesson"
+            a:layout_width="60px"
+            a:layout_height="48px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="39px"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_list_txt_day"
+            a:textColor="#525151"
+            a:textSize="38px" />
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_class_tool_auto_record_list_layout_start_time"
+            a:layout_width="330px"
+            a:layout_height="140px"
+            a:layout_marginLeft="12px"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_list_txt_lesson" >
+
+            <x.TextView
+                a:id="@+id/schedule_class_tool_auto_record_list_txt_start_time"
+                a:layout_width="200px"
+                a:layout_height="48px"
+                a:layout_centerInParent="true"
+                a:gravity="center"
+                a:textColor="@color/blue"
+                a:textSize="38px" />
+        </x.RelativeLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/schedule_class_tool_auto_record_list_layout_length"
+            a:layout_width="240px"
+            a:layout_height="140px"
+            a:layout_toRightOf="@id/schedule_class_tool_auto_record_list_layout_start_time" >
+
+            <x.TextView
+                a:id="@+id/schedule_class_tool_auto_record_list_txt_length"
+                a:layout_width="100px"
+                a:layout_height="48px"
+                a:layout_centerInParent="true"
+                a:gravity="center"
+                a:textColor="@color/blue"
+                a:textSize="38px" />
+        </x.RelativeLayout>
+    </x.RelativeLayout>
+
+</RelativeLayout>

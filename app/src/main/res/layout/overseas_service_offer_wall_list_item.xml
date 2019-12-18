@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content" >
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="65px"
+        a:layout_marginTop="50px"
+        a:textColor="#6d3c3c"
+        a:textSize="34px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_school"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignBottom="@id/overseas_service_offer_wall_list_item_name"
+        a:paddingBottom="3px"
+        a:layout_marginLeft="14px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_name"
+        a:textColor="#aca2a2"
+        a:textSize="26px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_gpa"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginTop="30px"
+        a:text="@string/overseas_service_offer_wall_gpa"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_gpa_score"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_gpa"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_toefl"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginLeft="33px"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_gpa_score"
+        a:text="@string/overseas_service_offer_wall_toefl"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_toefl_score"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_toefl"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_gre"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginLeft="33px"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_toefl_score"
+        a:text="@string/overseas_service_offer_wall_toefl"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_gre_score"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_marginTop="30px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_gre"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_service_start_date"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_gre_score"
+        a:layout_marginTop="33px"
+        a:text="@string/overseas_service_offer_wall_service_start_date"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_service_start_date_content"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_gre_score"
+        a:layout_marginTop="33px"
+        a:layout_toRightOf="@id/overseas_service_offer_wall_list_item_service_start_date"
+        a:textColor="#848586"
+        a:textSize="28px" />
+
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_offers"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/overseas_service_offer_wall_list_item_name"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_service_start_date_content"
+        a:layout_marginTop="38px"
+        a:text="@string/overseas_service_offer_wall_offers"
+        a:textColor="#636262"
+        a:textSize="30px" />
+
+    <LinearLayout
+        a:id="@+id/overseas_service_offer_wall_list_item_layout_offers_list"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_offers"
+        a:layout_alignLeft="@id/overseas_service_offer_wall_list_item_name"
+        a:orientation="vertical" >
+    </LinearLayout>
+
+    <x.RelativeLayout
+        a:id="@+id/overseas_service_offer_wall_list_item_offer_a_bg"
+        a:layout_width="334px"
+        a:layout_height="472px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="76px"
+        a:layout_marginTop="25px"
+        x:bg="@drawable/overseas_service_offer_wall_offer_a_bg" >
+
+        <x.ImageView
+            a:id="@+id/overseas_service_offer_wall_list_item_img_offer_a"
+            a:layout_width="300px"
+            a:layout_height="443px"
+            a:layout_centerInParent="true"
+            a:src="@drawable/offer_a" />
+    </x.RelativeLayout>
+    
+    <x.RelativeLayout
+        a:id="@+id/overseas_service_offer_wall_list_item_offer_b_bg"
+        a:layout_width="334px"
+        a:layout_height="472px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="28px"
+        a:layout_marginTop="55px"
+        x:bg="@drawable/overseas_service_offer_wall_offer_b_bg" >
+
+        <x.ImageView
+            a:id="@+id/overseas_service_offer_wall_list_item_img_offer_b"
+            a:layout_width="300px"
+            a:layout_height="375px"
+            a:layout_centerInParent="true"
+            a:src="@drawable/offer_b" />
+    </x.RelativeLayout>
+    
+    <x.TextView
+        a:id="@+id/overseas_service_offer_wall_list_item_update_date"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignBottom="@id/overseas_service_offer_wall_list_item_offer_b_bg"
+        a:layout_marginLeft="64px"
+        a:textColor="#848586"
+        a:textSize="30px" />
+    
+    <View
+        a:id="@+id/overseas_service_offer_wall_list_item_bottom_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/overseas_service_offer_wall_list_item_offer_b_bg"
+        a:layout_marginTop="32px"
+        a:layout_marginLeft="24px"
+        a:background="#eaeaea" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/list_item_color_selector">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgCategory"
+        a:layout_width="80px"
+        a:layout_height="80px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="30px"
+        x:corner_radius="75px"
+        x:oval="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtCategory"
+        style="@style/TextView"
+        a:layout_height="150px"
+        a:layout_centerVertical="true"
+        a:layout_marginLeft="50px"
+        a:layout_toRightOf="@id/mImgCategory"
+        a:gravity="center_vertical"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_44" />
+
+    <View
+        a:id="@+id/mImgLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_alignLeft="@id/mTxtCategory"
+        a:layout_below="@id/mTxtCategory"
+        a:background="@color/gray_f3" />
+
+</x.RelativeLayout>

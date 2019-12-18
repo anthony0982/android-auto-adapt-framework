@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="50px"
+        a:paddingTop="16px"
+        a:text="@string/book"
+        a:textColor="@color/gray_33"
+        a:textSize="@dimen/font_size_36"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtGroup"
+        a:background="@drawable/list_item_color_selector">
+
+        <x.ImageView
+            a:id="@+id/img_found_item_image"
+            style="@style/ImageView"
+            a:layout_width="172px"
+            a:layout_height="172px"
+            a:layout_alignParentRight="true"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="22px"
+            a:scaleType="centerCrop" />
+
+        <x.TextView
+            a:id="@+id/txt_found_item_picture_count"
+            a:layout_width="50px"
+            a:layout_height="50px"
+            a:layout_alignBottom="@id/img_found_item_image"
+            a:layout_alignRight="@id/img_found_item_image"
+            a:layout_marginBottom="10px"
+            a:layout_marginRight="10px"
+            a:gravity="center"
+            a:textColor="@android:color/white"
+            a:textSize="@dimen/font_size_30"
+            a:visibility="visible"
+            x:bg="@drawable/profile_list_item_picture_count_bg" />
+
+        <x.TextView
+            a:id="@+id/txt_found_item_title"
+            style="@style/Topic.Item.Title"
+            a:layout_width="match_parent"
+            a:layout_marginTop="40px"
+            a:layout_toLeftOf="@id/img_found_item_image"
+            a:paddingLeft="50px"
+            a:paddingRight="50px" />
+
+        <x.LinearLayout
+            a:id="@+id/found_item_layout_location"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/txt_found_item_title"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="20px"
+            a:gravity="center_vertical">
+
+            <x.ImageView
+                a:id="@+id/img_found_item_img_location"
+                style="@style/ImageView"
+                a:layout_width="40px"
+                a:layout_height="40px"
+                a:tint="@color/gray_b9"
+                x:src="@drawable/ic_lost_found_location" />
+
+            <x.TextView
+                a:id="@+id/txt_found_item_txt_location"
+                style="@style/TextView"
+                a:textColor="@color/gray_b9"
+                a:textSize="@dimen/font_size_38" />
+
+            <x.TextView
+                a:id="@+id/txt_found_item_time"
+                style="@style/TextView"
+                a:layout_marginLeft="40px"
+                a:textColor="@color/gray_b9"
+                a:textSize="@dimen/font_size_38" />
+        </x.LinearLayout>
+
+        <x.TextView
+            a:id="@+id/txt_found_item_digest"
+            style="@style/Topic.Item.Digest"
+            a:layout_width="match_parent"
+            a:layout_below="@id/found_item_layout_location"
+            a:layout_marginTop="40px"
+            a:layout_toLeftOf="@id/img_found_item_image"
+            a:paddingLeft="50px"
+            a:paddingRight="50px" />
+
+        <x.TextView
+            a:id="@+id/txt_found_item_txt_state_found"
+            style="@style/TextView"
+            a:layout_below="@id/txt_found_item_digest"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="40px"
+            a:paddingBottom="20px"
+            a:text="@string/found_state_found"
+            a:textColor="#FF03AD47"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.TextView
+            a:id="@+id/txt_found_item_txt_mark_found"
+            style="@style/TextView"
+            a:layout_below="@id/txt_found_item_digest"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="40px"
+            a:paddingBottom="20px"
+            a:text="@string/found_mark_found"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.TextView
+            a:id="@+id/txt_found_item_txt_contact"
+            style="@style/TextView"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/txt_found_item_digest"
+            a:layout_marginRight="50px"
+            a:layout_marginTop="40px"
+            a:paddingBottom="20px"
+            a:text="@string/found_contact"
+            a:textColor="@color/blue"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.ImageView
+            a:id="@+id/img_found_item_img_contact"
+            style="@style/ImageView"
+            a:layout_width="40px"
+            a:layout_height="40px"
+            a:layout_below="@id/txt_found_item_digest"
+            a:layout_marginRight="12px"
+            a:layout_marginTop="50px"
+            a:layout_toLeftOf="@id/txt_found_item_txt_contact"
+            a:tint="@color/blue"
+            x:src="@drawable/ic_message" />
+
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mLayoutContent"
+        a:background="@color/gray_f0" />
+
+</x.RelativeLayout>

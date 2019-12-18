@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/training_course_rate_item_img_avatar"
+        a:layout_width="110px"
+        a:layout_height="110px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="45px"
+        x:corner_radius="70px"
+        x:mutate_background="true" />
+
+    <TextView
+        a:id="@+id/training_course_rate_item_txt_name"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/training_course_rate_item_img_avatar"
+        a:text="蒋**"
+        a:textColor="#000000"
+        a:textSize="40px" />
+
+    <TextView
+        a:id="@+id/training_course_rate_item_txt_term"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_marginTop="40px"
+        a:layout_toRightOf="@id/training_course_rate_item_txt_name"
+        a:text="(第105期)"
+        a:textColor="#a0a0a0"
+        a:textSize="40px" />
+
+    <im.clazz.ui.component.RankView
+        a:id="@+id/training_course_rate_item_rank_view"
+        a:layout_width="183px"
+        a:layout_height="32px"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="45px"
+        a:layout_marginTop="55px"
+        a:max="5"
+        a:numStars="5" />
+
+    <TextView
+        a:id="@+id/training_course_rate_item_txt_time"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/training_course_rate_item_txt_name"
+        a:layout_below="@id/training_course_rate_item_txt_name"
+        a:layout_marginRight="45px"
+        a:layout_marginTop="20px"
+        a:text="12-2 11:20"
+        a:textColor="#a0a0a0"
+        a:textSize="34px" />
+
+    <TextView
+        a:id="@+id/training_course_rate_item_txt_comment"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_alignLeft="@id/training_course_rate_item_img_avatar"
+        a:layout_alignRight="@id/training_course_rate_item_rank_view"
+        a:layout_below="@id/training_course_rate_item_txt_time"
+        a:layout_marginTop="36px"
+        a:lineSpacingMultiplier="1.25"
+        a:text="通过三个月的培训，感觉自己学到了很多，现在已在百度工作，非常实用的培训！感谢各位老师的培养！"
+        a:textColor="#595959"
+        a:textSize="42px" />
+
+    <View
+        a:id="@+id/training_course_rate_item_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/training_course_rate_item_txt_comment"
+        a:layout_marginLeft="25px"
+        a:layout_marginTop="35px"
+        a:background="#e6e6e6" />
+
+</RelativeLayout>

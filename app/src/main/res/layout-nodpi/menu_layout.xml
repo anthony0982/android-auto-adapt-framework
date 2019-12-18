@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent">
+
+    <View
+        a:id="@+id/menu_list_bg"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/translucent_60_dark" />
+
+    <ScrollView
+        a:id="@+id/menu_scroll_view"
+        a:layout_width="wrap_content"
+        a:layout_height="match_parent"
+        a:background="@color/blue"
+        a:fillViewport="true"
+        a:paddingBottom="0px"
+        a:paddingRight="0px"
+        a:paddingTop="0px"
+        a:scrollbars="none" >
+
+        <RelativeLayout
+            a:id="@+id/menu_layout"
+            a:layout_width="600px"
+            a:layout_height="match_parent"
+            a:background="@color/white"
+            a:paddingBottom="150px" >
+
+            <GridLayout
+                a:id="@+id/menu_grid"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:alignmentMode="alignBounds"
+                a:columnCount="1"
+                a:columnOrderPreserved="false"
+                a:orientation="vertical"
+                a:rowCount="3"
+                a:useDefaultMargins="false" />
+        </RelativeLayout>
+    </ScrollView>
+
+</merge>

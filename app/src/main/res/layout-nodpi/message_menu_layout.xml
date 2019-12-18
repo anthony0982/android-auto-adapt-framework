@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="580px"
+    a:layout_height="wrap_content"
+    a:layout_alignParentRight="true"
+    a:layout_marginTop="100px"
+    a:orientation="vertical"
+    a:paddingBottom="24px"
+    a:paddingLeft="22px"
+    a:paddingRight="20px"
+    a:paddingTop="64px"
+    x:bg="@drawable/bg_menu">
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemJoinGroup"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_join_group"
+        x:text="@string/moment_menu_join_group" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemCreateNotification"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:src="@drawable/ic_send_notification"
+        x:text="@string/menu_send_notification" />
+
+    <im.clazz.ui.component.MenuItemView
+        a:id="@+id/mMenuItemScan"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        x:show_bottom_line="false"
+        x:src="@drawable/ic_menu_scan"
+        x:text="@string/scan" />
+
+</x.LinearLayout>

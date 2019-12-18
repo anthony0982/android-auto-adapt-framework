@@ -1,0 +1,30 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutWrapper"
+        a:layout_width="680px"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:orientation="vertical"
+        x:bg="@drawable/bg_dialog">
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:paddingBottom="60px"
+            a:paddingLeft="50px"
+            a:paddingTop="50px"
+            a:text="@string/choose"
+            a:textColor="#FF242424"
+            a:textSize="54px" />
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutContent"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:orientation="vertical"
+            a:paddingBottom="50px" />
+    </x.LinearLayout>
+
+</merge>

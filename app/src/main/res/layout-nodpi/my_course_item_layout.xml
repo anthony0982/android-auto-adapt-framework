@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/mLayoutItem"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@drawable/list_item_color_selector">
+
+    <com.makeramen.RoundedImageView
+        a:id="@+id/mImgAvatar"
+        a:layout_width="240px"
+        a:layout_height="240px"
+        a:layout_alignParentLeft="true"
+        a:layout_below="@id/mTxtDigest"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="52px"
+        a:scaleType="centerCrop"
+        x:corner_radius="10px" />
+
+    <x.TextView
+        a:id="@+id/mTxtState"
+        style="@style/TextView"
+        a:layout_alignRight="@id/mImgAvatar"
+        a:layout_alignTop="@id/mImgAvatar"
+        a:layout_below="@id/mTxtTitle"
+        a:text="@string/course_state_going"
+        a:textColor="@color/white"
+        a:textSize="@dimen/font_size_24"
+        x:round="true"
+        x:round_backgroundColor="@color/course_state_going"
+        x:round_padding_horizontal="0.4"
+        x:round_padding_vertical="0.2"
+        x:round_radiusTopRight="10px" />
+
+    <x.TextView
+        a:id="@+id/mTxtCourseName"
+        style="@style/Course.Item.Name"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="50px"
+        a:layout_marginTop="48px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:lineSpacingMultiplier="1.3"
+        a:singleLine="false" />
+
+    <im.clazz.ui.component.RatingBar
+        a:id="@+id/mRatingBar"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/mTxtCourseName"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="24px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        x:star_only="true" />
+
+    <x.TextView
+        a:id="@+id/mTxtStars"
+        style="@style/Course.Item.ChapterName"
+        a:layout_below="@id/mTxtCourseName"
+        a:layout_marginLeft="20px"
+        a:layout_marginTop="24px"
+        a:layout_toRightOf="@id/mRatingBar" />
+
+    <x.TextView
+        a:id="@+id/mProgressBackground"
+        style="@style/RoundTextView"
+        a:layout_width="322px"
+        a:layout_height="20px"
+        a:layout_below="@id/mRatingBar"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="24px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:textColor="@color/white"
+        a:textSize="16px"
+        x:round_backgroundColor="@color/gray_ee"
+        x:round_borderWidth="0px" />
+
+    <x.TextView
+        a:id="@+id/mLearnProgress"
+        style="@style/RoundTextView"
+        a:layout_width="30px"
+        a:layout_height="20px"
+        a:layout_below="@id/mRatingBar"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="24px"
+        a:layout_toRightOf="@id/mImgAvatar"
+        a:textSize="16px"
+        x:round_backgroundColor="@color/light_blue"
+        x:round_borderWidth="0px" />
+
+    <x.TextView
+        a:id="@+id/mTxtLearnProgress"
+        style="@style/Course.Item.ChapterName"
+        a:layout_below="@id/mLearnProgress"
+        a:layout_marginLeft="40px"
+        a:layout_marginTop="24px"
+        a:layout_toRightOf="@id/mImgAvatar" />
+
+    <x.TextView
+        a:id="@+id/mTxtPrice"
+        style="@style/Course.Item.Price"
+        a:layout_alignBottom="@id/mTxtLearnProgress"
+        a:layout_alignParentRight="true"
+        a:layout_marginRight="50px" />
+
+    <View
+        a:id="@+id/mBottomLine"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_below="@id/mTxtLearnProgress"
+        a:layout_marginTop="50px"
+        a:background="@color/gray_f0" />
+</x.RelativeLayout>

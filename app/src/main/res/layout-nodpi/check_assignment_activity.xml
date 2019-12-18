@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/post_notification_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutToolBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:text="@string/check_assignment_teacher" />
+
+
+        <LinearLayout
+            a:id="@+id/mLayoutTitleRight"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="50px">
+
+            <x.TextView
+                a:id="@+id/mTxtShowQuestion"
+                style="@style/TitleBar.Text"
+                a:layout_width="wrap_content"
+                a:textSize="44px"
+                a:text="@string/check_assignment_teacher_show" />
+
+            <x.TextView
+                a:id="@+id/mTxtMark"
+                style="@style/RoundTextView.Blue"
+                a:layout_width="80px"
+                a:layout_height="80px"
+                a:layout_marginLeft="20px"
+                a:text="4"
+                a:textSize="40px"
+                x:round_isRadiusAdjustBounds="false"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="40px" />
+
+        </LinearLayout>
+
+    </x.RelativeLayout>
+
+    <im.clazz.ui.component.CheckAssignmentView
+        a:id="@+id/mCheckAssignmentViewA"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@+id/mLayoutBottomBar"
+        a:layout_below="@id/mLayoutToolBar" />
+
+    <im.clazz.ui.component.CheckAssignmentView
+        a:id="@+id/mCheckAssignmentViewB"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_above="@+id/mLayoutBottomBar"
+        a:layout_below="@id/mLayoutToolBar"
+        a:visibility="gone" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutBottomBar"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:background="@color/white"
+        a:orientation="vertical">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutMark"
+            a:layout_width="wrap_content"
+            a:layout_height="152px"
+            a:layout_gravity="center_horizontal"
+            a:gravity="center_vertical"
+            a:visibility="gone">
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:text="0"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:text="1"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:text="2"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:text="3"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:text="4"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                style="@style/RoundTextView.Blue"
+                a:layout_width="100px"
+                a:layout_height="100px"
+                a:layout_marginLeft="50px"
+                a:text="5"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="0.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+        </x.LinearLayout>
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutBottomButtons"
+            a:layout_width="match_parent"
+            a:layout_height="152px"
+            a:background="#f1f1f1">
+
+            <x.TextView
+                a:id="@+id/mTxtWriteMark"
+                style="@style/RoundTextView.Blue"
+                a:layout_width="wrap_content"
+                a:layout_height="100px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="58px"
+                a:text="@string/check_assignment_write_comment"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="1.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                a:id="@+id/mTxtGiveMark"
+                style="@style/RoundTextView.Blue"
+                a:layout_width="wrap_content"
+                a:layout_height="100px"
+                a:layout_centerVertical="true"
+                a:layout_marginLeft="464px"
+                a:text="@string/check_assignment_mark"
+                a:textSize="48px"
+                x:round_borderWidth="0px"
+                x:round_padding_horizontal="1.0"
+                x:round_padding_vertical="0.0"
+                x:round_radius="50px" />
+
+            <x.TextView
+                a:id="@+id/mTxtContinue"
+                style="@style/TextView.Center"
+                a:layout_height="100px"
+                a:layout_alignParentRight="true"
+                a:layout_centerVertical="true"
+                a:layout_marginRight="50px"
+                a:enabled="false"
+                a:text="@string/check_assignment_continue"
+                a:textColor="@color/blue_btn_color_selector"
+                a:textSize="48px" />
+
+        </x.RelativeLayout>
+    </x.LinearLayout>
+
+    <View
+        a:id="@+id/mViewSplitBottomBar"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_above="@id/mLayoutBottomBar"
+        a:background="#dcdcdc" />
+
+    <im.clazz.view.CommentEditorView
+        a:id="@+id/mCommentEditorView"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:visibility="gone" />
+
+    <View
+        a:id="@+id/mViewSplitTitleBar"
+        style="@style/EditItem.Split"
+        a:layout_height="2px"
+        a:layout_below="@id/mLayoutToolBar"
+        a:background="@color/gray_ee" />
+
+</x.RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <RelativeLayout
+        a:layout_width="fill_parent"
+        a:layout_height="150px"
+        a:background="@color/cyan_gray">
+
+        <x.TextView
+            a:id="@+id/mTxtDate"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="36px"
+            a:textColor="@color/gray_58"
+            a:textSize="@dimen/font_size_46" />
+
+        <x.TextView
+            a:id="@+id/mTxtWeekDay"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="16px"
+            a:layout_toRightOf="@id/mTxtDate"
+            a:textColor="@color/gray_58"
+            a:textSize="@dimen/font_size_46" />
+    </RelativeLayout>
+</x.RelativeLayout>

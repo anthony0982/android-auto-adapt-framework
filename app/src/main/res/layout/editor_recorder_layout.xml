@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/editor_record_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <View
+        a:id="@+id/editor_record_top_line"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:background="@color/gray_e1" />
+
+    <x.ImageView
+        a:id="@+id/editor_record_img_bg"
+        a:layout_width="360px"
+        a:layout_height="360px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginLeft="10px"
+        a:layout_marginTop="190px"
+        a:tag="@string/strict_mode"
+        x:bg="@drawable/ic_editor_record_gray_bg" />
+
+    <x.ImageView
+        a:id="@+id/editor_record_img_wave_1"
+        style="@style/ImageView"
+        a:layout_width="540px"
+        a:layout_marginTop="100px"
+        a:layout_height="540px"
+        a:layout_centerHorizontal="true"
+        a:tag="@string/strict_mode"
+        a:visibility="invisible"
+        x:bg="@drawable/ic_editor_sound_wave" />
+
+    <x.ImageView
+        a:id="@+id/editor_record_img_wave_2"
+        style="@style/ImageView"
+        a:layout_marginTop="100px"
+        a:layout_width="540px"
+        a:layout_height="540px"
+        a:layout_centerHorizontal="true"
+        a:tag="@string/strict_mode"
+        a:visibility="invisible"
+        x:bg="@drawable/ic_editor_sound_wave" />
+
+    <x.ImageView
+        a:id="@+id/editor_record_img_mic"
+        a:layout_width="280px"
+        a:layout_height="280px"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="230px"
+        a:tag="@string/strict_mode"
+        x:src="@drawable/ic_editor_record_mic" />
+
+    <x.TextView
+        a:id="@+id/editor_record_txt_duration"
+        a:layout_width="500px"
+        a:layout_height="wrap_content"
+        a:layout_below="@id/editor_record_img_bg"
+        a:layout_centerHorizontal="true"
+        a:layout_marginTop="60px"
+        a:gravity="center"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_medium" />
+
+
+    <x.ImageView
+        a:id="@+id/editor_record_img_close"
+        a:layout_width="220px"
+        a:layout_height="220px"
+        a:layout_alignParentBottom="true"
+        a:layout_alignParentRight="true"
+        x:src="@drawable/ic_editor_record_close" />
+
+</x.RelativeLayout>

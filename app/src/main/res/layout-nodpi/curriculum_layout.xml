@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent" >
+
+    <com.halo.view.RecyclerView
+        a:id="@+id/curriculum_recycler_view"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+
+    <x.ImageView
+        a:id="@+id/ic_curriculum_add"
+        a:layout_width="216px"
+        a:layout_height="216px"
+        a:layout_alignBottom="@id/curriculum_recycler_view"
+        a:layout_alignParentRight="true"
+        a:layout_marginBottom="44px"
+        a:layout_marginRight="44px"
+        x:src="@drawable/ic_curriculum_add_blue" />
+
+</merge>

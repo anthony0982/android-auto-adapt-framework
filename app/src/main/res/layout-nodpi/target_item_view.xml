@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.TextView xmlns:a="http://schemas.android.com/apk/res/android"
+    style="@style/TextView.Black"
+    a:layout_marginLeft="40px"
+    a:gravity="center_vertical"
+    a:paddingBottom="8px"
+    a:paddingLeft="30px"
+    a:paddingRight="30px"
+    a:paddingTop="8px"
+    a:textSize="@dimen/font_size_46" />

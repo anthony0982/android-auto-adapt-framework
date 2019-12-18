@@ -1,0 +1,50 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        a:layout_width="780px"
+        a:layout_height="580px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/bg_dialog"
+        a:paddingTop="60px" >
+
+        <TextView
+            a:id="@+id/txt_title"
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:layout_centerHorizontal="true"
+            a:gravity="left"
+            a:paddingLeft="60px"
+            a:paddingRight="60px"
+            a:text="@string/choose_picture"
+            a:textColor="@color/black"
+            a:textSize="60px" />
+
+        <TextView
+            a:id="@+id/txt_take_photo"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:layout_marginTop="140px"
+            a:background="@drawable/material_list_item_bg_color_selector"
+            a:paddingLeft="60px"
+            a:paddingRight="60px"
+            a:text="@string/choose_picture_camera"
+            a:textColor="#FF5D5D5D"
+            a:textSize="56px" />
+
+        <TextView
+            a:id="@+id/txt_pick_gallery"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:layout_below="@id/txt_take_photo"
+            a:layout_marginTop="10px"
+            a:background="@drawable/material_list_item_bg_color_selector"
+            a:paddingLeft="60px"
+            a:paddingRight="60px"
+            a:text="@string/choose_picture_gallery"
+            a:textColor="#FF5D5D5D"
+            a:textSize="56px" />
+    </RelativeLayout>
+
+</merge>

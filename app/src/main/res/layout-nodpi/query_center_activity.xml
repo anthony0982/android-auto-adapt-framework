@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="70px"
+            a:layout_marginTop="70px">
+
+            <x.RelativeLayout
+                a:id="@+id/mLayoutQueryGrade"
+                a:layout_width="378px"
+                a:layout_height="444px">
+
+                <x.TextView
+                    a:id="@+id/mTxtBg"
+                    style="@style/RoundTextView"
+                    a:layout_width="match_parent"
+                    a:layout_height="match_parent"
+                    x:round_backgroundColor="#113a90ff"
+                    x:round_borderColor="@color/gray_e0"
+                    x:round_borderWidth="1px"
+                    x:round_isRadiusAdjustBounds="false"
+                    x:round_padding_vertical="0.8"
+                    x:round_radius="6px" />
+
+                <x.ImageView
+                    a:id="@+id/mImageTag"
+                    style="@style/ImageView"
+                    a:layout_width="228px"
+                    a:layout_height="228px"
+                    a:layout_centerHorizontal="true"
+                    a:layout_marginTop="30px"
+                    x:src="@drawable/ic_grades" />
+
+                <x.TextView
+                    a:id="@+id/mTxtGrades"
+                    style="@style/TextView"
+                    a:layout_below="@id/mImageTag"
+                    a:layout_centerHorizontal="true"
+                    a:layout_marginTop="66px"
+                    a:text="@string/query_grades"
+                    a:textColor="@color/gray_35"
+                    a:textSize="@dimen/font_size_42" />
+
+
+            </x.RelativeLayout>
+        </x.RelativeLayout>
+
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:text="@string/query_setting" />
+
+    </x.RelativeLayout>
+
+
+</RelativeLayout>

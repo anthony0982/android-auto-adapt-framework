@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':lib-AFinal')
+    compile project(':lib-ijkplayer')
+    compile project(':lib-MuPdf')
+    compile project(':lib-fab-menu')
+    compile "com.android.support:support-v4:$android_support_version"
+    compile "com.android.support:appcompat-v7:$android_support_version"
+    compile "com.android.support:preference-v7:$android_support_version"
+    compile "com.android.support:recyclerview-v7:$android_support_version"
+    compile "com.android.support:design:$android_support_version"
+    compile "com.android.support:gridlayout-v7:$android_support_version"
+    compile "com.android.support:palette-v7:$android_support_version"
+    compile "com.android.support:support-annotations:$android_support_version"
+    compile "com.android.support:leanback-v17:$android_support_version"
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
+    compile 'com.belerweb:pinyin4j:2.5.1'
+    compile 'org.apache.httpcomponents:httpcore:4.4.6'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.2@aar'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    compile 'es.voghdev.pdfviewpager:library:1.0.1'
+    compile 'com.trycatch.android:mysnackbar:1.2.2'
+    compile 'com.annimon:stream:1.1.7'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    compile "org.jetbrains.anko:anko-commons:$anko_version"
+    compile 'io.reactivex.rxjava2:rxkotlin:2.1.0'
+    compile 'com.github.ngwing:Android-WYSIWYG-Editor:2.0.28'
+    compile 'com.github.ngwing:FloatingActionButton:1.7.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.+'
+    compile 'com.xdandroid:hellodaemon:+'
+    compile 'com.github.jrvansuita:IconHandler:+'
+    compile 'com.github.florent37:expectanim:1.0.7'
+    compile 'com.github.ngwing:Luban:1.1.5'
+    compile 'jp.wasabeef:blurry:2.1.1'
+    compile 'jp.wasabeef:glide-transformations:2.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.github.vilyever:AndroidJsonModel:1.2.0'
+    compile 'com.github.vilyever:AndroidFileReadWrite:1.1.0'
+    compile 'com.github.vilyever:AndroidUnitConversion:1.1.0'
+    compile 'com.github.vilyever:AndroidResource:1.2.1'
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.4'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    // If you want to use the GPU Filters
+//    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}
+
+configurations {
+    all*.exclude group: 'xpp3', module: 'xpp3'
+    all*.exclude group: 'org.igniterealtime.smack', module: 'smack-core'
+}
+
+android {
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion "$build_tools_version"
+    defaultConfig {
+        applicationId 'im.clazz'
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_TOOLCHAIN=clang'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+    androidExtensions {
+        experimental = true
+    }
+    dataBinding {
+        enabled true
+    }
+    sourceSets {
+        main {
+            java {
+                srcDirs = ['src/main/java/afinal',
+                           'src/main/java/audio',
+                           // 'src/main/java/video',
+                           'src/main/java/clazz',
+                           'src/main/java/halo',
+                           'src/main/java/common',
+                           'src/main/java/xui',
+                           'src/main/java/picasso',
+                           'src/main/java/picker',
+                           'src/main/java/photo',
+                           'src/main/java/photo-selector-lib',
+                           'src/main/java/com.alexvasilkov',
+                           'src/main/java/gson-2.6.2',
+                           'src/main/java/gesture-view',
+                           // Kotlin Folders
+                           'src/main/kotlin/clazz',
+                           'src/main/kotlin/halo',
+                           'src/main/kotlin/xui',
+                           'src/main/kotlin/extension',
+                           'src/main/kotlin/chat'
+                ]
+            }
+        }
+    }
+    dexOptions {
+        jumboMode true
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/sign/CMakeLists.txt"
+        }
+    }
+    flavorDimensions "ndk"
+    productFlavors {
+        arm7 {
+            dimension "ndk"
+            ndk.abiFilters 'armeabi-v7a'
+        }
+//        arm8 {
+//            dimension "ndk"
+//            ndk.abiFilters 'arm64-v8a'
+//        }
+//        arm {
+//            dimension "ndk"
+//            ndk.abiFilters 'armeabi'
+//        }
+//        x86 {
+//            dimension "ndk"
+//            ndk.abiFilters 'x86'
+//        }
+//        x86_64 {
+//            dimension "ndk"
+//            ndk.abiFilters 'x86_64'
+//        }
+//        mips {
+//            dimension "ndk"
+//            ndk.abiFilters 'mips', 'mips64'
+//        }
+//        universal {
+//            dimension "ndk"
+//            ndk.abiFilters 'mips', 'mips64', 'x86', 'x86_64'
+//        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+    }
+    def mainDexListActivity = ['StartActivity']
+    afterEvaluate {
+        project.tasks.each { task ->
+            if (task.name.startsWith('collect') && task.name.endsWith('MultiDexComponents')) {
+                println "main-dex-filter: found task $task.name"
+                task.filter { name, attrs ->
+                    String componentName = attrs.get('android:name')
+                    if ('activity'.equals(name)) {
+                        def result = mainDexListActivity.find {
+                            componentName.endsWith("${it}")
+                        }
+                        return result != null
+                    } else {
+                        return true
+                    }
+                }
+            }
+        }
+    }
+}

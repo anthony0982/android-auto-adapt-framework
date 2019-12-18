@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <x.RelativeLayout
+        a:id="@+id/schedule_search_course_fragment_layout"
+        a:layout_width="1030px"
+        a:layout_height="1350px"
+        a:layout_centerInParent="true"
+        a:background="@drawable/schedule_add_course_bg_shadow" >
+
+        <x.TextView
+            a:id="@+id/schedule_search_course_fragment_txt_add_course"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="75px"
+            a:layout_marginTop="70px"
+            a:text="@string/schedule_add_course_add"
+            a:textColor="#808080"
+            a:textSize="40px" />
+
+        <com.materialedittext.MaterialEditText
+            a:id="@+id/schedule_search_course_fragment_edt_name"
+            a:layout_width="805px"
+            a:layout_height="wrap_content"
+            a:layout_below="@id/schedule_search_course_fragment_txt_add_course"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="70px"
+            a:focusableInTouchMode="true"
+            a:textCursorDrawable="@drawable/material_input_cursor_color"
+            a:textSize="35px"
+            x:met_primaryColor="@color/blue"
+            x:met_textColor="#000000"
+            x:met_underlineColorFocused="#ffd7d7d7" />
+
+        <x.TextView
+            a:id="@+id/schedule_search_course_fragment_txt_confirm"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/schedule_search_course_fragment_txt_add_course"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="70px"
+            a:text="@string/schedule_add_course_confirm"
+            a:textColor="#62b2ef"
+            a:textSize="40px" />
+
+        <com.halo.view.RecyclerView
+            a:id="@+id/schedule_search_course_fragment_recycler_view"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_marginLeft="27px"
+            a:layout_marginRight="27px"
+            a:paddingBottom="50px"
+            a:layout_below="@id/schedule_search_course_fragment_edt_name"
+            a:layout_marginTop="50px" />
+    </x.RelativeLayout>
+
+</RelativeLayout>

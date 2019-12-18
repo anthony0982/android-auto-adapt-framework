@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/system_message_item_layout"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/bg_item_white_trans_gray_color_selector"
+        a:minHeight="100px"
+        a:paddingLeft="38px">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/system_message_item_avatar"
+            style="@style/ChatList.Avatar" />
+
+        <x.TextView
+            a:id="@+id/system_message_item_name"
+            style="@style/ChatList.Name"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/system_message_item_avatar" />
+
+        <x.TextView
+            a:id="@+id/system_message_item_btn_agree"
+            style="@style/TextView.Center"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="30px"
+            a:background="@drawable/common_round_coner_green_background"
+            a:paddingBottom="17px"
+            a:paddingLeft="30px"
+            a:paddingRight="30px"
+            a:paddingTop="17px"
+            a:text="@string/agree"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_44"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/system_message_item_txt_handled"
+            style="@style/TextView.Center"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="40px"
+            a:background="@null"
+            a:paddingBottom="17px"
+            a:paddingLeft="30px"
+            a:paddingTop="32px"
+            a:text="@string/handled"
+            a:textColor="#FF999999"
+            a:textSize="@dimen/font_size_32"
+            a:visibility="gone" />
+
+        <x.TextView
+            a:id="@+id/system_message_item_text"
+            style="@style/ChatList.Text"
+            a:layout_below="@id/system_message_item_name"
+            a:layout_toRightOf="@id/system_message_item_avatar" />
+
+        <View
+            a:id="@+id/system_message_item_line"
+            a:layout_width="match_parent"
+            a:layout_height="1px"
+            a:layout_alignParentBottom="true"
+            a:layout_below="@id/system_message_item_avatar"
+            a:layout_marginLeft="64px"
+            a:layout_marginRight="32px"
+            a:layout_marginTop="30px"
+            a:layout_toRightOf="@id/system_message_item_avatar"
+            a:background="#FFEFEFEF" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/library_announce_layout_tool_bar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/library_announce_img_back"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/library_announce_toolbar_txt_title"
+            style="@style/TitleBar.Text"
+            a:text="@string/library_announce_title" />
+
+    </x.RelativeLayout>
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/library_announce_layout_tool_bar"
+        a:scrollbars="vertical">
+
+        <x.RelativeLayout
+            a:layout_width="match_parent"
+            a:layout_height="match_parent">
+
+            <x.TextView
+                a:id="@+id/txt_library_announce_title"
+                style="@style/TitleBar.NotificationTitle"
+                a:layout_below="@id/library_announce_layout_tool_bar"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="40px"
+                a:singleLine="false"
+                a:textStyle="bold" />
+
+            <x.TextView
+                a:id="@+id/txt_library_announce_content"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_below="@id/txt_library_announce_title"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="40px"
+                a:lineSpacingMultiplier="1.5"
+                a:singleLine="false"
+                a:textSize="@dimen/font_size_42" />
+
+            <x.TextView
+                a:id="@+id/txt_library_announce_sender"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/txt_library_announce_content"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="20px"
+                a:text="@string/library"
+                a:textSize="@dimen/font_size_42" />
+
+            <x.TextView
+                a:id="@+id/txt_library_announce_send_date"
+                style="@style/Topic.Item.Subtitle"
+                a:layout_alignParentRight="true"
+                a:layout_below="@id/txt_library_announce_sender"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="20px"
+                a:paddingBottom="100px"
+                a:textSize="@dimen/font_size_42" />
+
+        </x.RelativeLayout>
+    </ScrollView>
+</x.RelativeLayout>

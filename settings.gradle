@@ -1,0 +1,4 @@
+include ':lib-MuPdf', ':lib-fab-menu'
+include ':app'
+include ':lib-AFinal'
+include ':lib-ijkplayer'

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtGroup"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@color/gray_f6"
+        a:paddingBottom="16px"
+        a:paddingLeft="30px"
+        a:paddingTop="16px"
+        a:text="@string/book"
+        a:textColor="@color/gray_88"
+        a:textSize="@dimen/font_size_36"
+        a:visibility="gone" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItemHeader"
+        a:layout_width="match_parent"
+        a:layout_height="100px"
+        a:layout_gravity="center_vertical"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:gravity="center_vertical"
+        a:orientation="horizontal">
+
+        <x.TextView
+            a:id="@+id/mTagSchoolNumber"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="260px"
+            a:paddingLeft="30px"
+            a:text="@string/student_number"
+            a:textColor="@color/gray_9b"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTagName"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="200px"
+            a:text="@string/name"
+            a:textColor="@color/gray_9b"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTagSubmitDate"
+            style="@style/TextView.Center"
+            a:layout_width="260px"
+            a:text="@string/submit_time"
+            a:textColor="@color/gray_9b"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTagMark"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:text="@string/mark"
+            a:textColor="@color/gray_9b"
+            a:textSize="40px" />
+    </x.LinearLayout>
+
+    <View
+        a:id="@+id/mImgLineTop"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@color/gray_ee" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutItem"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center_vertical"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@drawable/list_item_color_selector"
+        a:gravity="center_vertical"
+        a:orientation="horizontal"
+        a:paddingBottom="30px"
+        a:paddingTop="30px">
+
+        <x.TextView
+            a:id="@+id/mTxtSchoolNumber"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="260px"
+            a:paddingLeft="30px"
+            a:singleLine="false"
+            a:text="@string/student_number"
+            a:textColor="@color/gray_9b"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/TextView.CenterLeft"
+            a:layout_width="200px"
+            a:singleLine="false"
+            a:text="@string/name"
+            a:textColor="@color/gray_66"
+            a:textSize="38px" />
+
+        <x.TextView
+            a:id="@+id/mTxtSubmitDate"
+            style="@style/TextView.Center"
+            a:layout_width="260px"
+            a:text="@string/submit_time"
+            a:textColor="@color/gray_66"
+            a:textSize="40px" />
+
+        <x.TextView
+            a:id="@+id/mTxtMark"
+            style="@style/TextView.Center"
+            a:layout_width="200px"
+            a:text="@string/mark"
+            a:textColor="@color/gray_66"
+            a:textSize="40px" />
+
+        <x.ImageView
+            a:id="@+id/mImageRight"
+            style="@style/ImageView"
+            a:layout_width="38px"
+            a:layout_height="38px"
+            a:layout_gravity="center_vertical"
+            a:layout_marginLeft="20px"
+            a:tint="@color/light_blue"
+            x:src="@drawable/ic_reg_dive_50" />
+    </x.LinearLayout>
+
+    <View
+        a:id="@+id/mImgLine"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@color/gray_ee" />
+</x.LinearLayout>

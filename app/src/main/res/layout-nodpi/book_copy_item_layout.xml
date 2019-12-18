@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/book_copy_item_layout"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@color/white">
+
+    <x.TextView
+        a:id="@+id/txt_book_copy_item_item_title"
+        style="@style/Book.Copy"
+        a:layout_width="460px" />
+
+    <x.TextView
+        a:id="@+id/txt_book_copy_item_item_state"
+        style="@style/Book.Copy"
+        a:layout_width="match_parent"
+        a:layout_marginRight="50px"
+        a:layout_toRightOf="@id/txt_book_copy_item_item_title" />
+
+    <View
+        a:id="@+id/txt_book_copy_item_item_line"
+        a:layout_width="match_parent"
+        a:layout_height="2px"
+        a:layout_below="@id/txt_book_copy_item_item_title"
+        a:layout_marginLeft="50px"
+        a:layout_marginRight="50px"
+        a:background="@color/gray_f0" />
+
+</x.RelativeLayout>

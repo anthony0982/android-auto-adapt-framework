@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="wrap_content"
+    a:layout_height="wrap_content">
+
+    <RelativeLayout
+        a:id="@+id/mLayoutBottomMenuItem"
+        a:layout_width="326px"
+        a:layout_height="240px">
+
+        <x.ImageView
+            a:id="@+id/mIcon"
+            style="@style/ImageView"
+            a:layout_width="70px"
+            a:layout_height="70px"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="60px"
+            a:tint="@color/gray_66" />
+
+        <x.TextView
+            a:id="@+id/mText"
+            style="@style/TextView.Center"
+            a:layout_below="@id/mIcon"
+            a:layout_centerHorizontal="true"
+            a:layout_marginTop="26px"
+            a:paddingBottom="20px"
+            a:paddingTop="6px"
+            a:textColor="@color/gray_66"
+            a:textSize="34px" />
+
+        <x.TextView
+            a:id="@+id/mTxtBadge"
+            style="@style/TextView.Center"
+            a:layout_width="54px"
+            a:layout_height="54px"
+            a:layout_alignParentRight="true"
+            a:layout_alignParentTop="true"
+            a:layout_marginRight="48px"
+            a:layout_marginTop="14px"
+            a:background="@drawable/messag_item_ic_spot"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_30"
+            a:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

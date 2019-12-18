@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<im.clazz.ui.component.PostGalleryView xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/post_gallery_view"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:background="@null"
+    a:fadingEdge="vertical"
+    a:visibility="gone" />

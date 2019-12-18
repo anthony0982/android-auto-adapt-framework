@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        a:id="@+id/edit_training_course_layout_title"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@color/white" >
+
+        <x.ImageView
+            a:id="@+id/edit_training_course_activity_back"
+            style="@style/ImageView"
+            a:layout_width="120px"
+            a:layout_height="120px"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="10px"
+            x:src="@drawable/ic_back_120" />
+
+
+        <x.TextView
+            a:id="@+id/edit_training_course_activity_title"
+            style="@style/TextView.Center"
+            a:layout_width="match_parent"
+            a:layout_height="160px"
+            a:layout_toRightOf="@id/edit_training_course_activity_back"
+            a:text="@string/edit_training_course_title_a"
+            a:textColor="#FF000000"
+            a:textSize="56px" />
+
+        <View
+            a:id="@+id/edit_training_course_activity_title_line"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_marginTop="152px"
+            a:background="#FFd7d7d7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/edit_training_course_layout_a"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/edit_training_course_layout_title" >
+
+        <x.TextView
+            a:id="@+id/edit_training_course_a_txt_next_step"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="60px"
+            a:layout_marginRight="100px"
+            a:text="@string/edit_training_course_a_next_step"
+            a:textColor="#282828"
+            a:textSize="50px" />
+
+        <ScrollView
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_above="@id/edit_training_course_a_txt_next_step"
+            a:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" >
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_course_name"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_marginTop="75px"
+                    a:text="@string/edit_training_course_a_course_name" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_course_name"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_marginTop="65px"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_course_name" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_term"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_course_name"
+                    a:text="@string/edit_training_course_a_term" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_term_number"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/edit_training_course_a_edt_course_name"
+                    a:layout_below="@id/edit_training_course_a_edt_course_name"
+                    a:layout_marginTop="75px"
+                    a:text="@string/edit_training_course_a_term_number"
+                    a:textColor="#949494"
+                    a:textSize="45px" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_term_terms"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_a_edt_course_name"
+                    a:layout_marginRight="450px"
+                    a:layout_marginTop="75px"
+                    a:text="@string/edit_training_course_a_term_terms"
+                    a:textColor="#949494"
+                    a:textSize="45px" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_term"
+                    a:layout_width="match_parent"
+                    a:layout_height="80px"
+                    a:layout_below="@id/edit_training_course_a_txt_course_name"
+                    a:layout_marginLeft="10px"
+                    a:layout_marginRight="10px"
+                    a:layout_marginTop="70px"
+                    a:layout_toLeftOf="@id/edit_training_course_a_txt_term_terms"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_term_number" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_course_core"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_term"
+                    a:text="@string/edit_training_course_a_course_core" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_course_core"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_txt_term"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_course_core" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_training_type"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_course_core"
+                    a:text="@string/edit_training_course_a_training_type" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_training_type"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_txt_course_core"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_training_type" />
+
+                <x.ImageView
+                    a:id="@+id/edit_training_course_a_img_training_type_add"
+                    style="@style/ImageView"
+                    a:layout_width="75px"
+                    a:layout_height="75px"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_a_edt_course_core"
+                    a:layout_marginRight="40px"
+                    a:layout_marginTop="65px"
+                    a:src="@drawable/edit_training_course_training_type_add" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_group"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_training_type"
+                    a:text="@string/edit_training_course_a_group" />
+
+                <com.halo.component.FlowLayout
+                    a:id="@+id/edit_training_course_a_flowlayout_group"
+                    a:layout_width="match_parent"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/edit_training_course_a_edt_training_type"
+                    a:layout_alignRight="@id/edit_training_course_a_edt_training_type"
+                    a:layout_below="@id/edit_training_course_a_edt_training_type"
+                    a:layout_marginTop="66px"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_group" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_tuition_origin"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_flowlayout_group"
+                    a:layout_marginTop="50px"
+                    a:text="@string/edit_training_course_a_tuition_origin" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_tuition_origin_yuan"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_a_flowlayout_group"
+                    a:layout_marginRight="450px"
+                    a:layout_marginTop="50px"
+                    a:text="@string/edit_training_course_a_tuition_yuan"
+                    a:textColor="#949494"
+                    a:textSize="45px" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_tuition_origin"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_flowlayout_group"
+                    a:layout_marginRight="10px"
+                    a:layout_marginTop="40px"
+                    a:layout_toLeftOf="@id/edit_training_course_a_txt_tuition_origin_yuan"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_tuition_origin" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_tuition_concession"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_tuition_origin"
+                    a:text="@string/edit_training_course_a_tuition_concession" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_tuition_concession_yuan"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_a_txt_tuition_origin"
+                    a:layout_marginRight="450px"
+                    a:layout_marginTop="85px"
+                    a:text="@string/edit_training_course_a_tuition_yuan"
+                    a:textColor="#949494"
+                    a:textSize="45px" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_tuition_concession"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_txt_tuition_origin"
+                    a:layout_marginRight="10px"
+                    a:layout_toLeftOf="@id/edit_training_course_a_txt_tuition_concession_yuan"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_tuition_concession" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_quota"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_tuition_concession"
+                    a:text="@string/edit_training_course_a_quota" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_a_edt_quota"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_txt_tuition_concession"
+                    a:layout_marginRight="505px"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_quota" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_txt_deadline"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_a_txt_course_name"
+                    a:layout_below="@id/edit_training_course_a_txt_quota"
+                    a:text="@string/edit_training_course_a_deadline" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_a_edt_deadline"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_a_txt_quota"
+                    a:layout_toRightOf="@id/edit_training_course_a_txt_deadline"
+                    a:gravity="left|center_vertical"
+                    a:textColor="#259bff" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        a:id="@+id/edit_training_course_layout_b"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@id/edit_training_course_layout_title"
+        a:visibility="gone" >
+
+        <x.TextView
+            a:id="@+id/edit_training_course_b_txt_complete"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_alignParentBottom="true"
+            a:layout_alignParentRight="true"
+            a:layout_marginBottom="60px"
+            a:layout_marginRight="100px"
+            a:text="@string/complete"
+            a:textColor="#259bff"
+            a:textSize="50px" />
+
+        <ScrollView
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:layout_above="@id/edit_training_course_b_txt_complete"
+            a:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" >
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_start_date"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_marginTop="75px"
+                    a:text="@string/edit_training_course_b_start_date" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_edt_start_date"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_marginTop="62px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_start_date"
+                    a:gravity="left|center_vertical"
+                    a:textColor="#259bff" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_course_time"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_start_date"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_course_time" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_course_time"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_txt_start_date"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_course_time" />
+
+                <x.ImageView
+                    a:id="@+id/edit_training_course_b_img_course_time_add"
+                    style="@style/ImageView"
+                    a:layout_width="75px"
+                    a:layout_height="75px"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_b_edt_start_date"
+                    a:layout_marginRight="40px"
+                    a:layout_marginTop="85px"
+                    a:src="@drawable/edit_training_course_training_type_add" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_course_period"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_course_time"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_course_period" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_course_period_months"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_alignParentRight="true"
+                    a:layout_below="@id/edit_training_course_b_txt_course_time"
+                    a:layout_marginRight="450px"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_course_period_months"
+                    a:textColor="#949494"
+                    a:textSize="45px" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_course_period"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_txt_course_time"
+                    a:layout_marginRight="10px"
+                    a:layout_marginTop="95px"
+                    a:layout_toLeftOf="@id/edit_training_course_b_txt_course_period_months"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_course_period" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_basic_required"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_course_period"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_basic_required" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_basic_required"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_txt_course_period"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_basic_required" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_course_goal"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_basic_required"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_course_goal" />
+
+                <com.halo.component.FlowLayout
+                    a:id="@+id/edit_training_course_b_flowlayout_course_goal"
+                    a:layout_width="match_parent"
+                    a:layout_height="wrap_content"
+                    a:layout_alignLeft="@id/edit_training_course_b_edt_basic_required"
+                    a:layout_alignRight="@id/edit_training_course_b_edt_basic_required"
+                    a:layout_below="@id/edit_training_course_b_edt_basic_required"
+                    a:layout_marginTop="85px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_course_goal" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_expect_result"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_flowlayout_course_goal"
+                    a:layout_marginTop="75px"
+                    a:text="@string/edit_training_course_b_expect_result" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_expect_result"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_flowlayout_course_goal"
+                    a:layout_marginTop="65px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_expect_result" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_course_guarantee"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_expect_result"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_course_guarantee" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_course_guarantee"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_txt_expect_result"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_course_guarantee" />
+
+                <x.TextView
+                    a:id="@+id/edit_training_course_b_txt_minimum_promise"
+                    style="@style/TextView.EditTrainingCourse"
+                    a:layout_alignRight="@id/edit_training_course_b_txt_start_date"
+                    a:layout_below="@id/edit_training_course_b_txt_course_guarantee"
+                    a:layout_marginTop="105px"
+                    a:text="@string/edit_training_course_b_minimum_promise" />
+
+                <x.combo.ComboEditText
+                    a:id="@+id/edit_training_course_b_edt_minimum_promise"
+                    style="@style/EditText.EditTrainingCourse"
+                    a:layout_below="@id/edit_training_course_b_txt_course_guarantee"
+                    a:layout_marginTop="95px"
+                    a:layout_toRightOf="@id/edit_training_course_b_txt_minimum_promise" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <com.example.picker.DatePicker
+        a:id="@+id/edit_training_course_b_picker_date"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_alignParentBottom="true"
+        a:layout_marginTop="@dimen/title_bar_height"
+        x:fromNowOn="true"
+        x:fromNowOnYears="1" />
+</RelativeLayout>

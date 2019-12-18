@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical" >
+
+    <x.TextView
+        a:id="@+id/txt_school_search_result_item_type_title"
+        style="@style/TextView.CenterLeft"
+        a:layout_width="match_parent"
+        a:layout_height="52px"
+        a:layout_marginBottom="3px"
+        a:background="@color/blue_dark"
+        a:paddingLeft="50px"
+        a:text="家教/私教"
+        a:textColor="@color/white"
+        a:textSize="@dimen/font_size_30"
+        a:visibility="gone" />
+
+    <x.RelativeLayout
+        a:id="@+id/layout_school_search_result_item"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:background="@drawable/school_bg_item_selector"
+        a:paddingLeft="50px" >
+
+        <LinearLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:orientation="horizontal" >
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_name"
+                style="@style/TitleBar.NotificationTitle"
+                a:layout_marginTop="26px"
+                a:text="张老师"
+                a:textColor="@color/school_search_result_title_color"
+                a:textSize="@dimen/font_size_46" />
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_title_sub"
+                style="@style/TitleBar.NotificationTitle"
+                a:layout_marginTop="20px"
+                a:text="(美国)"
+                a:textColor="#b1b7c9"
+                a:textSize="@dimen/font_size_34"
+                a:visibility="gone" />
+
+            <im.clazz.ui.component.RankView
+                a:id="@+id/txt_school_search_result_item_rank"
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="15px"
+                a:layout_marginTop="38px" />
+        </LinearLayout>
+
+        <LinearLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:orientation="horizontal" >
+
+            <x.ImageView
+                a:id="@+id/img_school_search_result_item_location"
+                a:layout_width="30px"
+                a:layout_height="30px"
+                a:layout_marginTop="110px"
+                x:src="@drawable/school_search_ic_location" />
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_distance"
+                style="@style/SchoolSearchResultSubTitle"
+                a:layout_marginLeft="6px"
+                a:layout_marginTop="105px"
+                a:paddingRight="54px"
+                a:text="0.3km" />
+
+            <x.ImageView
+                a:id="@+id/img_school_search_result_item_member"
+                a:layout_width="30px"
+                a:layout_height="30px"
+                a:layout_marginRight="8px"
+                a:layout_marginTop="112px"
+                x:src="@drawable/school_search_result_ic_member" />
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_gender"
+                style="@style/SchoolSearchResultSubTitle"
+                a:layout_marginTop="105px"
+                a:text="女" />
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_exp"
+                style="@style/SchoolSearchResultSubTitle"
+                a:layout_marginLeft="54px"
+                a:layout_marginTop="105px"
+                a:text="15年经验" />
+
+            <x.TextView
+                a:id="@+id/txt_school_search_result_item_description"
+                style="@style/SchoolSearchResultSubTitle"
+                a:layout_marginLeft="54px"
+                a:layout_marginTop="105px"
+                a:text="在职教师" />
+        </LinearLayout>
+
+        <x.ImageView
+            a:id="@+id/img_school_search_result_item_avatar"
+            a:layout_width="154px"
+            a:layout_height="154px"
+            a:layout_alignParentRight="true"/>
+
+        <x.TextView
+            a:id="@+id/txt_school_search_result_item_subject"
+            style="@style/SchoolSearchResultSubTitle"
+            a:layout_marginRight="32px"
+            a:layout_marginTop="35px"
+            a:layout_toLeftOf="@id/img_school_search_result_item_avatar"
+            a:gravity="right"
+            a:text="初中数学,初中物理"
+            a:textColor="#35393d" />
+
+        <x.TextView
+            a:id="@+id/txt_school_search_result_item_price"
+            style="@style/SchoolSearchResultSubTitle"
+            a:layout_marginRight="32px"
+            a:layout_marginTop="105px"
+            a:layout_toLeftOf="@id/img_school_search_result_item_avatar"
+            a:gravity="right"
+            a:text="180元/课时"
+            a:textColor="#fc1a64" />
+    </x.RelativeLayout>
+
+    <View
+        a:id="@+id/school_search_split_line"
+        a:layout_width="match_parent"
+        a:layout_height="1px"
+        a:layout_marginLeft="30px"
+        a:layout_marginRight="154px"
+        a:background="#c0c0c0" />
+
+    <x.RelativeLayout
+        a:id="@+id/layout_school_search_result_item_more"
+        a:layout_width="match_parent"
+        a:layout_height="130px"
+        a:background="@drawable/school_bg_item_selector"
+        a:visibility="gone" >
+
+        <x.ImageView
+            a:id="@+id/img_school_search_result_item_more"
+            a:layout_width="100px"
+            a:layout_height="25px"
+            a:layout_centerInParent="true"
+            x:src="@drawable/school_search_ic_more" />
+    </x.RelativeLayout>
+
+</LinearLayout>

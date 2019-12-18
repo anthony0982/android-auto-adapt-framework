@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/main_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white">
+
+    <WebView
+        a:id="@+id/mWebView"
+        style="@style/WebView" />
+
+    <x.TextView
+        a:id="@+id/mTxtEmpty"
+        style="@style/TextView.Center"
+        a:text="@string/open_fail"
+        a:textColor="@color/gray_9b"
+        a:textSize="@dimen/font_size_46"
+        a:visibility="gone" />
+</RelativeLayout>

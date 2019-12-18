@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutBottom"
+        a:layout_width="match_parent"
+        a:layout_height="144px"
+        a:layout_alignParentBottom="true"
+        a:background="@color/gray_ee">
+
+        <x.TextView
+            a:id="@+id/mTxtTip"
+            style="@style/TextView"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="50px"
+            a:text="@string/upload_slide_tip"
+            a:textColor="@color/gray_66"
+            a:textSize="@dimen/font_size_40" />
+
+        <x.TextView
+            a:id="@+id/mTxtUpload"
+            style="@style/RoundTextView.Red"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            a:layout_marginRight="36px"
+            a:text="@string/upload_slide"
+            a:textSize="@dimen/font_size_40" />
+
+
+        <WebView
+            a:id="@+id/mWebView"
+            style="@style/WebView"
+            a:layout_width="0px"
+            a:layout_height="0px" />
+
+    </x.RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/picker_bar_bg" >
+
+    <View
+        android:id="@+id/bar_top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="4px"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/bar_btn_cancel"
+        style="@style/TextView.Orange.Center.SLarge"
+        android:layout_height="120px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bar_top_line"
+        android:background="@null"
+        android:paddingLeft="54px"
+        android:paddingRight="54px"
+        android:text="@string/cancel"
+        android:textColor="@color/picker_btn_color_selector"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/bar_btn_confirm"
+        style="@style/TextView.Orange.Center.SLarge"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bar_top_line"
+        android:background="@null"
+        android:paddingLeft="54px"
+        android:paddingRight="54px"
+        android:text="@string/confirm"
+        android:textColor="@color/picker_btn_color_selector"
+        android:textSize="50px" />
+
+    <com.example.wheel.DoubleWheelView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/intro_login_wheel_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bar_btn_confirm"
+        android:layout_toLeftOf="@+id/wheel_view_center"
+        android:background="@color/white"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        wheel:lineSplitHeight="@dimen/wheel_line_split_height"
+        wheel:splitLineColor="@color/blue"
+        wheel:textColorFirst="#9FC7C7C7"
+        wheel:textColorSecond="#FFC7C7C7"
+        wheel:textColorThird="@color/blue"
+        wheel:textGravityColumnOne="left"
+        wheel:textGravityColumnTwo="right"
+        wheel:textSize="@dimen/font_size_wheel"
+        wheel:textSizeSecond="@dimen/font_size_wheel_second"
+        wheel:textSizeHighlight="@dimen/font_size_wheel_highlight" />
+
+</RelativeLayout>

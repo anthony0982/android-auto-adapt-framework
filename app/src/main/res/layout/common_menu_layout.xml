@@ -1,0 +1,15 @@
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_centerInParent="true"
+        a:minWidth="500px"
+        a:orientation="vertical"
+        a:paddingBottom="6px"
+        a:paddingTop="6px"
+        x:bg="@drawable/bg_dialog" />
+
+</merge>

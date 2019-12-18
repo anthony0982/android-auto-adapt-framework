@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content"
+    a:orientation="vertical">
+
+    <x.TextView
+        a:id="@+id/mTxtLabel"
+        style="@style/TextView"
+        a:layout_width="match_parent"
+        a:layout_height="150px"
+        a:layout_marginLeft="50px"
+        a:layout_marginTop="4px"
+        a:gravity="center_vertical|left"
+        a:textColor="@color/gray_66"
+        a:textSize="@dimen/font_size_44" />
+
+    <android.support.constraint.ConstraintLayout
+        a:id="@+id/mLayoutContent"
+        a:layout_width="1080px"
+        a:layout_height="wrap_content">
+
+        <View
+            a:id="@+id/mBottomBorder"
+            a:layout_width="0px"
+            a:layout_height="4px"
+            a:background="@color/cyan_gray"
+            x:layout_constraintBottom_toBottomOf="parent"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            a:id="@+id/mLeftBorder"
+            a:layout_width="6px"
+            a:layout_height="0px"
+            a:background="#4992e3"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            a:id="@+id/mSlideLayout"
+            a:layout_width="1020px"
+            a:layout_height="574px"
+            a:layout_marginTop="20px"
+            a:background="@color/white"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toTopOf="parent">
+
+            <WebView
+                a:id="@+id/mWebView"
+                style="@style/WebView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingView"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <com.vilyever.drawingview.DrawingView
+                a:id="@+id/mDrawingViewAbove"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+
+            <View
+                a:id="@+id/mWebViewCover"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:background="@color/white" />
+
+            <x.ImageView
+                a:id="@+id/mImgFileType"
+                style="@style/ImageView"
+                a:layout_width="154px"
+                a:layout_height="60px"
+                a:layout_marginLeft="50px"
+                a:layout_marginTop="50px"
+                x:src="@drawable/ic_type_clazz" />
+
+        </RelativeLayout>
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TextView"
+            a:layout_width="0px"
+            a:layout_marginLeft="50px"
+            a:layout_marginRight="60px"
+            a:layout_marginTop="48px"
+            a:lineSpacingMultiplier="1.25"
+            a:singleLine="false"
+            a:textColor="@color/gray_35"
+            a:textSize="@dimen/font_size_medium"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mSlideLayout" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/TextView"
+            a:layout_width="match_parent"
+            a:layout_marginBottom="60px"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="10px"
+            a:textColor="@color/gray_99"
+            a:textSize="@dimen/font_size_36"
+            x:layout_constraintBottom_toTopOf="@id/mBottomBorder"
+            x:layout_constraintLeft_toLeftOf="parent"
+            x:layout_constraintRight_toRightOf="parent"
+            x:layout_constraintTop_toBottomOf="@id/mTxtTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+</x.LinearLayout>

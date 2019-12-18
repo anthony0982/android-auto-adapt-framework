@@ -1,0 +1,171 @@
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/drawer_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+
+    <FrameLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="#0099cc">
+
+        <im.clazz.video.VideoView
+            a:id="@+id/mVideoView"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent" />
+
+        <FrameLayout
+            a:id="@+id/mLayoutPlayEndBackground"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:background="@color/translucent_60_dark"
+            a:visibility="gone" />
+
+        <x.RelativeLayout
+            a:id="@+id/mLayoutPlayEnd"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_gravity="center"
+            a:gravity="center"
+            a:orientation="vertical"
+            a:visibility="gone">
+
+            <x.TextView
+                a:id="@+id/mTxtButtonsBackground"
+                style="@style/RoundTextView"
+                a:layout_width="500px"
+                a:layout_height="350px"
+                x:round_backgroundColor="@color/white"
+                x:round_borderWidth="0px"
+                x:round_isRadiusAdjustBounds="false"
+                x:round_padding_horizontal="2.0"
+                x:round_padding_vertical="1.0"
+                x:round_radius="10px" />
+
+            <x.TextView
+                a:id="@+id/mTxtPlayNext"
+                style="@style/TextView.Center"
+                a:layout_width="500px"
+                a:layout_marginTop="30px"
+                a:padding="40px"
+                a:text="@string/play_next_lesson"
+                a:textColor="@color/black"
+                a:textSize="@dimen/font_size_52" />
+
+            <View
+                a:id="@+id/mImgLine"
+                a:layout_width="500px"
+                a:layout_height="2px"
+                a:layout_below="@id/mTxtPlayNext"
+                a:background="@color/gray_f3" />
+
+            <x.TextView
+                a:id="@+id/mTxtComment"
+                style="@style/TextView.Center"
+                a:layout_width="500px"
+                a:layout_below="@id/mTxtPlayNext"
+                a:padding="40px"
+                a:text="@string/comment_course"
+                a:textColor="@color/black"
+                a:textSize="@dimen/font_size_52" />
+        </x.RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        a:id="@+id/mLayoutMenuBackground"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:alpha="0"
+        a:background="@color/translucent_30_dark" />
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutMenu"
+        a:layout_width="900px"
+        a:layout_height="match_parent"
+        a:background="#ffffffff"
+        a:visibility="gone">
+
+        <x.RelativeLayout
+            a:id="@+id/mTitleBar"
+            style="@style/TitleBar.Main"
+            a:layout_width="match_parent"
+            a:background="@android:color/transparent">
+
+            <x.ImageView
+                a:id="@+id/mImgBack"
+                style="@style/ToolBar.Icon.Back.Blue"
+                a:tint="@color/black" />
+
+            <x.TextView
+                a:id="@+id/mTxtTitleBarTitle"
+                style="@style/TitleBar.Text"
+                a:layout_width="match_parent"
+                a:layout_marginRight="50px"
+                a:text="@string/course_chapters"
+                a:textColor="@color/black" />
+        </x.RelativeLayout>
+
+
+        <com.halo.view.ScrollView
+            a:id="@+id/mScrollView"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:layout_below="@id/mTitleBar">
+
+            <x.LinearLayout
+                a:id="@+id/mLayoutChapters"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="26px"
+                a:layout_marginRight="26px"
+                a:orientation="vertical"
+                a:paddingBottom="42px"
+                a:paddingLeft="42px"
+                a:paddingRight="42px"
+                a:paddingTop="0px" />
+        </com.halo.view.ScrollView>
+    </x.RelativeLayout>
+
+    <FrameLayout
+        a:id="@+id/mLayoutCommentBackground"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:background="@color/translucent_60_dark"
+        a:visibility="gone" />
+
+    <x.LinearLayout
+        a:id="@+id/mLayoutComment"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content"
+        a:layout_gravity="center"
+        a:background="@drawable/bg_dialog"
+        a:orientation="vertical"
+        a:padding="50px"
+        a:visibility="gone">
+
+        <x.TextView
+            a:id="@+id/mTxtTitleComment"
+            style="@style/TextView"
+            a:text="@string/comment_course"
+            a:textColor="#FF242424"
+            a:textSize="54px"
+            a:textStyle="bold" />
+
+        <im.clazz.ui.component.RatingBar
+            a:id="@+id/mRatingBar"
+            a:layout_width="1000px"
+            a:layout_height="wrap_content"
+            a:layout_marginLeft="50px"
+            a:layout_marginTop="50px"
+            x:star_only="true" />
+
+        <im.clazz.view.CommentEditorView
+            a:id="@+id/mCommentEditorView"
+            a:layout_width="1000px"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="50px"
+            a:minHeight="100px" />
+
+    </x.LinearLayout>
+
+</FrameLayout>

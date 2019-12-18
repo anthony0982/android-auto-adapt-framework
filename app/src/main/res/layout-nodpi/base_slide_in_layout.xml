@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android">
+
+    <View
+        a:id="@+id/slide_in_bg"
+        style="@style/FloatViewBg" />
+
+    <ViewStub
+        a:id="@+id/slide_in_content_layout_stub"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:layout_alignParentBottom="true"
+        a:alpha="0" />
+
+</merge>

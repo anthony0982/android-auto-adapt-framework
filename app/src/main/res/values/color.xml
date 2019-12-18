@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_linecolor">#E0E0E0</color>
+    <color name="tab_button_color_normal">#FF999999</color>
+    <color name="tab_button_color_active">@color/color_primary</color>
+    <color name="teacher_profile_activity_item_line">#F0F0F0</color>
+    <color name="teacher_profile_item_linecolor">#CDDAF3</color>
+    <color name="profile_item_line_color">#F2F2F2</color>
+    <color name="common_txt_color_black">#000000</color>
+    <color name="profile_list_view_bg">#E0E0E0</color>
+    <color name="profile_activity_bg_color">#F0F0F0</color>
+    <color name="profile_txt_color_2">#848484</color>
+    <color name="profile_txt_color_3">#FF61B3</color>
+    <color name="profile_txt_color_4">#A7A7A7</color>
+    <color name="profile_txt_color_5">#505050</color>
+    <color name="profile_txt_color_6">#949494</color>
+    <color name="profile_item_photo_bg">#D3D3D3</color>
+    <color name="profile_list_item_bg_color">#AAFF61B3</color>
+    <color name="course_txt_color_1">#423F37</color>
+    <color name="course_txt_color_2">#57534A</color>
+    <color name="course_txt_color_3">#847147</color>
+    <color name="course_txt_time_color">#595B5D</color>
+    <color name="about_activity_textcolor_1">#808080</color>
+    <color name="about_activity_textcolor_2">#26B1E3</color>
+    <color name="about_activity_main_bgcolor">#F8F9FB</color>
+    <color name="teacher_profile_activity_text_color_1">#55ACEE</color>
+    <color name="teacher_profile_activity_text_color_2">#E6E7EE</color>
+    <color name="teacher_profile_activity_text_color_3">#74736E</color>
+    <color name="teacher_profile_activity_text_color_4">#6B6D75</color>
+    <color name="teacher_profile_activity_text_color_5">#0A7EF6</color>
+    <color name="teacher_profile_activity_text_color_6">#817F79</color>
+    <color name="teacher_profile_activity_text_color_7">#A3A3A3</color>
+    <color name="teacher_profile_activity_item1_text_color_1">#83A3E0</color>
+    <color name="teacher_profile_activity_item1_text_color_2">#6E695E</color>
+    <color name="teacher_profile_activity_item2_text_color_1">#667084</color>
+    <color name="teacher_profile_activity_item2_text_color_2">#9098A5</color>
+    <color name="teacher_profile_activity_item3_text_color_1">#625C4E</color>
+    <color name="teacher_profile_activity_item3_text_color_2">#767267</color>
+    <color name="teacher_profile_activity_item3_text_color_3">#667084</color>
+    <color name="teacher_profile_activity_item4_text_color_1">#625C4E</color>
+    <color name="teacher_profile_activity_item4_text_color_2">#767267</color>
+    <color name="teacher_profile_activity_item4_text_color_3">#667084</color>
+    <color name="teacher_edit_profile_title_bgcorlor">#8188AB</color>
+    <color name="teacher_profile_activity_teacher_course_score">#6E695E</color>
+    <color name="teacher_profile_activity_tag_bg">#00FFFFFF</color>
+    <color name="teacher_profile_activity_item_txt_empty_color">#ffcccccc</color>
+
+    <drawable name="clr_pressed">#FFE0E0E0</drawable>
+    <drawable name="clr_normal">#00FFFFFF</drawable>
+
+    <color name="teacher_add_common_line">#D5D5D5</color>
+    <color name="teacher_add_common_hint">#D8D8D8</color>
+    <color name="addpaper_name">#FF333333</color>
+    <color name="addpaper_input">#1B9CF2</color>
+    <color name="confirm_normal">#FF259bff</color>
+    <color name="confirm_pressed">#88259bff</color>
+    <color name="cancel_normal">#FFAAAAAA</color>
+    <color name="cancel_pressed">#88AAAAAA</color>
+    <color name="gender_famale">#FFff33fd</color>
+
+    <color name="actionbar_background">#11000000</color>
+    <color name="actionbar_background_dark">#701129</color>
+    <color name="actionbar_background_semitransp">#11000000</color>
+    <color name="actionbar_tint">#FFD0E5</color>
+    <color name="text_normal">#CCCCCC</color>
+
+    <color name="chosen_item_checked">#e8f8ff</color>
+    <color name="chosen_item_unchecked">#fafafa</color>
+    <color name="chosen_item_text_checked">#5e65fe</color>
+    <color name="chosen_item_text_unchecked">#bdbdbd</color>
+
+    <color name="indigo_500">#3f51b5</color>
+    <color name="indigo_700">#303f9f</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="cyan_gray">#f4f8f8</color>
+
+
+    <color name="material_card_background_gray">#FFFAFAFA</color>
+    <color name="material_card_background_blue">#FF76C4F7</color>
+
+    <color name="material_card_background">#ffffff</color>
+    <color name="material_card_green_background">#80db4e</color>
+    <color name="material_card_shadow">#10000000</color>
+    <color name="material_lite_blue">#ff359ff2</color>
+    <color name="material_window_background">#00000000</color>
+    <color name="toast_background">#99111111</color>
+
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+    <color name="event_color_05">#979380</color>
+    <color name="event_color_06">#039be5</color>
+    <color name="event_color_07">#e67c73</color>
+    <color name="event_color_08">#7986cb</color>
+    <color name="event_color_09">#acd598</color>
+    <color name="event_color_10">#43b3cb</color>
+    <color name="event_color_11">#7ecef4</color>
+    <color name="event_color_12">#46b692</color>
+    <color name="event_color_13">#df88ab</color>
+    <color name="event_color_14">#d9d969</color>
+    <color name="toolbar">#FFF4F5F7</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">@color/white</color>
+
+</resources>

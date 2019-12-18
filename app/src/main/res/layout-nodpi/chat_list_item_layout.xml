@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutChat"
+        a:layout_width="fill_parent"
+        a:layout_height="180px"
+        a:background="@drawable/bg_item_white_trans_gray_color_selector"
+        a:paddingLeft="26px">
+
+        <com.makeramen.RoundedImageView
+            a:id="@+id/mRoundedImageView"
+            style="@style/ChatList.Avatar" />
+
+        <x.TextView
+            a:id="@+id/mTxtTime"
+            style="@style/ChatList.Time" />
+
+        <x.TextView
+            a:id="@+id/mTxtName"
+            style="@style/ChatList.Name" />
+
+        <x.TextView
+            a:id="@+id/mTxtUnread"
+            style="@style/TextView.Center"
+            a:layout_width="58px"
+            a:layout_height="58px"
+            a:layout_alignParentRight="true"
+            a:layout_below="@id/mTxtTime"
+            a:layout_marginRight="40px"
+            a:layout_marginTop="20px"
+            a:background="@drawable/messag_item_ic_spot"
+            a:textColor="@color/white"
+            a:textSize="@dimen/font_size_32" />
+
+        <x.TextView
+            a:id="@+id/mTxtText"
+            style="@style/ChatList.Text"
+            a:layout_below="@id/mTxtName"
+            a:layout_toLeftOf="@id/mTxtUnread"
+            a:layout_toRightOf="@id/mRoundedImageView" />
+
+        <View
+            a:id="@+id/mViewChatItemLine"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_alignParentBottom="true"
+            a:layout_marginLeft="40px"
+            a:layout_marginRight="32px"
+            a:layout_toRightOf="@id/mRoundedImageView"
+            a:background="#FFEDEDED"
+            a:visibility="gone" />
+    </x.RelativeLayout>
+
+</x.RelativeLayout>

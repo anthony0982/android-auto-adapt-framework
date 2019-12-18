@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="wrap_content">
+
+    <ViewStub
+        a:id="@+id/base_list_item_view_stub"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+</x.RelativeLayout>

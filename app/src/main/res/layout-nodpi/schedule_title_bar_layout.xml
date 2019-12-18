@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent" >
+
+    <x.TextView
+        a:id="@+id/schedule_title_bar_txt_title"
+        style="@style/TitleBar.Title"
+        a:layout_width="wrap_content"
+        a:text="@string/schedule" />
+
+    <x.TextView
+        a:id="@+id/mTxtTerm"
+        style="@style/TitleBar.ScheduleTitleTextRight"
+        a:layout_marginTop="15px"
+        a:textColor="@color/subtitle_text_color" />
+
+    <x.TextView
+        a:id="@+id/mTxtWeek"
+        style="@style/TitleBar.ScheduleTitleTextRight"
+        a:layout_alignParentBottom="true"
+        a:layout_marginBottom="15px"
+        a:textColor="@color/subtitle_text_color" />
+
+</RelativeLayout>

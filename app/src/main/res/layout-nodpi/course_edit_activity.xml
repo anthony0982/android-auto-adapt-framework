@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:clipToPadding="true"
+    a:fitsSystemWindows="true">
+
+    <ScrollView
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mTitleBar">
+
+        <x.LinearLayout
+            a:id="@+id/mLayoutSettings"
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content"
+            a:orientation="vertical">
+
+            <x.TextView
+                a:id="@+id/mTxtTitle"
+                style="@style/TextView.MultiLine"
+                a:layout_width="match_parent"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="80px"
+                a:textColor="@color/gray_22"
+                a:textSize="@dimen/font_size_56" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mPreCourse"
+                style="@style/SettingsItemView.Dive"
+                a:layout_marginTop="80px"
+                x:settings_title="@string/course_pre_course" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mBooks"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/course_books" />
+
+            <im.clazz.view.SettingsItemView
+                a:id="@+id/mApply"
+                style="@style/SettingsItemView.Dive"
+                x:settings_title="@string/course_apply" />
+
+            <x.RelativeLayout
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="50px"
+                a:layout_marginRight="50px"
+                a:layout_marginTop="100px">
+
+                <x.ImageView
+                    a:id="@+id/mImgWarning"
+                    style="@style/ImageView"
+                    a:layout_width="44px"
+                    a:layout_height="44px"
+                    a:layout_marginTop="6px"
+                    x:src="@drawable/ic_warning_44" />
+
+                <x.TextView
+                    a:id="@+id/mTxtWarningTitle"
+                    style="@style/TextView"
+                    a:layout_marginLeft="18px"
+                    a:layout_toRightOf="@id/mImgWarning"
+                    a:text="@string/course_edit_tip"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_40" />
+
+                <x.TextView
+                    a:id="@+id/mTxtWarningContent"
+                    style="@style/TextView.MultiLine"
+                    a:layout_below="@id/mTxtWarningTitle"
+                    a:layout_marginTop="30px"
+                    a:lineSpacingMultiplier="1.25"
+                    a:text="@string/course_edit_tips"
+                    a:textColor="@color/gray_99"
+                    a:textSize="@dimen/font_size_42" />
+            </x.RelativeLayout>
+        </x.LinearLayout>
+    </ScrollView>
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon.Back.Blue" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitleBar"
+            style="@style/TitleBar.Text"
+            a:layout_marginRight="20px"
+            a:text="@string/course_edit" />
+
+        <x.ImageView
+            a:id="@+id/mImgConfirm"
+            style="@style/ToolBar.Confirm"
+            a:layout_alignParentRight="true"
+            a:layout_centerVertical="true"
+            x:src="@drawable/ic_toobar_confirm_selector" />
+
+    </x.RelativeLayout>
+
+</RelativeLayout>

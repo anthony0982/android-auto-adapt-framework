@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+
+    <x.RelativeLayout
+        a:id="@+id/mLayoutMenuItem"
+        a:layout_width="match_parent"
+        a:layout_height="166px"
+        a:paddingLeft="20px"
+        a:paddingRight="20px"
+        x:bg="@drawable/menu_item_selector">
+
+        <x.ImageView
+            a:id="@+id/mImgMenu"
+            a:layout_width="52px"
+            a:layout_height="52px"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="52px"
+            a:tint="@color/light_blue"
+            x:src="@drawable/ic_add" />
+
+        <x.TextView
+            a:id="@+id/mTxtContacts"
+            style="@style/SchoolFunctionText"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            a:layout_toRightOf="@id/mImgMenu"
+            a:text="@string/menu_add_course" />
+
+        <x.ImageView
+            a:id="@+id/mTxtBottomLine"
+            a:layout_width="match_parent"
+            a:layout_height="2px"
+            a:layout_alignParentBottom="true"
+            a:src="#f0f0f0" />
+    </x.RelativeLayout>
+
+</merge>

@@ -1,0 +1,16 @@
+<menu xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto">
+    <item
+        a:id="@+id/action_camera"
+        x:actionLayout="@layout/image_selector_camera_view"
+        a:orderInCategory="80"
+        a:title="@string/take_photo"
+        x:showAsAction="ifRoom" />
+    <item
+        a:id="@+id/action_confirm"
+        x:actionLayout="@layout/image_selector_confirm_view"
+        a:orderInCategory="90"
+        a:title="@string/confirm"
+        x:showAsAction="ifRoom" />
+
+</menu>

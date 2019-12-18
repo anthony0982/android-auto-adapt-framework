@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<x.RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:x="http://schemas.android.com/apk/res-auto"
+    a:id="@+id/notification_responser_root_layout"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:background="@color/white"
+    a:fitsSystemWindows="true">
+
+    <x.RelativeLayout
+        a:id="@+id/mTitleBar"
+        style="@style/TitleBar.Main"
+        a:layout_width="match_parent">
+
+        <x.ImageView
+            a:id="@+id/mImgBack"
+            style="@style/ToolBar.Icon"
+            a:layout_alignParentLeft="true"
+            a:layout_centerVertical="true"
+            a:layout_marginLeft="30px"
+            x:src="@drawable/ic_toolbar_back" />
+
+        <x.TextView
+            a:id="@+id/mTxtTitle"
+            style="@style/TitleBar.Text"
+            a:layout_centerInParent="true"
+            a:text="@string/lesson_bind_slide" />
+
+    </x.RelativeLayout>
+
+    <com.astuetz.PagerIndicator
+        a:id="@+id/mPagerIndicator"
+        a:layout_width="match_parent"
+        a:layout_height="116px"
+        a:layout_below="@id/mTitleBar"
+        a:layout_marginLeft="40px"
+        a:layout_marginRight="40px"
+        a:background="@null"
+        a:overScrollMode="never"
+        x:pstsIndicatorColor="@color/black"
+        x:pstsIndicatorHeight="4px"
+        x:pstsShouldAnimateText="false"
+        x:pstsTabPaddingLeftRight="0px"
+        x:pstsTabWidth="500px"
+        x:pstsTextColor="#FFA3A3A3"
+        x:pstsTextColorHighlight="@color/black"
+        x:pstsTextSize="40px"
+        x:pstsTextSizeHighlight="40px"
+        x:pstsUnderlineHeight="0px" />
+
+    <com.halo.viewpager.ViewPager
+        a:id="@+id/mViewPager"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent"
+        a:layout_below="@+id/mPagerIndicator"
+        a:overScrollMode="never" />
+
+</x.RelativeLayout>
